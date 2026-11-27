@@ -7,6 +7,61 @@
     document.querySelector('.xxd-appearance-btn').hidden = false;
   }
 
+  // The language menu works on <details> without JS; enhance it with Escape, outside click and arrow keys.
+  const lang = document.querySelector('.site-lang__details');
+  if (lang) {
+    const summary = lang.querySelector('summary');
+    const menu = lang.querySelector('.xxd-menu');
+    if (summary && menu) {
+      const items = () => [...menu.querySelectorAll('[role="menuitem"]')];
+      let openFromKey = false;
+
+      summary.addEventListener('click', (e) => {
+        openFromKey = e.detail === 0;
+      });
+
+      summary.addEventListener('keydown', (e) => {
+        if (e.key !== 'ArrowDown' && e.key !== 'ArrowUp') return;
+        e.preventDefault();
+        openFromKey = false;
+        lang.open = true;
+        const list = items();
+        (e.key === 'ArrowDown' ? list[0] : list[list.length - 1])?.focus();
+      });
+
+      lang.addEventListener('toggle', () => {
+        const fromKey = openFromKey;
+        openFromKey = false;
+        if (lang.open && fromKey) (menu.querySelector('[aria-current="true"]') || items()[0])?.focus();
+      });
+
+      document.addEventListener('keydown', (e) => {
+        if (lang.open && e.key === 'Escape') {
+          e.preventDefault();
+          lang.open = false;
+          summary.focus();
+        }
+      });
+
+      menu.addEventListener('keydown', (e) => {
+        if (e.key !== ' ') return;
+        const item = e.target.closest?.('[role="menuitem"]');
+        if (item) {
+          e.preventDefault();
+          item.click();
+        }
+      });
+
+      document.addEventListener('pointerdown', (e) => {
+        if (lang.open && !lang.contains(e.target)) lang.open = false;
+      });
+
+      lang.addEventListener('focusout', (e) => {
+        if (lang.open && e.relatedTarget && !lang.contains(e.relatedTarget)) lang.open = false;
+      });
+    }
+  }
+
   const form = document.querySelector('[data-filter]');
   const list = document.querySelector('[data-filter-list]');
   if (!form || !list) return;

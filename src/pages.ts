@@ -456,10 +456,15 @@ ${head(ctx, title, c.description, links)}
     return html`<a class="xxd-link" data-variant="${current ? 'current' : 'plain'}" href="${link(ctx, p)}"${attr('aria-current', current ? 'page' : null)}>${t(key)}</a>`;
   })}</nav>
 <div class="site-tools">
-<nav class="site-lang" aria-label="${t('lang.label')}">${ENABLED_LOCALES.filter((l) => l.code !== locale.code).map(
+<nav class="site-lang" aria-label="${t('lang.label')}">
+<details class="site-lang__details">
+<summary class="xxd-btn site-lang__trigger" data-size="sm" data-variant="ghost"><i data-xxd-icon="Languages" data-size="16"></i><span>${locale.label}</span><span class="site-lang__caret" aria-hidden="true"></span></summary>
+<div class="xxd-menu site-lang__menu" role="menu" aria-label="${t('lang.label')}">${ENABLED_LOCALES.map(
     (l) =>
-      html`<a class="xxd-link" data-variant="plain" href="${link(ctx, page, l.code)}" hreflang="${l.htmlLang}" lang="${l.htmlLang}"><i data-xxd-icon="Languages" data-size="16"></i>${l.label}</a>`,
-  )}</nav>
+      html`<a class="xxd-menu__item" role="menuitem" href="${link(ctx, page, l.code)}" hreflang="${l.htmlLang}" lang="${l.htmlLang}"${attr('aria-current', l.code === locale.code ? 'true' : null)}>${l.label}</a>`,
+  )}</div>
+</details>
+</nav>
 <button class="xxd-btn xxd-appearance-btn" data-size="sm" data-variant="ghost" data-icon-only type="button" hidden data-xxd-popover="appearance-pop" aria-label="${t('appearance')}" data-tooltip="${t('appearance')}"><i class="xxd-appearance-btn__sun" data-xxd-icon="Sun" data-size="16"></i><i class="xxd-appearance-btn__moon" data-xxd-icon="Moon" data-size="16"></i></button>
 <div class="xxd-popover xxd-appearance-pop" id="appearance-pop" popover data-placement="bottom-end"></div>
 </div>
