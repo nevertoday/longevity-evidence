@@ -14,6 +14,10 @@ const VERDICT_BY_UPSTREAM = {
 } as const;
 export type VerdictId = (typeof VERDICT_BY_UPSTREAM)[keyof typeof VERDICT_BY_UPSTREAM];
 
+// Whether the record checks a claim from the original guide or adds a study found during review.
+const ORIGIN_BY_UPSTREAM = { 原库: 'original', 新增: 'added' } as const;
+export type Origin = (typeof ORIGIN_BY_UPSTREAM)[keyof typeof ORIGIN_BY_UPSTREAM];
+
 // Verdicts where the popular claim was wrong, overstated or untested, in the order the myths page lists them.
 export const MYTH_VERDICTS: readonly VerdictId[] = ['corrected', 'partly', 'no-direct'];
 
@@ -99,6 +103,7 @@ export type Study = {
   topic: TopicId;
   grade: Grade;
   verdict: VerdictId;
+  origin: Origin;
   sources: Source[];
   text: Record<LocaleCode, StudyText>;
 };
@@ -250,6 +255,7 @@ function parseStudy(r: Obj, langs: Record<LocaleCode, Lang>): Study {
     topic: TOPIC_OVERRIDES[id] ?? lookup(TOPIC_BY_SUBCATEGORY, str(r.subcategory, `${at}.subcategory`), `${at}.subcategory`),
     grade: lookup(Object.fromEntries(GRADES.map((g) => [g, g])), str(r.grade, `${at}.grade`), `${at}.grade`),
     verdict: lookup(VERDICT_BY_UPSTREAM, str(r.verdict, `${at}.verdict`), `${at}.verdict`),
+    origin: lookup(ORIGIN_BY_UPSTREAM, str(r.origin, `${at}.origin`), `${at}.origin`),
     sources: rawSources.map((s, i) => parseSource(s, `${at}.sources[${i}]`)),
     text: Object.fromEntries(
       LOCALE_CODES.map((code) => [code, parseText(id, rawSources, langs[code], `${at} (${code})`)]),
