@@ -367,6 +367,16 @@
 
 .claim ul {
   padding-inline-start: var(--space-5);
+  list-style: disc;
+}
+
+/* Bullets follow the claim's own nesting, not the study list it sits in. */
+.claim ul ul {
+  list-style: circle;
+}
+
+.claim ul ul ul {
+  list-style: square;
 }
 
 .claim a {
