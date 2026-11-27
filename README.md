@@ -17,7 +17,7 @@ npm run build    # 生成 dist/
 npm run check    # 检查内容完整、链接、lang、canonical 和 hreflang
 ```
 
-部署前设置网站地址，canonical 和 hreflang 会用到它：
+线上地址是 https://longevity.xiaoxiaodong.ai （Cloudflare Workers 静态资源，配置见 `wrangler.jsonc`）。`npm run deploy` 会构建、检查并上传。fork 后部署到别的域名时设置 `SITE_ORIGIN`，canonical 和 hreflang 会用到它：
 
 ```sh
 SITE_ORIGIN=https://你的域名 npm run build
@@ -76,7 +76,7 @@ npm run build    # writes dist/
 npm run check    # checks content, links, lang, canonical and hreflang
 ```
 
-Set the site address before a real deploy. Canonical and hreflang URLs use it:
+The live site is https://longevity.xiaoxiaodong.ai (Cloudflare Workers static assets, configured in `wrangler.jsonc`). `npm run deploy` builds, checks and uploads. A fork that deploys elsewhere sets `SITE_ORIGIN`, which canonical and hreflang URLs use:
 
 ```sh
 SITE_ORIGIN=https://your.domain npm run build
