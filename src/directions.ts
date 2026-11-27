@@ -53,7 +53,7 @@ export const DIRECTION_BY_ID: Record<string, { direction: Direction; reason: str
   toothbrushing: { direction: 'helps', reason: 'Rarely or never brushing against regular brushing HR 1.25 (1.21–1.28), so brushing goes with lower risk' },
   'tub-bathing': { direction: 'helps', reason: 'Incident CVD HR 0.72 (0.62–0.84), near-daily against 0–2 times a week; ACM not reported' },
   'heavy-housework': { direction: 'helps', reason: 'HR 0.71 (0.56–0.91) in older men, doing heavy housework against not' },
-  'sleep-duration': { direction: 'harms', reason: 'Sleeping 10 h or more against 7 h: men HR 1.34 (1.26–1.44), women 1.48 (1.36–1.61); long sleep is the risk' },
+  'sleep-duration': { direction: 'mixed', reason: 'Only long sleep is tested: 10 h or more against 7 h, men HR 1.34 (1.26–1.44), women 1.48 (1.36–1.61); the factor name has no direction, so harms would read as "sleep is harmful"' },
   bedtime: { direction: 'mixed', reason: 'Before about 22:00 or after midnight against 22:00–midnight: composite HR 1.09 (1.03–1.16) and 1.10 (1.02–1.20), both sides of the middle; ACM unverified' },
   'sedentary-time': { direction: 'harms', reason: 'RR 1.01 (1.00–1.01) per extra hour up to 8 h a day and 1.04 (1.03–1.05) above 8 h' },
   pessimism: { direction: 'harms', reason: 'HR 1.134 (1.065–1.207) per 1 SD higher pessimism score; optimism not significant' },
