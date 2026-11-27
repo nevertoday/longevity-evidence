@@ -1,0 +1,642 @@
+{
+  "poultry-fish": {
+    "question": "TODO 白肉、红肉与加工肉",
+    "answer": "TODO Estudios estadounidenses de seguimiento prolongado relacionaron comer más carne roja y procesada con mayor riesgo de muerte. La asociación fue más débil con pescado y aves; también importan los sustitutos y la cocción.",
+    "why": [
+      "TODO Estudios estadounidenses de seguimiento prolongado relacionaron comer más carne roja y procesada con mayor riesgo de muerte. La asociación fue más débil con pescado y aves; también importan los sustitutos y la cocción.",
+      "TODO JAMA美国6队列29682人，8875死亡；BMJ81469人，14019死亡"
+    ],
+    "caution": "TODO Come menos carne procesada y sustituye parte de la roja por legumbres, frutos secos o pescado.",
+    "myth": "TODO 行动节：白肉 −11%～−3% ACM；证据节：增加红肉≥半份/天，ACM增加10%；每周两份红肉/加工肉增加3%。"
+  },
+  "fresh-fruit-diabetes": {
+    "question": "TODO 新鲜水果（糖尿病人群）",
+    "answer": "TODO Un seguimiento chino de personas con diabetes relacionó comer más fruta fresca con menor riesgo de muerte y complicaciones vasculares. Estudió fruta entera, no zumo.",
+    "why": [
+      "TODO Un seguimiento chino de personas con diabetes relacionó comer más fruta fresca con menor riesgo de muerte y complicaciones vasculares. Estudió fruta entera, no zumo.",
+      "TODO 中国CKB基线糖尿病30300人，3389死亡，约7年"
+    ],
+    "caution": "TODO Incluye cantidades moderadas de fruta entera, ajustadas a tu glucemia y tratamiento.",
+    "myth": "TODO 每天摄入200克新鲜水果可使死亡率降低17%，糖尿病大血管并发症风险降低13%、微血管并发症降低28%。"
+  },
+  "flavonoid-foods": {
+    "question": "TODO 含黄酮食物",
+    "answer": "TODO Un seguimiento danés relacionó una mayor ingesta alimentaria de flavonoides con menor riesgo de muerte. Estos compuestos están en muchos vegetales; el estudio observó la dieta cotidiana.",
+    "why": [
+      "TODO Un seguimiento danés relacionó una mayor ingesta alimentaria de flavonoides con menor riesgo de muerte. Estos compuestos están en muchos vegetales; el estudio observó la dieta cotidiana.",
+      "TODO 丹麦56048人，14083死亡，23年"
+    ],
+    "caution": "TODO Varía las verduras, frutas y legumbres.",
+    "myth": "TODO 吃含黄酮食物与死亡风险降低20%相关；举例一杯茶、一个苹果、一个橘子、100克蓝莓或100克西兰花。"
+  },
+  "chili-us": {
+    "question": "TODO 红辣椒（美国）",
+    "answer": "TODO Un seguimiento estadounidense encontró menor riesgo de muerte entre adultos que comían chile rojo. La edad, la dieta y otros hábitos también influyen en esta asociación.",
+    "why": [
+      "TODO Un seguimiento estadounidense encontró menor riesgo de muerte entre adultos que comían chile rojo. La edad, la dieta y otros hábitos también influyen en esta asociación.",
+      "TODO 美国NHANES III 16179成人，中位18.9年"
+    ],
+    "caution": "TODO Si te gusta el picante y te sienta bien, disfrútalo como condimento.",
+    "myth": "TODO 美国16179人随访约19年：食辣者死亡21.6%，不食者33.6%；原段随后称每周>4次ACM降低23%。"
+  },
+  "chili-italy": {
+    "question": "TODO 辣椒（意大利）",
+    "answer": "TODO Un seguimiento italiano relacionó comer chile con frecuencia con menor mortalidad total y cardiovascular.",
+    "why": [
+      "TODO Un seguimiento italiano relacionó comer chile con frecuencia con menor mortalidad total y cardiovascular.",
+      "TODO 意大利Moli-sani 22811人，1236死亡，中位8.2年"
+    ],
+    "caution": "TODO Si te gusta el chile y lo toleras bien, úsalo para dar sabor a tus comidas.",
+    "myth": "TODO 每周吃辣>4次，ACM降低23%、心血管死亡降低34%；二手标题称“患病死亡风险可降低61%”。"
+  },
+  "eggs": {
+    "question": "TODO 鸡蛋",
+    "answer": "TODO Un seguimiento estadounidense de adultos de mediana y avanzada edad relacionó comer más huevos enteros con mayor riesgo de muerte. Los resultados varían entre regiones; la dieta completa aporta más contexto que el huevo por separado.",
+    "why": [
+      "TODO Un seguimiento estadounidense de adultos de mediana y avanzada edad relacionó comer más huevos enteros con mayor riesgo de muerte. Los resultados varían entre regiones; la dieta completa aporta más contexto que el huevo por separado.",
+      "TODO NIH-AARP 521120人，129328死亡，中位16年"
+    ],
+    "caution": "TODO Adapta los huevos a tus lípidos sanguíneos y tu alimentación, dejando espacio para legumbres y frutos secos.",
+    "myth": null
+  },
+  "walnuts": {
+    "question": "TODO 核桃",
+    "answer": "TODO Seguimientos estadounidenses relacionaron comer nueces regularmente con menor riesgo de muerte. Las diferencias de esperanza de vida se estimaron con modelos; otros hábitos saludables también pueden influir.",
+    "why": [
+      "TODO Seguimientos estadounidenses relacionaron comer nueces regularmente con menor riesgo de muerte. Las diferencias de esperanza de vida se estimaron con modelos; otros hábitos saludables también pueden influir.",
+      "TODO NHS/HPFS 93340人，30263死亡，最长20年"
+    ],
+    "caution": "TODO Si no tienes alergia, sustituye algunos tentempiés por cantidades moderadas de nueces sin sal y cuenta su aporte energético.",
+    "myth": "TODO ≥5份核桃/周（28克/份），健康预期寿命多1.3岁，ACM低14%，心血管死亡低25%。"
+  },
+  "nuts-general": {
+    "question": "TODO 坚果频率",
+    "answer": "TODO Varios seguimientos relacionaron comer frutos secos regularmente con menor riesgo de muerte. Incluyeron distintas dietas y no compararon directamente frutos secos crudos y tostados.",
+    "why": [
+      "TODO Varios seguimientos relacionaron comer frutos secos regularmente con menor riesgo de muerte. Incluyeron distintas dietas y no compararon directamente frutos secos crudos y tostados.",
+      "TODO NEJM118962人27429死亡；PREDIMED7216高CVD风险成人323死亡"
+    ],
+    "caution": "TODO Elige frutos secos sin sal y con poco azúcar añadido que te gusten; evítalos si tienes alergia.",
+    "myth": "TODO 原文以1盎司份量描述每周频率，并列死亡降低7%、11%、13%、15%、20%；另称7216人“横断面”研究中>3份/周死亡低39%。"
+  },
+  "sodium-ecological": {
+    "question": "TODO 钠摄入跨国生态关联",
+    "answer": "TODO Una comparación entre países encontró una mortalidad menor donde el consumo de sodio era mayor, aunque las diferencias de ingresos, atención sanitaria y otros factores nacionales también influyen en esta relación. Para decidir cuánto consumir, conviene tener en cuenta la presión arterial y la salud de cada persona.",
+    "why": [
+      "TODO Una comparación entre países encontró una mortalidad menor donde el consumo de sodio era mayor, aunque las diferencias de ingresos, atención sanitaria y otros factores nacionales también influyen en esta relación. Para decidir cuánto consumir, conviene tener en cuenta la presión arterial y la salud de cada persona.",
+      "TODO 181国家2010年汇总数据；高收入敏感性46国"
+    ],
+    "caution": "TODO Ajusta la sal a tu presión arterial y tus necesidades médicas.",
+    "myth": "TODO 181国生态研究：每增加1克/日钠，出生健康预期寿命β=2.6年，60岁β=0.3年；ACM β=−131；高收入46国β=3.4年、ACM β=−168。"
+  },
+  "potassium-salt": {
+    "question": "TODO 低钠富钾盐替代",
+    "answer": "TODO Un ensayo aleatorizado en zonas rurales chinas encontró menos muertes y eventos cardiovasculares al sustituir sal común por sal reducida en sodio y enriquecida con potasio. Los participantes tenían antecedentes de ictus o eran mayores con hipertensión.",
+    "why": [
+      "TODO Un ensayo aleatorizado en zonas rurales chinas encontró menos muertes y eventos cardiovasculares al sustituir sal común por sal reducida en sodio y enriquecida con potasio. Los participantes tenían antecedentes de ictus o eran mayores con hipertensión.",
+      "TODO 中国600村20995人；卒中史或≥60岁且高血压；均随访4.74年"
+    ],
+    "caution": "TODO Antes de cambiar de sal, confirma que sea adecuada, especialmente con enfermedad renal, potasio alto o fármacos que lo elevan.",
+    "myth": null
+  },
+  "carbohydrate-share": {
+    "question": "TODO 碳水能量占比",
+    "answer": "TODO Los seguimientos relacionaron tanto proporciones bajas como altas de carbohidratos con mayor mortalidad. Los alimentos que los sustituían también influyeron en los resultados.",
+    "why": [
+      "TODO Los seguimientos relacionaron tanto proporciones bajas como altas de carbohidratos con mayor mortalidad. Los alimentos que los sustituían también influyeron en los resultados.",
+      "TODO ARIC15428人及荟萃合计432179人"
+    ],
+    "caution": "TODO Mejora primero la calidad de los carbohidratos, con integrales y legumbres; adapta las dietas terapéuticas a cada persona.",
+    "myth": null
+  },
+  "betel-quid": {
+    "question": "TODO 槟榔/槟榔嚼块",
+    "answer": "TODO Un análisis conjunto de estudios asiáticos relacionó masticar betel con mayor riesgo de muerte. Las mezclas y el consumo conjunto de tabaco o alcohol influyen en la asociación.",
+    "why": [
+      "TODO Un análisis conjunto de estudios asiáticos relacionó masticar betel con mayor riesgo de muerte. Las mezclas y el consumo conjunto de tabaco o alcohol influyen en la asociación.",
+      "TODO ACM分析179582人，亚洲研究5个比较类别"
+    ],
+    "caution": "TODO Evita el betel; si tienes dependencia, busca apoyo para dejarlo.",
+    "myth": null
+  },
+  "calorie-restriction": {
+    "question": "TODO 热量限制（非人灵长类）",
+    "answer": "TODO Estudios con macacos rhesus sugieren que restringir calorías puede mejorar la supervivencia, con resultados diferentes entre estudios. No se ha demostrado que prolongue la vida humana.",
+    "why": [
+      "TODO Estudios con macacos rhesus sugieren que restringir calorías puede mejorar la supervivencia, con resultados diferentes entre estudios. No se ha demostrado que prolongue la vida humana.",
+      "TODO UW76只恒河猴；另NIA猴研究早期生存差异不显著"
+    ],
+    "caution": "TODO Come lo suficiente para nutrirte sin excesos; evita restringir por tu cuenta con bajo peso, embarazo, lactancia, durante el crecimiento, con fragilidad o trastornos alimentarios.",
+    "myth": "TODO 恒河猴热量限制：普通喂养组的多种疾病风险增加2.9倍，死亡风险增加3.0倍。"
+  },
+  "macronutrient-pattern": {
+    "question": "TODO 综合营养与宏量营养配比",
+    "answer": "TODO Un gran seguimiento británico encontró relaciones complejas entre grasas, proteínas, carbohidratos, fibra y salud. Combinar bien los alimentos es más práctico que buscar una proporción exacta.",
+    "why": [
+      "TODO Un gran seguimiento británico encontró relaciones complejas entre grasas, proteínas, carbohidratos, fibra y salud. Combinar bien los alimentos es más práctico que buscar una proporción exacta.",
+      "TODO UK Biobank195658人4780死亡，平均10.6年"
+    ],
+    "caution": "TODO Combina verduras, fruta, integrales, legumbres y proteínas adecuadas; con enfermedad renal o diabetes, sigue un plan nutricional adaptado.",
+    "myth": "TODO 原库称通用最优配比：<24%淀粉、15%–17%蛋白质、>15%单不饱和脂肪、<15%糖、6%饱和及6%多不饱和脂肪、30g+纤维；并描述总脂肪与ACM线性相关"
+  },
+  "ultraprocessed-acm": {
+    "question": "TODO 超加工食品与ACM",
+    "answer": "TODO Un seguimiento español relacionó comer más ultraprocesados con mayor riesgo de muerte. Participaron principalmente personas con estudios universitarios; la dieta y el entorno social también influyen.",
+    "why": [
+      "TODO Un seguimiento español relacionó comer más ultraprocesados con mayor riesgo de muerte. Participaron principalmente personas con estudios universitarios; la dieta y el entorno social también influyen.",
+      "TODO 西班牙SUN大学毕业生19899人，335死亡，200432人年"
+    ],
+    "caution": "TODO Sustituye poco a poco algunos ultraprocesados habituales por opciones asequibles y menos procesadas.",
+    "myth": "TODO 行动节：少吃超加工食物 −62%～−18%；引用标题称常吃薯片汉堡巧克力“平均死亡年龄仅58岁”。"
+  },
+  "ultraprocessed-cvd": {
+    "question": "TODO Ultraprocesados y salud cardiovascular",
+    "answer": "TODO Un seguimiento francés relacionó una mayor proporción de ultraprocesados con mayor riesgo de desarrollar enfermedad cardiovascular.",
+    "why": [
+      "TODO Un seguimiento francés relacionó una mayor proporción de ultraprocesados con mayor riesgo de desarrollar enfermedad cardiovascular.",
+      "TODO 法国105159成人，1409 CVD事件，中位5.2年"
+    ],
+    "caution": "TODO Reduce los aperitivos ultraprocesados y la comida lista para consumir; busca comidas cotidianas que puedas mantener.",
+    "myth": "TODO 超加工食品条目并列SUN全因死亡研究、NutriNet-Santé心血管发病研究和一篇评论。"
+  },
+  "whole-grains": {
+    "question": "TODO 全谷物",
+    "answer": "TODO Un análisis conjunto de estudios prolongados relacionó comer más integrales con menor riesgo de muerte. Las raciones correspondían al peso de los alimentos integrales.",
+    "why": [
+      "TODO Un análisis conjunto de estudios prolongados relacionó comer más integrales con menor riesgo de muerte. Las raciones correspondían al peso de los alimentos integrales.",
+      "TODO ACM合并11项前瞻研究；整体综述45项"
+    ],
+    "caution": "TODO Sustituye gradualmente parte de los cereales refinados por cereales integrales; si tienes celiaquía, elige opciones sin gluten.",
+    "myth": null
+  },
+  "dietary-fiber": {
+    "question": "TODO 膳食纤维",
+    "answer": "TODO Seguimientos relacionaron más fibra con menor riesgo de muerte; ensayos clínicos observaron mejoras en presión arterial y colesterol.",
+    "why": [
+      "TODO Seguimientos relacionaron más fibra con menor riesgo de muerte; ensayos clínicos observaron mejoras en presión arterial y colesterol.",
+      "TODO 185项前瞻研究及58项试验；试验4635人"
+    ],
+    "caution": "TODO Aumenta la fibra poco a poco con integrales, legumbres, verduras y fruta, y bebe suficiente agua. Con estrechamiento intestinal o enfermedad digestiva aguda, consulta antes.",
+    "myth": null
+  },
+  "plant-protein": {
+    "question": "TODO 植物蛋白来源",
+    "answer": "TODO Varias cohortes relacionaron una mayor ingesta de proteína vegetal con menor riesgo de muerte. Importan los alimentos de origen y cuáles sustituyen.",
+    "why": [
+      "TODO Varias cohortes relacionaron una mayor ingesta de proteína vegetal con menor riesgo de muerte. Importan los alimentos de origen y cuáles sustituyen.",
+      "TODO 32队列综述、31项合并，715128人113039死亡"
+    ],
+    "caution": "TODO Sustituye parte de la carne roja y procesada por legumbres, soja o frutos secos, adaptándolo a enfermedad renal o alergias.",
+    "myth": null
+  },
+  "dairy": {
+    "question": "TODO 乳制品／牛奶",
+    "answer": "TODO Un seguimiento multinacional relacionó los lácteos con menor riesgo de muerte, pero las revisiones no coinciden. Leche y yogur aportan nutrientes; la elección depende de tus necesidades.",
+    "why": [
+      "TODO Un seguimiento multinacional relacionó los lácteos con menor riesgo de muerte, pero las revisiones no coinciden. Leche y yogur aportan nutrientes; la elección depende de tus necesidades.",
+      "TODO 21国136,384人，35–70岁；中位随访9.1年；6,796死亡"
+    ],
+    "caution": "TODO Si te gustan y toleras, elige leche o yogur con poco azúcar añadido; busca alternativas adecuadas con intolerancia a lactosa o alergia.",
+    "myth": null
+  },
+  "tea-china-par": {
+    "question": "TODO 饮茶（China-PAR）",
+    "answer": "TODO Un seguimiento chino relacionó beber té habitualmente con menor riesgo de muerte. El estilo de vida y las circunstancias socioeconómicas de quienes lo beben también pueden influir.",
+    "why": [
+      "TODO Un seguimiento chino relacionó beber té habitualmente con menor riesgo de muerte. El estilo de vida y las circunstancias socioeconómicas de quienes lo beben también pueden influir.",
+      "TODO 中国100,902成人；中位7.3年；5,479死亡"
+    ],
+    "caution": "TODO Disfruta de té sin azúcar y no abrasador; reduce si altera el sueño, produce palpitaciones o debes limitar cafeína.",
+    "myth": null
+  },
+  "tea-ckb": {
+    "question": "TODO 饮茶（CKB）",
+    "answer": "TODO Otro gran seguimiento chino encontró la asociación entre té y menor mortalidad principalmente en hombres. Beberlo a diario no dio mejores resultados que beberlo con menor frecuencia.",
+    "why": [
+      "TODO Otro gran seguimiento chino encontró la asociación entre té y menor mortalidad principalmente en hombres. Beberlo a diario no dio mejores resultados que beberlo con menor frecuencia.",
+      "TODO 中国CKB 438,443人；中位11.1年；34,661死亡"
+    ],
+    "caution": "TODO Toma té sin azúcar en cantidades y a una temperatura agradables, sin perjudicar el sueño.",
+    "myth": null
+  },
+  "artificially-sweetened-drinks": {
+    "question": "TODO 人工甜味软饮料",
+    "answer": "TODO Un gran estudio europeo relacionó un mayor consumo de bebidas con edulcorantes artificiales con mayor riesgo de muerte. Las personas con problemas metabólicos previos pueden recurrir a estas bebidas con más frecuencia, lo que dificulta la interpretación.",
+    "why": [
+      "TODO Un gran estudio europeo relacionó un mayor consumo de bebidas con edulcorantes artificiales con mayor riesgo de muerte. Las personas con problemas metabólicos previos pueden recurrir a estas bebidas con más frecuencia, lo que dificulta la interpretación.",
+      "TODO EPIC欧洲10国451,743人；平均16.4年；41,693死亡"
+    ],
+    "caution": "TODO Para la sed, prioriza agua; si sustituyes bebidas azucaradas por bebidas sin azúcar, este resultado no es motivo para volver al azúcar.",
+    "myth": "TODO * 无糖（甜味）饮料\n  * [「无糖饮料使死亡风险增加 26 %」，是真的吗？](https://www.zhihu.com/question/4185982"
+  },
+  "sugar-sweetened-drinks": {
+    "question": "TODO 含糖饮料",
+    "answer": "TODO Seguimientos estadounidenses relacionaron beber más bebidas azucaradas con mayor riesgo de muerte total y cardiovascular.",
+    "why": [
+      "TODO Seguimientos estadounidenses relacionaron beber más bebidas azucaradas con mayor riesgo de muerte total y cardiovascular.",
+      "TODO 美国NHS 80,647女性、HPFS 37,716男性；最长34年；36,436死亡"
+    ],
+    "caution": "TODO Sustituye gradualmente las bebidas azucaradas habituales por agua u opciones sin azúcar.",
+    "myth": "TODO * 有糖饮料\n  * [可乐和奶茶，增加全因死亡率高达62%！果汁降低免疫力，影响肝代谢！含糖饮料那些事](https://zhuanlan.zhihu.com"
+  },
+  "fruit-juice": {
+    "question": "TODO 100%果汁",
+    "answer": "TODO Un seguimiento estadounidense de adultos de mediana y avanzada edad relacionó más zumo puro con mayor riesgo de muerte.",
+    "why": [
+      "TODO Un seguimiento estadounidense de adultos de mediana y avanzada edad relacionó más zumo puro con mayor riesgo de muerte.",
+      "TODO 美国REGARDS 13,440人，≥45岁，均龄63.6；平均6年；1,000死亡"
+    ],
+    "caution": "TODO Bebe agua para la sed, prioriza la fruta entera y toma zumo en pequeñas cantidades.",
+    "myth": "TODO * 果汁\n  * [JAMA子刊：100%纯果汁可能比含糖饮料更危险](https://zhuanlan.zhihu.com/p/66513350)\n    *"
+  },
+  "coffee": {
+    "question": "TODO 咖啡",
+    "answer": "TODO Una gran revisión relacionó el consumo moderado de café con menor riesgo de muerte. Importan el tamaño de la taza, la preparación, el azúcar y la tolerancia individual.",
+    "why": [
+      "TODO Una gran revisión relacionó el consumo moderado de café con menor riesgo de muerte. Importan el tamaño de la taza, la preparación, el azúcar y la tolerancia individual.",
+      "TODO 40研究，3,852,651人，450,256例全因及死因别死亡"
+    ],
+    "caution": "TODO Disfruta con moderación si te sienta bien, con poco azúcar; ajusta la cafeína durante el embarazo o con insomnio o palpitaciones.",
+    "myth": null
+  },
+  "spermidine-diet": {
+    "question": "TODO Espermidina en la alimentación",
+    "answer": "TODO Seguimientos relacionaron más espermidina procedente de alimentos con menor riesgo de muerte. Tomar suplementos es otra cuestión; no se ha demostrado que prolonguen la vida.",
+    "why": [
+      "TODO Seguimientos relacionaron más espermidina procedente de alimentos con menor riesgo de muerte. Tomar suplementos es otra cuestión; no se ha demostrado que prolonguen la vida.",
+      "TODO Bruneck 829人，45–84岁；1995–2015年341死亡；SAPHIR独立验证"
+    ],
+    "caution": "TODO Varía la dieta con alimentos corrientes, como integrales y legumbres.",
+    "myth": "TODO * 亚精胺\n  * [Science：科学背书！从精液中发现的亚精胺，竟然有着抗衰老、抗癌、保护心血管和神经、改善肥胖和2型糖尿病等逆天神效](https://"
+  },
+  "smoking": {
+    "question": "TODO 吸烟与戒烟",
+    "answer": "TODO Los seguimientos encuentran de forma consistente mayor mortalidad en fumadores, incluso con pocos cigarrillos diarios. Quienes dejan de fumar tienen menor riesgo que quienes continúan.",
+    "why": [
+      "TODO Los seguimientos encuentran de forma consistente mayor mortalidad en fumadores, incluso con pocos cigarrillos diarios. Quienes dejan de fumar tienen menor riesgo que quienes continúan.",
+      "TODO 墨西哥129,151无既往慢病成人，35–89岁；招募1998–2004，随访至2018"
+    ],
+    "caution": "TODO No empieces; si fumas, déjalo cuanto antes, con servicios de cesación y apoyo farmacológico cuando sea necesario.",
+    "myth": null
+  },
+  "sun-exposure": {
+    "question": "TODO 晒太阳／紫外线",
+    "answer": "TODO Estudios nórdicos encontraron asociaciones entre indicadores de exposición solar y supervivencia. La actividad exterior y el uso de servicios sanitarios también influyen. No establecieron un tiempo de sol para vivir más.",
+    "why": [
+      "TODO Estudios nórdicos encontraron asociaciones entre indicadores de exposición solar y supervivencia. La actividad exterior y el uso de servicios sanitarios también influyen. No establecieron un tiempo de sol para vivir más.",
+      "TODO 丹麦>40岁440万人，1980–2006；瑞典29,518名女性20年随访"
+    ],
+    "caution": "TODO Disfruta del aire libre y la luz natural evitando quemaduras; adapta la protección con alto riesgo de cáncer cutáneo o fotosensibilidad.",
+    "myth": "TODO * 晒太阳\n  * [晒太阳和死亡率的关系，如何科学，安全的晒太阳？\n](https://zhuanlan.zhihu.com/p/76301306)\n    "
+  },
+  "nmn": {
+    "question": "TODO NMN",
+    "answer": "TODO Los ensayos humanos han sido pequeños y breves, centrados en medidas metabólicas. No se ha demostrado que NMN prolongue la vida humana y hay pocos datos de seguridad a largo plazo.",
+    "why": [
+      "TODO Los ensayos humanos han sido pequeños y breves, centrados en medidas metabólicas. No se ha demostrado que NMN prolongue la vida humana y hay pocos datos de seguridad a largo plazo.",
+      "TODO 原RCT为超重/肥胖绝经后糖尿病前期女性、10周；综述8试验342人"
+    ],
+    "caution": "TODO Prioriza dieta, actividad y sueño; no consideres NMN un fármaco de longevidad probado.",
+    "myth": "TODO * NMN"
+  },
+  "metformin-diabetes": {
+    "question": "TODO 二甲双胍（超重新诊断2型糖尿病）",
+    "answer": "TODO Un ensayo aleatorizado en personas con sobrepeso y diabetes recién diagnosticada encontró menos muertes con metformina. Los ensayos posteriores agrupados fueron menos concluyentes. Se trata de tratamiento de la diabetes.",
+    "why": [
+      "TODO Un ensayo aleatorizado en personas con sobrepeso y diabetes recién diagnosticada encontró menos muertes con metformina. Los ensayos posteriores agrupados fueron menos concluyentes. Se trata de tratamiento de la diabetes.",
+      "TODO UKPDS主随机比较753名超重新诊断2型糖尿病者，均龄53；中位10.7年"
+    ],
+    "caution": "TODO Con diabetes, sigue el plan prescrito según función renal y tolerancia; si estás sano, no empieces metformina por tu cuenta para vivir más.",
+    "myth": null
+  },
+  "metformin-longevity": {
+    "question": "TODO Metformina y longevidad en personas sanas",
+    "answer": "TODO Un estudio observacional comparó a personas con diabetes que tomaban metformina con un grupo de control sin diabetes y encontró una mayor supervivencia en el primer grupo. Sin embargo, un seguimiento aleatorizado a largo plazo no encontró una reducción de la mortalidad en personas con alto riesgo de diabetes. No se ha demostrado que la metformina prolongue la vida de las personas sanas.",
+    "why": [
+      "TODO Un estudio observacional comparó a personas con diabetes que tomaban metformina con un grupo de control sin diabetes y encontró una mayor supervivencia en el primer grupo. Sin embargo, un seguimiento aleatorizado a largo plazo no encontró una reducción de la mortalidad en personas con alto riesgo de diabetes. No se ha demostrado que la metformina prolongue la vida de las personas sanas.",
+      "TODO 英国CPRD 78,241二甲双胍患者、12,222磺脲患者、90,463匹配非糖尿病人；DPP/DPPOS 3,234高糖尿病风险者、中位21年、453死亡"
+    ],
+    "caution": "TODO No te automediques para el envejecimiento; si tienes diabetes o planeas tener hijos, consulta las dudas de tratamiento.",
+    "myth": "TODO * 二甲双胍\n  * [“胍”吹必看 丨我就是神药——二甲双胍](https://zhuanlan.zhihu.com/p/419202902)\n    * 二"
+  },
+  "multivitamins": {
+    "question": "TODO 复合维生素",
+    "answer": "TODO Ensayos y grandes seguimientos no han demostrado menor mortalidad con multivitamínicos en personas generalmente sanas. Algunos encontraron menos diagnósticos de cáncer, que es otro desenlace.",
+    "why": [
+      "TODO Ensayos y grandes seguimientos no han demostrado menor mortalidad con multivitamínicos en personas generalmente sanas. Algunos encontraron menos diagnósticos de cáncer, que es otro desenlace.",
+      "TODO PHS II 14,641男性医生、11.2年；COSMOS 21,442老年成人、3.6年；2024队列390,124人"
+    ],
+    "caution": "TODO Reserva los suplementos para carencias o necesidades concretas; empieza por una buena alimentación cotidiana.",
+    "myth": "TODO * 复合维生素\n  * [服用复合维生素可降低癌症危险8%，其他效果并不显著](https://health.qq.com/a/20121023/000026."
+  },
+  "glucosamine-chondroitin": {
+    "question": "TODO 葡萄糖胺／软骨素",
+    "answer": "TODO Un seguimiento estadounidense relacionó uso prolongado de glucosamina y condroitina con menor mortalidad. Sus usuarios también hacían más ejercicio y fumaban menos. No se ha demostrado que estos suplementos prolonguen la vida de personas sanas.",
+    "why": [
+      "TODO Un seguimiento estadounidense relacionó uso prolongado de glucosamina y condroitina con menor mortalidad. Sus usuarios también hacían más ejercicio y fumaban menos. No se ha demostrado que estos suplementos prolonguen la vida de personas sanas.",
+      "TODO NHANES 1999–2010，16,686名≥40岁成人，排除基线CVD及生命状态缺失者；658使用≥1年；中位107个月；3,366死亡"
+    ],
+    "caution": "TODO Averigua primero la causa de las molestias articulares y revisa interacciones, especialmente si tomas anticoagulantes.",
+    "myth": "TODO * 葡萄糖胺\n  * [神奇！氨糖降低心血管死亡率65%，与定期运动效果相当](https://www.sohu.com/a/436372221_1208732"
+  },
+  "anti-aging-drugs-review": {
+    "question": "TODO 综合抗衰药候选（综述）",
+    "answer": "TODO Una revisión de fármacos antienvejecimiento reunió moléculas candidatas, con datos sobre todo animales y estudios humanos limitados. Su beneficio de longevidad en personas sanas sigue sin demostrarse.",
+    "why": [
+      "TODO Una revisión de fármacos antienvejecimiento reunió moléculas candidatas, con datos sobre todo animales y estudios humanos limitados. Su beneficio de longevidad en personas sanas sigue sin demostrarse.",
+      "TODO 以动物模型与有限人类研究为主；不形成健康人死亡干预人群"
+    ],
+    "caution": "TODO No combines fármacos antienvejecimiento por tu cuenta; los tratamientos experimentales deben realizarse en investigación adecuada.",
+    "myth": "TODO * 综合\n  * [《自然》子刊深度综述：如何开发抗衰老药](https://zhuanlan.zhihu.com/p/145495570)\n  * ![如何开"
+  },
+  "alcohol": {
+    "question": "TODO 酒精／饮酒",
+    "answer": "TODO Una gran revisión que tuvo en cuenta sesgos como el consumo previo no encontró menor mortalidad con poco alcohol; más consumo se asoció con mayor riesgo.",
+    "why": [
+      "TODO Una gran revisión que tuvo en cuenta sesgos como el consumo previo no encontró menor mortalidad con poco alcohol; más consumo se asoció con mayor riesgo.",
+      "TODO 107队列，4,838,825人，425,564死亡"
+    ],
+    "caution": "TODO Si no bebes, no necesitas empezar; si bebes, reduce. Si tienes dependencia del alcohol o has tenido síntomas de abstinencia, busca apoyo médico para reducirlo o dejarlo.",
+    "myth": "TODO 行动节：戒酒（否则+~50% ACM，无上限）；第6节无对应证据条目。"
+  },
+  "ambient-air-pollution": {
+    "question": "TODO 长期环境PM2.5污染",
+    "answer": "TODO Un gran seguimiento estadounidense de mayores relacionó exposición prolongada a más partículas finas y ozono con mayor riesgo de muerte.",
+    "why": [
+      "TODO Un gran seguimiento estadounidense de mayores relacionó exposición prolongada a más partículas finas y ozono con mayor riesgo de muerte.",
+      "TODO 美国60,925,443名Medicare受益者；2000–2012；460,310,521人年"
+    ],
+    "caution": "TODO Consulta la calidad del aire, reduce esfuerzos intensos al aire libre con mucha contaminación y mejora el aire interior cuando puedas.",
+    "myth": null
+  },
+  "statins-indicated-patients": {
+    "question": "TODO 他汀降脂（按心血管风险及适应证）",
+    "answer": "TODO Ensayos aleatorizados agrupados encontraron menos eventos cardiovasculares con estatinas y menos muertes en participantes sin enfermedad vascular previa. El beneficio individual depende del riesgo inicial.",
+    "why": [
+      "TODO Ensayos aleatorizados agrupados encontraron menos eventos cardiovasculares con estatinas y menos muertes en participantes sin enfermedad vascular previa. El beneficio individual depende del riesgo inicial.",
+      "TODO 27RCT共174,149人；ACM数字为无既往血管病亚群；中位4.8–5.1年"
+    ],
+    "caution": "TODO Si cumples criterios de tratamiento, coméntalo con tu médico y comunica molestias musculares u otros medicamentos que puedan interactuar.",
+    "myth": null
+  },
+  "vitamin-d-general-population": {
+    "question": "TODO 维生素D补充（一般无选择老年成人）",
+    "answer": "TODO Un gran ensayo aleatorizado no encontró menor mortalidad al suplementar vitamina D de rutina en adultos de mediana y avanzada edad generalmente sanos. Carencias y enfermedad ósea necesitan valoración aparte.",
+    "why": [
+      "TODO Un gran ensayo aleatorizado no encontró menor mortalidad al suplementar vitamina D de rutina en adultos de mediana y avanzada edad generalmente sanos. Carencias y enfermedad ósea necesitan valoración aparte.",
+      "TODO 美国25,871人，男性≥50、女性≥55；中位5.3年；978死亡"
+    ],
+    "caution": "TODO Usa suplementos según riesgos de carencia o necesidades óseas identificadas; evita dosis altas sin supervisión.",
+    "myth": null
+  },
+  "racquet-sports": {
+    "question": "TODO 挥拍运动",
+    "answer": "TODO Un seguimiento británico de adultos relacionó practicar deportes de raqueta con menor riesgo de muerte. Para elegir actividad también cuentan el disfrute, la capacidad y la constancia.",
+    "why": [
+      "TODO Un seguimiento británico de adultos relacionó practicar deportes de raqueta con menor riesgo de muerte. Para elegir actividad también cuentan el disfrute, la capacidad y la constancia.",
+      "TODO 80,306名英国成年人；平均52±14岁"
+    ],
+    "caution": "TODO Busca un deporte de raqueta que te guste y puedas practicar; aumenta poco a poco.",
+    "myth": null
+  },
+  "vigorous-activity": {
+    "question": "TODO 剧烈运动",
+    "answer": "TODO Un seguimiento británico relacionó periodos breves de actividad vigorosa con menor mortalidad. Participaron sobre todo adultos de mediana y avanzada edad; la actividad se midió con dispositivos.",
+    "why": [
+      "TODO Un seguimiento británico relacionó periodos breves de actividad vigorosa con menor mortalidad. Participaron sobre todo adultos de mediana y avanzada edad; la actividad se midió con dispositivos.",
+      "TODO 71,893名UK Biobank成年人，中位62.5岁，平均随访5.9年"
+    ],
+    "caution": "TODO Si tienes base física y puedes hacerlo con seguridad, añade esfuerzos breves intensos; con síntomas o enfermedad crónica inestable, consulta antes.",
+    "myth": "TODO 每周15–20分钟剧烈运动降低16%–40%的ACM；达到50–57分钟可进一步降低。"
+  },
+  "walking-steps": {
+    "question": "TODO 走路/每日步数",
+    "answer": "TODO Un seguimiento estadounidense de adultos de mediana edad relacionó más pasos diarios con menor mortalidad, sin mostrar que cuantos más, mejor.",
+    "why": [
+      "TODO Un seguimiento estadounidense de adultos de mediana edad relacionó más pasos diarios con menor mortalidad, sin mostrar que cuantos más, mejor.",
+      "TODO CARDIA 2,110名美国黑人/白人成年人，平均45.2岁；随访10.8年，72例死亡"
+    ],
+    "caution": "TODO Camina algo más desde tu nivel actual; adapta con enfermedad cardiopulmonar, riesgo de caídas o movilidad reducida.",
+    "myth": null
+  },
+  "toothbrushing": {
+    "question": "TODO 刷牙",
+    "answer": "TODO Un gran seguimiento chino encontró mayor mortalidad en quienes raramente se cepillaban. El cuidado bucal también se relaciona con tabaco, salud y acceso asistencial.",
+    "why": [
+      "TODO Un gran seguimiento chino encontró mayor mortalidad en quienes raramente se cepillaban. El cuidado bucal también se relaciona con tabaco, salud y acceso asistencial.",
+      "TODO 中国慢性病前瞻性研究512,715人，30–79岁"
+    ],
+    "caution": "TODO Cepíllate regularmente con pasta fluorada y trata los problemas dentales.",
+    "myth": null
+  },
+  "tub-bathing": {
+    "question": "TODO 泡澡",
+    "answer": "TODO Un seguimiento japonés de adultos de mediana edad relacionó baños regulares en bañera con menos enfermedad cardiovascular e ictus.",
+    "why": [
+      "TODO Un seguimiento japonés de adultos de mediana edad relacionó baños regulares en bañera con menos enfermedad cardiovascular e ictus.",
+      "TODO 30,076名40–59岁日本人，基线无CVD或癌症；1990–2009年随访"
+    ],
+    "caution": "TODO Agua a temperatura cómoda; evita baños calientes largos y bañarte solo después de beber alcohol, con tendencia al desmayo o enfermedad cardiovascular inestable.",
+    "myth": "TODO 每天泡澡相对每周1–2次或不泡澡，CVD风险低28%，卒中低26%，脑出血低46%，未见猝死风险增加关联。"
+  },
+  "heavy-housework": {
+    "question": "TODO 重型家务（老年男性）",
+    "answer": "TODO Un seguimiento de mayores de Hong Kong relacionó tareas domésticas pesadas con menor mortalidad en hombres, sin asociación clara en mujeres. Una mejor capacidad previa también puede influir.",
+    "why": [
+      "TODO Un seguimiento de mayores de Hong Kong relacionó tareas domésticas pesadas con menor mortalidad en hombres, sin asociación clara en mujeres. Una mejor capacidad previa también puede influir.",
+      "TODO 香港社区≥65岁老人；排除特定慢病后2867人，平均72岁；452例死亡"
+    ],
+    "caution": "TODO Haz tareas adecuadas como actividad diaria; evita cargas pesadas con fragilidad, osteoporosis o problemas de espalda.",
+    "myth": "TODO 72岁之后男性每周做重型家务可以减少29%平均死亡率。"
+  },
+  "sleep-duration": {
+    "question": "TODO 睡眠时长",
+    "answer": "TODO Estudios asiáticos relacionaron dormir mucho con mayor mortalidad. El sueño prolongado también puede reflejar enfermedad o problemas de sueño.",
+    "why": [
+      "TODO Estudios asiáticos relacionaron dormir mucho con mayor mortalidad. El sueño prolongado también puede reflejar enfermedad o problemas de sueño.",
+      "TODO 日本、中国、新加坡、韩国9队列322,721人，平均54.5岁；排除基线自报CVD/癌症及随访前5年死亡者；男性19,419例、女性13,768例死亡"
+    ],
+    "caution": "TODO Busca sueño suficiente y reparador; investiga somnolencia, fatiga o ronquidos persistentes.",
+    "myth": null
+  },
+  "bedtime": {
+    "question": "TODO 就寝时间",
+    "answer": "TODO Un seguimiento multinacional relacionó acostarse muy temprano o muy tarde con un mayor riesgo combinado de muerte y eventos cardiovasculares. La asociación se debilitó considerablemente al tener en cuenta otros factores.",
+    "why": [
+      "TODO Un seguimiento multinacional relacionó acostarse muy temprano o muy tarde con un mayor riesgo combinado de muerte y eventos cardiovasculares. La asociación se debilitó considerablemente al tener en cuenta otros factores.",
+      "TODO 21国PURE 112,198人；9.2年随访；5633死亡、5346主要心血管事件"
+    ],
+    "caution": "TODO Mantén horarios regulares que te permitan dormir suficiente; no te fuerces a trasnochar para cumplir una hora concreta.",
+    "myth": "TODO 22–24点就寝最好；早睡增加43% ACM，晚睡增加15%，原文注明存在争议。"
+  },
+  "sedentary-time": {
+    "question": "TODO 久坐及看电视",
+    "answer": "TODO Una revisión relacionó más sedentarismo con mayor mortalidad, sobre todo en quienes pasaban gran parte del día sentados. Televisión y tiempo total sentado mostraron asociaciones diferentes.",
+    "why": [
+      "TODO Una revisión relacionó más sedentarismo con mayor mortalidad, sobre todo en quienes pasaban gran parte del día sentados. Televisión y tiempo total sentado mostraron asociaciones diferentes.",
+      "TODO 34项前瞻研究，共1,331,468名不同结局的独立参与者"
+    ],
+    "caution": "TODO Si tu cuerpo lo permite, cambia parte del tiempo sentado por caminar u otro movimiento.",
+    "myth": "TODO 久坐每多1小时，CVD发生风险增4%、癌症增1%、ACM增3%；总久坐阈值6–8小时/日，看电视3–4小时/日。"
+  },
+  "pessimism": {
+    "question": "TODO 悲观/乐观情绪",
+    "answer": "TODO Un seguimiento australiano de adultos mayores relacionó mayor puntuación de pesimismo con mayor mortalidad. Ánimo, salud física y circunstancias vitales se influyen mutuamente.",
+    "why": [
+      "TODO Un seguimiento australiano de adultos mayores relacionó mayor puntuación de pesimismo con mayor mortalidad. Ánimo, salud física y circunstancias vitales se influyen mutuamente.",
+      "TODO 澳大利亚≥50岁双胞胎相关样本2978人，平均20年后1068人死亡；具体模型因缺失人数减少"
+    ],
+    "caution": "TODO Habla con alguien de confianza cuando estés mal; si el ánimo afecta la vida de forma persistente, busca apoyo profesional.",
+    "myth": null
+  },
+  "wealth": {
+    "question": "TODO 净资产/经济资源",
+    "answer": "TODO Un seguimiento estadounidense de adultos de mediana edad relacionó mayor patrimonio con menor mortalidad. Recursos, salud y seguridad económica suelen influirse mutuamente.",
+    "why": [
+      "TODO Un seguimiento estadounidense de adultos de mediana edad relacionó mayor patrimonio con menor mortalidad. Recursos, salud y seguridad económica suelen influirse mutuamente.",
+      "TODO 美国MIDUS 5414人，平均46.7岁，近24年随访；1010例死亡；兄弟姐妹/双胞胎2490人"
+    ],
+    "caution": "TODO Prioriza vivienda, acceso sanitario y seguridad económica básica para reducir presiones evitables.",
+    "myth": null
+  },
+  "weight-change": {
+    "question": "TODO 成年早期至中年体重变化",
+    "answer": "TODO Un seguimiento estadounidense encontró menor mortalidad en quienes pasaron de obesidad a sobrepeso entre juventud y mediana edad que en quienes siguieron con obesidad.",
+    "why": [
+      "TODO Un seguimiento estadounidense encontró menor mortalidad en quienes pasaron de obesidad a sobrepeso entre juventud y mediana edad que en quienes siguieron con obesidad.",
+      "TODO NHANES 24,205名40–74岁美国成年人；回忆25岁和基线前10年体重；随访10.7年，5846死亡"
+    ],
+    "caution": "TODO Con obesidad, planifica un manejo sostenible del peso y la fuerza; investiga pérdidas involuntarias, especialmente en mayores.",
+    "myth": null
+  },
+  "covid-pandemic": {
+    "question": "TODO 新冠疫情与全因超额死亡",
+    "answer": "TODO Registros de varios países mostraron mucha mortalidad adicional durante la primera ola de COVID-19. Incluía infecciones y posibles efectos indirectos como interrupciones asistenciales. Refleja esa etapa de la pandemia.",
+    "why": [
+      "TODO Registros de varios países mostraron mucha mortalidad adicional durante la primera ola de COVID-19. Incluía infecciones y posibles efectos indirectos como interrupciones asistenciales. Refleja esa etapa de la pandemia.",
+      "TODO 21个工业化国家全国死亡登记，2020年第一波；不含美国"
+    ],
+    "caution": "TODO Reduce la exposición, cuida las enfermedades crónicas y busca atención adecuada pronto si enfermas.",
+    "myth": "TODO 美国新冠死亡率约1.5%，人均预期寿命减少2年；所引论文标题为21个工业化国家疫情第一波ACM。"
+  },
+  "resistance-training": {
+    "question": "TODO 抗阻/肌肉力量训练",
+    "answer": "TODO Una revisión de cohortes relacionó el fortalecimiento muscular con menor mortalidad. Sigue habiendo incertidumbre sobre la cantidad concreta de entrenamiento.",
+    "why": [
+      "TODO Una revisión de cohortes relacionó el fortalecimiento muscular con menor mortalidad. Sigue habiendo incertidumbre sobre la cantidad concreta de entrenamiento.",
+      "TODO ACM二分类合成7研究、263,058人、42,133死亡；综述总计16研究"
+    ],
+    "caution": "TODO Trabaja gradualmente los principales grupos musculares junto al ejercicio aeróbico. Adapta el ejercicio si tienes dolor, te has sometido recientemente a una cirugía o tienes una enfermedad crónica inestable.",
+    "myth": null
+  },
+  "social-isolation": {
+    "question": "TODO 社会隔离、孤独与独居",
+    "answer": "TODO Una revisión relacionó aislamiento, soledad y vivir solo con mayor mortalidad, aunque son experiencias distintas. Quien vive solo también puede tener relaciones satisfactorias y fiables.",
+    "why": [
+      "TODO Una revisión relacionó aislamiento, soledad y vivir solo con mayor mortalidad, aunque son experiencias distintas. Quien vive solo también puede tener relaciones satisfactorias y fiables.",
+      "TODO 纳入截至2014年2月的死亡随访研究；各研究人群及调整因素不同"
+    ],
+    "caution": "TODO Mantén contactos y vías de ayuda acordes con tus preferencias; atiende dificultades de audición, movilidad o ánimo.",
+    "myth": null
+  },
+  "intensive-bp-control": {
+    "question": "TODO 符合适应条件者的强化降压",
+    "answer": "TODO Un ensayo aleatorizado en adultos hipertensos con alto riesgo cardiovascular y sin diabetes encontró menos muertes con control intensivo, pero más efectos adversos como hipotensión y problemas renales.",
+    "why": [
+      "TODO Un ensayo aleatorizado en adultos hipertensos con alto riesgo cardiovascular y sin diabetes encontró menos muertes con control intensivo, pero más efectos adversos como hipotensión y problemas renales.",
+      "TODO 9,361名SBP≥130mmHg、心血管风险增加且无糖尿病的成人"
+    ],
+    "caution": "TODO Acuerda los objetivos de presión con tu médico y vigila mareos, función renal y electrolitos.",
+    "myth": null
+  },
+  "cardiorespiratory-fitness": {
+    "question": "TODO 心肺适能（CRF）",
+    "answer": "TODO Varias cohortes relacionaron mejor aptitud cardiorrespiratoria medida en pruebas de esfuerzo con menor mortalidad. Refleja capacidad física, pero también influyen enfermedades y genética.",
+    "why": [
+      "TODO Varias cohortes relacionaron mejor aptitud cardiorrespiratoria medida en pruebas de esfuerzo con menor mortalidad. Refleja capacidad física, pero también influyen enfermedades y genética.",
+      "TODO 34项成人队列纳入综述；ACM连续剂量分析来自其中子集"
+    ],
+    "caution": "TODO Parte de tu capacidad actual y aumenta gradualmente la actividad adecuada.",
+    "myth": null
+  },
+  "dapagliflozin-ckd": {
+    "question": "TODO 达格列净（特定慢性肾病）",
+    "answer": "TODO Un ensayo aleatorizado encontró menos muertes con dapagliflozina en pacientes aptos con enfermedad renal crónica, con o sin diabetes. No se ha demostrado beneficio de longevidad en sanos.",
+    "why": [
+      "TODO Un ensayo aleatorizado encontró menos muertes con dapagliflozina en pacientes aptos con enfermedad renal crónica, con o sin diabetes. No se ha demostrado beneficio de longevidad en sanos.",
+      "TODO 4304名CKD成人；eGFR 25–75、UACR 200–5000 mg/g；随访中位2.4年，含有/无2型糖尿病者"
+    ],
+    "caution": "TODO Con enfermedad renal crónica, que un médico valore si es adecuada, considerando deshidratación, infección y cetoacidosis.",
+    "myth": null
+  },
+  "semaglutide-select": {
+    "question": "TODO 司美格鲁肽（SELECT适应人群）",
+    "answer": "TODO En SELECT, pacientes con enfermedad cardiovascular, sobrepeso u obesidad y sin diabetes tuvieron menos muertes en el grupo de semaglutida. Este resultado de mortalidad es exploratorio.",
+    "why": [
+      "TODO En SELECT, pacientes con enfermedad cardiovascular, sobrepeso u obesidad y sin diabetes tuvieron menos muertes en el grupo de semaglutida. Este resultado de mortalidad es exploratorio.",
+      "TODO 17604人；≥45岁、BMI≥27、已有心血管疾病、无糖尿病；平均随访39.8个月"
+    ],
+    "caution": "TODO Valora el tratamiento según necesidades médicas y de peso, incluida tolerancia; el beneficio de longevidad en sanos no está demostrado.",
+    "myth": null
+  },
+  "aspirin-primary-prevention": {
+    "question": "TODO 阿司匹林（老年人初级预防）",
+    "answer": "TODO Un ensayo aleatorizado en mayores sin enfermedad cardiovascular previa no encontró beneficio de longevidad con aspirina diaria y observó una señal de más mortalidad. Es distinto de tratar tras infarto o ictus.",
+    "why": [
+      "TODO Un ensayo aleatorizado en mayores sin enfermedad cardiovascular previa no encontró beneficio de longevidad con aspirina diaria y observó una señal de más mortalidad. Es distinto de tratar tras infarto o ictus.",
+      "TODO 19114名通常≥70岁的社区老人（美国黑人/西语裔≥65岁），无心血管病、痴呆或残疾；中位4.7年"
+    ],
+    "caution": "TODO No empieces aspirina solo para vivir más; si la tomas por indicación médica, consulta antes de cambiarla.",
+    "myth": null
+  },
+  "walking-steps-2025": {
+    "question": "TODO 每日步数（2025综述更新）",
+    "answer": "TODO Una revisión más reciente volvió a relacionar más pasos diarios con menor mortalidad. La salud de los participantes, los dispositivos y los métodos también influyen.",
+    "why": [
+      "TODO Una revisión más reciente volvió a relacionar más pasos diarios con menor mortalidad. La salud de los participantes, los dispositivos y los métodos también influyen.",
+      "TODO 成人前瞻性队列；ACM该比较含14项研究；综述检索至2025-02-14"
+    ],
+    "caution": "TODO Fija una meta de paseo alcanzable; importan la comodidad y la constancia.",
+    "myth": null
+  },
+  "metformin-adverse-events": {
+    "question": "TODO Efectos adversos de la metformina",
+    "answer": "TODO La metformina puede causar diarrea y otras molestias digestivas, y bajar vitamina B12; la acidosis láctica es otro riesgo importante. Las reacciones varían con formulación, dosis y salud.",
+    "why": [
+      "TODO La metformina puede causar diarrea y otras molestias digestivas, y bajar vitamina B12; la acidosis láctica es otro riesgo importante. Las reacciones varían con formulación, dosis y salud.",
+      "TODO 标签收录美国2型糖尿病试验：药组141人、安慰剂145人；B12数据来自29周试验"
+    ],
+    "caution": "TODO Úsala según receta, vigila tolerancia, riñón y vitamina B12, y comunica pronto las molestias.",
+    "myth": "TODO 维生素B12缺乏7%–17.4%；胃肠不良反应最高53%；疲倦9%、头痛6%；罕见严重乳酸酸中毒、肝损伤。"
+  },
+  "waist-circumference": {
+    "question": "TODO Cintura y grasa abdominal",
+    "answer": "TODO La cintura aporta información útil además del peso. Los estudios de seguimiento prolongado relacionan una cintura mayor con mayor riesgo de muerte, por lo que la báscula por sí sola puede pasar por alto parte del riesgo.",
+    "why": [
+      "TODO La cintura aporta información útil además del peso. Los estudios de seguimiento prolongado relacionan una cintura mayor con mayor riesgo de muerte, por lo que la báscula por sí sola puede pasar por alto parte del riesgo.",
+      "TODO 综述共72项前瞻性队列、2,528,297人；腰围分析含50项研究"
+    ],
+    "caution": "TODO Registra tu cintura además del peso e incorpora actividad física regular y comidas equilibradas a tu rutina.",
+    "myth": null
+  },
+  "obstructive-sleep-apnoea": {
+    "question": "TODO Ronquidos y apnea del sueño",
+    "answer": "TODO Pasar toda la noche en la cama no siempre significa dormir bien. La apnea del sueño grave se relaciona con mayor riesgo de muerte; los ronquidos persistentes, las pausas respiratorias y la somnolencia diurna merecen atención.",
+    "why": [
+      "TODO Pasar toda la noche en la cama no siempre significa dormir bien. La apnea del sueño grave se relaciona con mayor riesgo de muerte; los ronquidos persistentes, las pausas respiratorias y la somnolencia diurna merecen atención.",
+      "TODO 风险综述共6项前瞻性观察研究、11,932人；按呼吸暂停严重度分组"
+    ],
+    "caution": "TODO Solicita una evaluación del sueño si roncas fuerte a menudo, dejas de respirar mientras duermes o tienes somnolencia durante el día; si se confirma el diagnóstico, consulta el tratamiento adecuado.",
+    "myth": null
+  },
+  "hepatitis-c-treatment": {
+    "question": "TODO Detectar y tratar la hepatitis C",
+    "answer": "TODO La hepatitis C puede pasar inadvertida durante años. Un estudio de seguimiento de personas con infección crónica relacionó el tratamiento antiviral con menor mortalidad, lo que refuerza la importancia del diagnóstico y la atención a tiempo.",
+    "why": [
+      "TODO La hepatitis C puede pasar inadvertida durante años. Un estudio de seguimiento de personas con infección crónica relacionó el tratamiento antiviral con menor mortalidad, lo que refuerza la importancia del diagnóstico y la atención a tiempo.",
+      "TODO 法国32个肝病中心、9,895名慢性丙肝成人；中位随访33.4个月"
+    ],
+    "caution": "TODO Tras una prueba positiva de anticuerpos, confirma si hay infección actual. Si se confirma, solicita una evaluación hepática y consulta pronto el tratamiento antiviral.",
+    "myth": null
+  }
+}

@@ -1,6 +1,7 @@
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { DIRECTION_BY_ID, type Direction } from './directions.ts';
+import { evidenceKind, KIND_IDS, loadExplainers, type EvidenceKind, type Explainer } from './explain.ts';
 import { LOCALE_CODES, type LocaleCode } from './locales.ts';
 
 export const GRADES = ['A', 'B', 'C', 'D'] as const;
@@ -108,6 +109,9 @@ export type Study = {
   origin: Origin;
   sources: Source[];
   text: Record<LocaleCode, StudyText>;
+  // This site's plain-language restatement, from content/explain/.
+  kind: EvidenceKind;
+  explain: Record<LocaleCode, Explainer>;
 };
 
 export type GlossaryEntry = { term: string; name: string; description: string };
@@ -254,7 +258,7 @@ function directionOf(id: string): Direction {
   return entry.direction;
 }
 
-function parseStudy(r: Obj, langs: Record<LocaleCode, Lang>): Study {
+function parseStudy(r: Obj, langs: Record<LocaleCode, Lang>): Omit<Study, 'explain'> {
   const id = str(r.id, 'record id');
   const at = `record ${id}`;
   const rawSources = arr(r.sources, `${at}.sources`).map((s, i) => obj(s, `${at}.sources[${i}]`));
@@ -263,6 +267,7 @@ function parseStudy(r: Obj, langs: Record<LocaleCode, Lang>): Study {
     topic: TOPIC_OVERRIDES[id] ?? lookup(TOPIC_BY_SUBCATEGORY, str(r.subcategory, `${at}.subcategory`), `${at}.subcategory`),
     grade: lookup(Object.fromEntries(GRADES.map((g) => [g, g])), str(r.grade, `${at}.grade`), `${at}.grade`),
     direction: directionOf(id),
+    kind: evidenceKind(id),
     verdict: lookup(VERDICT_BY_UPSTREAM, str(r.verdict, `${at}.verdict`), `${at}.verdict`),
     origin: lookup(ORIGIN_BY_UPSTREAM, str(r.origin, `${at}.origin`), `${at}.origin`),
     sources: rawSources.map((s, i) => parseSource(s, `${at}.sources[${i}]`)),
@@ -284,12 +289,17 @@ export function loadUpstream(dir: string = UPSTREAM_DIR): Upstream {
   };
   const langs = Object.fromEntries(LOCALE_CODES.map((code) => [code, parseLang(code, json)])) as Record<LocaleCode, Lang>;
   const records = arr(json('data/evidence.json').records, 'evidence.json records');
-  const studies = records.map((r, i) => parseStudy(obj(r, `evidence.json records[${i}]`), langs));
+  const parsed = records.map((r, i) => parseStudy(obj(r, `evidence.json records[${i}]`), langs));
+  const explainers = loadExplainers(parsed.map((s) => ({ id: s.id, isMyth: MYTH_VERDICTS.includes(s.verdict) })));
+  const studies: Study[] = parsed.map((s) => ({ ...s, explain: explainers[s.id]! }));
 
   const ids = new Set(studies.map((s) => s.id));
   if (ids.size !== studies.length) throw new Error('evidence.json: duplicate record ids');
   for (const id of Object.keys(TOPIC_OVERRIDES)) {
     if (!ids.has(id)) throw new Error(`TOPIC_OVERRIDES names "${id}", which upstream no longer has`);
+  }
+  for (const id of KIND_IDS) {
+    if (!ids.has(id)) throw new Error(`src/explain.ts names "${id}", which upstream no longer has`);
   }
   for (const id of Object.keys(DIRECTION_BY_ID)) {
     if (!ids.has(id)) throw new Error(`DIRECTION_BY_ID names "${id}", which upstream no longer has`);

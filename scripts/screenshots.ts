@@ -20,26 +20,24 @@ const both = (name: string, path: string, schemes: Shot['scheme'][] = ['light'])
 
 const SHOTS: Shot[] = [
   ...both('zh-home', 'zh/', ['light', 'dark']),
-  ...both('en-home', 'en/', ['light', 'dark']),
+  ...both('en-home', 'en/'),
+  // The three studies with finished explanations: a myth that harms, a habit that helps, and a trial that found harm.
   ...both('zh-study-alcohol', 'zh/studies/alcohol/'),
-  ...both('en-study-spermidine', 'en/studies/spermidine-diet/'),
-  // Strong evidence of harm and of no effect: these must not read as advice to take them.
+  ...both('en-study-alcohol', 'en/studies/alcohol/'),
+  ...both('zh-study-coffee', 'zh/studies/coffee/'),
+  ...both('en-study-coffee', 'en/studies/coffee/'),
   ...both('zh-study-aspirin', 'zh/studies/aspirin-primary-prevention/'),
   ...both('en-study-aspirin', 'en/studies/aspirin-primary-prevention/'),
-  ...both('zh-study-vitamin-d', 'zh/studies/vitamin-d-general-population/'),
-  ...both('en-study-vitamin-d', 'en/studies/vitamin-d-general-population/'),
+  // The closed "raw data" fold, opened.
+  ...both('zh-study-alcohol-raw', 'zh/studies/alcohol/').map((s) => ({ ...s, action: "document.querySelector('details.raw').open = true" })),
+  ...both('zh-topic-drinking', 'zh/topics/drinking/'),
   ...both('zh-myths', 'zh/myths/'),
-  ...both('en-myths', 'en/myths/'),
   ...both('zh-studies-filtered', 'zh/studies/?topic=drinking&grade=B'),
-  ...both('en-studies-filtered', 'en/studies/?q=coffee'),
-  ...both('en-studies-no-effect', 'en/studies/?direction=no-effect'),
-  ...both('en-topic-eating', 'en/topics/eating/'),
+  ...both('en-studies-search', 'en/studies/?q=coffee'),
   ...both('zh-about', 'zh/about/'),
-  // The six later languages; Arabic is right to left.
-  ...(['es', 'fr', 'de', 'pt', 'ja', 'ar'] as const).flatMap((code) => both(`${code}-home`, `${code}/`)),
+  // Arabic is right to left.
+  ...both('ar-home', 'ar/'),
   ...both('ar-study-aspirin', 'ar/studies/aspirin-primary-prevention/'),
-  ...both('de-studies', 'de/studies/'),
-  ...both('ja-lang-open', 'ja/').map((s) => ({ ...s, action: "document.querySelector('.site-lang__details').open = true" })),
   ...both('ar-lang-open', 'ar/').map((s) => ({ ...s, action: "document.querySelector('.site-lang__details').open = true" })),
   // The root page redirects by browser language: Chinese to zh/, French to fr/, anything unsupported to en/.
   { name: 'root-zh-browser-390-light', path: '', width: 390, scheme: 'light', acceptLanguage: 'zh-CN,zh;q=0.9' },

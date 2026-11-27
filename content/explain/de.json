@@ -1,0 +1,642 @@
+{
+  "poultry-fish": {
+    "question": "TODO 白肉、红肉与加工肉",
+    "answer": "TODO US-Langzeitstudien brachten einen höheren Verzehr von rotem und verarbeitetem Fleisch mit einem höheren Sterberisiko in Verbindung. Bei Fisch und Geflügel waren die Zusammenhänge schwächer. Auch Ersatzlebensmittel und Zubereitung spielen eine Rolle.",
+    "why": [
+      "TODO US-Langzeitstudien brachten einen höheren Verzehr von rotem und verarbeitetem Fleisch mit einem höheren Sterberisiko in Verbindung. Bei Fisch und Geflügel waren die Zusammenhänge schwächer. Auch Ersatzlebensmittel und Zubereitung spielen eine Rolle.",
+      "TODO JAMA美国6队列29682人，8875死亡；BMJ81469人，14019死亡"
+    ],
+    "caution": "TODO Weniger verarbeitetes Fleisch essen und rotes Fleisch teilweise durch Hülsenfrüchte, Nüsse oder Fisch ersetzen.",
+    "myth": "TODO 行动节：白肉 −11%～−3% ACM；证据节：增加红肉≥半份/天，ACM增加10%；每周两份红肉/加工肉增加3%。"
+  },
+  "fresh-fruit-diabetes": {
+    "question": "TODO 新鲜水果（糖尿病人群）",
+    "answer": "TODO In einer chinesischen Langzeitstudie mit Menschen mit Diabetes war mehr frisches Obst mit einem niedrigeren Risiko für Tod und Gefäßkomplikationen verbunden. Untersucht wurde ganzes Obst, kein Saft.",
+    "why": [
+      "TODO In einer chinesischen Langzeitstudie mit Menschen mit Diabetes war mehr frisches Obst mit einem niedrigeren Risiko für Tod und Gefäßkomplikationen verbunden. Untersucht wurde ganzes Obst, kein Saft.",
+      "TODO 中国CKB基线糖尿病30300人，3389死亡，约7年"
+    ],
+    "caution": "TODO Obst in mäßigen Mengen essen und die Portionen an Blutzucker und Behandlungsplan anpassen.",
+    "myth": "TODO 每天摄入200克新鲜水果可使死亡率降低17%，糖尿病大血管并发症风险降低13%、微血管并发症降低28%。"
+  },
+  "flavonoid-foods": {
+    "question": "TODO 含黄酮食物",
+    "answer": "TODO Eine dänische Langzeitstudie brachte mehr Flavonoide aus der Ernährung mit einem niedrigeren Sterberisiko in Verbindung. Diese Pflanzenstoffe kommen in vielen Lebensmitteln vor; untersucht wurde die alltägliche Ernährung.",
+    "why": [
+      "TODO Eine dänische Langzeitstudie brachte mehr Flavonoide aus der Ernährung mit einem niedrigeren Sterberisiko in Verbindung. Diese Pflanzenstoffe kommen in vielen Lebensmitteln vor; untersucht wurde die alltägliche Ernährung.",
+      "TODO 丹麦56048人，14083死亡，23年"
+    ],
+    "caution": "TODO Gemüse, Obst und Hülsenfrüchte abwechslungsreich genießen.",
+    "myth": "TODO 吃含黄酮食物与死亡风险降低20%相关；举例一杯茶、一个苹果、一个橘子、100克蓝莓或100克西兰花。"
+  },
+  "chili-us": {
+    "question": "TODO 红辣椒（美国）",
+    "answer": "TODO In einer US-Beobachtungsstudie hatten Erwachsene, die rote Chili aßen, ein niedrigeres Sterberisiko. Alter, Ernährung und andere Gewohnheiten beeinflussen diesen Zusammenhang ebenfalls.",
+    "why": [
+      "TODO In einer US-Beobachtungsstudie hatten Erwachsene, die rote Chili aßen, ein niedrigeres Sterberisiko. Alter, Ernährung und andere Gewohnheiten beeinflussen diesen Zusammenhang ebenfalls.",
+      "TODO 美国NHANES III 16179成人，中位18.9年"
+    ],
+    "caution": "TODO Wer Chili mag und gut verträgt, kann damit sein Essen würzen.",
+    "myth": "TODO 美国16179人随访约19年：食辣者死亡21.6%，不食者33.6%；原段随后称每周>4次ACM降低23%。"
+  },
+  "chili-italy": {
+    "question": "TODO 辣椒（意大利）",
+    "answer": "TODO Eine italienische Beobachtungsstudie verband häufigen Chiliverzehr mit niedrigerer Gesamt- und Herz-Kreislauf-Mortalität.",
+    "why": [
+      "TODO Eine italienische Beobachtungsstudie verband häufigen Chiliverzehr mit niedrigerer Gesamt- und Herz-Kreislauf-Mortalität.",
+      "TODO 意大利Moli-sani 22811人，1236死亡，中位8.2年"
+    ],
+    "caution": "TODO Wer Chili mag und gut verträgt, kann damit nach Geschmack würzen.",
+    "myth": "TODO 每周吃辣>4次，ACM降低23%、心血管死亡降低34%；二手标题称“患病死亡风险可降低61%”。"
+  },
+  "eggs": {
+    "question": "TODO 鸡蛋",
+    "answer": "TODO Eine US-Studie bei Erwachsenen mittleren und höheren Alters verband mehr ganze Eier mit einem höheren Sterberisiko. Ergebnisse anderer Regionen unterscheiden sich. Die gesamte Ernährung sagt mehr aus als Eier allein.",
+    "why": [
+      "TODO Eine US-Studie bei Erwachsenen mittleren und höheren Alters verband mehr ganze Eier mit einem höheren Sterberisiko. Ergebnisse anderer Regionen unterscheiden sich. Die gesamte Ernährung sagt mehr aus als Eier allein.",
+      "TODO NIH-AARP 521120人，129328死亡，中位16年"
+    ],
+    "caution": "TODO Eier passend zu Blutfetten und Ernährungsgewohnheiten einplanen; auch Hülsenfrüchten und Nüssen Platz geben.",
+    "myth": null
+  },
+  "walnuts": {
+    "question": "TODO 核桃",
+    "answer": "TODO US-Langzeitstudien verbanden regelmäßigen Walnussverzehr mit niedrigerem Sterberisiko. Unterschiede in der Lebenserwartung wurden statistisch geschätzt; andere gesunde Gewohnheiten können mitwirken.",
+    "why": [
+      "TODO US-Langzeitstudien verbanden regelmäßigen Walnussverzehr mit niedrigerem Sterberisiko. Unterschiede in der Lebenserwartung wurden statistisch geschätzt; andere gesunde Gewohnheiten können mitwirken.",
+      "TODO NHS/HPFS 93340人，30263死亡，最长20年"
+    ],
+    "caution": "TODO Ohne Nussallergie einige Snacks durch kleine Portionen ungesalzener Walnüsse ersetzen und deren Energie mitrechnen.",
+    "myth": "TODO ≥5份核桃/周（28克/份），健康预期寿命多1.3岁，ACM低14%，心血管死亡低25%。"
+  },
+  "nuts-general": {
+    "question": "TODO 坚果频率",
+    "answer": "TODO Mehrere Beobachtungsstudien verbanden regelmäßigen Nussverzehr mit niedrigerem Sterberisiko. Sie erfassten unterschiedliche Ernährungsweisen, verglichen aber rohe und geröstete Nüsse nicht direkt.",
+    "why": [
+      "TODO Mehrere Beobachtungsstudien verbanden regelmäßigen Nussverzehr mit niedrigerem Sterberisiko. Sie erfassten unterschiedliche Ernährungsweisen, verglichen aber rohe und geröstete Nüsse nicht direkt.",
+      "TODO NEJM118962人27429死亡；PREDIMED7216高CVD风险成人323死亡"
+    ],
+    "caution": "TODO Ungesalzene Nüsse mit wenig Zuckerzusatz nach Geschmack wählen; bei Nussallergie meiden.",
+    "myth": "TODO 原文以1盎司份量描述每周频率，并列死亡降低7%、11%、13%、15%、20%；另称7216人“横断面”研究中>3份/周死亡低39%。"
+  },
+  "sodium-ecological": {
+    "question": "TODO 钠摄入跨国生态关联",
+    "answer": "TODO Ein Ländervergleich fand eine niedrigere Sterblichkeit in Ländern mit höherer Natriumaufnahme. Unterschiede bei Einkommen, Gesundheitsversorgung und weiteren Faktoren beeinflussen diesen Zusammenhang ebenfalls. Die persönliche Salzaufnahme richtet sich besser nach Blutdruck und Gesundheitszustand.",
+    "why": [
+      "TODO Ein Ländervergleich fand eine niedrigere Sterblichkeit in Ländern mit höherer Natriumaufnahme. Unterschiede bei Einkommen, Gesundheitsversorgung und weiteren Faktoren beeinflussen diesen Zusammenhang ebenfalls. Die persönliche Salzaufnahme richtet sich besser nach Blutdruck und Gesundheitszustand.",
+      "TODO 181国家2010年汇总数据；高收入敏感性46国"
+    ],
+    "caution": "TODO Die Salzzufuhr an den eigenen Blutdruck und medizinischen Bedarf anpassen.",
+    "myth": "TODO 181国生态研究：每增加1克/日钠，出生健康预期寿命β=2.6年，60岁β=0.3年；ACM β=−131；高收入46国β=3.4年、ACM β=−168。"
+  },
+  "potassium-salt": {
+    "question": "TODO 低钠富钾盐替代",
+    "answer": "TODO In einer randomisierten Studie im ländlichen China gab es weniger Todesfälle und Herz-Kreislauf-Ereignisse, wenn normales Salz durch natriumärmeres, kaliumreiches Salz ersetzt wurde. Teilnehmende hatten einen früheren Schlaganfall oder waren älter und hatten Bluthochdruck.",
+    "why": [
+      "TODO In einer randomisierten Studie im ländlichen China gab es weniger Todesfälle und Herz-Kreislauf-Ereignisse, wenn normales Salz durch natriumärmeres, kaliumreiches Salz ersetzt wurde. Teilnehmende hatten einen früheren Schlaganfall oder waren älter und hatten Bluthochdruck.",
+      "TODO 中国600村20995人；卒中史或≥60岁且高血压；均随访4.74年"
+    ],
+    "caution": "TODO Vor dem Salzwechsel die Eignung prüfen lassen, besonders bei eingeschränkter Nierenfunktion, hohem Kalium oder kaliumerhöhenden Medikamenten.",
+    "myth": null
+  },
+  "carbohydrate-share": {
+    "question": "TODO 碳水能量占比",
+    "answer": "TODO Langzeitstudien fanden sowohl bei niedrigem als auch hohem Kohlenhydratanteil eine höhere Mortalität. Auch die Lebensmittel, die Kohlenhydrate ersetzen, beeinflussten die Ergebnisse.",
+    "why": [
+      "TODO Langzeitstudien fanden sowohl bei niedrigem als auch hohem Kohlenhydratanteil eine höhere Mortalität. Auch die Lebensmittel, die Kohlenhydrate ersetzen, beeinflussten die Ergebnisse.",
+      "TODO ARIC15428人及荟萃合计432179人"
+    ],
+    "caution": "TODO Zunächst auf gute Kohlenhydratquellen wie Vollkorn und Hülsenfrüchte achten; therapeutische Ernährungsformen individuell anpassen.",
+    "myth": null
+  },
+  "betel-quid": {
+    "question": "TODO 槟榔/槟榔嚼块",
+    "answer": "TODO Eine gemeinsame Auswertung asiatischer Studien verband das Kauen von Betelbissen mit höherem Sterberisiko. Zusammensetzung sowie gleichzeitiges Rauchen oder Trinken beeinflussen die Stärke des Zusammenhangs.",
+    "why": [
+      "TODO Eine gemeinsame Auswertung asiatischer Studien verband das Kauen von Betelbissen mit höherem Sterberisiko. Zusammensetzung sowie gleichzeitiges Rauchen oder Trinken beeinflussen die Stärke des Zusammenhangs.",
+      "TODO ACM分析179582人，亚洲研究5个比较类别"
+    ],
+    "caution": "TODO Betelbissen meiden und bei Abhängigkeit Hilfe zum Aufhören suchen.",
+    "myth": null
+  },
+  "calorie-restriction": {
+    "question": "TODO 热量限制（非人灵长类）",
+    "answer": "TODO Studien an Rhesusaffen deuten auf besseres Überleben durch Kalorienbeschränkung hin, mit unterschiedlichen Ergebnissen. Eine Lebensverlängerung beim Menschen ist dadurch bisher nicht belegt.",
+    "why": [
+      "TODO Studien an Rhesusaffen deuten auf besseres Überleben durch Kalorienbeschränkung hin, mit unterschiedlichen Ergebnissen. Eine Lebensverlängerung beim Menschen ist dadurch bisher nicht belegt.",
+      "TODO UW76只恒河猴；另NIA猴研究早期生存差异不显著"
+    ],
+    "caution": "TODO Ausreichend und ausgewogen essen, ohne Übermaß. Bei Untergewicht, Schwangerschaft, Stillzeit, im Wachstum, bei Gebrechlichkeit oder Essstörungen nicht eigenständig Kalorien beschränken.",
+    "myth": "TODO 恒河猴热量限制：普通喂养组的多种疾病风险增加2.9倍，死亡风险增加3.0倍。"
+  },
+  "macronutrient-pattern": {
+    "question": "TODO 综合营养与宏量营养配比",
+    "answer": "TODO Eine große britische Langzeitstudie fand komplexe Zusammenhänge zwischen Fett, Protein, Kohlenhydraten, Ballaststoffen und Gesundheit. Eine ausgewogene Lebensmittelauswahl ist praktischer als ein exakt berechnetes Nährstoffverhältnis.",
+    "why": [
+      "TODO Eine große britische Langzeitstudie fand komplexe Zusammenhänge zwischen Fett, Protein, Kohlenhydraten, Ballaststoffen und Gesundheit. Eine ausgewogene Lebensmittelauswahl ist praktischer als ein exakt berechnetes Nährstoffverhältnis.",
+      "TODO UK Biobank195658人4780死亡，平均10.6年"
+    ],
+    "caution": "TODO Gemüse, Obst, Vollkorn, Hülsenfrüchte und passende Proteinquellen kombinieren; bei Nierenkrankheit oder Diabetes dem individuellen Ernährungsplan folgen.",
+    "myth": "TODO 原库称通用最优配比：<24%淀粉、15%–17%蛋白质、>15%单不饱和脂肪、<15%糖、6%饱和及6%多不饱和脂肪、30g+纤维；并描述总脂肪与ACM线性相关"
+  },
+  "ultraprocessed-acm": {
+    "question": "TODO 超加工食品与ACM",
+    "answer": "TODO In einer spanischen Beobachtungsstudie war mehr hochverarbeitetes Essen mit höherem Sterberisiko verbunden. Teilnehmende waren überwiegend Hochschulabsolventen; Ernährung und sozialer Hintergrund beeinflussen die Ergebnisse ebenfalls.",
+    "why": [
+      "TODO In einer spanischen Beobachtungsstudie war mehr hochverarbeitetes Essen mit höherem Sterberisiko verbunden. Teilnehmende waren überwiegend Hochschulabsolventen; Ernährung und sozialer Hintergrund beeinflussen die Ergebnisse ebenfalls.",
+      "TODO 西班牙SUN大学毕业生19899人，335死亡，200432人年"
+    ],
+    "caution": "TODO Häufig gegessene hochverarbeitete Lebensmittel schrittweise durch bezahlbare, weniger verarbeitete Alternativen ersetzen.",
+    "myth": "TODO 行动节：少吃超加工食物 −62%～−18%；引用标题称常吃薯片汉堡巧克力“平均死亡年龄仅58岁”。"
+  },
+  "ultraprocessed-cvd": {
+    "question": "TODO Hochverarbeitete Lebensmittel und Herz-Kreislauf-Gesundheit",
+    "answer": "TODO Eine französische Beobachtungsstudie verband einen höheren Anteil hochverarbeiteter Lebensmittel mit höherem Herz-Kreislauf-Erkrankungsrisiko.",
+    "why": [
+      "TODO Eine französische Beobachtungsstudie verband einen höheren Anteil hochverarbeiteter Lebensmittel mit höherem Herz-Kreislauf-Erkrankungsrisiko.",
+      "TODO 法国105159成人，1409 CVD事件，中位5.2年"
+    ],
+    "caution": "TODO Weniger hochverarbeitete Snacks und Fertiggerichte wählen, dafür mehr einfache Mahlzeiten, die sich im Alltag beibehalten lassen.",
+    "myth": "TODO 超加工食品条目并列SUN全因死亡研究、NutriNet-Santé心血管发病研究和一篇评论。"
+  },
+  "whole-grains": {
+    "question": "TODO 全谷物",
+    "answer": "TODO Eine gemeinsame Auswertung von Langzeitstudien verband mehr Vollkorn mit niedrigerem Sterberisiko. Die Portionsangaben bezogen sich auf das Gewicht der Vollkornlebensmittel.",
+    "why": [
+      "TODO Eine gemeinsame Auswertung von Langzeitstudien verband mehr Vollkorn mit niedrigerem Sterberisiko. Die Portionsangaben bezogen sich auf das Gewicht der Vollkornlebensmittel.",
+      "TODO ACM合并11项前瞻研究；整体综述45项"
+    ],
+    "caution": "TODO Raffinierte Getreideprodukte nach und nach teilweise durch Vollkorn ersetzen; bei Zöliakie glutenfreie Sorten wählen.",
+    "myth": null
+  },
+  "dietary-fiber": {
+    "question": "TODO 膳食纤维",
+    "answer": "TODO Beobachtungsstudien verbanden mehr Ballaststoffe mit niedrigerem Sterberisiko. Klinische Studien fanden außerdem Verbesserungen etwa bei Blutdruck und Cholesterin.",
+    "why": [
+      "TODO Beobachtungsstudien verbanden mehr Ballaststoffe mit niedrigerem Sterberisiko. Klinische Studien fanden außerdem Verbesserungen etwa bei Blutdruck und Cholesterin.",
+      "TODO 185项前瞻研究及58项试验；试验4635人"
+    ],
+    "caution": "TODO Ballaststoffe aus Vollkorn, Hülsenfrüchten, Gemüse und Obst langsam steigern und ausreichend trinken; bei Darmverengung oder akuter Magen-Darm-Erkrankung erst ärztlich nachfragen.",
+    "myth": null
+  },
+  "plant-protein": {
+    "question": "TODO 植物蛋白来源",
+    "answer": "TODO Mehrere Kohortenstudien verbanden mehr pflanzliches Protein mit niedrigerem Sterberisiko. Entscheidend für die Einordnung sind die Lebensmittelquellen und was sie ersetzen.",
+    "why": [
+      "TODO Mehrere Kohortenstudien verbanden mehr pflanzliches Protein mit niedrigerem Sterberisiko. Entscheidend für die Einordnung sind die Lebensmittelquellen und was sie ersetzen.",
+      "TODO 32队列综述、31项合并，715128人113039死亡"
+    ],
+    "caution": "TODO Rotes und verarbeitetes Fleisch teilweise durch Hülsenfrüchte, Sojaprodukte oder Nüsse ersetzen; Nierenkrankheiten und Allergien berücksichtigen.",
+    "myth": null
+  },
+  "dairy": {
+    "question": "TODO 乳制品／牛奶",
+    "answer": "TODO Eine länderübergreifende Beobachtungsstudie verband Milchprodukte mit niedrigerem Sterberisiko; andere Übersichten fanden uneinheitliche Ergebnisse. Milch und Joghurt liefern Nährstoffe, die Auswahl richtet sich auch nach persönlichen Bedürfnissen.",
+    "why": [
+      "TODO Eine länderübergreifende Beobachtungsstudie verband Milchprodukte mit niedrigerem Sterberisiko; andere Übersichten fanden uneinheitliche Ergebnisse. Milch und Joghurt liefern Nährstoffe, die Auswahl richtet sich auch nach persönlichen Bedürfnissen.",
+      "TODO 21国136,384人，35–70岁；中位随访9.1年；6,796死亡"
+    ],
+    "caution": "TODO Wer Milchprodukte mag und gut verträgt, kann Milch oder Joghurt mit wenig Zuckerzusatz wählen. Bei Laktoseintoleranz oder Allergie passende Alternativen suchen.",
+    "myth": null
+  },
+  "tea-china-par": {
+    "question": "TODO 饮茶（China-PAR）",
+    "answer": "TODO In einer chinesischen Langzeitstudie hatten regelmäßige Teetrinkende ein niedrigeres Sterberisiko. Lebensweise und soziale sowie wirtschaftliche Umstände können mitwirken.",
+    "why": [
+      "TODO In einer chinesischen Langzeitstudie hatten regelmäßige Teetrinkende ein niedrigeres Sterberisiko. Lebensweise und soziale sowie wirtschaftliche Umstände können mitwirken.",
+      "TODO 中国100,902成人；中位7.3年；5,479死亡"
+    ],
+    "caution": "TODO Ungesüßten, nicht zu heißen Tee genießen; bei Schlafproblemen, Herzklopfen oder nötiger Koffeinbegrenzung weniger trinken.",
+    "myth": null
+  },
+  "tea-ckb": {
+    "question": "TODO 饮茶（CKB）",
+    "answer": "TODO Eine weitere große chinesische Langzeitstudie fand den Zusammenhang zwischen Tee und niedrigerer Mortalität vor allem bei Männern. Tägliches Trinken schnitt nicht besser ab als selteneres.",
+    "why": [
+      "TODO Eine weitere große chinesische Langzeitstudie fand den Zusammenhang zwischen Tee und niedrigerer Mortalität vor allem bei Männern. Tägliches Trinken schnitt nicht besser ab als selteneres.",
+      "TODO 中国CKB 438,443人；中位11.1年；34,661死亡"
+    ],
+    "caution": "TODO Ungesüßten Tee nach Geschmack und in angenehmer Temperatur trinken, ohne den Schlaf zu stören.",
+    "myth": null
+  },
+  "artificially-sweetened-drinks": {
+    "question": "TODO 人工甜味软饮料",
+    "answer": "TODO Eine große europäische Studie verband mehr künstlich gesüßte Getränke mit höherem Sterberisiko. Menschen mit bestehenden Stoffwechselproblemen wechseln möglicherweise häufiger zu solchen Getränken, was die Einordnung erschwert.",
+    "why": [
+      "TODO Eine große europäische Studie verband mehr künstlich gesüßte Getränke mit höherem Sterberisiko. Menschen mit bestehenden Stoffwechselproblemen wechseln möglicherweise häufiger zu solchen Getränken, was die Einordnung erschwert.",
+      "TODO EPIC欧洲10国451,743人；平均16.4年；41,693死亡"
+    ],
+    "caution": "TODO Im Alltag Wasser gegen Durst wählen. Wer Zuckergetränke durch zuckerfreie ersetzt, muss deshalb nicht wieder zu Zuckergetränken wechseln.",
+    "myth": "TODO * 无糖（甜味）饮料\n  * [「无糖饮料使死亡风险增加 26 %」，是真的吗？](https://www.zhihu.com/question/4185982"
+  },
+  "sugar-sweetened-drinks": {
+    "question": "TODO 含糖饮料",
+    "answer": "TODO US-Langzeitstudien verbanden mehr Zuckergetränke mit höherem Gesamt- und Herz-Kreislauf-Sterberisiko.",
+    "why": [
+      "TODO US-Langzeitstudien verbanden mehr Zuckergetränke mit höherem Gesamt- und Herz-Kreislauf-Sterberisiko.",
+      "TODO 美国NHS 80,647女性、HPFS 37,716男性；最长34年；36,436死亡"
+    ],
+    "caution": "TODO Regelmäßige Zuckergetränke schrittweise durch Wasser oder ungesüßte Getränke ersetzen.",
+    "myth": "TODO * 有糖饮料\n  * [可乐和奶茶，增加全因死亡率高达62%！果汁降低免疫力，影响肝代谢！含糖饮料那些事](https://zhuanlan.zhihu.com"
+  },
+  "fruit-juice": {
+    "question": "TODO 100%果汁",
+    "answer": "TODO Eine US-Beobachtungsstudie bei Erwachsenen mittleren und höheren Alters verband mehr reinen Fruchtsaft mit höherem Sterberisiko.",
+    "why": [
+      "TODO Eine US-Beobachtungsstudie bei Erwachsenen mittleren und höheren Alters verband mehr reinen Fruchtsaft mit höherem Sterberisiko.",
+      "TODO 美国REGARDS 13,440人，≥45岁，均龄63.6；平均6年；1,000死亡"
+    ],
+    "caution": "TODO Bei Durst Wasser trinken, Obst möglichst ganz essen und Saft in kleinen Mengen genießen.",
+    "myth": "TODO * 果汁\n  * [JAMA子刊：100%纯果汁可能比含糖饮料更危险](https://zhuanlan.zhihu.com/p/66513350)\n    *"
+  },
+  "coffee": {
+    "question": "TODO 咖啡",
+    "answer": "TODO Eine große Forschungsübersicht verband mäßigen Kaffeekonsum mit niedrigerem Sterberisiko. Tassengröße, Zubereitung, Zuckerzusatz und persönliche Verträglichkeit sind ebenfalls wichtig.",
+    "why": [
+      "TODO Eine große Forschungsübersicht verband mäßigen Kaffeekonsum mit niedrigerem Sterberisiko. Tassengröße, Zubereitung, Zuckerzusatz und persönliche Verträglichkeit sind ebenfalls wichtig.",
+      "TODO 40研究，3,852,651人，450,256例全因及死因别死亡"
+    ],
+    "caution": "TODO Bei Verträglichkeit maßvoll mit wenig Zucker genießen; in der Schwangerschaft, bei Schlaflosigkeit oder Herzklopfen die Koffeinzufuhr anpassen.",
+    "myth": null
+  },
+  "spermidine-diet": {
+    "question": "TODO Spermidin aus der Ernährung",
+    "answer": "TODO Beobachtungsstudien verbanden mehr Spermidin aus Lebensmitteln mit niedrigerem Sterberisiko. Supplemente sind eine andere Frage; eine Lebensverlängerung durch sie ist bisher nicht belegt.",
+    "why": [
+      "TODO Beobachtungsstudien verbanden mehr Spermidin aus Lebensmitteln mit niedrigerem Sterberisiko. Supplemente sind eine andere Frage; eine Lebensverlängerung durch sie ist bisher nicht belegt.",
+      "TODO Bruneck 829人，45–84岁；1995–2015年341死亡；SAPHIR独立验证"
+    ],
+    "caution": "TODO Mit gewöhnlichen Lebensmitteln wie Vollkorn und Hülsenfrüchten für Abwechslung sorgen.",
+    "myth": "TODO * 亚精胺\n  * [Science：科学背书！从精液中发现的亚精胺，竟然有着抗衰老、抗癌、保护心血管和神经、改善肥胖和2型糖尿病等逆天神效](https://"
+  },
+  "smoking": {
+    "question": "TODO 吸烟与戒烟",
+    "answer": "TODO Langzeitstudien finden durchgehend höhere Mortalität bei Rauchenden, auch bei wenigen Zigaretten täglich. Wer aufhört, hat niedrigere Risiken als Menschen, die weiterrauchen.",
+    "why": [
+      "TODO Langzeitstudien finden durchgehend höhere Mortalität bei Rauchenden, auch bei wenigen Zigaretten täglich. Wer aufhört, hat niedrigere Risiken als Menschen, die weiterrauchen.",
+      "TODO 墨西哥129,151无既往慢病成人，35–89岁；招募1998–2004，随访至2018"
+    ],
+    "caution": "TODO Nicht anfangen; wer raucht, möglichst früh aufhören. Bei Bedarf Entwöhnungsangebote und medikamentöse Unterstützung nutzen.",
+    "myth": null
+  },
+  "sun-exposure": {
+    "question": "TODO 晒太阳／紫外线",
+    "answer": "TODO Nordische Studien fanden Zusammenhänge zwischen Merkmalen der Sonnenexposition und Überleben. Auch Aktivitäten im Freien und die Nutzung medizinischer Versorgung können die Ergebnisse beeinflussen. Eine Dauer des Sonnenbadens für ein längeres Leben wurde nicht bestimmt.",
+    "why": [
+      "TODO Nordische Studien fanden Zusammenhänge zwischen Merkmalen der Sonnenexposition und Überleben. Auch Aktivitäten im Freien und die Nutzung medizinischer Versorgung können die Ergebnisse beeinflussen. Eine Dauer des Sonnenbadens für ein längeres Leben wurde nicht bestimmt.",
+      "TODO 丹麦>40岁440万人，1980–2006；瑞典29,518名女性20年随访"
+    ],
+    "caution": "TODO Draußen sein und Tageslicht genießen, Sonnenbrand vermeiden. Bei hohem Hautkrebsrisiko oder Lichtempfindlichkeit gezielt schützen.",
+    "myth": "TODO * 晒太阳\n  * [晒太阳和死亡率的关系，如何科学，安全的晒太阳？\n](https://zhuanlan.zhihu.com/p/76301306)\n    "
+  },
+  "nmn": {
+    "question": "TODO NMN",
+    "answer": "TODO Humanstudien zu NMN waren bisher meist klein, kurz und auf Stoffwechselwerte ausgerichtet. Eine Verlängerung des menschlichen Lebens ist nicht belegt; langfristige Sicherheitsdaten fehlen weitgehend.",
+    "why": [
+      "TODO Humanstudien zu NMN waren bisher meist klein, kurz und auf Stoffwechselwerte ausgerichtet. Eine Verlängerung des menschlichen Lebens ist nicht belegt; langfristige Sicherheitsdaten fehlen weitgehend.",
+      "TODO 原RCT为超重/肥胖绝经后糖尿病前期女性、10周；综述8试验342人"
+    ],
+    "caution": "TODO Zuerst auf Ernährung, Bewegung und Schlaf achten, statt NMN als bewiesenes Langlebigkeitsmedikament anzusehen.",
+    "myth": "TODO * NMN"
+  },
+  "metformin-diabetes": {
+    "question": "TODO 二甲双胍（超重新诊断2型糖尿病）",
+    "answer": "TODO Eine randomisierte Studie bei übergewichtigen Menschen mit neu diagnostiziertem Diabetes fand weniger Todesfälle unter Metformin. Zusammengefasste spätere Studien waren weniger eindeutig. Es geht um Diabetesbehandlung.",
+    "why": [
+      "TODO Eine randomisierte Studie bei übergewichtigen Menschen mit neu diagnostiziertem Diabetes fand weniger Todesfälle unter Metformin. Zusammengefasste spätere Studien waren weniger eindeutig. Es geht um Diabetesbehandlung.",
+      "TODO UKPDS主随机比较753名超重新诊断2型糖尿病者，均龄53；中位10.7年"
+    ],
+    "caution": "TODO Bei Diabetes dem verordneten Plan folgen und Nierenfunktion sowie Verträglichkeit berücksichtigen; als gesunder Mensch nicht eigenständig für Langlebigkeit beginnen.",
+    "myth": null
+  },
+  "metformin-longevity": {
+    "question": "TODO Metformin und die Lebensdauer gesunder Menschen",
+    "answer": "TODO Eine Beobachtungsstudie verglich Menschen mit Diabetes, die Metformin einnahmen, mit Kontrollpersonen ohne Diabetes und fand ein besseres Überleben in der Metformin-Gruppe. Eine langfristige randomisierte Nachbeobachtung zeigte jedoch keine geringere Sterblichkeit bei Menschen mit hohem Diabetesrisiko. Eine lebensverlängernde Wirkung bei gesunden Menschen ist nicht belegt.",
+    "why": [
+      "TODO Eine Beobachtungsstudie verglich Menschen mit Diabetes, die Metformin einnahmen, mit Kontrollpersonen ohne Diabetes und fand ein besseres Überleben in der Metformin-Gruppe. Eine langfristige randomisierte Nachbeobachtung zeigte jedoch keine geringere Sterblichkeit bei Menschen mit hohem Diabetesrisiko. Eine lebensverlängernde Wirkung bei gesunden Menschen ist nicht belegt.",
+      "TODO 英国CPRD 78,241二甲双胍患者、12,222磺脲患者、90,463匹配非糖尿病人；DPP/DPPOS 3,234高糖尿病风险者、中位21年、453死亡"
+    ],
+    "caution": "TODO Keine Medikamente auf eigene Faust gegen das Altern einnehmen. Bei Diabetes oder Kinderwunsch Fragen zur Medikation ärztlich besprechen.",
+    "myth": "TODO * 二甲双胍\n  * [“胍”吹必看 丨我就是神药——二甲双胍](https://zhuanlan.zhihu.com/p/419202902)\n    * 二"
+  },
+  "multivitamins": {
+    "question": "TODO 复合维生素",
+    "answer": "TODO Randomisierte Studien und große Langzeitbeobachtungen zeigten keine niedrigere Mortalität durch Multivitamine bei allgemein gesunden Menschen. Weniger Krebsdiagnosen in einigen Studien sind ein anderer Endpunkt.",
+    "why": [
+      "TODO Randomisierte Studien und große Langzeitbeobachtungen zeigten keine niedrigere Mortalität durch Multivitamine bei allgemein gesunden Menschen. Weniger Krebsdiagnosen in einigen Studien sind ein anderer Endpunkt.",
+      "TODO PHS II 14,641男性医生、11.2年；COSMOS 21,442老年成人、3.6年；2024队列390,124人"
+    ],
+    "caution": "TODO Bei Mangel oder besonderem Nährstoffbedarf gezielt ergänzen und zunächst im Alltag gut essen.",
+    "myth": "TODO * 复合维生素\n  * [服用复合维生素可降低癌症危险8%，其他效果并不显著](https://health.qq.com/a/20121023/000026."
+  },
+  "glucosamine-chondroitin": {
+    "question": "TODO 葡萄糖胺／软骨素",
+    "answer": "TODO Eine US-Beobachtungsstudie verband langfristige Glucosamin- und Chondroitinnutzung mit niedrigerer Mortalität. Nutzende bewegten sich auch häufiger und rauchten seltener. Eine Lebensverlängerung Gesunder durch diese Präparate ist nicht belegt.",
+    "why": [
+      "TODO Eine US-Beobachtungsstudie verband langfristige Glucosamin- und Chondroitinnutzung mit niedrigerer Mortalität. Nutzende bewegten sich auch häufiger und rauchten seltener. Eine Lebensverlängerung Gesunder durch diese Präparate ist nicht belegt.",
+      "TODO NHANES 1999–2010，16,686名≥40岁成人，排除基线CVD及生命状态缺失者；658使用≥1年；中位107个月；3,366死亡"
+    ],
+    "caution": "TODO Bei Gelenkbeschwerden zuerst die Ursache klären; besonders bei Blutverdünnern Wechselwirkungen mit Supplementen prüfen lassen.",
+    "myth": "TODO * 葡萄糖胺\n  * [神奇！氨糖降低心血管死亡率65%，与定期运动效果相当](https://www.sohu.com/a/436372221_1208732"
+  },
+  "anti-aging-drugs-review": {
+    "question": "TODO 综合抗衰药候选（综述）",
+    "answer": "TODO Eine Übersicht zu Antiaging-Arzneien behandelte verschiedene Wirkstoffkandidaten. Die Evidenz stammt überwiegend aus Tierstudien und begrenzten Humanstudien. Lebensverlängerung bei Gesunden ist weiterhin unbewiesen.",
+    "why": [
+      "TODO Eine Übersicht zu Antiaging-Arzneien behandelte verschiedene Wirkstoffkandidaten. Die Evidenz stammt überwiegend aus Tierstudien und begrenzten Humanstudien. Lebensverlängerung bei Gesunden ist weiterhin unbewiesen.",
+      "TODO 以动物模型与有限人类研究为主；不形成健康人死亡干预人群"
+    ],
+    "caution": "TODO Antiaging-Arzneien nicht eigenständig kombinieren; experimentelle Behandlungen gehören in sorgfältig durchgeführte Forschung.",
+    "myth": "TODO * 综合\n  * [《自然》子刊深度综述：如何开发抗衰老药](https://zhuanlan.zhihu.com/p/145495570)\n  * ![如何开"
+  },
+  "alcohol": {
+    "question": "TODO 酒精／饮酒",
+    "answer": "TODO Eine große Übersicht berücksichtigte Verzerrungen etwa durch ehemals Trinkende und fand keinen Mortalitätsvorteil geringer Alkoholmengen. Höherer Konsum war mit höherem Risiko verbunden.",
+    "why": [
+      "TODO Eine große Übersicht berücksichtigte Verzerrungen etwa durch ehemals Trinkende und fand keinen Mortalitätsvorteil geringer Alkoholmengen. Höherer Konsum war mit höherem Risiko verbunden.",
+      "TODO 107队列，4,838,825人，425,564死亡"
+    ],
+    "caution": "TODO Wer nicht trinkt, braucht nicht anzufangen. Wer trinkt, möglichst reduzieren; bei Abhängigkeit oder früherem Entzug mit medizinischer Unterstützung.",
+    "myth": "TODO 行动节：戒酒（否则+~50% ACM，无上限）；第6节无对应证据条目。"
+  },
+  "ambient-air-pollution": {
+    "question": "TODO 长期环境PM2.5污染",
+    "answer": "TODO Eine große US-Studie bei älteren Erwachsenen verband langfristig höhere Feinstaub- und Ozonbelastung mit höherem Sterberisiko.",
+    "why": [
+      "TODO Eine große US-Studie bei älteren Erwachsenen verband langfristig höhere Feinstaub- und Ozonbelastung mit höherem Sterberisiko.",
+      "TODO 美国60,925,443名Medicare受益者；2000–2012；460,310,521人年"
+    ],
+    "caution": "TODO Auf die Luftqualität achten, bei starker Belastung anstrengende Bewegung im Freien reduzieren und die Raumluft möglichst verbessern.",
+    "myth": null
+  },
+  "statins-indicated-patients": {
+    "question": "TODO 他汀降脂（按心血管风险及适应证）",
+    "answer": "TODO Zusammengefasste randomisierte Studien fanden weniger Herz-Kreislauf-Ereignisse unter Statinen. Auch bei Teilnehmenden ohne frühere Gefäßerkrankung gab es weniger Todesfälle. Der persönliche Nutzen hängt vom Ausgangsrisiko ab.",
+    "why": [
+      "TODO Zusammengefasste randomisierte Studien fanden weniger Herz-Kreislauf-Ereignisse unter Statinen. Auch bei Teilnehmenden ohne frühere Gefäßerkrankung gab es weniger Todesfälle. Der persönliche Nutzen hängt vom Ausgangsrisiko ab.",
+      "TODO 27RCT共174,149人；ACM数字为无既往血管病亚群；中位4.8–5.1年"
+    ],
+    "caution": "TODO Bei erfüllten Behandlungskriterien Statine ärztlich besprechen; Muskelbeschwerden und weitere Medikamente mit möglichen Wechselwirkungen ansprechen.",
+    "myth": null
+  },
+  "vitamin-d-general-population": {
+    "question": "TODO 维生素D补充（一般无选择老年成人）",
+    "answer": "TODO Eine große randomisierte Studie fand keine Mortalitätssenkung durch routinemäßiges Vitamin D bei allgemein gesunden Erwachsenen mittleren und höheren Alters. Mangel und Knochenkrankheiten brauchen eigene Beurteilung.",
+    "why": [
+      "TODO Eine große randomisierte Studie fand keine Mortalitätssenkung durch routinemäßiges Vitamin D bei allgemein gesunden Erwachsenen mittleren und höheren Alters. Mangel und Knochenkrankheiten brauchen eigene Beurteilung.",
+      "TODO 美国25,871人，男性≥50、女性≥55；中位5.3年；978死亡"
+    ],
+    "caution": "TODO Bei festgestelltem Mangelrisiko oder Bedarf für die Knochengesundheit gezielt ergänzen; keine eigenständigen hohen Dosen.",
+    "myth": null
+  },
+  "racquet-sports": {
+    "question": "TODO 挥拍运动",
+    "answer": "TODO Eine britische Beobachtungsstudie bei Erwachsenen verband Rückschlagsport mit niedrigerem Sterberisiko. Freude, Fitness und langfristige Durchführbarkeit gehören ebenfalls zur Sportwahl.",
+    "why": [
+      "TODO Eine britische Beobachtungsstudie bei Erwachsenen verband Rückschlagsport mit niedrigerem Sterberisiko. Freude, Fitness und langfristige Durchführbarkeit gehören ebenfalls zur Sportwahl.",
+      "TODO 80,306名英国成年人；平均52±14岁"
+    ],
+    "caution": "TODO Eine passende Rückschlagsportart wählen, die Freude macht, und die Aktivität langsam steigern.",
+    "myth": null
+  },
+  "vigorous-activity": {
+    "question": "TODO 剧烈运动",
+    "answer": "TODO Eine britische Beobachtungsstudie verband schon kurze intensive Aktivität mit niedrigerer Mortalität. Teilnehmende waren vorwiegend mittleren und höheren Alters; tragbare Geräte erfassten die Bewegung.",
+    "why": [
+      "TODO Eine britische Beobachtungsstudie verband schon kurze intensive Aktivität mit niedrigerer Mortalität. Teilnehmende waren vorwiegend mittleren und höheren Alters; tragbare Geräte erfassten die Bewegung.",
+      "TODO 71,893名UK Biobank成年人，中位62.5岁，平均随访5.9年"
+    ],
+    "caution": "TODO Wer schon regelmäßig aktiv ist, kann kurze intensive Einheiten ergänzen, sofern gesundheitlich nichts dagegenspricht. Bei Beschwerden oder instabiler chronischer Erkrankung erst ärztlich abklären lassen.",
+    "myth": "TODO 每周15–20分钟剧烈运动降低16%–40%的ACM；达到50–57分钟可进一步降低。"
+  },
+  "walking-steps": {
+    "question": "TODO 走路/每日步数",
+    "answer": "TODO Eine US-Studie bei Menschen mittleren Alters verband mehr tägliche Schritte mit niedrigerer Mortalität. Sie zeigte nicht, dass immer mehr Schritte stets besser sind.",
+    "why": [
+      "TODO Eine US-Studie bei Menschen mittleren Alters verband mehr tägliche Schritte mit niedrigerer Mortalität. Sie zeigte nicht, dass immer mehr Schritte stets besser sind.",
+      "TODO CARDIA 2,110名美国黑人/白人成年人，平均45.2岁；随访10.8年，72例死亡"
+    ],
+    "caution": "TODO Vom heutigen Niveau aus etwas mehr gehen; bei Herz- oder Lungenkrankheit, Sturzrisiko oder eingeschränkter Mobilität anpassen.",
+    "myth": null
+  },
+  "toothbrushing": {
+    "question": "TODO 刷牙",
+    "answer": "TODO Eine große chinesische Beobachtungsstudie fand höhere Mortalität bei seltenem Zähneputzen. Mundpflege hängt auch mit Rauchen, Gesundheit und Versorgungszugang zusammen.",
+    "why": [
+      "TODO Eine große chinesische Beobachtungsstudie fand höhere Mortalität bei seltenem Zähneputzen. Mundpflege hängt auch mit Rauchen, Gesundheit und Versorgungszugang zusammen.",
+      "TODO 中国慢性病前瞻性研究512,715人，30–79岁"
+    ],
+    "caution": "TODO Regelmäßig mit Fluoridzahnpasta putzen und Zahnprobleme behandeln lassen.",
+    "myth": null
+  },
+  "tub-bathing": {
+    "question": "TODO 泡澡",
+    "answer": "TODO Eine japanische Studie bei Menschen mittleren Alters verband regelmäßiges Wannenbaden mit weniger Herz-Kreislauf-Erkrankungen und Schlaganfällen.",
+    "why": [
+      "TODO Eine japanische Studie bei Menschen mittleren Alters verband regelmäßiges Wannenbaden mit weniger Herz-Kreislauf-Erkrankungen und Schlaganfällen.",
+      "TODO 30,076名40–59岁日本人，基线无CVD或癌症；1990–2009年随访"
+    ],
+    "caution": "TODO Angenehm warm baden; nach Alkohol, bei Ohnmachtsneigung oder instabiler Herz-Kreislauf-Gesundheit lange heiße und unbeaufsichtigte Bäder vermeiden.",
+    "myth": "TODO 每天泡澡相对每周1–2次或不泡澡，CVD风险低28%，卒中低26%，脑出血低46%，未见猝死风险增加关联。"
+  },
+  "heavy-housework": {
+    "question": "TODO 重型家务（老年男性）",
+    "answer": "TODO In einer Hongkonger Studie bei Älteren war schwere Hausarbeit bei Männern mit niedrigerer Mortalität verbunden. Bei Frauen gab es keinen klaren Zusammenhang. Bessere Ausgangsfitness kann mitwirken.",
+    "why": [
+      "TODO In einer Hongkonger Studie bei Älteren war schwere Hausarbeit bei Männern mit niedrigerer Mortalität verbunden. Bei Frauen gab es keinen klaren Zusammenhang. Bessere Ausgangsfitness kann mitwirken.",
+      "TODO 香港社区≥65岁老人；排除特定慢病后2867人，平均72岁；452例死亡"
+    ],
+    "caution": "TODO Geeignete Hausarbeit als Alltagsbewegung nutzen; bei Gebrechlichkeit, Osteoporose oder Rückenproblemen schweres Heben vermeiden.",
+    "myth": "TODO 72岁之后男性每周做重型家务可以减少29%平均死亡率。"
+  },
+  "sleep-duration": {
+    "question": "TODO 睡眠时长",
+    "answer": "TODO Studien in mehreren asiatischen Ländern verbanden sehr langen Schlaf mit höherer Mortalität. Längerer Schlaf kann auch auf Erkrankungen oder Schlafprobleme hinweisen.",
+    "why": [
+      "TODO Studien in mehreren asiatischen Ländern verbanden sehr langen Schlaf mit höherer Mortalität. Längerer Schlaf kann auch auf Erkrankungen oder Schlafprobleme hinweisen.",
+      "TODO 日本、中国、新加坡、韩国9队列322,721人，平均54.5岁；排除基线自报CVD/癌症及随访前5年死亡者；男性19,419例、女性13,768例死亡"
+    ],
+    "caution": "TODO Ausreichenden, erholsamen Schlaf anstreben; anhaltende Schläfrigkeit, Müdigkeit oder Schnarchen abklären lassen.",
+    "myth": null
+  },
+  "bedtime": {
+    "question": "TODO 就寝时间",
+    "answer": "TODO Eine länderübergreifende Nachbeobachtung verband sehr frühe und sehr späte Schlafenszeiten mit einem höheren kombinierten Risiko für Tod und Herz-Kreislauf-Ereignisse. Nach Berücksichtigung anderer Faktoren war der Zusammenhang deutlich schwächer.",
+    "why": [
+      "TODO Eine länderübergreifende Nachbeobachtung verband sehr frühe und sehr späte Schlafenszeiten mit einem höheren kombinierten Risiko für Tod und Herz-Kreislauf-Ereignisse. Nach Berücksichtigung anderer Faktoren war der Zusammenhang deutlich schwächer.",
+      "TODO 21国PURE 112,198人；9.2年随访；5633死亡、5346主要心血管事件"
+    ],
+    "caution": "TODO Einen passenden regelmäßigen Rhythmus mit genug Schlaf finden; nicht für eine bestimmte Uhrzeit absichtlich wach bleiben.",
+    "myth": "TODO 22–24点就寝最好；早睡增加43% ACM，晚睡增加15%，原文注明存在争议。"
+  },
+  "sedentary-time": {
+    "question": "TODO 久坐及看电视",
+    "answer": "TODO Eine Übersicht verband längeres Sitzen mit höherer Mortalität, besonders bei Menschen, die einen großen Teil des Tages saßen. Fernsehen und Gesamtsitzzeit zeigten unterschiedliche Zusammenhänge.",
+    "why": [
+      "TODO Eine Übersicht verband längeres Sitzen mit höherer Mortalität, besonders bei Menschen, die einen großen Teil des Tages saßen. Fernsehen und Gesamtsitzzeit zeigten unterschiedliche Zusammenhänge.",
+      "TODO 34项前瞻研究，共1,331,468名不同结局的独立参与者"
+    ],
+    "caution": "TODO Soweit körperlich möglich einen Teil der Sitzzeit durch Gehen oder andere Bewegung ersetzen.",
+    "myth": "TODO 久坐每多1小时，CVD发生风险增4%、癌症增1%、ACM增3%；总久坐阈值6–8小时/日，看电视3–4小时/日。"
+  },
+  "pessimism": {
+    "question": "TODO 悲观/乐观情绪",
+    "answer": "TODO Eine australische Beobachtungsstudie bei Erwachsenen mittleren und höheren Alters verband höhere Pessimismuswerte mit höherer Mortalität. Stimmung, körperliche Gesundheit und Lebensumstände beeinflussen sich gegenseitig.",
+    "why": [
+      "TODO Eine australische Beobachtungsstudie bei Erwachsenen mittleren und höheren Alters verband höhere Pessimismuswerte mit höherer Mortalität. Stimmung, körperliche Gesundheit und Lebensumstände beeinflussen sich gegenseitig.",
+      "TODO 澳大利亚≥50岁双胞胎相关样本2978人，平均20年后1068人死亡；具体模型因缺失人数减少"
+    ],
+    "caution": "TODO In schwierigen Zeiten mit vertrauten Menschen sprechen; bei anhaltender Alltagsbeeinträchtigung professionelle Unterstützung suchen.",
+    "myth": null
+  },
+  "wealth": {
+    "question": "TODO 净资产/经济资源",
+    "answer": "TODO Eine US-Studie bei Menschen mittleren Alters verband größeres Nettovermögen mit niedrigerer Mortalität. Finanzielle Mittel, Gesundheit und Sicherheit beeinflussen sich oft gegenseitig.",
+    "why": [
+      "TODO Eine US-Studie bei Menschen mittleren Alters verband größeres Nettovermögen mit niedrigerer Mortalität. Finanzielle Mittel, Gesundheit und Sicherheit beeinflussen sich oft gegenseitig.",
+      "TODO 美国MIDUS 5414人，平均46.7岁，近24年随访；1010例死亡；兄弟姐妹/双胞胎2490人"
+    ],
+    "caution": "TODO Wohnen, Gesundheitsversorgung und finanzielle Grundsicherheit priorisieren, um vermeidbare Belastungen zu reduzieren.",
+    "myth": null
+  },
+  "weight-change": {
+    "question": "TODO 成年早期至中年体重变化",
+    "answer": "TODO Eine US-Beobachtungsstudie fand niedrigere Mortalität bei Menschen, die zwischen frühem Erwachsenenalter und Lebensmitte von Adipositas zu Übergewicht wechselten, als bei Menschen mit anhaltender Adipositas.",
+    "why": [
+      "TODO Eine US-Beobachtungsstudie fand niedrigere Mortalität bei Menschen, die zwischen frühem Erwachsenenalter und Lebensmitte von Adipositas zu Übergewicht wechselten, als bei Menschen mit anhaltender Adipositas.",
+      "TODO NHANES 24,205名40–74岁美国成年人；回忆25岁和基线前10年体重；随访10.7年，5846死亡"
+    ],
+    "caution": "TODO Bei Adipositas das Gewicht langfristig regulieren und die Muskelkraft erhalten; ungewollten Gewichtsverlust besonders im Alter abklären lassen.",
+    "myth": null
+  },
+  "covid-pandemic": {
+    "question": "TODO 新冠疫情与全因超额死亡",
+    "answer": "TODO Sterberegister mehrerer Länder zeigten in der ersten COVID-19-Welle deutliche Übersterblichkeit. Neben Infektionen können indirekte Folgen wie unterbrochene Versorgung beitragen. Das bildet die damalige Pandemiephase ab.",
+    "why": [
+      "TODO Sterberegister mehrerer Länder zeigten in der ersten COVID-19-Welle deutliche Übersterblichkeit. Neben Infektionen können indirekte Folgen wie unterbrochene Versorgung beitragen. Das bildet die damalige Pandemiephase ab.",
+      "TODO 21个工业化国家全国死亡登记，2020年第一波；不含美国"
+    ],
+    "caution": "TODO Infektionsexposition verringern, chronische Erkrankungen gut versorgen und bei Krankheit rechtzeitig geeignete Hilfe holen.",
+    "myth": "TODO 美国新冠死亡率约1.5%，人均预期寿命减少2年；所引论文标题为21个工业化国家疫情第一波ACM。"
+  },
+  "resistance-training": {
+    "question": "TODO 抗阻/肌肉力量训练",
+    "answer": "TODO Eine Übersicht von Kohortenstudien verband Muskelkräftigung mit niedrigerer Mortalität. Der Zusammenhang mit bestimmten Trainingsmengen bleibt unsicher.",
+    "why": [
+      "TODO Eine Übersicht von Kohortenstudien verband Muskelkräftigung mit niedrigerer Mortalität. Der Zusammenhang mit bestimmten Trainingsmengen bleibt unsicher.",
+      "TODO ACM二分类合成7研究、263,058人、42,133死亡；综述总计16研究"
+    ],
+    "caution": "TODO Große Muskelgruppen langsam zusätzlich zur Ausdauer trainieren; bei Schmerzen, nach Operationen oder instabiler chronischer Erkrankung anpassen.",
+    "myth": null
+  },
+  "social-isolation": {
+    "question": "TODO 社会隔离、孤独与独居",
+    "answer": "TODO Eine Übersicht verband soziale Isolation, Einsamkeit und Alleinleben mit höherer Mortalität. Das sind unterschiedliche Erfahrungen. Auch Alleinlebende können erfüllende, zuverlässige Kontakte haben.",
+    "why": [
+      "TODO Eine Übersicht verband soziale Isolation, Einsamkeit und Alleinleben mit höherer Mortalität. Das sind unterschiedliche Erfahrungen. Auch Alleinlebende können erfüllende, zuverlässige Kontakte haben.",
+      "TODO 纳入截至2014年2月的死亡随访研究；各研究人群及调整因素不同"
+    ],
+    "caution": "TODO Nach eigenen Wünschen verlässliche Kontakte und Hilfswege pflegen; Hindernisse durch Hör-, Bewegungs- oder Stimmungsprobleme beachten.",
+    "myth": null
+  },
+  "intensive-bp-control": {
+    "question": "TODO 符合适应条件者的强化降压",
+    "answer": "TODO Eine randomisierte Studie bei Menschen mit Bluthochdruck, erhöhtem Herz-Kreislauf-Risiko und ohne Diabetes fand weniger Todesfälle unter intensiver Blutdruckbehandlung. Hypotonie und Nierenprobleme traten jedoch häufiger auf.",
+    "why": [
+      "TODO Eine randomisierte Studie bei Menschen mit Bluthochdruck, erhöhtem Herz-Kreislauf-Risiko und ohne Diabetes fand weniger Todesfälle unter intensiver Blutdruckbehandlung. Hypotonie und Nierenprobleme traten jedoch häufiger auf.",
+      "TODO 9,361名SBP≥130mmHg、心血管风险增加且无糖尿病的成人"
+    ],
+    "caution": "TODO Blutdruckziele gemeinsam ärztlich festlegen und auf Schwindel, Nierenfunktion sowie Elektrolyte achten.",
+    "myth": null
+  },
+  "cardiorespiratory-fitness": {
+    "question": "TODO 心肺适能（CRF）",
+    "answer": "TODO Mehrere Kohortenstudien verbanden bessere Herz-Lungen-Fitness im Belastungstest mit niedrigerer Mortalität. Sie zeigt körperliche Leistungsfähigkeit, wird aber auch von Krankheiten und Genetik beeinflusst.",
+    "why": [
+      "TODO Mehrere Kohortenstudien verbanden bessere Herz-Lungen-Fitness im Belastungstest mit niedrigerer Mortalität. Sie zeigt körperliche Leistungsfähigkeit, wird aber auch von Krankheiten und Genetik beeinflusst.",
+      "TODO 34项成人队列纳入综述；ACM连续剂量分析来自其中子集"
+    ],
+    "caution": "TODO Von der aktuellen Fitness aus passende Bewegung langsam aufbauen.",
+    "myth": null
+  },
+  "dapagliflozin-ckd": {
+    "question": "TODO 达格列净（特定慢性肾病）",
+    "answer": "TODO Eine randomisierte Studie fand weniger Todesfälle unter Dapagliflozin bei Teilnehmenden mit chronischer Nierenkrankheit, die die Studienkriterien erfüllten, mit oder ohne Diabetes. Eine Lebensverlängerung Gesunder ist nicht belegt.",
+    "why": [
+      "TODO Eine randomisierte Studie fand weniger Todesfälle unter Dapagliflozin bei Teilnehmenden mit chronischer Nierenkrankheit, die die Studienkriterien erfüllten, mit oder ohne Diabetes. Eine Lebensverlängerung Gesunder ist nicht belegt.",
+      "TODO 4304名CKD成人；eGFR 25–75、UACR 200–5000 mg/g；随访中位2.4年，含有/无2型糖尿病者"
+    ],
+    "caution": "TODO Bei chronischer Nierenkrankheit ärztlich auf Eignung prüfen lassen; dabei Austrocknung, Infektionen und Ketoazidose berücksichtigen.",
+    "myth": null
+  },
+  "semaglutide-select": {
+    "question": "TODO 司美格鲁肽（SELECT适应人群）",
+    "answer": "TODO In SELECT gab es unter Semaglutid weniger Todesfälle bei Teilnehmenden mit Herz-Kreislauf-Erkrankung, Übergewicht oder Adipositas und ohne Diabetes. Dieser Mortalitätsbefund ist explorativ.",
+    "why": [
+      "TODO In SELECT gab es unter Semaglutid weniger Todesfälle bei Teilnehmenden mit Herz-Kreislauf-Erkrankung, Übergewicht oder Adipositas und ohne Diabetes. Dieser Mortalitätsbefund ist explorativ.",
+      "TODO 17604人；≥45岁、BMI≥27、已有心血管疾病、无糖尿病；平均随访39.8个月"
+    ],
+    "caution": "TODO Behandlung nach Krankheits- und Gewichtsmanagementbedarf sowie Verträglichkeit beurteilen; Lebensverlängerung Gesunder bleibt unbewiesen.",
+    "myth": null
+  },
+  "aspirin-primary-prevention": {
+    "question": "TODO 阿司匹林（老年人初级预防）",
+    "answer": "TODO Eine randomisierte Studie bei Älteren ohne frühere Herz-Kreislauf-Erkrankung fand keine Lebensverlängerung durch tägliches Aspirin und ein Signal höherer Mortalität. Das ist eine andere Situation als die Behandlung nach Herzinfarkt oder Schlaganfall.",
+    "why": [
+      "TODO Eine randomisierte Studie bei Älteren ohne frühere Herz-Kreislauf-Erkrankung fand keine Lebensverlängerung durch tägliches Aspirin und ein Signal höherer Mortalität. Das ist eine andere Situation als die Behandlung nach Herzinfarkt oder Schlaganfall.",
+      "TODO 19114名通常≥70岁的社区老人（美国黑人/西语裔≥65岁），无心血管病、痴呆或残疾；中位4.7年"
+    ],
+    "caution": "TODO Nicht allein zur Lebensverlängerung mit der Einnahme von Aspirin beginnen; bei bestehender medizinischer Indikation Änderungen zuerst ärztlich besprechen.",
+    "myth": null
+  },
+  "walking-steps-2025": {
+    "question": "TODO 每日步数（2025综述更新）",
+    "answer": "TODO Eine neuere Übersicht verband erneut mehr tägliche Schritte mit niedrigerer Mortalität. Gesundheitszustand, Geräte und Messmethoden beeinflussen die Ergebnisse ebenfalls.",
+    "why": [
+      "TODO Eine neuere Übersicht verband erneut mehr tägliche Schritte mit niedrigerer Mortalität. Gesundheitszustand, Geräte und Messmethoden beeinflussen die Ergebnisse ebenfalls.",
+      "TODO 成人前瞻性队列；ACM该比较含14项研究；综述检索至2025-02-14"
+    ],
+    "caution": "TODO Ein erreichbares Gehziel wählen; angenehm gehen und dranbleiben sind wichtig.",
+    "myth": null
+  },
+  "metformin-adverse-events": {
+    "question": "TODO Nebenwirkungen von Metformin",
+    "answer": "TODO Metformin kann Durchfall und andere Verdauungsbeschwerden verursachen und den Vitamin-B12-Spiegel senken. Auch Laktatazidose ist ein wichtiges Risiko. Reaktionen hängen von Präparat, Dosis und Gesundheit ab.",
+    "why": [
+      "TODO Metformin kann Durchfall und andere Verdauungsbeschwerden verursachen und den Vitamin-B12-Spiegel senken. Auch Laktatazidose ist ein wichtiges Risiko. Reaktionen hängen von Präparat, Dosis und Gesundheit ab.",
+      "TODO 标签收录美国2型糖尿病试验：药组141人、安慰剂145人；B12数据来自29周试验"
+    ],
+    "caution": "TODO Nach Verordnung einnehmen, Verträglichkeit, Nierenfunktion und Vitamin B12 beobachten und Beschwerden zeitnah melden.",
+    "myth": "TODO 维生素B12缺乏7%–17.4%；胃肠不良反应最高53%；疲倦9%、头痛6%；罕见严重乳酸酸中毒、肝损伤。"
+  },
+  "waist-circumference": {
+    "question": "TODO Taillenumfang und Bauchfett",
+    "answer": "TODO Der Taillenumfang liefert neben dem Gewicht weitere nützliche Informationen. Langzeitstudien verbinden einen größeren Taillenumfang mit höherem Sterberisiko; die Waage allein erfasst daher nicht das ganze Bild.",
+    "why": [
+      "TODO Der Taillenumfang liefert neben dem Gewicht weitere nützliche Informationen. Langzeitstudien verbinden einen größeren Taillenumfang mit höherem Sterberisiko; die Waage allein erfasst daher nicht das ganze Bild.",
+      "TODO 综述共72项前瞻性队列、2,528,297人；腰围分析含50项研究"
+    ],
+    "caution": "TODO Neben dem Gewicht auch den Taillenumfang verfolgen und regelmäßige Bewegung sowie ausgewogene Mahlzeiten in den Alltag einbauen.",
+    "myth": null
+  },
+  "obstructive-sleep-apnoea": {
+    "question": "TODO Schnarchen und Schlafapnoe",
+    "answer": "TODO Eine ganze Nacht im Bett bedeutet nicht immer erholsamen Schlaf. Schwere Schlafapnoe ist mit höherem Sterberisiko verbunden; anhaltendes Schnarchen, Atemaussetzer und Tagesschläfrigkeit verdienen Aufmerksamkeit.",
+    "why": [
+      "TODO Eine ganze Nacht im Bett bedeutet nicht immer erholsamen Schlaf. Schwere Schlafapnoe ist mit höherem Sterberisiko verbunden; anhaltendes Schnarchen, Atemaussetzer und Tagesschläfrigkeit verdienen Aufmerksamkeit.",
+      "TODO 风险综述共6项前瞻性观察研究、11,932人；按呼吸暂停严重度分组"
+    ],
+    "caution": "TODO Bei häufigem lautem Schnarchen, Atemaussetzern im Schlaf oder Tagesschläfrigkeit eine Schlafuntersuchung veranlassen und nach gesicherter Diagnose eine passende Behandlung besprechen.",
+    "myth": null
+  },
+  "hepatitis-c-treatment": {
+    "question": "TODO Hepatitis C erkennen und behandeln",
+    "answer": "TODO Hepatitis C kann jahrelang unbemerkt bleiben. Eine Verlaufsstudie bei Menschen mit chronischer Infektion verband antivirale Behandlung mit geringerer Sterblichkeit; das spricht dafür, die Infektion abzuklären und rechtzeitig behandeln zu lassen.",
+    "why": [
+      "TODO Hepatitis C kann jahrelang unbemerkt bleiben. Eine Verlaufsstudie bei Menschen mit chronischer Infektion verband antivirale Behandlung mit geringerer Sterblichkeit; das spricht dafür, die Infektion abzuklären und rechtzeitig behandeln zu lassen.",
+      "TODO 法国32个肝病中心、9,895名慢性丙肝成人；中位随访33.4个月"
+    ],
+    "caution": "TODO Nach positivem Antikörpertest auf eine aktuelle Infektion prüfen lassen. Bei Bestätigung die Leber untersuchen lassen und zeitnah eine antivirale Behandlung besprechen.",
+    "myth": null
+  }
+}

@@ -3,6 +3,7 @@ import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import { join, relative } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { DIRECTIONS, type Direction } from '../src/directions.ts';
+import type { Explainer } from '../src/explain.ts';
 import { escape } from '../src/html.ts';
 import { ENABLED_LOCALES } from '../src/locales.ts';
 import { loadUpstream, MYTH_VERDICTS } from '../src/model.ts';
@@ -14,16 +15,27 @@ process.chdir(fileURLToPath(new URL('..', import.meta.url)));
 const problems: string[] = [];
 const up = loadUpstream();
 const REQUIRED = ['title', 'summary', 'takeaway', 'finding'] as const;
+const explainText = (e: Explainer) => [e.question, e.answer, ...e.why, e.caution, ...(e.myth === null ? [] : [e.myth])];
 
+const isPlaceholder = (text: string) => text.startsWith('TODO');
 for (const locale of ENABLED_LOCALES) {
   try {
     loadUi(locale);
   } catch (e) {
     problems.push((e as Error).message);
   }
+  // Untranslated interface text is written as "TODO " + the English text, so it cannot ship.
+  const strings = JSON.parse(readFileSync(`src/ui/${locale.code}.json`, 'utf8')) as Record<string, string>;
+  for (const [key, value] of Object.entries(strings)) {
+    if (isPlaceholder(value)) problems.push(`${locale.code}: src/ui has a placeholder for ${key}`);
+  }
   for (const s of up.studies) {
     for (const field of REQUIRED) {
       if (!s.text[locale.code][field].trim()) problems.push(`${locale.code}: study ${s.id} has an empty ${field}`);
+    }
+    const e = s.explain[locale.code];
+    if (explainText(e).some(isPlaceholder)) {
+      problems.push(`${locale.code}: content/explain has a placeholder for ${s.id}`);
     }
   }
 }
@@ -89,8 +101,10 @@ for (const file of pages) {
   }
 }
 
-// Every study page exists in every enabled language and shows the reader text and its direction.
-const directionTag = (text: string) => [...text.matchAll(/<span class="xxd-badge" data-direction="([^"]+)"[^>]*>([^<]*)<\/span>/g)].map((m) => ({ direction: m[1], label: m[2] }));
+// Every study page exists in every enabled language and shows the upstream text, this site's explanation and its direction.
+// A direction chip is an optional kit icon followed by the label.
+const directionTag = (text: string) =>
+  [...text.matchAll(/<span class="xxd-badge" data-direction="([^"]+)"[^>]*>(?:<i [^>]*><\/i>)?([^<]*)<\/span>/g)].map((m) => ({ direction: m[1], label: m[2] }));
 for (const locale of ENABLED_LOCALES) {
   const t = loadUi(locale);
   for (const s of up.studies) {
@@ -99,10 +113,13 @@ for (const locale of ENABLED_LOCALES) {
       problems.push(`dist/${file} is missing`);
       continue;
     }
-    const text = readFileSync(join('dist', file), 'utf8');
+    const page = readFileSync(join('dist', file), 'utf8');
     for (const field of REQUIRED) {
-      if (!text.includes(escape(s.text[locale.code][field]))) problems.push(`dist/${file} does not show its ${field}`);
+      if (!page.includes(escape(s.text[locale.code][field]))) problems.push(`dist/${file} does not show its ${field}`);
     }
+    if (!explainText(s.explain[locale.code]).every((line) => page.includes(escape(line)))) problems.push(`dist/${file} does not show all of content/explain`);
+    // Cards for other studies in the same topic follow the article; only the article itself must carry this study's direction.
+    const text = page.split('aria-labelledby="related"')[0] as string;
     const tags = directionTag(text);
     const label = escape(t(`direction.${s.direction}`));
     if (!tags.length || tags.some((tag) => tag.direction !== s.direction || tag.label !== label)) {
@@ -124,10 +141,9 @@ for (const locale of ENABLED_LOCALES) {
       problems.push(`${file}: no section "${id}"`);
       continue;
     }
-    const items = [...body.matchAll(/<li class="study">([\s\S]*?)<\/li>/g)].map((m) => m[1] as string);
+    const items = [...body.matchAll(/<a class="xxd-card study-card" href="[^"]*studies\/([^/"]+)\/">([\s\S]*?)<\/a>/g)].map((m) => ({ studyId: m[1], item: m[2] as string }));
     if (!items.length) problems.push(`${file}: section "${id}" lists no studies`);
-    for (const item of items) {
-      const studyId = /href="[^"]*studies\/([^/"]+)\/"/.exec(item)?.[1];
+    for (const { studyId, item } of items) {
       const direction = studyId === undefined ? undefined : directionById.get(studyId);
       const tags = directionTag(item).map((tag) => tag.direction);
       if (!direction || !allowed.includes(direction)) problems.push(`${file}: section "${id}" lists ${studyId}, whose direction is ${direction}`);
@@ -142,10 +158,10 @@ if (problems.length) {
   process.exit(1);
 }
 const codes = ENABLED_LOCALES.map((l) => l.code).join(' + ');
-console.log(`content: ${up.studies.length} studies in ${codes}, each with title, summary, takeaway and finding`);
+console.log(`content: ${up.studies.length} studies in ${codes}, each showing its title, summary, takeaway, finding and every content/explain line, none a placeholder`);
 console.log(`direction: every study page shows its tag (${DIRECTIONS.map((d) => `${d} ${up.studies.filter((s) => s.direction === d).length}`).join(', ')})`);
 console.log(`home: no harms or no-effect study under "helps" (${homeCounts.join(', ')})`);
-console.log(`ui: src/ui/{${ENABLED_LOCALES.map((l) => l.code).join(',')}}.json have every key and placeholder of zh.json`);
+console.log(`ui: src/ui/{${ENABLED_LOCALES.map((l) => l.code).join(',')}}.json have every key and placeholder of zh.json, and no value starts with TODO`);
 console.log(`pages: ${pages.length} HTML files, ${links} internal links and assets resolve`);
 console.log(`head: every page has <html lang dir>, a unique <title>, a meta description, its canonical URL and hreflang for ${codes}`);
 console.log('check passed');

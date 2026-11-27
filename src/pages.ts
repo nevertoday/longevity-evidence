@@ -1,5 +1,6 @@
 import { renderClaim } from './claim.ts';
 import { DIRECTIONS, type Direction } from './directions.ts';
+import { EVIDENCE_KINDS, type EvidenceKind } from './explain.ts';
 import { html, raw, type Html, type Part } from './html.ts';
 import { ENABLED_LOCALES, FALLBACK_LOCALE, type Locale, type LocaleCode } from './locales.ts';
 import {
@@ -63,8 +64,29 @@ const attr = (name: string, value: string | null) => (value === null ? null : ht
 const commitUrl = (up: Upstream) => `${up.source.repository}/tree/${up.source.commit}`;
 
 const isMyth = (s: Study) => MYTH_VERDICTS.includes(s.verdict);
+
+// Kit icons (`pnpm xxd icon`). Each sits beside text that says the same thing, so screen readers skip it.
+const TOPIC_ICON: Record<TopicId, string> = {
+  eating: 'Leaf',
+  drinking: 'Coffee',
+  movement: 'Bike',
+  sleep: 'MoonStar',
+  habits: 'CalendarDays',
+  mind: 'Smile',
+  body: 'Ruler',
+  environment: 'Wind',
+  supplements: 'FlaskConical',
+  illness: 'Thermometer',
+};
+const DIRECTION_ICON: Record<Direction, string> = { helps: 'Check', harms: 'TriangleAlert', 'no-effect': 'Equal', mixed: 'ArrowUpDown' };
+const KIND_ICON: Record<EvidenceKind, string> = { trial: 'Shuffle', observational: 'Eye', indirect: 'Lightbulb' };
+
+// Colour carries meaning only: harm is danger, a mixed result is a warning, the rest stays ink.
+const DIRECTION_TONE: Record<Direction, string | null> = { helps: null, harms: 'danger', 'no-effect': null, mixed: 'warning' };
 const VERDICT_TONE: Record<VerdictId, string | null> = { corrected: 'warning', partly: null, 'no-direct': null, qualified: null };
-const DIRECTION_TONE: Record<Direction, string | null> = { harms: 'danger', helps: null, 'no-effect': null, mixed: null };
+
+// Bars filled out of four, so the strength reads without knowing the letter scale.
+const STRENGTH: Record<Grade, number> = { A: 4, B: 3, C: 2, D: 1 };
 
 // Home page lists: grade A or B, split by which way the evidence points, strongest grade first.
 const HOME_LISTS = {
@@ -73,6 +95,9 @@ const HOME_LISTS = {
   'no-help': (s: Study) => s.direction === 'harms' || s.direction === 'no-effect',
 } as const;
 
+const HOME_MYTHS = 6;
+const RELATED = 3;
+
 function strongEvidence(studies: readonly Study[], keep: (s: Study) => boolean): Study[] {
   const picked = studies.filter((s) => (s.grade === 'A' || s.grade === 'B') && keep(s));
   return sortByGrade(TOPICS.flatMap((topic) => picked.filter((s) => s.topic === topic)));
@@ -80,44 +105,69 @@ function strongEvidence(studies: readonly Study[], keep: (s: Study) => boolean):
 
 const byTopicThenGrade = (studies: readonly Study[]) => TOPICS.flatMap((topic) => sortByGrade(studies.filter((s) => s.topic === topic)));
 
+const icon = (name: string, size: 12 | 14 | 20) => html`<i data-xxd-icon="${name}" data-size="${size}" aria-hidden="true"></i>`;
+
 function gradeBadge(ctx: Ctx, grade: Grade): Html {
   return html`<span class="xxd-badge">${ctx.t('grade.badge', { grade, label: ctx.guide.grades[grade].label })}</span>`;
 }
 
-function directionBadge(ctx: Ctx, direction: Direction): Html {
-  return html`<span class="xxd-badge" data-direction="${direction}"${attr('data-tone', DIRECTION_TONE[direction])}>${ctx.t(`direction.${direction}` as const)}</span>`;
+function directionChip(ctx: Ctx, direction: Direction): Html {
+  return html`<span class="xxd-badge" data-direction="${direction}"${attr('data-tone', DIRECTION_TONE[direction])}>${icon(DIRECTION_ICON[direction], 12)}${ctx.t(`direction.${direction}` as const)}</span>`;
 }
 
-function verdictBadge(ctx: Ctx, verdict: VerdictId): Html | null {
-  if (!MYTH_VERDICTS.includes(verdict)) return null;
+function verdictChip(ctx: Ctx, verdict: VerdictId): Html {
   return html`<span class="xxd-badge"${attr('data-tone', VERDICT_TONE[verdict])}>${ctx.t(`verdict.${verdict}` as const)}</span>`;
 }
 
-// Grade and direction always sit together, so a strong grade is never read as a benefit.
-function studyBadges(ctx: Ctx, s: Study): Html {
-  return html`${gradeBadge(ctx, s.grade)}${directionBadge(ctx, s.direction)}${verdictBadge(ctx, s.verdict)}`;
+function strength(ctx: Ctx, grade: Grade): Html {
+  const label = ctx.t(`strength.${grade}` as const);
+  return html`<span class="strength" role="meter" aria-label="${ctx.t('strength.label')}" aria-valuemin="0" aria-valuemax="4" aria-valuenow="${STRENGTH[grade]}" aria-valuetext="${label}"><span class="xxd-meter strength__bars" data-segments data-strength="${STRENGTH[grade]}"><span class="xxd-meter__track"><span class="xxd-meter__fill"></span></span></span>${label}</span>`;
 }
 
-function studyItem(ctx: Ctx, s: Study, level: 2 | 3, mode: 'full' | 'brief' | 'filterable'): Html {
-  const tx = s.text[ctx.locale.code];
+function kindLabel(ctx: Ctx, kind: EvidenceKind): Html {
+  return html`<span class="kind">${icon(KIND_ICON[kind], 14)}${ctx.t(`kind.${kind}` as const)}</span>`;
+}
+
+function topicLabel(ctx: Ctx, topic: TopicId): Html {
+  return html`<span class="topic-label">${icon(TOPIC_ICON[topic], 14)}${ctx.t(`topic.${topic}` as const)}</span>`;
+}
+
+// The one study card: home lists, topic pages, the full list and "related" all use it. The whole card is the link.
+function studyCard(ctx: Ctx, s: Study, level: 2 | 3): Html {
+  const e = s.explain[ctx.locale.code];
   const h = raw(`h${level}`);
-  const filterable = mode === 'filterable';
-  const search = filterable ? [tx.title, tx.factor, tx.summary, tx.takeaway, ctx.t(`direction.${s.direction}` as const)].join(' ') : null;
-  return html`<li class="study"${attr('data-topic', filterable ? s.topic : null)}${attr('data-grade', filterable ? s.grade : null)}${attr('data-direction', filterable ? s.direction : null)}${attr('data-search', search)}>
-<${h} class="study__title"><a href="${link(ctx, { kind: 'study', study: s })}">${tx.title}</a></${h}>
-<div class="study__badges">${studyBadges(ctx, s)}${filterable ? html`<span class="study__topic">${ctx.t(`topic.${s.topic}` as const)}</span>` : null}</div>
-${mode === 'full' ? html`<p class="study__summary">${tx.summary}</p><p class="study__label">${ctx.t('study.takeaway')}</p>` : null}
-<p class="study__takeaway">${tx.takeaway}</p>
-</li>`;
+  return html`<a class="xxd-card study-card" href="${link(ctx, { kind: 'study', study: s })}">
+${topicLabel(ctx, s.topic)}
+<${h} class="study-card__title">${e.question}</${h}>
+<p class="study-card__text">${e.answer}</p>
+<span class="card-foot">${directionChip(ctx, s.direction)}${strength(ctx, s.grade)}</span>
+</a>`;
 }
 
-// Home page entry: the advice is the heading, and the study it comes from follows with its grade and direction.
-function adviceItem(ctx: Ctx, s: Study): Html {
-  const tx = s.text[ctx.locale.code];
-  return html`<li class="study">
-<h3 class="study__title"><a href="${link(ctx, { kind: 'study', study: s })}">${tx.takeaway}</a></h3>
-<div class="study__badges"><span class="study__subject">${tx.title}</span>${studyBadges(ctx, s)}</div>
-</li>`;
+const studyCards = (ctx: Ctx, studies: readonly Study[], level: 2 | 3) =>
+  html`<ul class="card-grid">${studies.map((s) => html`<li>${studyCard(ctx, s, level)}</li>`)}</ul>`;
+
+function mythCard(ctx: Ctx, s: Study, level: 2 | 3): Html {
+  const e = s.explain[ctx.locale.code];
+  const h = raw(`h${level}`);
+  return html`<a class="xxd-card study-card myth-card" href="${link(ctx, { kind: 'study', study: s })}">
+<${h} class="study-card__title">${e.myth}</${h}>
+<span class="kicker">${ctx.t('myths.evidence')}</span>
+<p class="study-card__text">${e.answer}</p>
+<span class="card-foot">${verdictChip(ctx, s.verdict)}${topicLabel(ctx, s.topic)}</span>
+</a>`;
+}
+
+const mythCards = (ctx: Ctx, studies: readonly Study[], level: 2 | 3) =>
+  html`<ul class="card-grid">${studies.map((s) => html`<li>${mythCard(ctx, s, level)}</li>`)}</ul>`;
+
+function topicCard(ctx: Ctx, topic: TopicId): Html {
+  const { t } = ctx;
+  return html`<a class="xxd-card topic-card" href="${link(ctx, { kind: 'topic', topic })}">${icon(TOPIC_ICON[topic], 20)}
+<h3 class="topic-card__name">${t(`topic.${topic}` as const)}</h3>
+<p class="topic-card__question">${t(`topic.${topic}.question` as const)}</p>
+<span class="topic-card__count">${t.studies(ctx.up.studies.filter((s) => s.topic === topic).length)}</span>
+</a>`;
 }
 
 function crumbs(ctx: Ctx, trail: { label: string; page: Page }[]): Html {
@@ -126,10 +176,13 @@ function crumbs(ctx: Ctx, trail: { label: string; page: Page }[]): Html {
   )}</ol></nav>`;
 }
 
-function pageHeader(ctx: Ctx, title: string, desc: Part[], trail: { label: string; page: Page }[] = []): Html {
+type Header = { trail?: { label: string; page: Page }[]; icon?: string; lead?: string };
+
+function pageHeader(ctx: Ctx, title: string, desc: Part[], opts: Header = {}): Html {
   return html`<header class="xxd-page-header">
-${trail.length ? crumbs(ctx, trail) : null}
-<div class="xxd-page-header__row"><h1 class="xxd-page-header__title">${title}</h1></div>
+${opts.trail?.length ? crumbs(ctx, opts.trail) : null}
+<div class="xxd-page-header__row"><h1 class="xxd-page-header__title">${opts.icon ? icon(opts.icon, 20) : null}${title}</h1></div>
+${opts.lead ? html`<p class="page-lead">${opts.lead}</p>` : null}
 ${desc.map((d) => html`<p class="xxd-page-header__desc">${d}</p>`)}
 </header>`;
 }
@@ -143,20 +196,29 @@ function facts(rows: [Part, Part][]): Html {
   return html`<dl class="facts">${rows.map(([term, value]) => html`<div class="facts__row"><dt>${term}</dt><dd>${value}</dd></div>`)}</dl>`;
 }
 
-function gradeFacts(ctx: Ctx, withCounts: boolean): Html {
+function gradeFacts(ctx: Ctx): Html {
   return facts(
     GRADES.map((g) => [
-      ctx.t('grade.badge', { grade: g, label: ctx.guide.grades[g].label }),
-      html`${ctx.guide.grades[g].meaning}${withCounts ? html` <span class="facts__count">${ctx.t.studies(ctx.up.studies.filter((s) => s.grade === g).length)}</span>` : null}`,
+      strength(ctx, g),
+      html`${gradeBadge(ctx, g)} ${ctx.guide.grades[g].meaning} <span class="facts__count">${ctx.t.studies(ctx.up.studies.filter((s) => s.grade === g).length)}</span>`,
     ]),
   );
 }
 
-function directionFacts(ctx: Ctx, withCounts: boolean): Html {
+function directionFacts(ctx: Ctx): Html {
   return facts(
     DIRECTIONS.map((d) => [
-      directionBadge(ctx, d),
-      html`${ctx.t(`direction.${d}.desc` as const)}${withCounts ? html` <span class="facts__count">${ctx.t.studies(ctx.up.studies.filter((s) => s.direction === d).length)}</span>` : null}`,
+      directionChip(ctx, d),
+      html`${ctx.t(`direction.${d}.desc` as const)} <span class="facts__count">${ctx.t.studies(ctx.up.studies.filter((s) => s.direction === d).length)}</span>`,
+    ]),
+  );
+}
+
+function kindFacts(ctx: Ctx): Html {
+  return facts(
+    EVIDENCE_KINDS.map((k) => [
+      kindLabel(ctx, k),
+      html`${ctx.t(`kind.${k}.desc` as const)} <span class="facts__count">${ctx.t.studies(ctx.up.studies.filter((s) => s.kind === k).length)}</span>`,
     ]),
   );
 }
@@ -164,48 +226,54 @@ function directionFacts(ctx: Ctx, withCounts: boolean): Html {
 // Upstream writes numbers straight after abbreviations ("RR1.19"), so only a letter ends a term.
 const termPattern = (term: string) => new RegExp(`(?<![A-Za-z])${term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}s?(?![A-Za-z])`);
 
-function glossary(ctx: Ctx, terms: readonly string[] | ((term: string) => boolean)): Html {
-  const keep = typeof terms === 'function' ? terms : (term: string) => terms.includes(term);
+function glossary(ctx: Ctx, keep: (term: string) => boolean): Html {
   return facts(
     ctx.guide.glossary.filter((e) => keep(e.term)).map((e) => [`${e.term} · ${e.name}`, e.description] as [string, Part]),
   );
 }
 
-function topicList(ctx: Ctx): Html {
-  return html`<div class="xxd-frame"><ul class="xxd-list topic-list" data-interactive>${TOPICS.map(
-    (topic) => html`<li class="xxd-list__item"><a class="xxd-list__main" href="${link(ctx, { kind: 'topic', topic })}"><span class="xxd-list__title">${ctx.t(`topic.${topic}` as const)}</span><span class="xxd-list__meta">${ctx.t(`topic.${topic}.desc` as const)}</span></a><span class="topic-list__count">${ctx.t.studies(ctx.up.studies.filter((s) => s.topic === topic).length)}</span></li>`,
-  )}</ul></div>`;
-}
-
 function home(ctx: Ctx): Content {
   const { t, up } = ctx;
+  const total = up.studies.length;
   const helps = strongEvidence(up.studies, HOME_LISTS.helps);
   const noHelp = strongEvidence(up.studies, HOME_LISTS['no-help']);
-  const count = (v: VerdictId) => up.studies.filter((s) => s.verdict === v).length;
-  const teaser = sortByGrade(up.studies.filter((s) => s.verdict === 'corrected')).slice(0, 4);
+  const myths = up.studies.filter(isMyth);
+  const count = (v: VerdictId) => myths.filter((s) => s.verdict === v).length;
+  const teaser = MYTH_VERDICTS.flatMap((v) => sortByGrade(myths.filter((s) => s.verdict === v))).slice(0, HOME_MYTHS);
+  const mythsPage = link(ctx, { kind: 'myths' });
+  const figure = (key: UiKey, n: number, href: string) =>
+    html`<li><a class="xxd-card figure" href="${href}">${t.html(key, { count: html`<span class="figure__value">${n}</span>` })}</a></li>`;
   const illness = html`<a class="xxd-link" href="${link(ctx, { kind: 'topic', topic: 'illness' })}">${t('topic.illness')}</a>`;
+  const upstream = html`<a class="xxd-link" href="${up.source.repository}">HowToLiveLonger</a>`;
   return {
-    title: t('home.title'),
-    description: t('site.description', { count: up.studies.length }),
-    body: html`<header class="home-head"><h1 class="page-title">${t('home.title')}</h1><p class="lead">${t('home.intro', { count: up.studies.length })}</p></header>
-${section('helps', t('home.helps.title'), html`<p class="section__intro">${t.html('home.helps.intro', { count: helps.length, illness })}</p><ul class="studies">${helps.map((s) => adviceItem(ctx, s))}</ul>`)}
-${section('no-help', t('home.nohelp.title'), html`<p class="section__intro">${t('home.nohelp.intro', { count: noHelp.length })}</p><ul class="studies">${noHelp.map((s) => adviceItem(ctx, s))}</ul>`)}
-${section('topics', t('home.topics.title'), topicList(ctx))}
+    title: t('site.tagline', { count: total }),
+    description: t('site.description', { count: total }),
+    body: html`<header class="hero">
+<p class="eyebrow">${t('home.eyebrow')}</p>
+<h1 class="page-title hero__title">${t('home.title')}</h1>
+<p class="hero__lead">${t('home.lead', { count: total })}</p>
+<ul class="figures">${figure('home.figure.helps', helps.length, '#helps')}${figure('home.figure.nohelp', noHelp.length, '#no-help')}${figure('home.figure.myths', myths.length, mythsPage)}</ul>
+</header>
+${section('helps', t('home.helps.title'), html`<p class="section__intro">${t.html('home.helps.intro', { count: helps.length, illness })}</p>${studyCards(ctx, helps, 3)}`)}
+${section('no-help', t('home.nohelp.title'), html`<p class="section__intro">${t('home.nohelp.intro', { count: noHelp.length })}</p>${studyCards(ctx, noHelp, 3)}`)}
 ${section(
   'myths',
   t('home.myths.title'),
   html`<p class="section__intro">${t('home.myths.intro', { corrected: count('corrected'), partly: count('partly'), nodirect: count('no-direct') })}</p>
-<ul class="studies">${teaser.map((s) => studyItem(ctx, s, 3, 'brief'))}</ul>
-<p class="more"><a class="xxd-link" href="${link(ctx, { kind: 'myths' })}">${t('home.myths.more', { count: up.studies.filter(isMyth).length })}</a></p>`,
+${mythCards(ctx, teaser, 3)}
+<p class="more"><a class="xxd-link" href="${mythsPage}">${t('home.myths.more', { count: myths.length })}</a></p>`,
 )}
+${section('topics', t('home.topics.title'), html`<ul class="topic-grid">${TOPICS.map((topic) => html`<li>${topicCard(ctx, topic)}</li>`)}</ul>`)}
 ${section(
   'read',
   t('home.read.title'),
-  html`<p class="section__intro">${t('home.read.grades')}</p>${gradeFacts(ctx, false)}
-<p class="prose-text">${t('home.read.direction')}</p>${directionFacts(ctx, false)}
-<p class="prose-text">${t('home.read.association')}</p>
-<p class="prose-text">${t('home.read.additive')}</p>
-<h3 class="subsection__title">${t('home.read.terms')}</h3>${glossary(ctx, ['ACM', 'HR', 'CI', 'RCT'])}
+  html`<div class="read-grid">
+<div class="read-card"><h3 class="read-card__title">${t('home.read.strength.title')}</h3><p class="read-card__text">${t('home.read.grades')}</p>
+<ul class="levels">${GRADES.map((g) => html`<li>${strength(ctx, g)}<span class="levels__desc">${t(`strength.${g}.desc` as const)}</span></li>`)}</ul></div>
+<div class="read-card"><h3 class="read-card__title">${t('home.read.observe.title')}</h3><p class="read-card__text">${t('home.read.association')}</p></div>
+<div class="read-card"><h3 class="read-card__title">${t('home.read.add.title')}</h3><p class="read-card__text">${t('home.read.additive')}</p></div>
+</div>
+<p class="section__note">${t.html('home.read.source', { upstream })}</p>
 <p class="more"><a class="xxd-link" href="${link(ctx, { kind: 'about' })}">${t('home.read.more')}</a></p>`,
 )}`,
   };
@@ -214,31 +282,37 @@ ${section(
 function topicPage(ctx: Ctx, topic: TopicId): Content {
   const { t, up } = ctx;
   const studies = sortByGrade(up.studies.filter((s) => s.topic === topic));
+  const name = t(`topic.${topic}` as const);
   const desc = t(`topic.${topic}.desc` as const);
   return {
-    title: t(`topic.${topic}` as const),
-    description: desc,
-    body: html`${pageHeader(ctx, t(`topic.${topic}` as const), [desc, t('topic.intro', { count: t.studies(studies.length) })], [
-      { label: t('breadcrumb.home'), page: { kind: 'home' } },
-    ])}
-<ul class="studies">${studies.map((s) => studyItem(ctx, s, 2, 'full'))}</ul>`,
+    title: name,
+    description: `${t(`topic.${topic}.question` as const)} ${desc}`,
+    body: html`${pageHeader(ctx, name, [desc, t('topic.intro', { count: t.studies(studies.length) })], {
+      trail: [{ label: t('breadcrumb.home'), page: { kind: 'home' } }],
+      icon: TOPIC_ICON[topic],
+      lead: t(`topic.${topic}.question` as const),
+    })}
+${studyCards(ctx, studies, 2)}`,
   };
 }
 
+// One storyline: the question, the answer, what to do, why, the catch, how solid it is, the papers, then the raw record.
 function studyPage(ctx: Ctx, s: Study): Content {
-  const { t, guide: g } = ctx;
+  const { t, guide: g, up } = ctx;
   const tx = s.text[ctx.locale.code];
+  const e = s.explain[ctx.locale.code];
   const myth = isMyth(s);
   const topicName = t(`topic.${s.topic}` as const);
+  const topicRef: Page = { kind: 'topic', topic: s.topic };
   const rows: [string, Part][] = [
-    ...(myth ? [] : [[g.fields.finding, tx.finding] as [string, Part]]),
+    [g.fields.finding, tx.finding],
     [g.fields.effect, tx.effect],
     [g.fields.ci, tx.ci],
     [g.fields.comparison, tx.comparison],
     [g.fields.population, tx.population],
     [g.fields.design, tx.design],
     [t('study.grade'), html`${gradeBadge(ctx, s.grade)} ${g.grades[s.grade].meaning}`],
-    [t('study.direction'), html`${directionBadge(ctx, s.direction)} ${t(`direction.${s.direction}.desc` as const)}`],
+    [t('study.direction'), html`${directionChip(ctx, s.direction)} ${t(`direction.${s.direction}.desc` as const)}`],
     [g.fields.gradeReason, tx.gradeReason],
     [g.fields.limitations, tx.limitations],
     [g.fields.action, tx.action],
@@ -246,7 +320,6 @@ function studyPage(ctx: Ctx, s: Study): Content {
   ];
   const shown = [
     tx.summary,
-    tx.takeaway,
     myth ? tx.originalClaim : '',
     tx.finding,
     tx.effect,
@@ -260,42 +333,76 @@ function studyPage(ctx: Ctx, s: Study): Content {
     s.sources.some((src) => src.doi) ? 'DOI' : '',
     ...tx.sources.map((n) => n.note),
   ].join('\n');
-  const terms = g.glossary.filter((e) => termPattern(e.term).test(shown));
-  const topicPageRef: Page = { kind: 'topic', topic: s.topic };
+  const terms = g.glossary.filter((entry) => termPattern(entry.term).test(shown));
+  const related = sortByGrade(up.studies.filter((r) => r.topic === s.topic && r !== s)).slice(0, RELATED);
 
   return {
-    title: tx.title,
-    description: tx.summary,
-    body: html`${pageHeader(ctx, tx.title, [], [
-      { label: t('breadcrumb.home'), page: { kind: 'home' } },
-      { label: topicName, page: topicPageRef },
-    ])}
-<div class="study__badges">${studyBadges(ctx, s)}</div>
-<p class="lead">${tx.summary}</p>
-<div class="xxd-layer takeaway"><div class="xxd-layer__secondary">${t('study.takeaway')}</div><div class="xxd-layer__primary">${tx.takeaway}</div></div>
+    title: e.question,
+    description: e.answer,
+    body: html`<article class="story">
+<header class="story__head">
+${crumbs(ctx, [
+  { label: t('breadcrumb.home'), page: { kind: 'home' } },
+  { label: topicName, page: topicRef },
+])}
+<p class="eyebrow">${icon(TOPIC_ICON[s.topic], 14)}${topicName}</p>
+<h1 class="page-title">${e.question}</h1>
+<p class="story__answer">${e.answer}</p>
+<p class="story__facts">${directionChip(ctx, s.direction)}${strength(ctx, s.grade)}${kindLabel(ctx, s.kind)}</p>
+</header>
+<section class="xxd-layer takeaway" aria-labelledby="todo"><h2 class="xxd-layer__secondary" id="todo">${t('study.takeaway')}</h2><p class="xxd-layer__primary">${tx.takeaway}</p></section>
+${section('why', t('study.why.title'), e.why.map((p) => html`<p class="prose-text">${p}</p>`))}
 ${myth
   ? section(
       'claim',
       t('study.claim.title'),
-      html`<div class="versus"><div class="versus__part"><h3 class="versus__label">${t('study.claim.original')}</h3><div class="claim">${renderClaim(tx.originalClaim)}</div></div>
-<div class="versus__part"><h3 class="versus__label">${t('study.claim.evidence')}</h3><p class="prose-text">${tx.finding}</p><p class="versus__verdict">${verdictBadge(ctx, s.verdict)} ${t(`verdict.${s.verdict}.desc` as const)}</p></div></div>`,
+      html`<blockquote class="quote">${e.myth}</blockquote>
+<p class="verdict">${verdictChip(ctx, s.verdict)}<span>${t(`verdict.${s.verdict}.desc` as const)}</span></p>`,
     )
   : null}
-${section('numbers', t('study.numbers.title'), facts(rows))}
-${terms.length ? section('terms', t('study.terms.title'), glossary(ctx, (term) => terms.some((e) => e.term === term))) : null}
+${section('caution', t('study.caution.title'), html`<p class="prose-text">${e.caution}</p>`)}
+${section(
+  'evidence',
+  t('study.evidence.title'),
+  html`<div class="evidence"><p class="evidence__head">${strength(ctx, s.grade)}</p><p class="prose-text">${t(`strength.${s.grade}.desc` as const)}</p></div>
+<div class="evidence"><p class="evidence__head">${kindLabel(ctx, s.kind)}</p><p class="prose-text">${t(`kind.${s.kind}.desc` as const)}</p></div>`,
+)}
 ${section(
   'sources',
   t('study.sources.title'),
-  html`<ol class="sources">${s.sources.map((src, i) => {
-    const note = tx.sources[i];
-    return html`<li class="source"><p class="source__title"><a class="xxd-link" href="${src.url}" rel="noopener noreferrer">${src.title}</a></p>
+  html`<ol class="sources">${s.sources.map(
+    (src) => html`<li class="source"><a class="xxd-link source__title" href="${src.url}" rel="noopener noreferrer">${src.title}</a> <span class="source__year">${src.year}</span></li>`,
+  )}</ol>`,
+)}
+<details class="xxd-collapse raw">
+<summary><h2 class="raw__title" id="raw">${t('study.raw.title')}</h2></summary>
+<div class="raw__body">
+<p class="raw__intro">${t('study.raw.intro')}</p>
+<h3 class="raw__heading">${tx.title}</h3>
+<p class="raw__text">${tx.summary}</p>
+${myth ? html`<h3 class="raw__heading">${t('study.claim.original')}</h3><div class="claim">${renderClaim(tx.originalClaim)}</div>` : null}
+<h3 class="raw__heading">${t('study.numbers.title')}</h3>
+${facts(rows)}
+<h3 class="raw__heading">${t('study.raw.sources')}</h3>
+<ol class="sources">${s.sources.map((src, i) => {
+  const note = tx.sources[i];
+  return html`<li class="source"><p class="source__name">${src.title}</p>
 <p class="source__meta"><span>${src.year}</span>${src.doi ? html`<span>DOI <a class="xxd-link" href="https://doi.org/${src.doi}" rel="noopener noreferrer">${src.doi}</a></span>` : null}</p>
 <dl class="source__facts"><div><dt>${t('study.source.read')}</dt><dd>${note?.readLevel}</dd></div><div><dt>${t('study.source.status')}</dt><dd>${note?.status}</dd></div></dl>
 <p class="source__note">${note?.note}</p>
 ${src.originalUrl ? html`<p class="source__meta"><a class="xxd-link" href="${src.originalUrl}" rel="nofollow noopener noreferrer">${t('study.source.original')}</a></p>` : null}</li>`;
-  })}</ol>`,
-)}
-<p class="more"><a class="xxd-link" href="${link(ctx, topicPageRef)}">${t('study.back', { topic: topicName })}</a></p>`,
+})}</ol>
+${terms.length ? html`<h3 class="raw__heading">${t('study.terms.title')}</h3>${glossary(ctx, (term) => terms.some((entry) => entry.term === term))}` : null}
+</div>
+</details>
+</article>
+${related.length
+  ? section(
+      'related',
+      t('study.related.title'),
+      html`${studyCards(ctx, related, 3)}<p class="more"><a class="xxd-link" href="${link(ctx, topicRef)}">${t('study.back', { topic: topicName })}</a></p>`,
+    )
+  : null}`,
   };
 }
 
@@ -311,14 +418,7 @@ ${MYTH_VERDICTS.map((v) => {
   return section(
     `verdict-${v}`,
     `${t(`verdict.${v}` as const)} · ${group.length}`,
-    html`<p class="section__intro">${t(`verdict.${v}.desc` as const)}</p><ul class="studies">${group.map((s) => {
-      const tx = s.text[ctx.locale.code];
-      return html`<li class="study myth"><h3 class="study__title"><a href="${link(ctx, { kind: 'study', study: s })}">${tx.title}</a></h3>
-<div class="study__badges">${gradeBadge(ctx, s.grade)}${directionBadge(ctx, s.direction)}<span class="study__topic">${t(`topic.${s.topic}` as const)}</span></div>
-<div class="versus"><div class="versus__part"><p class="versus__label">${t('myths.claim')}</p><div class="claim">${renderClaim(tx.originalClaim)}</div></div>
-<div class="versus__part"><p class="versus__label">${t('myths.evidence')}</p><p class="prose-text">${tx.finding}</p></div></div>
-<p class="more"><a class="xxd-link" href="${link(ctx, { kind: 'study', study: s })}">${t('myths.more')}</a></p></li>`;
-    })}</ul>`,
+    html`<p class="section__intro">${t(`verdict.${v}.desc` as const)}</p>${mythCards(ctx, group, 3)}`,
   );
 })}`,
   };
@@ -329,6 +429,11 @@ function studiesPage(ctx: Ctx): Content {
   const total = up.studies.length;
   const options = (all: string, values: [string, string][]) =>
     html`<option value="">${all}</option>${values.map(([value, label]) => html`<option value="${value}">${label}</option>`)}`;
+  const search = (s: Study) => {
+    const tx = s.text[ctx.locale.code];
+    const e = s.explain[ctx.locale.code];
+    return [e.question, e.answer, tx.title, tx.factor, tx.summary, tx.takeaway, t(`topic.${s.topic}` as const), t(`direction.${s.direction}` as const)].join(' ');
+  };
   return {
     title: t('studies.title'),
     description: t('studies.intro', { count: t.studies(total) }),
@@ -341,7 +446,7 @@ function studiesPage(ctx: Ctx): Content {
     )}</select></label></div>
 <div class="xxd-field"><label class="xxd-label" for="filter-grade">${t('studies.grade.label')}</label><label class="xxd-select"><select id="filter-grade" name="grade">${options(
       t('studies.grade.all'),
-      GRADES.map((g) => [g, t('grade.badge', { grade: g, label: ctx.guide.grades[g].label })]),
+      GRADES.map((g) => [g, t(`strength.${g}` as const)]),
     )}</select></label></div>
 <div class="xxd-field"><label class="xxd-label" for="filter-direction">${t('studies.direction.label')}</label><label class="xxd-select"><select id="filter-direction" name="direction">${options(
       t('studies.direction.all'),
@@ -349,7 +454,9 @@ function studiesPage(ctx: Ctx): Content {
     )}</select></label></div>
 </form>
 <p class="filter-count"><span aria-live="polite" data-filter-count="${t('studies.shown', { shown: '{shown}', total: '{total}' })}">${t('studies.shown', { shown: total, total })}</span><button class="xxd-link" type="reset" form="filter" data-filter-reset hidden>${t('studies.reset')}</button></p>
-<ul class="studies" data-filter-list>${byTopicThenGrade(up.studies).map((s) => studyItem(ctx, s, 2, 'filterable'))}</ul>
+<ul class="card-grid" data-filter-list>${byTopicThenGrade(up.studies).map(
+      (s) => html`<li data-topic="${s.topic}" data-grade="${s.grade}" data-direction="${s.direction}" data-search="${search(s)}">${studyCard(ctx, s, 2)}</li>`,
+    )}</ul>
 <div class="xxd-empty" data-filter-empty hidden><i data-xxd-icon="SearchX"></i><p class="xxd-empty__title">${t('studies.empty.title')}</p><p class="xxd-empty__text">${t('studies.empty.text')}</p></div>`,
   };
 }
@@ -362,15 +469,16 @@ function aboutPage(ctx: Ctx): Content {
   const verdicts: VerdictId[] = [...MYTH_VERDICTS, 'qualified'];
   return {
     title: t('about.title'),
-    description: t('about.intro'),
-    body: html`${pageHeader(ctx, t('about.title'), [t('about.intro')])}
+    description: t('about.lead'),
+    body: html`<div class="column">${pageHeader(ctx, t('about.title'), [t('about.lead')])}
 ${section(
   'method',
   t('about.method.title'),
   html`<p class="prose-text">${t('about.method.text', { original: n((s) => s.origin === 'original'), added: n((s) => s.origin === 'added') })}</p><p class="prose-text">${t('about.method.limits')}</p>`,
 )}
-${section('grades', t('about.grades.title'), html`<p class="section__intro">${ctx.guide.gradeNote}</p>${gradeFacts(ctx, true)}`)}
-${section('directions', t('about.directions.title'), html`<p class="section__intro">${t('about.directions.intro')}</p>${directionFacts(ctx, true)}`)}
+${section('grades', t('about.grades.title'), html`<p class="section__intro">${ctx.guide.gradeNote}</p>${gradeFacts(ctx)}`)}
+${section('directions', t('about.directions.title'), html`<p class="section__intro">${t('about.directions.intro')}</p>${directionFacts(ctx)}`)}
+${section('kinds', t('about.kinds.title'), html`<p class="section__intro">${t('about.kinds.intro')}</p>${kindFacts(ctx)}`)}
 ${section(
   'verdicts',
   t('about.verdicts.title'),
@@ -391,7 +499,7 @@ ${section(
   'contribute',
   t('about.contribute.title'),
   html`<p class="prose-text">${t.html('about.contribute.text', { guide: html`<a class="xxd-link" href="${UPSTREAM_CONTRIBUTING}">${t('about.contribute.guide')}</a>` })}</p><p class="prose-text">${t.html('about.contribute.site', { repo: html`<a class="xxd-link" href="${SOURCE_REPO}">${t('about.contribute.repo')}</a>` })}</p>`,
-)}`,
+)}</div>`,
   };
 }
 
@@ -450,7 +558,7 @@ ${head(ctx, title, c.description, links)}
 <body class="xxd-page">
 <a class="xxd-sr-only-focusable" href="#main">${t('skip')}</a>
 <header class="site-header"><div class="site-header__inner">
-<a class="site-brand" href="${link(ctx, { kind: 'home' })}"${attr('aria-current', page.kind === 'home' ? 'page' : null)}>${t('site.name')}</a>
+<a class="site-brand" href="${link(ctx, { kind: 'home' })}"${attr('aria-current', page.kind === 'home' ? 'page' : null)}><span class="site-brand__name">${t('site.name')}</span><span class="site-brand__tagline">${t('site.tagline', { count: up.studies.length })}</span></a>
 <nav class="site-nav" aria-label="${t('nav.label')}">${NAV.map(([p, key]) => {
     const current = p.kind === page.kind;
     return html`<a class="xxd-link" data-variant="${current ? 'current' : 'plain'}" href="${link(ctx, p)}"${attr('aria-current', current ? 'page' : null)}>${t(key)}</a>`;
