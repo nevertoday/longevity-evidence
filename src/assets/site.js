@@ -8,6 +8,7 @@
   if (!form || !list) return;
   const count = document.querySelector('[data-filter-count]');
   const empty = document.querySelector('[data-filter-empty]');
+  const reset = document.querySelector('[data-filter-reset]');
   const normalize = (s) => s.normalize('NFKC').toLowerCase();
   const items = [...list.children].map((el) => ({ el, text: normalize(el.dataset.search || el.textContent) }));
   const fields = ['q', 'topic', 'grade'];
@@ -25,6 +26,7 @@
     }
     count.textContent = count.dataset.filterCount.replace('{shown}', shown).replace('{total}', items.length);
     empty.hidden = shown > 0;
+    reset.hidden = !fields.some((name) => form.elements[name].value);
 
     const params = new URLSearchParams();
     for (const name of fields) if (form.elements[name].value) params.set(name, form.elements[name].value.trim());

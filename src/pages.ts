@@ -125,7 +125,8 @@ function gradeFacts(ctx: Ctx, withCounts: boolean): Html {
   );
 }
 
-const termPattern = (term: string) => new RegExp(`(?<![A-Za-z0-9])${term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}s?(?![A-Za-z0-9])`);
+// Upstream writes numbers straight after abbreviations ("RR1.19"), so only a letter ends a term.
+const termPattern = (term: string) => new RegExp(`(?<![A-Za-z])${term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}s?(?![A-Za-z])`);
 
 function glossary(ctx: Ctx, terms: readonly string[] | ((term: string) => boolean)): Html {
   const keep = typeof terms === 'function' ? terms : (term: string) => terms.includes(term);
@@ -292,7 +293,7 @@ function studiesPage(ctx: Ctx): Content {
     title: t('studies.title'),
     description: t('studies.intro', { count: t.studies(total) }),
     body: html`${pageHeader(ctx, t('studies.title'), [t('studies.intro', { count: t.studies(total) })])}
-<form class="filters" role="search" data-filter hidden>
+<form class="filters" id="filter" role="search" data-filter hidden>
 <div class="xxd-field filters__search"><label class="xxd-label" for="filter-q">${t('studies.search.label')}</label><div class="xxd-input-wrap"><i data-xxd-icon="Search" data-size="16"></i><input class="xxd-input" id="filter-q" name="q" type="search" autocomplete="off" placeholder="${t('studies.search.placeholder')}"></div></div>
 <div class="xxd-field"><label class="xxd-label" for="filter-topic">${t('studies.topic.label')}</label><label class="xxd-select"><select id="filter-topic" name="topic">${options(
       t('studies.topic.all'),
@@ -302,9 +303,8 @@ function studiesPage(ctx: Ctx): Content {
       t('studies.grade.all'),
       GRADES.map((g) => [g, t('grade.badge', { grade: g, label: ctx.guide.grades[g].label })]),
     )}</select></label></div>
-<div class="filters__reset"><button class="xxd-btn" data-variant="ghost" type="reset">${t('studies.reset')}</button></div>
 </form>
-<p class="filter-count" aria-live="polite" data-filter-count="${t('studies.shown', { shown: '{shown}', total: '{total}' })}">${t('studies.shown', { shown: total, total })}</p>
+<p class="filter-count"><span aria-live="polite" data-filter-count="${t('studies.shown', { shown: '{shown}', total: '{total}' })}">${t('studies.shown', { shown: total, total })}</span><button class="xxd-link" type="reset" form="filter" data-filter-reset hidden>${t('studies.reset')}</button></p>
 <ul class="studies" data-filter-list>${byTopicThenGrade(up.studies).map((s) => studyItem(ctx, s, 2, 'filterable'))}</ul>
 <div class="xxd-empty" data-filter-empty hidden><i data-xxd-icon="SearchX"></i><p class="xxd-empty__title">${t('studies.empty.title')}</p><p class="xxd-empty__text">${t('studies.empty.text')}</p></div>`,
   };
@@ -380,7 +380,7 @@ function head(ctx: Ctx, title: string, description: string, links: Part): Html {
 <meta name="description" content="${description}">
 ${links}
 <meta name="color-scheme" content="light dark">
-<script src="${asset(ctx, 'vendor/xxd/boot.js')}" data-key="${APPEARANCE_KEY}"></script>
+<script src="${asset(ctx, 'vendor/xxd/boot.js')}" data-key="${APPEARANCE_KEY}" data-default-theme="system"></script>
 <link rel="stylesheet" href="${asset(ctx, 'vendor/xxd/xxd.css')}">
 <link rel="stylesheet" href="${asset(ctx, 'assets/site.css')}">
 <script defer src="${asset(ctx, 'vendor/xxd/icons.js')}"></script>
@@ -424,7 +424,8 @@ ${c.body}
 </main>
 <footer class="site-footer"><div class="site-footer__inner">
 <p>${t('footer.disclaimer')}</p>
-<p>${t.html('footer.source', { upstream: html`<a class="xxd-link" href="${commitUrl(up)}">geekan/HowToLiveLonger</a>` })} <a class="xxd-link" href="${link(ctx, { kind: 'about' })}">${t('footer.about')}</a></p>
+<p>${t.html('footer.source', { upstream: html`<a class="xxd-link" href="${commitUrl(up)}">geekan/HowToLiveLonger</a>` })}</p>
+<p><a class="xxd-link" href="${link(ctx, { kind: 'about' })}">${t('footer.about')}</a></p>
 </div></footer>
 </body>
 </html>

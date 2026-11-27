@@ -116,6 +116,12 @@
   margin-top: var(--space-2);
 }
 
+/* Short links in running text stay on one line. */
+.section__intro a,
+.site-footer a {
+  white-space: nowrap;
+}
+
 /* Text */
 
 .page-title {
@@ -180,8 +186,17 @@
   border-top: 1px solid var(--line);
 }
 
+/* While filtering, rule off every visible study except the first visible one. */
 .study[hidden] {
   display: none;
+}
+
+[data-filter-list] > .study + .study {
+  border-top: 0;
+}
+
+[data-filter-list] > .study:not([hidden]) ~ .study:not([hidden]) {
+  border-top: 1px solid var(--line);
 }
 
 .study__title {
@@ -426,8 +441,7 @@
   display: none;
 }
 
-.filters__search,
-.filters__reset {
+.filters__search {
   grid-column: 1 / -1;
 }
 
@@ -435,22 +449,18 @@
   display: grid;
 }
 
-@media (min-width: 640px) {
-  .filters {
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) auto;
-    align-items: end;
-  }
-
-  .filters__reset {
-    grid-column: auto;
-  }
-}
-
 .filter-count {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1) var(--space-4);
   margin: var(--space-4) 0 0;
   color: var(--muted);
   font-size: var(--text-xs);
   line-height: var(--leading-sm);
+}
+
+.filter-count [hidden] {
+  display: none;
 }
 
 /* Root language picker */
