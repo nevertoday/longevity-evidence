@@ -57,8 +57,10 @@
 
   "home.title": "Which habits are linked to a longer life",
   "home.intro": "This site covers {count} studies of food, exercise, sleep and daily habits. Each one starts with what you can do, then says how strong the evidence is and links the original papers. Where a popular claim got the numbers or the conclusion wrong, the site says so. The research summaries come from the open-source HowToLiveLonger project, which checked each claim against the original paper. This site has not changed the medical content.",
-  "home.best.title": "Advice with the strongest evidence",
-  "home.best.intro": "The {count} studies graded A or B where the research supports the original claim. Trials in people already diagnosed with a disease are under \"{illness}\" instead.",
+  "home.helps.title": "Strong evidence says these help",
+  "home.helps.intro": "The {count} studies graded A or B where the research found a benefit, each led by what you can do. Trials in people already diagnosed with a disease are under \"{illness}\" instead.",
+  "home.nohelp.title": "Strong evidence says these do not help or do harm",
+  "home.nohelp.intro": "The {count} studies graded A or B where the research found no effect or found harm, each led by what you can do. A high grade means the evidence is reliable, not that the thing studied is worth doing.",
   "home.topics.title": "Browse by topic",
   "home.myths.title": "Popular claims that do not hold up",
   "home.myths.intro": "Of the original claims, {corrected} need correcting, {partly} are only partly right and {nodirect} have no direct evidence on deaths.",

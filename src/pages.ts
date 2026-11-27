@@ -66,9 +66,15 @@ const isMyth = (s: Study) => MYTH_VERDICTS.includes(s.verdict);
 const VERDICT_TONE: Record<VerdictId, string | null> = { corrected: 'warning', partly: null, 'no-direct': null, qualified: null };
 const DIRECTION_TONE: Record<Direction, string | null> = { harms: 'danger', helps: null, 'no-effect': null, mixed: null };
 
-// Home page list: strong evidence that supports the claim, leaving out trials in diagnosed patients.
-function bestSupported(studies: readonly Study[]): Study[] {
-  const picked = studies.filter((s) => (s.grade === 'A' || s.grade === 'B') && s.verdict === 'qualified' && s.topic !== 'illness');
+// Home page lists: grade A or B, split by which way the evidence points, strongest grade first.
+const HOME_LISTS = {
+  // Trials in diagnosed patients are not advice for healthy readers, so they stay on the illness topic page.
+  helps: (s: Study) => s.direction === 'helps' && s.topic !== 'illness',
+  'no-help': (s: Study) => s.direction === 'harms' || s.direction === 'no-effect',
+} as const;
+
+function strongEvidence(studies: readonly Study[], keep: (s: Study) => boolean): Study[] {
+  const picked = studies.filter((s) => (s.grade === 'A' || s.grade === 'B') && keep(s));
   return sortByGrade(TOPICS.flatMap((topic) => picked.filter((s) => s.topic === topic)));
 }
 
@@ -102,6 +108,15 @@ function studyItem(ctx: Ctx, s: Study, level: 2 | 3, mode: 'full' | 'brief' | 'f
 <div class="study__badges">${studyBadges(ctx, s)}${filterable ? html`<span class="study__topic">${ctx.t(`topic.${s.topic}` as const)}</span>` : null}</div>
 ${mode === 'full' ? html`<p class="study__summary">${tx.summary}</p><p class="study__label">${ctx.t('study.takeaway')}</p>` : null}
 <p class="study__takeaway">${tx.takeaway}</p>
+</li>`;
+}
+
+// Home page entry: the advice is the heading, and the study it comes from follows with its grade and direction.
+function adviceItem(ctx: Ctx, s: Study): Html {
+  const tx = s.text[ctx.locale.code];
+  return html`<li class="study">
+<h3 class="study__title"><a href="${link(ctx, { kind: 'study', study: s })}">${tx.takeaway}</a></h3>
+<div class="study__badges"><span class="study__subject">${tx.title}</span>${studyBadges(ctx, s)}</div>
 </li>`;
 }
 
@@ -164,7 +179,8 @@ function topicList(ctx: Ctx): Html {
 
 function home(ctx: Ctx): Content {
   const { t, up } = ctx;
-  const best = bestSupported(up.studies);
+  const helps = strongEvidence(up.studies, HOME_LISTS.helps);
+  const noHelp = strongEvidence(up.studies, HOME_LISTS['no-help']);
   const count = (v: VerdictId) => up.studies.filter((s) => s.verdict === v).length;
   const teaser = sortByGrade(up.studies.filter((s) => s.verdict === 'corrected')).slice(0, 4);
   const illness = html`<a class="xxd-link" href="${link(ctx, { kind: 'topic', topic: 'illness' })}">${t('topic.illness')}</a>`;
@@ -172,7 +188,8 @@ function home(ctx: Ctx): Content {
     title: t('home.title'),
     description: t('site.description', { count: up.studies.length }),
     body: html`<header class="home-head"><h1 class="page-title">${t('home.title')}</h1><p class="lead">${t('home.intro', { count: up.studies.length })}</p></header>
-${section('best', t('home.best.title'), html`<p class="section__intro">${t.html('home.best.intro', { count: best.length, illness })}</p><ul class="studies">${best.map((s) => studyItem(ctx, s, 3, 'brief'))}</ul>`)}
+${section('helps', t('home.helps.title'), html`<p class="section__intro">${t.html('home.helps.intro', { count: helps.length, illness })}</p><ul class="studies">${helps.map((s) => adviceItem(ctx, s))}</ul>`)}
+${section('no-help', t('home.nohelp.title'), html`<p class="section__intro">${t('home.nohelp.intro', { count: noHelp.length })}</p><ul class="studies">${noHelp.map((s) => adviceItem(ctx, s))}</ul>`)}
 ${section('topics', t('home.topics.title'), topicList(ctx))}
 ${section(
   'myths',

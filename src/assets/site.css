@@ -231,6 +231,13 @@
   line-height: var(--leading-xs);
 }
 
+/* On the home page the advice is the heading, so the study it comes from leads the badge row. */
+.study__subject {
+  color: var(--muted);
+  font-size: var(--text-sm);
+  line-height: var(--leading-sm);
+}
+
 .study__summary,
 .study__takeaway {
   margin: var(--space-2) 0 0;

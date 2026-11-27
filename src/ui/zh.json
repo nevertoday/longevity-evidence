@@ -57,8 +57,10 @@
 
   "home.title": "哪些习惯真的和活得更久有关",
   "home.intro": "这里有 {count} 项关于饮食、运动、睡眠和日常习惯的研究。每一项先说可以怎么做，再说证据有多可靠，最后列出原始论文。网上流传的说法里，说错和说大的地方也单独标了出来。研究整理来自开源项目 HowToLiveLonger 对原始论文的逐条核验，本站没有改动医学内容。",
-  "home.best.title": "证据最扎实的做法",
-  "home.best.intro": "证据等级为 A 或 B、研究也支持原说法的 {count} 项。只针对已确诊患者的研究不在这里，放在「{illness}」。",
+  "home.helps.title": "有较强证据支持去做的",
+  "home.helps.intro": "证据等级为 A 或 B、研究发现有益的 {count} 项，每项先说可以怎么做。只针对已确诊患者的研究不在这里，放在「{illness}」。",
+  "home.nohelp.title": "有较强证据说没用或有害的",
+  "home.nohelp.intro": "证据等级为 A 或 B、研究发现没有效果或有害的 {count} 项，每项先说可以怎么做。等级高只说明证据可靠，不说明这件事值得做。",
   "home.topics.title": "按话题看",
   "home.myths.title": "流行说法，哪里不对",
   "home.myths.intro": "原说法里，{corrected} 条需要纠正，{partly} 条只对了一部分，{nodirect} 条没有直接的死亡率证据。",
