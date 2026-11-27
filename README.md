@@ -33,15 +33,19 @@ npm run typecheck
 npm run screenshots         # 390 和 1440 宽、亮暗两种主题的截图，写到 .screenshots/
 ```
 
-### 添加一种语言
+### 语言
 
-上游已经有 8 种语言的研究文字、术语表和等级说明。以西班牙语为例：
+网站有 8 种语言：简体中文、English、Español、Français、Deutsch、Português、日本語、العربية。研究文字、术语表和等级说明来自上游；界面文字在 `src/ui/<语言>.json`。西、法、德、葡、日、阿六种语言的界面文字由 Gemini 翻译，还没有母语者审读，欢迎提修改。
 
-1. 在 `src/locales.ts` 里把 `es` 的 `enabled` 改成 `true`。
-2. 复制 `src/ui/en.json` 为 `src/ui/es.json`，翻译每个值，保留 `{count}` 这样的占位符。
-3. 运行 `npm run build && npm run check`。缺键、占位符不一致、缺研究文字都会报错。
+改界面文字时，所有语言文件的键和 `{count}` 这样的占位符必须和 `src/ui/zh.json` 一致，否则构建失败。
 
-阿拉伯语的 `dir` 已经是 `rtl`，样式全部用逻辑属性。
+加第 9 种语言需要上游先有这种语言的研究文字，然后：
+
+1. 在 `src/locales.ts` 的 `LOCALE_CODES` 和 `LOCALES` 里各加一项。
+2. 复制 `src/ui/en.json` 为 `src/ui/<代码>.json`，翻译每个值。
+3. 运行 `npm run build && npm run check`。
+
+阿拉伯语的 `dir` 是 `rtl`，样式全部用逻辑属性。
 
 ### 数据来源
 
@@ -92,15 +96,19 @@ npm run typecheck
 npm run screenshots         # 390 and 1440 wide, light and dark, into .screenshots/
 ```
 
-### Add a language
+### Languages
 
-Upstream already has study text, the glossary and the grade descriptions in eight languages. For Spanish:
+The site has eight languages: 简体中文, English, Español, Français, Deutsch, Português, 日本語 and العربية. Study text, the glossary and the grade descriptions come from upstream. Interface text lives in `src/ui/<code>.json`. Gemini translated the interface text for Spanish, French, German, Portuguese, Japanese and Arabic, and no native speaker has reviewed it yet. Corrections are welcome.
 
-1. In `src/locales.ts`, set `enabled: true` for `es`.
-2. Copy `src/ui/en.json` to `src/ui/es.json` and translate every value. Keep placeholders such as `{count}`.
-3. Run `npm run build && npm run check`. A missing key, a changed placeholder or missing study text fails the build or the check.
+Every language file must have the same keys and placeholders such as `{count}` as `src/ui/zh.json`, or the build fails.
 
-Arabic already has `dir: 'rtl'`, and the stylesheet uses logical properties throughout.
+A ninth language needs upstream study text in that language first. Then:
+
+1. Add it to `LOCALE_CODES` and `LOCALES` in `src/locales.ts`.
+2. Copy `src/ui/en.json` to `src/ui/<code>.json` and translate every value.
+3. Run `npm run build && npm run check`.
+
+Arabic has `dir: 'rtl'`, and the stylesheet uses logical properties throughout.
 
 ### Data provenance
 

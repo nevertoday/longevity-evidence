@@ -35,9 +35,16 @@ const SHOTS: Shot[] = [
   ...both('en-studies-no-effect', 'en/studies/?direction=no-effect'),
   ...both('en-topic-eating', 'en/topics/eating/'),
   ...both('zh-about', 'zh/about/'),
-  // The root page redirects by browser language: Chinese to zh/, anything unsupported to en/.
+  // The six later languages; Arabic is right to left.
+  ...(['es', 'fr', 'de', 'pt', 'ja', 'ar'] as const).flatMap((code) => both(`${code}-home`, `${code}/`)),
+  ...both('ar-study-aspirin', 'ar/studies/aspirin-primary-prevention/'),
+  ...both('de-studies', 'de/studies/'),
+  ...both('ja-lang-open', 'ja/').map((s) => ({ ...s, action: "document.querySelector('.site-lang__details').open = true" })),
+  ...both('ar-lang-open', 'ar/').map((s) => ({ ...s, action: "document.querySelector('.site-lang__details').open = true" })),
+  // The root page redirects by browser language: Chinese to zh/, French to fr/, anything unsupported to en/.
   { name: 'root-zh-browser-390-light', path: '', width: 390, scheme: 'light', acceptLanguage: 'zh-CN,zh;q=0.9' },
   { name: 'root-fr-browser-390-light', path: '', width: 390, scheme: 'light', acceptLanguage: 'fr-FR,fr;q=0.9' },
+  { name: 'root-ko-browser-390-light', path: '', width: 390, scheme: 'light', acceptLanguage: 'ko-KR,ko;q=0.9' },
   // Without JavaScript the root page lists every language and the study list shows all studies.
   { name: 'root-nojs-390-light', path: '', width: 390, scheme: 'light', noScript: true },
   { name: 'zh-studies-nojs-390-light', path: 'zh/studies/?topic=drinking', width: 390, scheme: 'light', noScript: true },
