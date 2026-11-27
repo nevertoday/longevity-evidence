@@ -1,5 +1,6 @@
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
+import { DIRECTION_BY_ID, type Direction } from './directions.ts';
 import { LOCALE_CODES, type LocaleCode } from './locales.ts';
 
 export const GRADES = ['A', 'B', 'C', 'D'] as const;
@@ -102,6 +103,7 @@ export type Study = {
   id: string;
   topic: TopicId;
   grade: Grade;
+  direction: Direction;
   verdict: VerdictId;
   origin: Origin;
   sources: Source[];
@@ -246,6 +248,12 @@ function parseText(id: string, rawSources: Obj[], lang: Lang, at: string): Study
   };
 }
 
+function directionOf(id: string): Direction {
+  const entry = DIRECTION_BY_ID[id];
+  if (!entry) throw new Error(`record ${id} has no entry in DIRECTION_BY_ID (src/directions.ts)`);
+  return entry.direction;
+}
+
 function parseStudy(r: Obj, langs: Record<LocaleCode, Lang>): Study {
   const id = str(r.id, 'record id');
   const at = `record ${id}`;
@@ -254,6 +262,7 @@ function parseStudy(r: Obj, langs: Record<LocaleCode, Lang>): Study {
     id,
     topic: TOPIC_OVERRIDES[id] ?? lookup(TOPIC_BY_SUBCATEGORY, str(r.subcategory, `${at}.subcategory`), `${at}.subcategory`),
     grade: lookup(Object.fromEntries(GRADES.map((g) => [g, g])), str(r.grade, `${at}.grade`), `${at}.grade`),
+    direction: directionOf(id),
     verdict: lookup(VERDICT_BY_UPSTREAM, str(r.verdict, `${at}.verdict`), `${at}.verdict`),
     origin: lookup(ORIGIN_BY_UPSTREAM, str(r.origin, `${at}.origin`), `${at}.origin`),
     sources: rawSources.map((s, i) => parseSource(s, `${at}.sources[${i}]`)),
@@ -281,6 +290,9 @@ export function loadUpstream(dir: string = UPSTREAM_DIR): Upstream {
   if (ids.size !== studies.length) throw new Error('evidence.json: duplicate record ids');
   for (const id of Object.keys(TOPIC_OVERRIDES)) {
     if (!ids.has(id)) throw new Error(`TOPIC_OVERRIDES names "${id}", which upstream no longer has`);
+  }
+  for (const id of Object.keys(DIRECTION_BY_ID)) {
+    if (!ids.has(id)) throw new Error(`DIRECTION_BY_ID names "${id}", which upstream no longer has`);
   }
 
   const source = obj(JSON.parse(readFileSync(join(dir, 'SOURCE.json'), 'utf8')), 'SOURCE.json');
