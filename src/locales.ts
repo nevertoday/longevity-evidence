@@ -13,12 +13,12 @@ export type Locale = {
 export const LOCALES: readonly Locale[] = [
   { code: 'zh', htmlLang: 'zh-CN', label: '简体中文', dir: 'ltr', enabled: true },
   { code: 'en', htmlLang: 'en', label: 'English', dir: 'ltr', enabled: true },
-  { code: 'es', htmlLang: 'es', label: 'Español', dir: 'ltr', enabled: false },
-  { code: 'fr', htmlLang: 'fr', label: 'Français', dir: 'ltr', enabled: false },
-  { code: 'de', htmlLang: 'de', label: 'Deutsch', dir: 'ltr', enabled: false },
-  { code: 'pt', htmlLang: 'pt', label: 'Português', dir: 'ltr', enabled: false },
-  { code: 'ja', htmlLang: 'ja', label: '日本語', dir: 'ltr', enabled: false },
-  { code: 'ar', htmlLang: 'ar', label: 'العربية', dir: 'rtl', enabled: false },
+  { code: 'es', htmlLang: 'es', label: 'Español', dir: 'ltr', enabled: true },
+  { code: 'fr', htmlLang: 'fr', label: 'Français', dir: 'ltr', enabled: true },
+  { code: 'de', htmlLang: 'de', label: 'Deutsch', dir: 'ltr', enabled: true },
+  { code: 'pt', htmlLang: 'pt', label: 'Português', dir: 'ltr', enabled: true },
+  { code: 'ja', htmlLang: 'ja', label: '日本語', dir: 'ltr', enabled: true },
+  { code: 'ar', htmlLang: 'ar', label: 'العربية', dir: 'rtl', enabled: true },
 ];
 
 export const ENABLED_LOCALES: readonly Locale[] = LOCALES.filter((l) => l.enabled);
