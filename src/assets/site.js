@@ -1,7 +1,11 @@
 // Enhancements only. Every page reads and navigates the same without this file.
 (() => {
+  // The appearance button stays hidden unless the kit's script can fill its popover.
   const pop = document.getElementById('appearance-pop');
-  if (pop && window.Xxd && window.Xxd.mountAppearance) window.Xxd.mountAppearance(pop);
+  if (pop && window.Xxd && window.Xxd.mountAppearance) {
+    window.Xxd.mountAppearance(pop);
+    document.querySelector('.xxd-appearance-btn').hidden = false;
+  }
 
   const form = document.querySelector('[data-filter]');
   const list = document.querySelector('[data-filter-list]');

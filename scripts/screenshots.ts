@@ -14,7 +14,7 @@ const OUT = '.screenshots';
 const TILE_HEIGHT = 1800;
 
 // `action` runs in the page before the capture, for example to open a popover.
-type Shot = { name: string; path: string; width: 390 | 1440; scheme: 'light' | 'dark'; action?: string };
+type Shot = { name: string; path: string; width: 390 | 1440; scheme: 'light' | 'dark'; action?: string; acceptLanguage?: string; noScript?: boolean };
 const both = (name: string, path: string, schemes: Shot['scheme'][] = ['light']): Shot[] =>
   ([390, 1440] as const).flatMap((width) => schemes.map((scheme) => ({ name: `${name}-${width}-${scheme}`, path, width, scheme })));
 
@@ -29,6 +29,12 @@ const SHOTS: Shot[] = [
   ...both('en-studies-filtered', 'en/studies/?q=coffee'),
   ...both('en-topic-eating', 'en/topics/eating/'),
   ...both('zh-about', 'zh/about/'),
+  // The root page redirects by browser language: Chinese to zh/, anything unsupported to en/.
+  { name: 'root-zh-browser-390-light', path: '', width: 390, scheme: 'light', acceptLanguage: 'zh-CN,zh;q=0.9' },
+  { name: 'root-fr-browser-390-light', path: '', width: 390, scheme: 'light', acceptLanguage: 'fr-FR,fr;q=0.9' },
+  // Without JavaScript the root page lists every language and the study list shows all studies.
+  { name: 'root-nojs-390-light', path: '', width: 390, scheme: 'light', noScript: true },
+  { name: 'zh-studies-nojs-390-light', path: 'zh/studies/?topic=drinking', width: 390, scheme: 'light', noScript: true },
   ...both('zh-appearance-open', 'zh/').map((s) => ({ ...s, action: "document.querySelector('.xxd-appearance-btn').click()" })),
   // Picking dark in the popover must survive navigation while the system stays light. Keep these last.
   {
@@ -53,7 +59,7 @@ const stopAll = () => {
   }
 };
 process.on('exit', stopAll);
-process.on('SIGINT', () => process.exit(130));
+for (const signal of ['SIGINT', 'SIGTERM', 'SIGHUP'] as const) process.on(signal, () => process.exit(1));
 
 const start = (cmd: string, args: string[]) => {
   const child = spawn(cmd, args, { detached: true, stdio: ['ignore', 'pipe', 'pipe'] });
@@ -126,14 +132,23 @@ async function main() {
   const send = (method: string, params: object = {}): Promise<any> =>
     new Promise((resolve, reject) => {
       const id = ++nextId;
-      pending.set(id, { resolve, reject });
+      const timer = setTimeout(() => reject(new Error(`${method} timed out`)), 30000);
+      pending.set(id, {
+        resolve: (v) => (clearTimeout(timer), resolve(v)),
+        reject: (e) => (clearTimeout(timer), reject(e)),
+      });
       ws.send(JSON.stringify({ id, method, params }));
     });
-  const next = (method: string) => new Promise<void>((resolve) => waiters.push({ method, resolve }));
+  const next = (method: string) =>
+    Promise.race([
+      new Promise<void>((resolve) => waiters.push({ method, resolve })),
+      new Promise<void>((_, reject) => setTimeout(() => reject(new Error(`no ${method} within 30s`)), 30000)),
+    ]);
   const evaluate = async (expression: string) =>
     (await send('Runtime.evaluate', { expression, awaitPromise: true, returnByValue: true })).result.value;
 
   await send('Page.enable');
+  const { userAgent } = await send('Browser.getVersion');
   const only = process.argv[2];
   for (const shot of SHOTS.filter((s) => !only || s.name.includes(only))) {
     const mobile = shot.width < 600;
@@ -141,16 +156,22 @@ async function main() {
     await send('Emulation.setDeviceMetricsOverride', viewport);
     await send('Emulation.setTouchEmulationEnabled', { enabled: mobile });
     await send('Emulation.setEmulatedMedia', { features: [{ name: 'prefers-color-scheme', value: shot.scheme }] });
+    await send('Emulation.setScriptExecutionDisabled', { value: shot.noScript === true });
+    await send('Emulation.setUserAgentOverride', { userAgent, acceptLanguage: shot.acceptLanguage ?? 'en-US' });
     const loaded = next('Page.loadEventFired');
     await send('Page.navigate', { url: `http://127.0.0.1:${port}/${shot.path}` });
     await loaded;
-    await evaluate('document.fonts.ready.then(() => new Promise((r) => setTimeout(r, 300)))');
+    if (shot.path === '') await new Promise((r) => setTimeout(r, 1000));
+    // Page script is off for noScript shots, so measure through the protocol and skip page-side checks.
+    if (shot.noScript) await new Promise((r) => setTimeout(r, 500));
+    else await evaluate('document.fonts.ready.then(() => new Promise((r) => setTimeout(r, 300)))');
     if (shot.action) await evaluate(`(${shot.action}, new Promise((r) => setTimeout(r, 400)))`);
-    const height: number = await evaluate('document.documentElement.scrollHeight');
-    const overflow: number = await evaluate('document.documentElement.scrollWidth - window.innerWidth');
-    const theme: string = await evaluate(
-      'document.documentElement.dataset.theme + " (system dark: " + matchMedia("(prefers-color-scheme: dark)").matches + ")"',
-    );
+    const metrics = await send('Page.getLayoutMetrics');
+    const height = Math.ceil(metrics.cssContentSize.height);
+    const overflow = Math.ceil(metrics.cssContentSize.width - metrics.cssLayoutViewport.clientWidth);
+    const theme: string = shot.noScript
+      ? 'n/a (no script)'
+      : await evaluate('document.documentElement.dataset.theme + " (system dark: " + matchMedia("(prefers-color-scheme: dark)").matches + ")"');
 
     const capture = async (y: number, h: number) =>
       Buffer.from(
@@ -162,7 +183,9 @@ async function main() {
     for (let i = 0; i < tiles; i++) {
       writeFileSync(join(OUT, 'tiles', `${shot.name}-${i + 1}.png`), await capture(i * TILE_HEIGHT, Math.min(TILE_HEIGHT, height - i * TILE_HEIGHT)));
     }
-    console.log(`${shot.name}.png  ${shot.width}x${height}  theme=${theme}  horizontal overflow ${overflow}px  ${tiles} tiles`);
+    const history = await send('Page.getNavigationHistory');
+    const at = new URL(history.entries[history.currentIndex].url).pathname;
+    console.log(`${shot.name}.png  ${at}  ${shot.width}x${height}  theme=${theme}  horizontal overflow ${overflow}px  ${tiles} tiles`);
   }
   ws.close();
   stopAll();
@@ -173,5 +196,5 @@ async function main() {
 
 main().catch((e) => {
   console.error(e);
-  process.exitCode = 1;
+  process.exit(1);
 });

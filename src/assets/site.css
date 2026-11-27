@@ -465,6 +465,10 @@
 
 /* Root language picker */
 
+.root-title {
+  display: block;
+}
+
 .root-langs {
   margin: var(--space-6) 0 0;
   padding: 0;

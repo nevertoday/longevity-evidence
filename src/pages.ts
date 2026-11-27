@@ -415,7 +415,7 @@ ${head(ctx, title, c.description, links)}
     (l) =>
       html`<a class="xxd-link" data-variant="plain" href="${link(ctx, page, l.code)}" hreflang="${l.htmlLang}" lang="${l.htmlLang}"><i data-xxd-icon="Languages" data-size="16"></i>${l.label}</a>`,
   )}</nav>
-<button class="xxd-btn xxd-appearance-btn" data-size="sm" data-variant="ghost" data-icon-only type="button" data-xxd-popover="appearance-pop" aria-label="${t('appearance')}" data-tooltip="${t('appearance')}"><i class="xxd-appearance-btn__sun" data-xxd-icon="Sun" data-size="16"></i><i class="xxd-appearance-btn__moon" data-xxd-icon="Moon" data-size="16"></i></button>
+<button class="xxd-btn xxd-appearance-btn" data-size="sm" data-variant="ghost" data-icon-only type="button" hidden data-xxd-popover="appearance-pop" aria-label="${t('appearance')}" data-tooltip="${t('appearance')}"><i class="xxd-appearance-btn__sun" data-xxd-icon="Sun" data-size="16"></i><i class="xxd-appearance-btn__moon" data-xxd-icon="Moon" data-size="16"></i></button>
 <div class="xxd-popover xxd-appearance-pop" id="appearance-pop" popover data-placement="bottom-end"></div>
 </div>
 </div></header>
@@ -452,7 +452,7 @@ ${head(ctx, title, description, links)}
 </head>
 <body class="xxd-page">
 <main id="main" class="site-main">
-<h1 class="page-title">${title}</h1>
+<h1 class="page-title">${locales.map((l) => html`<span class="root-title" lang="${l.locale.htmlLang}">${l.t('site.name')}</span>`)}</h1>
 <ul class="root-langs">${locales.map(
   (l) => html`<li lang="${l.locale.htmlLang}" dir="${l.locale.dir}"><a class="xxd-link" href="${l.locale.code}/" hreflang="${l.locale.htmlLang}">${l.locale.label}</a><p class="root-langs__desc">${l.t('home.title')}</p></li>`,
 )}</ul>
