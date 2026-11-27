@@ -1,0 +1,20 @@
+{
+  "name": "healthy",
+  "private": true,
+  "type": "module",
+  "license": "Unlicense",
+  "engines": {
+    "node": ">=26"
+  },
+  "scripts": {
+    "sync": "node scripts/sync-upstream.ts",
+    "build": "node scripts/build.ts",
+    "check": "node scripts/check.ts",
+    "typecheck": "tsc",
+    "screenshots": "node scripts/screenshots.ts"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.11",
+    "typescript": "5.9.3"
+  }
+}

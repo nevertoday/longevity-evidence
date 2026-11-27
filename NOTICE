@@ -1,0 +1,16 @@
+This repository is released into the public domain under the Unlicense
+(see LICENSE), with the exceptions below.
+
+vendor/xxd/
+  Files copied from the 小小东 UI Kit (xxd-ui-kit) by `pnpm xxd init`.
+  Copyright 小小东. Licensed under the PolyForm Noncommercial License 1.0.0
+  (see vendor/xxd/LICENSE). The build copies them into dist/vendor/xxd/,
+  so a deployed copy of the site is bound by that license too:
+  noncommercial use is free, commercial use needs a license from the author.
+
+data/upstream/
+  Files copied from https://github.com/geekan/HowToLiveLonger at the commit
+  named in data/upstream/SOURCE.json. That project is released under the
+  Unlicense (see data/upstream/LICENSE).
+
+The research papers that the records link to have their own terms.
