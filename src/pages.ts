@@ -1,4 +1,5 @@
 import { renderClaim } from './claim.ts';
+import { DIRECTIONS, type Direction } from './directions.ts';
 import { html, raw, type Html, type Part } from './html.ts';
 import { ENABLED_LOCALES, FALLBACK_LOCALE, type Locale, type LocaleCode } from './locales.ts';
 import {
@@ -63,6 +64,7 @@ const commitUrl = (up: Upstream) => `${up.source.repository}/tree/${up.source.co
 
 const isMyth = (s: Study) => MYTH_VERDICTS.includes(s.verdict);
 const VERDICT_TONE: Record<VerdictId, string | null> = { corrected: 'warning', partly: null, 'no-direct': null, qualified: null };
+const DIRECTION_TONE: Record<Direction, string | null> = { harms: 'danger', helps: null, 'no-effect': null, mixed: null };
 
 // Home page list: strong evidence that supports the claim, leaving out trials in diagnosed patients.
 function bestSupported(studies: readonly Study[]): Study[] {
@@ -76,18 +78,28 @@ function gradeBadge(ctx: Ctx, grade: Grade): Html {
   return html`<span class="xxd-badge">${ctx.t('grade.badge', { grade, label: ctx.guide.grades[grade].label })}</span>`;
 }
 
+function directionBadge(ctx: Ctx, direction: Direction): Html {
+  return html`<span class="xxd-badge" data-direction="${direction}"${attr('data-tone', DIRECTION_TONE[direction])}>${ctx.t(`direction.${direction}` as const)}</span>`;
+}
+
 function verdictBadge(ctx: Ctx, verdict: VerdictId): Html | null {
   if (!MYTH_VERDICTS.includes(verdict)) return null;
   return html`<span class="xxd-badge"${attr('data-tone', VERDICT_TONE[verdict])}>${ctx.t(`verdict.${verdict}` as const)}</span>`;
 }
 
+// Grade and direction always sit together, so a strong grade is never read as a benefit.
+function studyBadges(ctx: Ctx, s: Study): Html {
+  return html`${gradeBadge(ctx, s.grade)}${directionBadge(ctx, s.direction)}${verdictBadge(ctx, s.verdict)}`;
+}
+
 function studyItem(ctx: Ctx, s: Study, level: 2 | 3, mode: 'full' | 'brief' | 'filterable'): Html {
   const tx = s.text[ctx.locale.code];
   const h = raw(`h${level}`);
-  const search = mode === 'filterable' ? [tx.title, tx.factor, tx.summary, tx.takeaway].join(' ') : null;
-  return html`<li class="study"${attr('data-topic', mode === 'filterable' ? s.topic : null)}${attr('data-grade', mode === 'filterable' ? s.grade : null)}${attr('data-search', search)}>
+  const filterable = mode === 'filterable';
+  const search = filterable ? [tx.title, tx.factor, tx.summary, tx.takeaway, ctx.t(`direction.${s.direction}` as const)].join(' ') : null;
+  return html`<li class="study"${attr('data-topic', filterable ? s.topic : null)}${attr('data-grade', filterable ? s.grade : null)}${attr('data-direction', filterable ? s.direction : null)}${attr('data-search', search)}>
 <${h} class="study__title"><a href="${link(ctx, { kind: 'study', study: s })}">${tx.title}</a></${h}>
-<div class="study__badges">${gradeBadge(ctx, s.grade)}${verdictBadge(ctx, s.verdict)}${mode === 'filterable' ? html`<span class="study__topic">${ctx.t(`topic.${s.topic}` as const)}</span>` : null}</div>
+<div class="study__badges">${studyBadges(ctx, s)}${filterable ? html`<span class="study__topic">${ctx.t(`topic.${s.topic}` as const)}</span>` : null}</div>
 ${mode === 'full' ? html`<p class="study__summary">${tx.summary}</p><p class="study__label">${ctx.t('study.takeaway')}</p>` : null}
 <p class="study__takeaway">${tx.takeaway}</p>
 </li>`;
@@ -112,7 +124,7 @@ function section(id: string, title: string, body: Part, level: 2 | 3 = 2): Html 
   return html`<section class="section" aria-labelledby="${id}"><${h} class="section__title" id="${id}">${title}</${h}>${body}</section>`;
 }
 
-function facts(rows: [string, Part][]): Html {
+function facts(rows: [Part, Part][]): Html {
   return html`<dl class="facts">${rows.map(([term, value]) => html`<div class="facts__row"><dt>${term}</dt><dd>${value}</dd></div>`)}</dl>`;
 }
 
@@ -121,6 +133,15 @@ function gradeFacts(ctx: Ctx, withCounts: boolean): Html {
     GRADES.map((g) => [
       ctx.t('grade.badge', { grade: g, label: ctx.guide.grades[g].label }),
       html`${ctx.guide.grades[g].meaning}${withCounts ? html` <span class="facts__count">${ctx.t.studies(ctx.up.studies.filter((s) => s.grade === g).length)}</span>` : null}`,
+    ]),
+  );
+}
+
+function directionFacts(ctx: Ctx, withCounts: boolean): Html {
+  return facts(
+    DIRECTIONS.map((d) => [
+      directionBadge(ctx, d),
+      html`${ctx.t(`direction.${d}.desc` as const)}${withCounts ? html` <span class="facts__count">${ctx.t.studies(ctx.up.studies.filter((s) => s.direction === d).length)}</span>` : null}`,
     ]),
   );
 }
@@ -164,6 +185,7 @@ ${section(
   'read',
   t('home.read.title'),
   html`<p class="section__intro">${t('home.read.grades')}</p>${gradeFacts(ctx, false)}
+<p class="prose-text">${t('home.read.direction')}</p>${directionFacts(ctx, false)}
 <p class="prose-text">${t('home.read.association')}</p>
 <p class="prose-text">${t('home.read.additive')}</p>
 <h3 class="subsection__title">${t('home.read.terms')}</h3>${glossary(ctx, ['ACM', 'HR', 'CI', 'RCT'])}
@@ -199,6 +221,7 @@ function studyPage(ctx: Ctx, s: Study): Content {
     [g.fields.population, tx.population],
     [g.fields.design, tx.design],
     [t('study.grade'), html`${gradeBadge(ctx, s.grade)} ${g.grades[s.grade].meaning}`],
+    [t('study.direction'), html`${directionBadge(ctx, s.direction)} ${t(`direction.${s.direction}.desc` as const)}`],
     [g.fields.gradeReason, tx.gradeReason],
     [g.fields.limitations, tx.limitations],
     [g.fields.action, tx.action],
@@ -230,7 +253,7 @@ function studyPage(ctx: Ctx, s: Study): Content {
       { label: t('breadcrumb.home'), page: { kind: 'home' } },
       { label: topicName, page: topicPageRef },
     ])}
-<div class="study__badges">${gradeBadge(ctx, s.grade)}${verdictBadge(ctx, s.verdict)}</div>
+<div class="study__badges">${studyBadges(ctx, s)}</div>
 <p class="lead">${tx.summary}</p>
 <div class="xxd-layer takeaway"><div class="xxd-layer__secondary">${t('study.takeaway')}</div><div class="xxd-layer__primary">${tx.takeaway}</div></div>
 ${myth
@@ -274,7 +297,7 @@ ${MYTH_VERDICTS.map((v) => {
     html`<p class="section__intro">${t(`verdict.${v}.desc` as const)}</p><ul class="studies">${group.map((s) => {
       const tx = s.text[ctx.locale.code];
       return html`<li class="study myth"><h3 class="study__title"><a href="${link(ctx, { kind: 'study', study: s })}">${tx.title}</a></h3>
-<div class="study__badges">${gradeBadge(ctx, s.grade)}<span class="study__topic">${t(`topic.${s.topic}` as const)}</span></div>
+<div class="study__badges">${gradeBadge(ctx, s.grade)}${directionBadge(ctx, s.direction)}<span class="study__topic">${t(`topic.${s.topic}` as const)}</span></div>
 <div class="versus"><div class="versus__part"><p class="versus__label">${t('myths.claim')}</p><div class="claim">${renderClaim(tx.originalClaim)}</div></div>
 <div class="versus__part"><p class="versus__label">${t('myths.evidence')}</p><p class="prose-text">${tx.finding}</p></div></div>
 <p class="more"><a class="xxd-link" href="${link(ctx, { kind: 'study', study: s })}">${t('myths.more')}</a></p></li>`;
@@ -303,6 +326,10 @@ function studiesPage(ctx: Ctx): Content {
       t('studies.grade.all'),
       GRADES.map((g) => [g, t('grade.badge', { grade: g, label: ctx.guide.grades[g].label })]),
     )}</select></label></div>
+<div class="xxd-field"><label class="xxd-label" for="filter-direction">${t('studies.direction.label')}</label><label class="xxd-select"><select id="filter-direction" name="direction">${options(
+      t('studies.direction.all'),
+      DIRECTIONS.map((d) => [d, t(`direction.${d}` as const)]),
+    )}</select></label></div>
 </form>
 <p class="filter-count"><span aria-live="polite" data-filter-count="${t('studies.shown', { shown: '{shown}', total: '{total}' })}">${t('studies.shown', { shown: total, total })}</span><button class="xxd-link" type="reset" form="filter" data-filter-reset hidden>${t('studies.reset')}</button></p>
 <ul class="studies" data-filter-list>${byTopicThenGrade(up.studies).map((s) => studyItem(ctx, s, 2, 'filterable'))}</ul>
@@ -326,6 +353,7 @@ ${section(
   html`<p class="prose-text">${t('about.method.text', { original: n((s) => s.origin === 'original'), added: n((s) => s.origin === 'added') })}</p><p class="prose-text">${t('about.method.limits')}</p>`,
 )}
 ${section('grades', t('about.grades.title'), html`<p class="section__intro">${ctx.guide.gradeNote}</p>${gradeFacts(ctx, true)}`)}
+${section('directions', t('about.directions.title'), html`<p class="section__intro">${t('about.directions.intro')}</p>${directionFacts(ctx, true)}`)}
 ${section(
   'verdicts',
   t('about.verdicts.title'),

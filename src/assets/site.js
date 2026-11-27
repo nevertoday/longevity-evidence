@@ -15,16 +15,16 @@
   const reset = document.querySelector('[data-filter-reset]');
   const normalize = (s) => s.normalize('NFKC').toLowerCase();
   const items = [...list.children].map((el) => ({ el, text: normalize(el.dataset.search || el.textContent) }));
-  const fields = ['q', 'topic', 'grade'];
+  const fields = ['q', 'topic', 'grade', 'direction'];
+  const selects = fields.filter((name) => form.elements[name].tagName === 'SELECT');
 
   const apply = () => {
     const words = normalize(form.elements.q.value).split(/\s+/).filter(Boolean);
-    const topic = form.elements.topic.value;
-    const grade = form.elements.grade.value;
     let shown = 0;
     for (const { el, text } of items) {
       const match =
-        (!topic || el.dataset.topic === topic) && (!grade || el.dataset.grade === grade) && words.every((w) => text.includes(w));
+        selects.every((name) => !form.elements[name].value || el.dataset[name] === form.elements[name].value) &&
+        words.every((w) => text.includes(w));
       el.hidden = !match;
       if (match) shown++;
     }
