@@ -2,6 +2,7 @@
 import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import { join, relative } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { DIRECTIONS, type Direction } from '../src/directions.ts';
 import { escape } from '../src/html.ts';
 import { ENABLED_LOCALES } from '../src/locales.ts';
 import { loadUpstream, MYTH_VERDICTS } from '../src/model.ts';
@@ -88,8 +89,10 @@ for (const file of pages) {
   }
 }
 
-// Every study page exists in every enabled language and shows the reader text.
+// Every study page exists in every enabled language and shows the reader text and its direction.
+const directionTag = (text: string) => [...text.matchAll(/<span class="xxd-badge" data-direction="([^"]+)"[^>]*>([^<]*)<\/span>/g)].map((m) => ({ direction: m[1], label: m[2] }));
 for (const locale of ENABLED_LOCALES) {
+  const t = loadUi(locale);
   for (const s of up.studies) {
     const file = `${locale.code}/studies/${s.id}/index.html`;
     if (!files.has(file)) {
@@ -100,6 +103,37 @@ for (const locale of ENABLED_LOCALES) {
     for (const field of REQUIRED) {
       if (!text.includes(escape(s.text[locale.code][field]))) problems.push(`dist/${file} does not show its ${field}`);
     }
+    const tags = directionTag(text);
+    const label = escape(t(`direction.${s.direction}`));
+    if (!tags.length || tags.some((tag) => tag.direction !== s.direction || tag.label !== label)) {
+      problems.push(`dist/${file} tags ${JSON.stringify(tags)}, expected only "${s.direction}" labelled "${label}"`);
+    }
+  }
+}
+
+// The home page lists strong evidence by direction: a study that found harm or no effect must never sit under "do this".
+const HOME_SECTIONS: Record<string, readonly Direction[]> = { helps: ['helps'], 'no-help': ['harms', 'no-effect'] };
+const directionById = new Map(up.studies.map((s) => [s.id, s.direction]));
+const homeCounts: string[] = [];
+for (const locale of ENABLED_LOCALES) {
+  const file = `dist/${locale.code}/index.html`;
+  const text = readFileSync(file, 'utf8');
+  for (const [id, allowed] of Object.entries(HOME_SECTIONS)) {
+    const body = new RegExp(`<section class="section" aria-labelledby="${id}">([\\s\\S]*?)</section>`).exec(text)?.[1];
+    if (!body) {
+      problems.push(`${file}: no section "${id}"`);
+      continue;
+    }
+    const items = [...body.matchAll(/<li class="study">([\s\S]*?)<\/li>/g)].map((m) => m[1] as string);
+    if (!items.length) problems.push(`${file}: section "${id}" lists no studies`);
+    for (const item of items) {
+      const studyId = /href="[^"]*studies\/([^/"]+)\/"/.exec(item)?.[1];
+      const direction = studyId === undefined ? undefined : directionById.get(studyId);
+      const tags = directionTag(item).map((tag) => tag.direction);
+      if (!direction || !allowed.includes(direction)) problems.push(`${file}: section "${id}" lists ${studyId}, whose direction is ${direction}`);
+      if (tags.length !== 1 || tags[0] !== direction) problems.push(`${file}: ${studyId} in section "${id}" is tagged ${JSON.stringify(tags)}`);
+    }
+    homeCounts.push(`${locale.code} ${id} ${items.length}`);
   }
 }
 
@@ -109,6 +143,8 @@ if (problems.length) {
 }
 const codes = ENABLED_LOCALES.map((l) => l.code).join(' + ');
 console.log(`content: ${up.studies.length} studies in ${codes}, each with title, summary, takeaway and finding`);
+console.log(`direction: every study page shows its tag (${DIRECTIONS.map((d) => `${d} ${up.studies.filter((s) => s.direction === d).length}`).join(', ')})`);
+console.log(`home: no harms or no-effect study under "helps" (${homeCounts.join(', ')})`);
 console.log(`ui: src/ui/{${ENABLED_LOCALES.map((l) => l.code).join(',')}}.json have every key and placeholder of zh.json`);
 console.log(`pages: ${pages.length} HTML files, ${links} internal links and assets resolve`);
 console.log(`head: every page has <html lang dir>, a unique <title>, a meta description, its canonical URL and hreflang for ${codes}`);
