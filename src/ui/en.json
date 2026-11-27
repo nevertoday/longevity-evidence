@@ -12,6 +12,7 @@
   "breadcrumb.home": "Home",
   "footer.disclaimer": "This site summarizes research. It is not medical advice. If you have a condition, take medication or plan to change a treatment, talk to a clinician first.",
   "footer.source": "Content from {upstream}, released under the Unlicense.",
+  "footer.code": "Source code",
   "footer.about": "Method, sources and license",
 
   "count.studies.one": "{count} study",
@@ -126,6 +127,7 @@
   "about.source.kit": "The interface uses the 小小东 UI Kit under the PolyForm Noncommercial license.",
   "about.contribute.title": "How to contribute",
   "about.contribute.text": "If a number, population or conclusion is wrong, propose a change to HowToLiveLonger following {guide}. Include the original paper, the study design, the population, the comparison and the interval. After the change lands upstream, this site picks it up on the next sync.",
+  "about.contribute.repo": "this site's source repository",
   "about.contribute.guide": "its contribution guide",
-  "about.contribute.site": "For problems with this site's layout, interface text or translations, open an issue in this site's source repository."
+  "about.contribute.site": "For problems with this site's layout, interface text or translations, open an issue in {repo}."
 }

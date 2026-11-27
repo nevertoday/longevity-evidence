@@ -12,6 +12,7 @@
   "breadcrumb.home": "首页",
   "footer.disclaimer": "本站整理研究证据，不是医疗建议。有疾病、正在用药或打算改变治疗，请先咨询医生。",
   "footer.source": "内容来自 {upstream}，以 Unlicense 发布。",
+  "footer.code": "源代码",
   "footer.about": "方法、来源与许可",
 
   "count.studies.one": "{count} 项研究",
@@ -126,6 +127,7 @@
   "about.source.kit": "界面使用小小东 UI Kit，按 PolyForm Noncommercial 许可使用。",
   "about.contribute.title": "参与改进",
   "about.contribute.text": "发现研究数字、人群或结论有误，请按 {guide} 向 HowToLiveLonger 提交修改，并附上原始论文、研究设计、人群、比较对象和区间。上游合并后，本站重新同步就会更新。",
+  "about.contribute.repo": "本站的源代码仓库",
   "about.contribute.guide": "它的贡献指南",
-  "about.contribute.site": "网站的排版、界面文字或翻译有问题，请提交到本站的源代码仓库。"
+  "about.contribute.site": "网站的排版、界面文字或翻译有问题，请提交到{repo}。"
 }

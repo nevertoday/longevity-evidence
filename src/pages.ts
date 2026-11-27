@@ -14,7 +14,7 @@ import {
   type Upstream,
   type VerdictId,
 } from './model.ts';
-import { APPEARANCE_KEY, SITE_ORIGIN, UPSTREAM_CONTRIBUTING } from './site.ts';
+import { APPEARANCE_KEY, SITE_ORIGIN, SOURCE_REPO, UPSTREAM_CONTRIBUTING } from './site.ts';
 import type { T, UiKey } from './ui.ts';
 
 export type Page =
@@ -390,7 +390,7 @@ ${section(
 ${section(
   'contribute',
   t('about.contribute.title'),
-  html`<p class="prose-text">${t.html('about.contribute.text', { guide: html`<a class="xxd-link" href="${UPSTREAM_CONTRIBUTING}">${t('about.contribute.guide')}</a>` })}</p><p class="prose-text">${t('about.contribute.site')}</p>`,
+  html`<p class="prose-text">${t.html('about.contribute.text', { guide: html`<a class="xxd-link" href="${UPSTREAM_CONTRIBUTING}">${t('about.contribute.guide')}</a>` })}</p><p class="prose-text">${t.html('about.contribute.site', { repo: html`<a class="xxd-link" href="${SOURCE_REPO}">${t('about.contribute.repo')}</a>` })}</p>`,
 )}`,
   };
 }
@@ -470,7 +470,7 @@ ${c.body}
 <footer class="site-footer"><div class="site-footer__inner">
 <p>${t('footer.disclaimer')}</p>
 <p>${t.html('footer.source', { upstream: html`<a class="xxd-link" href="${commitUrl(up)}">geekan/HowToLiveLonger</a>` })}</p>
-<p><a class="xxd-link" href="${link(ctx, { kind: 'about' })}">${t('footer.about')}</a></p>
+<p><a class="xxd-link" href="${link(ctx, { kind: 'about' })}">${t('footer.about')}</a> · <a class="xxd-link" href="${SOURCE_REPO}">${t('footer.code')}</a></p>
 </div></footer>
 </body>
 </html>
