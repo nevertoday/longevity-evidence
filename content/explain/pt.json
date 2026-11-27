@@ -1,642 +1,732 @@
 {
   "poultry-fish": {
-    "question": "TODO 白肉、红肉与加工肉",
-    "answer": "TODO Estudos de acompanhamento nos EUA associaram maior consumo de carne vermelha e processada a maior risco de morte. As associações foram mais fracas para peixe e aves; as substituições e o preparo também importam.",
+    "question": "Comer carne vermelha e processada encurta a vida? Frango e peixe são melhores?",
+    "answer": "Em parte. Quem comia mais carne vermelha e processada teve um risco de morte ligeiramente maior. Aves e peixes não mostraram ligação clara para nenhum dos lados, então não está comprovado que carne branca ajude a viver mais.",
     "why": [
-      "TODO Estudos de acompanhamento nos EUA associaram maior consumo de carne vermelha e processada a maior risco de morte. As associações foram mais fracas para peixe e aves; as substituições e o preparo também importam.",
-      "TODO JAMA美国6队列29682人，8875死亡；BMJ81469人，14019死亡"
+      "Aqui são reunidos dois estudos de longo prazo dos EUA que acompanharam pessoas por anos. Um juntou 6 estudos com 29.682 pessoas, das quais 8.875 morreram. O outro acompanhou 81.469 pessoas, das quais 14.019 morreram.",
+      "Cada 2 porções extras por semana de carne processada, ou de carne vermelha, vieram acompanhadas de um risco de morte cerca de 3% maior. Porções extras de aves ou peixes não mostraram diferença clara.",
+      "Quem aumentou o consumo de carne vermelha em pelo menos meia porção por dia ao longo de oito anos (cerca de 40 g de carne vermelha fresca ou 14 g de carne vermelha processada) teve um risco de morte cerca de 10% maior nos oito anos seguintes em comparação com quem manteve o mesmo consumo.",
+      "A alimentação foi registrada por questionário e os estudos apenas observaram as pessoas; portanto, mostram uma ligação, mas não conseguem provar que a carne em si causou as mortes."
     ],
-    "caution": "TODO Coma menos carne processada e substitua parte da carne vermelha por feijões, castanhas ou peixe.",
-    "myth": "TODO 行动节：白肉 −11%～−3% ACM；证据节：增加红肉≥半份/天，ACM增加10%；每周两份红肉/加工肉增加3%。"
+    "caution": "Não haver ligação clara com a morte não prova que aves e peixes estejam livres de risco. Em um dos estudos, comer mais aves apareceu ligado a mais doenças do coração e dos vasos sanguíneos. Além disso, os dois estudos cobriram períodos diferentes, então seus números não devem ser misturados.",
+    "myth": "O guia original dizia que carne branca reduz o risco de morte em 3% a 11%, que comer meia porção a mais de carne vermelha por dia aumenta esse risco em 10% e que duas porções de carne vermelha ou processada por semana o aumentam em 3%."
   },
   "fresh-fruit-diabetes": {
-    "question": "TODO 新鲜水果（糖尿病人群）",
-    "answer": "TODO Um estudo de longo prazo na China associou maior consumo de frutas frescas a menor risco de morte e complicações vasculares em pessoas com diabetes. O estudo tratou de frutas inteiras, não de sucos.",
+    "question": "Se você tem diabetes, ainda deve comer frutas?",
+    "answer": "Provavelmente sim. Entre adultos chineses com diabetes, quem comia mais frutas frescas teve menor risco de morte, mas esse resultado vem de um único estudo observacional, então as evidências são limitadas.",
     "why": [
-      "TODO Um estudo de longo prazo na China associou maior consumo de frutas frescas a menor risco de morte e complicações vasculares em pessoas com diabetes. O estudo tratou de frutas inteiras, não de sucos.",
-      "TODO 中国CKB基线糖尿病30300人，3389死亡，约7年"
+      "O estudo acompanhou 30.300 adultos chineses que já tinham diabetes por cerca de 7 anos, período em que 3.389 deles morreram.",
+      "Cada 100 g extras de frutas frescas por dia estiveram ligados a um risco de morte cerca de 17% menor. Também estiveram ligados a cerca de 13% menos complicações em grandes vasos sanguíneos, como AVC e doenças do coração, e cerca de 28% menos em pequenos vasos, como doenças renais e oculares causadas pelo diabetes.",
+      "O estudo apenas observou as pessoas. Quem comia mais frutas pode ter sido diferente em outros aspectos, então não dá para provar que foram as frutas que causaram o benefício."
     ],
-    "caution": "TODO Inclua porções moderadas de frutas inteiras, ajustadas à glicemia e ao plano de tratamento.",
-    "myth": "TODO 每天摄入200克新鲜水果可使死亡率降低17%，糖尿病大血管并发症风险降低13%、微血管并发症降低28%。"
+    "caution": "Os números são por 100 g extras por dia, e não 200 g, e vêm apenas de pessoas com diabetes; logo, não significam que todo mundo tenha um risco 17% menor. O estudo analisou frutas frescas inteiras, e suco não substitui a fruta.",
+    "myth": "O guia original dizia que comer 200 g de frutas frescas por dia reduz a taxa de morte em 17%, as complicações do diabetes em grandes vasos sanguíneos em 13% e em pequenos vasos em 28%."
   },
   "flavonoid-foods": {
-    "question": "TODO 含黄酮食物",
-    "answer": "TODO Um estudo de longo prazo na Dinamarca associou maior ingestão de flavonoides pela alimentação a menor risco de morte. Essas substâncias vêm de vários alimentos vegetais; a pesquisa observou a dieta habitual.",
+    "question": "Alimentos ricos em flavonoides, como maçã, chá e brócolis, ajudam a viver mais?",
+    "answer": "Talvez um pouco, mas as evidências são limitadas. Adultos dinamarqueses que consumiam mais flavonoides pela alimentação tiveram um risco de morte cerca de 8% a 12% menor, menos do que os 20% que o guia original afirmava.",
     "why": [
-      "TODO Um estudo de longo prazo na Dinamarca associou maior ingestão de flavonoides pela alimentação a menor risco de morte. Essas substâncias vêm de vários alimentos vegetais; a pesquisa observou a dieta habitual.",
-      "TODO 丹麦56048人，14083死亡，23年"
+      "O estudo acompanhou 56.048 pessoas na Dinamarca por 23 anos, período em que 14.083 morreram. A quantidade de flavonoides ingerida por cada pessoa foi estimada com base em um único questionário alimentar.",
+      "As pessoas foram divididas em cinco grupos iguais, do menor ao maior consumo. Depois de levar em conta o restante da alimentação, o grupo intermediário teve um risco de morte cerca de 12% menor do que o grupo mais baixo, e o grupo mais alto teve cerca de 8% menos risco.",
+      "Acima de aproximadamente 500 mg de flavonoides por dia, consumir mais não reduziu ainda mais o risco.",
+      "Quem consome mais flavonoides também costuma se alimentar melhor no geral e ter melhor condição financeira, o que pode explicar parte da ligação; assim, o estudo mostra uma ligação, não uma prova."
     ],
-    "caution": "TODO Varie as verduras, as frutas e os feijões e aproveite essa diversidade.",
-    "myth": "TODO 吃含黄酮食物与死亡风险降低20%相关；举例一杯茶、一个苹果、一个橘子、100克蓝莓或100克西兰花。"
+    "caution": "O estudo tratou de alimentos comuns, então não diz nada sobre suplementos de flavonoides, e esses alimentos não anulam os danos do cigarro ou do álcool. Ninguém testou um plano específico como comer 100 g de brócolis por dia.",
+    "myth": "O guia original dizia que alimentos ricos em flavonoides reduzem o risco de morte em 20%, dando exemplos como uma xícara de chá, uma maçã, uma laranja, 100 g de mirtilos ou 100 g de brócolis."
   },
   "chili-us": {
-    "question": "TODO 红辣椒（美国）",
-    "answer": "TODO Um estudo de acompanhamento nos EUA encontrou menor risco de morte entre adultos que comiam pimenta vermelha. Idade, alimentação e outros hábitos também influenciam essa associação.",
+    "question": "Nos EUA, quem come pimenta vermelha picante vive mais?",
+    "answer": "Talvez, mas as evidências são limitadas. Depois de considerar a idade e outros fatores, adultos americanos que comiam pimenta vermelha picante tiveram um risco de morte cerca de 13% menor, bem menos do que sugerem os números brutos.",
     "why": [
-      "TODO Um estudo de acompanhamento nos EUA encontrou menor risco de morte entre adultos que comiam pimenta vermelha. Idade, alimentação e outros hábitos também influenciam essa associação.",
-      "TODO 美国NHANES III 16179成人，中位18.9年"
+      "Pesquisadores usaram um levantamento nacional de saúde dos EUA e acompanharam 16.179 adultos por cerca de 19 anos, período em que 4.946 morreram.",
+      "Nos números brutos, 21,6% dos consumidores de pimenta morreram, contra 33,6% de quem não comia. Os dois grupos diferiam na idade e em outros fatores, então essa diferença não pode ser comparada diretamente.",
+      "Depois de levar em conta a idade e outros fatores, quem comia pimenta vermelha picante teve um risco de morte cerca de 13% menor do que quem não comia.",
+      "A alimentação foi perguntada apenas uma vez no início e o estudo só observou as pessoas; portanto, mostra uma ligação, mas não que a pimenta causou a diferença."
     ],
-    "caution": "TODO Se você gosta de pimenta e a tolera bem, use-a para dar sabor à comida.",
-    "myth": "TODO 美国16179人随访约19年：食辣者死亡21.6%，不食者33.6%；原段随后称每周>4次ACM降低23%。"
+    "caution": "Isso não prova que a pimenta em si prolongue a vida. O número de 23% frequentemente associado a este estudo vem de outra pesquisa feita na Itália. Se comida apimentada faz mal ao seu estômago, não há motivo para se forçar a comer mais.",
+    "myth": "O guia original dizia que, em um estudo americano com 16.179 pessoas acompanhadas por cerca de 19 anos, 21,6% de quem comia pimenta morreu contra 33,6% de quem não comia, e que comer pimenta mais de quatro vezes por semana reduzia o risco de morte em 23%."
   },
   "chili-italy": {
-    "question": "TODO 辣椒（意大利）",
-    "answer": "TODO Um estudo de acompanhamento na Itália associou o consumo frequente de pimenta a menor mortalidade geral e cardiovascular.",
+    "question": "Na Itália, quem come pimenta mais de quatro vezes por semana tem menor risco de morte?",
+    "answer": "Talvez, mas as evidências são limitadas. Adultos italianos que comiam pimenta mais de quatro vezes por semana tiveram um risco de morte cerca de 23% menor do que quem nunca ou raramente comia.",
     "why": [
-      "TODO Um estudo de acompanhamento na Itália associou o consumo frequente de pimenta a menor mortalidade geral e cardiovascular.",
-      "TODO 意大利Moli-sani 22811人，1236死亡，中位8.2年"
+      "O estudo acompanhou 22.811 adultos na Itália por cerca de 8 anos, período em que 1.236 morreram.",
+      "Em comparação com quem nunca ou raramente comia pimenta, quem comia mais de quatro vezes por semana teve um risco de morte cerca de 23% menor e um risco cerca de 34% menor de morrer por doenças do coração e dos vasos sanguíneos.",
+      "O número muito divulgado de 61% vale apenas para mortes por AVC e outras doenças dos vasos sanguíneos do cérebro, e não para mortes por doenças em geral.",
+      "O estudo apenas observou as pessoas. Quem come pimenta com frequência pode ter dieta e estilo de vida diferentes, então não dá para mostrar que a pimenta ou sua substância picante, a capsaicina, causou a diferença."
     ],
-    "caution": "TODO Se você gosta de pimenta e a tolera bem, use-a para temperar a comida.",
-    "myth": "TODO 每周吃辣>4次，ACM降低23%、心血管死亡降低34%；二手标题称“患病死亡风险可降低61%”。"
+    "caution": "O grupo de comparação era formado por quem nunca ou raramente comia pimenta, não por todos os que comiam menos de duas vezes por semana. Pimenta não substitui o controle da pressão arterial nem outros tratamentos e, se incomodar seu estômago, consuma apenas o que tolerar.",
+    "myth": "O guia original dizia que comer pimenta mais de quatro vezes por semana reduz o risco de morte em 23% e as mortes por doenças do coração e dos vasos sanguíneos em 34%, e uma manchete citada nele afirmava um risco 61% menor de morrer por doenças."
   },
   "eggs": {
-    "question": "TODO 鸡蛋",
-    "answer": "TODO Um estudo dos EUA com adultos de meia-idade e idosos associou maior consumo de ovos inteiros a maior risco de morte. Os resultados variam entre regiões; a alimentação como um todo oferece mais contexto que o ovo isolado.",
+    "question": "Ovos aumentam seu risco de morte?",
+    "answer": "Talvez, um pouco. Entre americanos de meia-idade e idosos, cada meio ovo extra por dia esteve ligado a um risco de morte cerca de 7% maior, mas isso vem de observação e não prova que ovos façam mal.",
     "why": [
-      "TODO Um estudo dos EUA com adultos de meia-idade e idosos associou maior consumo de ovos inteiros a maior risco de morte. Os resultados variam entre regiões; a alimentação como um todo oferece mais contexto que o ovo isolado.",
-      "TODO NIH-AARP 521120人，129328死亡，中位16年"
+      "O estudo acompanhou 521.120 americanos de meia-idade e idosos por cerca de 16 anos, período em que 129.328 morreram.",
+      "Cada meio ovo inteiro a mais por dia (cerca de 25 g) esteve ligado a um risco de morte cerca de 7% maior.",
+      "Os pesquisadores também usaram um modelo estatístico para estimar a troca desse meio ovo pela mesma quantidade de clara de ovo, aves, peixe, laticínios, nozes e castanhas ou feijões e outras leguminosas. Cada troca resultou em risco de 6% a 13% menor, com maior redução para nozes e castanhas. Isso foi um cálculo, não um teste com pessoas mudando a dieta de verdade.",
+      "A alimentação foi informada pelos próprios participantes uma única vez no início, e outros hábitos ainda podem explicar parte dessa ligação."
     ],
-    "caution": "TODO Ajuste o consumo de ovos aos seus lipídios no sangue e à alimentação, deixando espaço também para feijões e castanhas.",
+    "caution": "Esses resultados vêm de adultos americanos de meia-idade e idosos, e estudos feitos em outros lugares nem sempre concordaram; logo, ovos não acrescentam um risco fixo de 7% para todo mundo. Um único estudo não é motivo para cortar os ovos por completo.",
     "myth": null
   },
   "walnuts": {
-    "question": "TODO 核桃",
-    "answer": "TODO Estudos de longo prazo nos EUA associaram o consumo regular de nozes a menor risco de morte. As diferenças na expectativa de vida foram estimadas por modelos estatísticos; outros hábitos saudáveis também podem contribuir.",
+    "question": "Comer nozes pode acrescentar anos à sua vida?",
+    "answer": "Talvez. Quem comia cinco ou mais porções de nozes por semana teve um risco de morte cerca de 14% menor do que quem não comia, mas o ganho de 1,3 ano é apenas a estimativa de um modelo.",
     "why": [
-      "TODO Estudos de longo prazo nos EUA associaram o consumo regular de nozes a menor risco de morte. As diferenças na expectativa de vida foram estimadas por modelos estatísticos; outros hábitos saudáveis também podem contribuir.",
-      "TODO NHS/HPFS 93340人，30263死亡，最长20年"
+      "O estudo reuniu duas pesquisas americanas de longo prazo com 93.340 pessoas acompanhadas por até 20 anos, período em que 30.263 morreram.",
+      "Quem comia cinco ou mais porções de 28 g de nozes por semana teve um risco de morte cerca de 14% menor do que quem não comia nenhuma.",
+      "Um modelo estimou que, aos 60 anos, as mulheres viveriam cerca de 1,30 ano a mais e os homens cerca de 1,26 ano a mais. Isso se refere ao tempo total de vida, não a anos com boa saúde, e não é garantia.",
+      "Quem come nozes regularmente talvez já cuide mais da saúde, e o trabalho recebeu financiamento da indústria — dois motivos para ler o resultado com cautela."
     ],
-    "caution": "TODO Se não tiver alergia, troque parte dos lanches por porções moderadas de nozes sem sal e inclua essas calorias no total diário.",
-    "myth": "TODO ≥5份核桃/周（28克/份），健康预期寿命多1.3岁，ACM低14%，心血管死亡低25%。"
+    "caution": "Isso não se aplica se você tem alergia a nozes e castanhas. Os números são médias de um grupo grande e não significam que cada pessoa ganhará um ano ou mais.",
+    "myth": "O guia original dizia que cinco ou mais porções de 28 g de nozes por semana acrescentam 1,3 ano de vida saudável, reduzem o risco de morte em 14% e diminuem em 25% as mortes por doenças do coração e dos vasos sanguíneos."
   },
   "nuts-general": {
-    "question": "TODO 坚果频率",
-    "answer": "TODO Vários estudos de acompanhamento associaram o consumo regular de castanhas e outras oleaginosas a menor risco de morte. Abrangeram dietas diferentes, sem comparar diretamente as versões cruas e torradas.",
+    "question": "Quem come nozes e castanhas com mais frequência vive mais?",
+    "answer": "Provavelmente. Quanto mais vezes por semana as pessoas comiam nozes e castanhas, menor era o risco de morte. Quem comia sete ou mais vezes por semana teve um risco cerca de 20% menor do que quem não comia.",
     "why": [
-      "TODO Vários estudos de acompanhamento associaram o consumo regular de castanhas e outras oleaginosas a menor risco de morte. Abrangeram dietas diferentes, sem comparar diretamente as versões cruas e torradas.",
-      "TODO NEJM118962人27429死亡；PREDIMED7216高CVD风险成人323死亡"
+      "Um grande estudo de longo prazo acompanhou 118.962 pessoas, das quais 27.429 morreram, e as agrupou conforme quantas vezes por semana comiam nozes e castanhas.",
+      "Em comparação com quem não comia, quem consumia menos de uma vez, uma vez, duas a quatro vezes, cinco ou seis vezes e sete ou mais vezes por semana teve risco de morte cerca de 7%, 11%, 13%, 15% e 20% menor.",
+      "Um segundo estudo com 7.216 adultos com alto risco de doenças do coração e dos vasos sanguíneos encontrou um risco de morte cerca de 39% menor em quem comia mais de três porções por semana. Porém, apenas 323 deles morreram, e as pessoas escolhiam quanto comer; portanto, foi uma observação, não um teste em que o consumo foi sorteado."
     ],
-    "caution": "TODO Escolha oleaginosas sem sal e com pouco açúcar adicionado, conforme seu gosto; evite-as se tiver alergia.",
-    "myth": "TODO 原文以1盎司份量描述每周频率，并列死亡降低7%、11%、13%、15%、20%；另称7216人“横断面”研究中>3份/周死亡低39%。"
+    "caution": "Os estudos não compararam versões cruas e torradas, então não mostram que nozes e castanhas precisem ser comidas cruas. Se você tem alergia a elas, evite.",
+    "myth": "O guia original dizia que, contando porções de cerca de 1 onça (cerca de 28 g), comer nozes e castanhas mais vezes por semana reduz o risco de morte em 7%, 11%, 13%, 15% e 20%, e que em um estudo com 7.216 pessoas mais de três porções por semana o reduziram em 39%."
   },
   "sodium-ecological": {
-    "question": "TODO 钠摄入跨国生态关联",
-    "answer": "TODO Uma comparação entre países encontrou menor mortalidade onde o consumo de sódio era maior, mas diferenças de renda, assistência à saúde e outros fatores nacionais também influenciam essa associação. Para ajustar o consumo pessoal de sal, é melhor considerar a pressão arterial e o estado de saúde.",
+    "question": "Países que consomem mais sal vivem mais. Você deveria comer mais sal?",
+    "answer": "Não. Isso é apenas uma comparação entre países, as evidências são fracas e os próprios pesquisadores dizem que o resultado não deve orientar o que cada pessoa come.",
     "why": [
-      "TODO Uma comparação entre países encontrou menor mortalidade onde o consumo de sódio era maior, mas diferenças de renda, assistência à saúde e outros fatores nacionais também influenciam essa associação. Para ajustar o consumo pessoal de sal, é melhor considerar a pressão arterial e o estado de saúde.",
-      "TODO 181国家2010年汇总数据；高收入敏感性46国"
+      "Pesquisadores compararam o consumo médio de sódio em 181 países em 2010 com as taxas de morte e a expectativa de vida saudável de cada país. Nenhuma pessoa individual foi acompanhada.",
+      "Países com consumo médio maior de sódio tiveram taxas de morte menores e maior expectativa de vida saudável, e o mesmo aconteceu quando foram comparados apenas 46 países de alta renda.",
+      "Países que consomem mais sal também tendem a ser mais ricos e a ter melhor atendimento médico, o que pode gerar esse padrão. Além disso, o consumo de cada país foi estimado, e uma média nacional não diz nada sobre uma pessoa específica daquele país.",
+      "Os pesquisadores afirmam claramente que esses dados são observacionais e não devem servir de base para recomendações nutricionais."
     ],
-    "caution": "TODO Ajuste o consumo de sal à sua pressão arterial e às suas necessidades médicas.",
-    "myth": "TODO 181国生态研究：每增加1克/日钠，出生健康预期寿命β=2.6年，60岁β=0.3年；ACM β=−131；高收入46国β=3.4年、ACM β=−168。"
+    "caution": "Não coma mais sal para viver mais. Se você tem pressão alta ou outra doença, mantenha o sal no nível adequado ao seu caso e siga a orientação do seu médico.",
+    "myth": "O guia original dizia que, em 181 países, cada 1 g extra de sódio por dia (cerca de 2,5 g de sal) vinha acompanhado de mais 2,6 anos de expectativa de vida saudável ao nascer, 0,3 ano a mais aos 60 anos e taxas de morte menores, além de mais 3,4 anos em 46 países de alta renda."
   },
   "potassium-salt": {
-    "question": "TODO 低钠富钾盐替代",
-    "answer": "TODO Um ensaio randomizado na zona rural da China encontrou menos mortes e eventos cardiovasculares ao trocar o sal comum por um sal com menos sódio e mais potássio. Os participantes tinham histórico de AVC ou eram idosos com hipertensão.",
+    "question": "Trocar o sal comum por sal com menos sódio e enriquecido com potássio reduz o risco de morte?",
+    "answer": "Sim, para as pessoas de alto risco do estudo. Adultos da zona rural da China que já tinham tido um AVC, ou tinham 60 anos ou mais com pressão alta, tiveram um risco de morte cerca de 12% menor depois de trocar para o sal substituto.",
     "why": [
-      "TODO Um ensaio randomizado na zona rural da China encontrou menos mortes e eventos cardiovasculares ao trocar o sal comum por um sal com menos sódio e mais potássio. Os participantes tinham histórico de AVC ou eram idosos com hipertensão.",
-      "TODO 中国600村20995人；卒中史或≥60岁且高血压；均随访4.74年"
+      "Este foi um ensaio randomizado com 20.995 pessoas em 600 aldeias da zona rural da China, todas com histórico de AVC ou com 60 anos ou mais e pressão alta. As aldeias foram sorteadas para usar um sal substituto com 75% de cloreto de sódio e 25% de cloreto de potássio, ou sal comum, e os participantes foram acompanhados por 4,74 anos em média.",
+      "Nas aldeias com sal substituto morreram cerca de 39,3 pessoas por 1.000 a cada ano, contra cerca de 44,6 com sal comum — um risco cerca de 12% menor.",
+      "As mortes não eram a medida principal do estudo, todo mundo sabia qual sal estava usando e o ensaio não consegue dizer se o benefício veio do menos sódio ou do mais potássio."
     ],
-    "caution": "TODO Confirme se a troca é adequada, sobretudo com função renal reduzida, potássio alto ou medicamentos que aumentam o potássio.",
+    "caution": "Se você tem problemas nos rins ou potássio alto no sangue, ou toma remédios que aumentam o potássio, não troque o sal por conta própria. Pergunte ao seu médico primeiro. O resultado vem desse grupo de alto risco e não mostra quanto pessoas saudáveis ganhariam.",
     "myth": null
   },
   "carbohydrate-share": {
-    "question": "TODO 碳水能量占比",
-    "answer": "TODO Estudos de longo prazo encontraram maior mortalidade tanto nas proporções baixas quanto nas altas de carboidratos. Os alimentos usados para substituí-los também influenciaram os resultados.",
+    "question": "Cortar carboidratos faz bem para viver mais?",
+    "answer": "Não necessariamente. Tanto quem obtinha muito pouca energia dos carboidratos quanto quem obtinha demais teve maior risco de morte, e o menor risco apareceu em torno de 50% a 55%.",
     "why": [
-      "TODO Estudos de longo prazo encontraram maior mortalidade tanto nas proporções baixas quanto nas altas de carboidratos. Os alimentos usados para substituí-los também influenciaram os resultados.",
-      "TODO ARIC15428人及荟萃合计432179人"
+      "Pesquisadores acompanharam 15.428 pessoas e também reuniram vários estudos de longo prazo, totalizando 432.179 pessoas.",
+      "O risco de morte foi menor quando os carboidratos forneciam cerca de 50% a 55% da energia diária, e maior nos dois extremos.",
+      "Em comparação com um consumo moderado, obter menos de 40% da energia de carboidratos esteve ligado a um risco cerca de 20% maior, e mais de 70% a um risco cerca de 23% maior.",
+      "O que entrava no lugar dos carboidratos também importou, pois alimentos de origem animal e vegetal deram resultados diferentes. Tudo isso vem da observação de pessoas que relataram a própria alimentação."
     ],
-    "caution": "TODO Comece melhorando a qualidade dos carboidratos, com grãos integrais e feijões; adapte dietas terapêuticas às necessidades individuais.",
+    "caution": "Isso não significa que uma dieta com pouco carboidrato vá encurtar a vida de alguém, nem é uma proporção para seguir à risca. Se você tem diabetes ou usa dieta cetogênica como tratamento médico, siga o plano feito pelo seu médico ou nutricionista.",
     "myth": null
   },
   "betel-quid": {
-    "question": "TODO 槟榔/槟榔嚼块",
-    "answer": "TODO Uma análise conjunta de estudos asiáticos associou a mastigação de preparados de noz de areca a maior risco de morte. A composição desses preparados e o uso de tabaco ou álcool influenciam a intensidade da associação.",
+    "question": "Mascar preparado de bétele encurta a vida?",
+    "answer": "Provavelmente. Estudos reunidos na Ásia mostraram que quem mascava preparado de bétele teve um risco de morte cerca de 21% maior, mas esses estudos apenas observaram as pessoas, então as evidências são limitadas.",
     "why": [
-      "TODO Uma análise conjunta de estudos asiáticos associou a mastigação de preparados de noz de areca a maior risco de morte. A composição desses preparados e o uso de tabaco ou álcool influenciam a intensidade da associação.",
-      "TODO ACM分析179582人，亚洲研究5个比较类别"
+      "Pesquisadores reuniram estudos observacionais da Ásia com 179.582 pessoas e compararam quem mascava noz de areca ou preparado de bétele com quem não mascava.",
+      "Quem mascava teve um risco de morte cerca de 21% maior.",
+      "Os resultados variaram muito de um estudo para outro. As receitas do preparado mudam conforme a região, e muitas pessoas que mascam também fumam e bebem — tudo isso afeta o número."
     ],
-    "caution": "TODO Evite esses preparados e procure apoio para parar se houver dependência.",
+    "caution": "Um preparado sem tabaco não é seguro por isso. Esses estudos não foram testes de pessoas parando de mascar, então não podem dizer quanto tempo a mais você viveria se parasse.",
     "myth": null
   },
   "calorie-restriction": {
-    "question": "TODO 热量限制（非人灵长类）",
-    "answer": "TODO Estudos com macacos rhesus sugerem que restringir calorias pode melhorar a sobrevivência, mas os resultados variam. Ainda não foi demonstrado que essa prática prolongue a vida humana.",
+    "question": "Comer menos calorias ajuda a viver mais?",
+    "answer": "Em pessoas, não se sabe. Apenas estudos com macacos sugerem isso, e um dos dois estudos com macacos inicialmente não encontrou diferença clara; portanto, as evidências ainda são iniciais.",
     "why": [
-      "TODO Estudos com macacos rhesus sugerem que restringir calorias pode melhorar a sobrevivência, mas os resultados variam. Ainda não foi demonstrado que essa prática prolongue a vida humana.",
-      "TODO UW76只恒河猴；另NIA猴研究早期生存差异不显著"
+      "Este é um estudo em animais. 76 macacos rhesus foram mantidos por longo prazo em dois grupos: um alimentado normalmente e outro recebendo cerca de 30% menos calorias.",
+      "Nos resultados mais recentes, os macacos alimentados normalmente tiveram um risco de morte cerca de 78% maior do que os com restrição, e cerca de 2,9 vezes mais risco de morrer por doenças ligadas à idade.",
+      "Um estudo semelhante com macacos em outro centro não encontrou diferença clara na sobrevivência no início, e os dois centros diferiam na ração, na idade dos macacos e na quantidade que os animais de comparação comiam.",
+      "Resultados em macacos não podem ser transferidos para pessoas, e não está comprovado quanto comer menos poderia prolongar a vida humana."
     ],
-    "caution": "TODO Coma o suficiente para se nutrir bem, sem excessos. Evite restringir calorias por conta própria em caso de baixo peso, gestação, amamentação, crescimento, fragilidade ou transtorno alimentar.",
-    "myth": "TODO 恒河猴热量限制：普通喂养组的多种疾病风险增加2.9倍，死亡风险增加3.0倍。"
+    "caution": "Não corte calorias por conta própria para viver mais. Isso importa sobretudo para quem está abaixo do peso, gestantes ou lactantes, crianças e adolescentes, idosos frágeis e qualquer pessoa com transtorno alimentar.",
+    "myth": "O guia original dizia que, em macacos rhesus, animais alimentados normalmente tinham 2,9 vezes mais risco de várias doenças e 3,0 vezes mais risco de morte em comparação com os que tinham restrição de calorias."
   },
   "macronutrient-pattern": {
-    "question": "TODO 综合营养与宏量营养配比",
-    "answer": "TODO Um grande estudo de acompanhamento britânico encontrou relações complexas entre gorduras, proteínas, carboidratos, fibras e saúde. Combinar bem os alimentos é mais prático que buscar uma proporção exata de nutrientes.",
+    "question": "Existe uma proporção ideal de proteínas, gorduras e carboidratos para comer?",
+    "answer": "Nenhuma comprovada. Um grande estudo no Reino Unido encontrou uma faixa de menor risco para cada nutriente, mas juntar essas faixas não cria uma receita testada.",
     "why": [
-      "TODO Um grande estudo de acompanhamento britânico encontrou relações complexas entre gorduras, proteínas, carboidratos, fibras e saúde. Combinar bem os alimentos é mais prático que buscar uma proporção exata de nutrientes.",
-      "TODO UK Biobank195658人4780死亡，平均10.6年"
+      "O estudo acompanhou 195.658 pessoas no Reino Unido por 10,6 anos em média, período em que 4.780 morreram. A alimentação foi registrada perguntando o que cada pessoa tinha comido nas últimas 24 horas.",
+      "Quem consumia de 15 a 30 g de fibras por dia teve um risco de morte cerca de 32% menor do que quem consumia 5 g, e quem obtinha de 14% a 18% da energia de proteínas teve um risco cerca de 27% menor do que quem obtinha 10%. Para o amido, o menor risco ficou entre 20% e 30% da energia.",
+      "A quantidade total de gordura não mostrou ligação clara com a morte; portanto, o estudo não mostrou que mais gordura seja sempre pior.",
+      "Esses dados são observações, e cada ponto mais baixo foi calculado separadamente, então juntá-los em uma única proporção ideal nunca foi testado."
     ],
-    "caution": "TODO Combine verduras, frutas, grãos integrais, feijões e fontes adequadas de proteína; siga um plano nutricional individualizado se tiver doença renal ou diabetes.",
-    "myth": "TODO 原库称通用最优配比：<24%淀粉、15%–17%蛋白质、>15%单不饱和脂肪、<15%糖、6%饱和及6%多不饱和脂肪、30g+纤维；并描述总脂肪与ACM线性相关"
+    "caution": "Não há necessidade de perseguir percentuais exatos, porque a qualidade geral dos alimentos importa mais. Se você tem doença renal, diabetes ou outra condição semelhante, siga o plano alimentar indicado pelo seu médico ou nutricionista.",
+    "myth": "O guia original dizia que existe uma combinação ideal universal: menos de 24% de amido, 15% a 17% de proteína, mais de 15% de gordura monoinsaturada, menos de 15% de açúcar, 6% de gordura saturada e 6% de poli-insaturada, e 30 g ou mais de fibras. Também dizia que o risco de morte sobe continuamente com a gordura total."
   },
   "ultraprocessed-acm": {
-    "question": "TODO 超加工食品与ACM",
-    "answer": "TODO Um estudo de acompanhamento espanhol associou maior consumo de ultraprocessados a maior risco de morte. Os participantes eram principalmente graduados universitários; alimentação e contexto social também influenciam os resultados.",
+    "question": "Alimentos ultraprocessados, como batata chips e hambúrgueres, aumentam o risco de morrer cedo?",
+    "answer": "Talvez, mas as evidências são limitadas. Em um estudo espanhol, quem comia mais alimentos ultraprocessados teve um risco de morte cerca de 62% maior do que quem comia menos.",
     "why": [
-      "TODO Um estudo de acompanhamento espanhol associou maior consumo de ultraprocessados a maior risco de morte. Os participantes eram principalmente graduados universitários; alimentação e contexto social também influenciam os resultados.",
-      "TODO 西班牙SUN大学毕业生19899人，335死亡，200432人年"
+      "O estudo acompanhou 19.899 graduados universitários na Espanha, e apenas 335 deles morreram durante o estudo.",
+      "As pessoas foram divididas em quatro grupos conforme a quantidade de ultraprocessados que consumiam. O grupo mais alto, com mais de quatro porções por dia, teve um risco de morte cerca de 62% maior do que o grupo mais baixo, e cada porção diária a mais esteve ligada a um risco cerca de 18% maior.",
+      "Com tão poucas mortes, o tamanho real do efeito é incerto. Todos os participantes tinham ensino superior, e outros aspectos da alimentação também podem explicar parte dessa ligação.",
+      "A afirmação muito difundida de que quem come esses alimentos com frequência morre em média aos 58 anos refere-se apenas à idade média das 335 pessoas que morreram. Não significa que quem come esses alimentos só viva até os 58."
     ],
-    "caution": "TODO Troque aos poucos alguns ultraprocessados habituais por opções menos processadas e que caibam no orçamento.",
-    "myth": "TODO 行动节：少吃超加工食物 −62%～−18%；引用标题称常吃薯片汉堡巧克力“平均死亡年龄仅58岁”。"
+    "caution": "Esses resultados vêm de graduados universitários espanhóis e podem não valer para outros grupos. Se você reduzir ultraprocessados, garanta que os alimentos escolhidos no lugar continuem oferecendo nutrição adequada e caibam no orçamento.",
+    "myth": "O guia original dizia que comer menos ultraprocessados reduz o risco de morte em 18% a 62%, e citava uma manchete afirmando que quem come batata chips, hambúrgueres e chocolate com frequência morre em média com apenas 58 anos."
   },
   "ultraprocessed-cvd": {
-    "question": "TODO Ultraprocessados e saúde cardiovascular",
-    "answer": "TODO Um estudo de acompanhamento francês associou uma proporção maior de ultraprocessados na dieta a maior risco de desenvolver doença cardiovascular.",
+    "question": "Alimentos ultraprocessados aumentam o risco de doenças do coração e dos vasos sanguíneos?",
+    "answer": "Talvez, mas as evidências são iniciais e este estudo não avaliou mortes. Em um estudo francês, uma fatia maior de ultraprocessados na alimentação esteve ligada a maior risco de doenças do coração e dos vasos sanguíneos.",
     "why": [
-      "TODO Um estudo de acompanhamento francês associou uma proporção maior de ultraprocessados na dieta a maior risco de desenvolver doença cardiovascular.",
-      "TODO 法国105159成人，1409 CVD事件，中位5.2年"
+      "O estudo acompanhou 105.159 adultos na França por cerca de 5 anos, período em que 1.409 desenvolveram doença do coração ou dos vasos sanguíneos.",
+      "Cada 10 pontos percentuais a mais de alimentos ultraprocessados na alimentação estiveram ligados a um risco cerca de 12% maior de doença do coração e dos vasos sanguíneos.",
+      "Ele mediu novos casos de doença, não mortes, então não pode dizer nada sobre o tempo de vida. O outro artigo citado junto é apenas um comentário sem dados próprios."
     ],
-    "caution": "TODO Escolha menos lanches ultraprocessados e refeições prontas e mais comida caseira que caiba na sua rotina.",
-    "myth": "TODO 超加工食品条目并列SUN全因死亡研究、NutriNet-Santé心血管发病研究和一篇评论。"
+    "caution": "Não leia esse número como risco de morte. Ele apoia a ideia geral de comer menos ultraprocessados, mas apenas observou pessoas e não serve para calcular quanto comer menos mudaria seu risco de morrer.",
+    "myth": "O guia original dizia que sua seção sobre ultraprocessados se baseava em três artigos — um estudo espanhol sobre mortes, um estudo francês sobre doenças do coração e um comentário — e tratou os três como evidências sobre morte."
   },
   "whole-grains": {
-    "question": "TODO 全谷物",
-    "answer": "TODO Uma análise conjunta de estudos de longo prazo associou maior consumo de grãos integrais a menor risco de morte. As porções se referiam ao peso dos alimentos integrais.",
+    "question": "Cereais integrais, como pão integral, ajudam a viver mais?",
+    "answer": "Provavelmente. Reunindo vários estudos, cada 90 g extras de alimentos integrais por dia estiveram ligados a um risco de morte cerca de 17% menor.",
     "why": [
-      "TODO Uma análise conjunta de estudos de longo prazo associou maior consumo de grãos integrais a menor risco de morte. As porções se referiam ao peso dos alimentos integrais.",
-      "TODO ACM合并11项前瞻研究；整体综述45项"
+      "Pesquisadores reuniram 11 estudos de longo prazo que acompanharam pessoas por anos para ver como o consumo de cereais integrais se ligava ao risco de morte, como parte de uma revisão de 45 estudos.",
+      "Cada 90 g extras de alimentos integrais por dia — cerca de três porções, como duas fatias de pão e uma tigela de cereal — estiveram ligados a um risco de morte cerca de 17% menor.",
+      "Esses 90 g correspondem ao peso do alimento integral pronto, não a 90 g de grãos secos nem de fibras.",
+      "Os resultados variaram bastante entre os estudos, e todos apenas observaram as pessoas; logo, mostram uma ligação, não uma prova."
     ],
-    "caution": "TODO Substitua aos poucos parte dos cereais refinados por integrais; se tiver doença celíaca, escolha opções sem glúten.",
+    "caution": "Isso não prova que os cereais integrais em si prolonguem a vida. Se você tem doença celíaca, escolha cereais integrais sem glúten e, se seu intestino for sensível, aumente o consumo aos poucos.",
     "myth": null
   },
   "dietary-fiber": {
-    "question": "TODO 膳食纤维",
-    "answer": "TODO Estudos de acompanhamento associaram maior ingestão de fibras a menor risco de morte. Ensaios clínicos também encontraram melhorias em medidas como pressão arterial e colesterol.",
+    "question": "Comer mais fibras ajuda a viver mais?",
+    "answer": "Provavelmente. Quem comia mais fibras teve menor risco de morte, embora a revisão não informe um número exato para essa redução.",
     "why": [
-      "TODO Estudos de acompanhamento associaram maior ingestão de fibras a menor risco de morte. Ensaios clínicos também encontraram melhorias em medidas como pressão arterial e colesterol.",
-      "TODO 185项前瞻研究及58项试验；试验4635人"
+      "Pesquisadores reuniram 185 estudos que acompanharam pessoas por anos e 58 ensaios clínicos com 4.635 participantes.",
+      "Nos estudos de longo prazo, quem consumia mais fibras teve menor risco de morte do que quem consumia menos. A redução de 15% a 30% citada no resumo da revisão engloba vários problemas de saúde juntos, não apenas mortes.",
+      "Os ganhos pareceram maiores perto de 25 a 29 g de fibras por dia.",
+      "Os ensaios clínicos mostraram que mais fibras melhoraram peso corporal, pressão arterial e colesterol, mas não mediram mortes."
     ],
-    "caution": "TODO Aumente as fibras aos poucos com grãos integrais, feijões, verduras e frutas, bebendo água suficiente; com estreitamento intestinal ou doença digestiva aguda, consulte um médico primeiro.",
+    "caution": "As evidências sobre mortes vêm apenas de observação, então não provam que as fibras em si prolonguem a vida. Se você tem estreitamento intestinal ou doença intestinal aguda, pergunte ao seu médico antes de aumentar muito as fibras.",
     "myth": null
   },
   "plant-protein": {
-    "question": "TODO 植物蛋白来源",
-    "answer": "TODO Vários estudos de coorte associaram maior ingestão de proteína vegetal a menor risco de morte. As fontes alimentares e aquilo que substituem são centrais para entender o resultado.",
+    "question": "Comer mais proteína vegetal, como feijão e tofu, ajuda a viver mais?",
+    "answer": "Talvez um pouco. Quem comia mais proteína vegetal teve um risco de morte cerca de 8% menor do que quem comia menos.",
     "why": [
-      "TODO Vários estudos de coorte associaram maior ingestão de proteína vegetal a menor risco de morte. As fontes alimentares e aquilo que substituem são centrais para entender o resultado.",
-      "TODO 32队列综述、31项合并，715128人113039死亡"
+      "Pesquisadores reuniram 31 estudos de longo prazo com 715.128 pessoas, das quais 113.039 morreram.",
+      "O grupo que consumiu mais proteína vegetal teve um risco de morte cerca de 8% menor do que o grupo que consumiu menos. Cada 3% extras da energia diária vindos de proteína vegetal estiveram ligados a um risco cerca de 5% menor.",
+      "Os resultados variaram um pouco entre os estudos, e todos apenas observaram as pessoas. É difícil saber se o ganho vem da proteína em si, de alimentos como feijões e castanhas como um todo ou da carne que eles substituem."
     ],
-    "caution": "TODO Troque parte da carne vermelha e processada por feijões, alimentos de soja ou castanhas, considerando doença renal e alergias.",
+    "caution": "Isso se refere à proteína vegetal dos alimentos, então não mostra que acrescentar proteína em pó ajude. Se você tem doença renal ou alergia a leguminosas, soja ou nozes e castanhas, adapte às suas necessidades.",
     "myth": null
   },
   "dairy": {
-    "question": "TODO 乳制品／牛奶",
-    "answer": "TODO Um estudo de acompanhamento em vários países associou o consumo de laticínios a menor risco de morte, mas outras revisões tiveram resultados variados. Leite e iogurte fornecem nutrientes; a escolha também depende das necessidades pessoais.",
+    "question": "Tomar leite todo dia ajuda a viver mais?",
+    "answer": "Não está claro. Um estudo feito em vários países ligou maior consumo de laticínios a menor risco de morte, mas outros estudos reunidos não encontraram ligação consistente entre leite e risco de morte.",
     "why": [
-      "TODO Um estudo de acompanhamento em vários países associou o consumo de laticínios a menor risco de morte, mas outras revisões tiveram resultados variados. Leite e iogurte fornecem nutrientes; a escolha também depende das necessidades pessoais.",
-      "TODO 21国136,384人，35–70岁；中位随访9.1年；6,796死亡"
+      "Um estudo acompanhou 136.384 pessoas de 35 a 70 anos em 21 países por cerca de 9 anos, período em que 6.796 morreram.",
+      "Quem consumia mais de duas porções de laticínios por dia — sendo uma porção cerca de 244 g de leite ou iogurte, 15 g de queijo ou 5 g de manteiga — teve um risco de morte cerca de 17% menor do que quem não consumia nenhum. Isso conta todos os laticínios, não apenas o leite.",
+      "O risco de morrer por doenças do coração e dos vasos sanguíneos não mostrou diferença clara.",
+      "Uma revisão de 8 análises combinadas não encontrou ligação clara entre 200 a 244 g extras de leite por dia e o risco de morte."
     ],
-    "caution": "TODO Se gostar e tolerar, escolha leite ou iogurte com pouco açúcar adicionado; procure alternativas adequadas para intolerância à lactose ou alergia.",
+    "caution": "Não tome mais leite na esperança de viver mais, porque esses estudos não podem prometer isso. Se você tem intolerância à lactose ou alergia ao leite, esse resultado não se aplica a você.",
     "myth": null
   },
   "tea-china-par": {
-    "question": "TODO 饮茶（China-PAR）",
-    "answer": "TODO Um estudo de longo prazo na China associou o hábito de tomar chá a menor risco de morte. O estilo de vida e as condições sociais e econômicas também podem contribuir.",
+    "question": "Beber chá três ou mais vezes por semana pode acrescentar um ano à sua vida?",
+    "answer": "Talvez, mas o ganho de 1,26 ano é a estimativa de um modelo, não uma promessa. Adultos chineses que bebiam chá três ou mais vezes por semana tiveram um risco de morte cerca de 15% menor.",
     "why": [
-      "TODO Um estudo de longo prazo na China associou o hábito de tomar chá a menor risco de morte. O estilo de vida e as condições sociais e econômicas também podem contribuir.",
-      "TODO 中国100,902成人；中位7.3年；5,479死亡"
+      "O estudo combinou três pesquisas chinesas de longo prazo com 100.902 adultos, acompanhados por cerca de 7 anos, período em que 5.479 morreram.",
+      "Quem bebia chá três ou mais vezes por semana teve um risco de morte cerca de 15% menor do que quem nunca bebia ou bebia com menos frequência.",
+      "A partir disso, os pesquisadores estimaram que, aos 50 anos, quem bebe chá com frequência viveria cerca de 1,26 ano a mais. Esse número vem de um modelo, não de um teste em que as pessoas receberam chá.",
+      "O consumo de chá foi informado pelos próprios participantes, e quem bebe chá também pode diferir em tabagismo, consumo de álcool, renda e outros hábitos; portanto, o estudo mostra uma ligação, não uma prova."
     ],
-    "caution": "TODO Aproveite chá sem açúcar e em temperatura confortável; reduza se atrapalhar o sono, causar palpitações ou houver necessidade de limitar cafeína.",
+    "caution": "O estudo não diferenciou tamanho da xícara, concentração nem tipo de chá, então não pode dizer qual chá ou qual quantidade é melhor. Chá não substitui parar de fumar nem tratar uma doença.",
     "myth": null
   },
   "tea-ckb": {
-    "question": "TODO 饮茶（CKB）",
-    "answer": "TODO Outro grande estudo chinês encontrou a associação entre chá e menor mortalidade principalmente nos homens. Tomar chá diariamente não apresentou resultados melhores que o consumo menos frequente.",
+    "question": "Beber chá todo dia é melhor do que beber de vez em quando?",
+    "answer": "Não necessariamente. Quem bebia chá teve um risco de morte ligeiramente menor, mas quem bebia todos os dias não se saiu melhor do que quem bebia ocasionalmente, e a ligação apareceu sobretudo nos homens.",
     "why": [
-      "TODO Outro grande estudo chinês encontrou a associação entre chá e menor mortalidade principalmente nos homens. Tomar chá diariamente não apresentou resultados melhores que o consumo menos frequente.",
-      "TODO 中国CKB 438,443人；中位11.1年；34,661死亡"
+      "Este estudo acompanhou 438.443 adultos na China por cerca de 11 anos, período em que 34.661 morreram.",
+      "Em comparação com quem nunca bebia chá, quem bebia sem ser todos os dias teve um risco de morte cerca de 11% menor, e quem bebia todos os dias teve cerca de 8% menos risco.",
+      "O risco menor apareceu principalmente nos homens, e o consumo de chá foi perguntado apenas uma vez no início.",
+      "Tabagismo e álcool podem distorcer os resultados, então o estudo não consegue provar que o chá em si faça as pessoas viverem mais."
     ],
-    "caution": "TODO Tome chá sem açúcar em quantidades e temperatura agradáveis, sem prejudicar o sono.",
+    "caution": "Isso não é motivo para beber cada vez mais chá, e o chá não anula os danos do cigarro nem do consumo pesado de álcool.",
     "myth": null
   },
   "artificially-sweetened-drinks": {
-    "question": "TODO 人工甜味软饮料",
-    "answer": "TODO Um grande estudo europeu associou maior consumo de bebidas com adoçantes a maior risco de morte. Pessoas com problemas metabólicos prévios podem recorrer mais a essas bebidas, o que dificulta a interpretação.",
+    "question": "Bebidas diet com adoçantes artificiais aumentam o risco de morte?",
+    "answer": "Talvez, mas não está claro se a culpa é dos adoçantes. Em um grande estudo europeu, quem bebia dois ou mais copos por dia de refrigerantes com adoçantes artificiais teve um risco de morte cerca de 26% maior.",
     "why": [
-      "TODO Um grande estudo europeu associou maior consumo de bebidas com adoçantes a maior risco de morte. Pessoas com problemas metabólicos prévios podem recorrer mais a essas bebidas, o que dificulta a interpretação.",
-      "TODO EPIC欧洲10国451,743人；平均16.4年；41,693死亡"
+      "O estudo acompanhou 451.743 pessoas em 10 países europeus por 16,4 anos em média, período em que 41.693 morreram.",
+      "Em comparação com quem bebia menos de um copo por mês, quem bebia dois ou mais copos por dia (sendo um copo cerca de 250 ml) teve risco de morte cerca de 26% maior com bebidas adoçadas artificialmente, cerca de 8% maior com bebidas açucaradas e cerca de 17% maior considerando todos os refrigerantes juntos.",
+      "Os números de 18%, 11% e 27% do guia original valem apenas para pessoas que não estavam acima do peso (índice de massa corporal abaixo de 25) e bebiam um copo ou mais por dia.",
+      "Pessoas que já têm obesidade ou outros riscos de saúde podem migrar para bebidas diet, e as bebidas foram perguntadas apenas uma vez; logo, o estudo não mostra que os adoçantes causem morte."
     ],
-    "caution": "TODO Prefira água para matar a sede. Se usa bebidas com adoçantes no lugar das açucaradas, esse resultado não é motivo para voltar ao açúcar.",
-    "myth": "TODO * 无糖（甜味）饮料\n  * [「无糖饮料使死亡风险增加 26 %」，是真的吗？](https://www.zhihu.com/question/4185982"
+    "caution": "Isso não se aplica a água nem a chá e café sem açúcar. O estudo não testou trocar bebidas açucaradas por diet, e não consegue apontar um adoçante específico.",
+    "myth": "O guia original dizia que, em comparação com menos de um copo de refrigerante por mês, um copo ou mais por dia aumentava o risco de morte em 18%, em 11% para bebidas açucaradas e em 27% para bebidas sem açúcar."
   },
   "sugar-sweetened-drinks": {
-    "question": "TODO 含糖饮料",
-    "answer": "TODO Estudos de longo prazo nos EUA associaram maior consumo de bebidas açucaradas a maior risco de morte por todas as causas e por doenças cardiovasculares.",
+    "question": "Bebidas açucaradas, como refrigerante e chá com leite adoçado, aumentam o risco de morte?",
+    "answer": "Provavelmente. Em estudos americanos de longo prazo, quem tomava duas ou mais porções de bebidas açucaradas por dia teve um risco de morte cerca de 21% maior, e o risco subia a cada porção extra.",
     "why": [
-      "TODO Estudos de longo prazo nos EUA associaram maior consumo de bebidas açucaradas a maior risco de morte por todas as causas e por doenças cardiovasculares.",
-      "TODO 美国NHS 80,647女性、HPFS 37,716男性；最长34年；36,436死亡"
+      "Dois estudos dos EUA acompanharam 80.647 mulheres e 37.716 homens, em sua maioria profissionais de saúde, por até 34 anos, período em que 36.436 morreram.",
+      "Em comparação com quem tomava menos de uma porção por mês, quem tomava duas ou mais por dia teve um risco de morte cerca de 21% maior, um risco cerca de 31% maior de morrer por doenças do coração e dos vasos sanguíneos e cerca de 16% maior de morrer por câncer.",
+      "Cada porção diária a mais esteve ligada a um risco de morte cerca de 7% maior, cerca de 10% maior para mortes por doenças do coração e dos vasos sanguíneos e cerca de 5% maior para mortes por câncer.",
+      "O consumo de bebidas foi informado pelos próprios participantes, e outros hábitos podem explicar parte da ligação."
     ],
-    "caution": "TODO Troque aos poucos as bebidas doces habituais por água ou opções sem açúcar.",
-    "myth": "TODO * 有糖饮料\n  * [可乐和奶茶，增加全因死亡率高达62%！果汁降低免疫力，影响肝代谢！含糖饮料那些事](https://zhuanlan.zhihu.com"
+    "caution": "Uma porção neste estudo não se converte diretamente em um copo de outros estudos, e os grupos usados aqui não são limites seguros. Os números de 18% e 12% citados com frequência ao lado deste estudo tratam de desenvolver câncer, não de morrer.",
+    "myth": "O guia original dizia que uma bebida açucarada por dia aumenta o risco de morte em 7% e duas em 21%, que cada xícara extra aumenta o risco de morte por câncer em 16%, e citava uma manchete afirmando que cola e chá com leite aumentam o risco de morte em até 62%."
   },
   "fruit-juice": {
-    "question": "TODO 100%果汁",
-    "answer": "TODO Um estudo dos EUA com adultos de meia-idade e idosos associou maior consumo de suco puro de fruta a maior risco de morte.",
+    "question": "Suco de fruta 100% puro é tão saudável quanto parece?",
+    "answer": "Em grandes quantidades provavelmente não, mas as evidências são limitadas e não mostram que suco seja pior do que refrigerantes açucarados. Em um estudo americano, cada 355 ml extras de suco puro por dia estiveram ligados a um risco de morte cerca de 24% maior.",
     "why": [
-      "TODO Um estudo dos EUA com adultos de meia-idade e idosos associou maior consumo de suco puro de fruta a maior risco de morte.",
-      "TODO 美国REGARDS 13,440人，≥45岁，均龄63.6；平均6年；1,000死亡"
+      "O estudo acompanhou 13.440 adultos americanos com 45 anos ou mais, idade média de 63,6 anos, por 6 anos em média, período em que 1.000 morreram.",
+      "Cada 12 onças extras (cerca de 355 ml) de suco de fruta 100% puro por dia estiveram ligadas a um risco de morte cerca de 24% maior.",
+      "Quando quem bebia mais suco e quem bebia menos foram comparados diretamente, não houve diferença clara, e o estudo apenas observou as pessoas.",
+      "O número de 11% que o guia original atribuiu às bebidas açucaradas na verdade reunia bebidas adoçadas com açúcar e suco 100% puro juntos, então não pode ser usado para comparar suco com refrigerante."
     ],
-    "caution": "TODO Beba água para matar a sede, prefira frutas inteiras e tome suco em pequenas quantidades.",
-    "myth": "TODO * 果汁\n  * [JAMA子刊：100%纯果汁可能比含糖饮料更危险](https://zhuanlan.zhihu.com/p/66513350)\n    *"
+    "caution": "Isso não se aplica a comer frutas inteiras. Se você tem diabetes ou precisa limitar o açúcar, encaixe o suco no plano alimentar indicado pelo seu médico.",
+    "myth": "O guia original dizia que cada porção extra de 12 onças por dia de bebidas açucaradas aumenta o risco de morte em 11% e a de suco de fruta em 24%, então suco 100% puro poderia ser mais perigoso do que bebidas açucaradas."
   },
   "coffee": {
-    "question": "TODO 咖啡",
-    "answer": "TODO Uma grande revisão associou o consumo moderado de café a menor risco de morte. O tamanho da xícara, o preparo, o açúcar adicionado e a tolerância pessoal também importam.",
+    "question": "Café faz mal? Você deveria parar de beber?",
+    "answer": "Não precisa parar. Quem bebia café com moderação teve um risco de morte ligeiramente menor, mas isso não é motivo para começar a beber só para viver mais.",
     "why": [
-      "TODO Uma grande revisão associou o consumo moderado de café a menor risco de morte. O tamanho da xícara, o preparo, o açúcar adicionado e a tolerância pessoal também importam.",
-      "TODO 40研究，3,852,651人，450,256例全因及死因别死亡"
+      "Pesquisadores reuniram 40 estudos com cerca de 3,85 milhões de pessoas para ver como a quantidade de café se relacionava com o risco de morte.",
+      "Quem bebia cerca de 3,5 xícaras por dia teve um risco de morte cerca de 15% menor do que quem não bebia — o menor entre todas as quantidades. Beber mais não reduziu ainda mais o risco.",
+      "Esses estudos apenas observaram as pessoas. Quem bebe café também pode diferir na alimentação, no tabagismo e no álcool, e algumas pessoas param de tomar café porque ficaram doentes; portanto, os estudos mostram uma ligação, mas não provam que o café faça viver mais."
     ],
-    "caution": "TODO Se gostar e tolerar, aproveite com moderação e pouco açúcar; ajuste a cafeína na gestação ou se houver insônia ou palpitações.",
+    "caution": "3,5 xícaras é o ponto mais baixo de uma curva estatística, não uma receita. Se você está grávida, dorme mal ou sente palpitações, beba menos. Pegue leve no açúcar. Se você não bebe café, não há necessidade de começar em busca de uma vida mais longa.",
     "myth": null
   },
   "spermidine-diet": {
-    "question": "TODO Espermidina na alimentação",
-    "answer": "TODO Estudos de acompanhamento associaram maior ingestão de espermidina pelos alimentos a menor risco de morte. Tomar suplementos é outra questão; ainda não foi demonstrado que eles prolonguem a vida.",
+    "question": "Espermidina, vinda da alimentação ou de suplementos, pode ajudar a viver mais?",
+    "answer": "Talvez pela alimentação, mas as evidências são limitadas, e não há evidência de que suplementos de espermidina prolonguem a vida.",
     "why": [
-      "TODO Estudos de acompanhamento associaram maior ingestão de espermidina pelos alimentos a menor risco de morte. Tomar suplementos é outra questão; ainda não foi demonstrado que eles prolonguem a vida.",
-      "TODO Bruneck 829人，45–84岁；1995–2015年341死亡；SAPHIR独立验证"
+      "O estudo acompanhou 829 pessoas de 45 a 84 anos entre 1995 e 2015, período em que 341 morreram, e estimou quanta espermidina cada pessoa obtinha de alimentos comuns.",
+      "Depois de considerar a idade e outros fatores, cada aumento de um desvio-padrão (uma unidade estatística de variação) na ingestão esteve ligado a um risco de morte cerca de 24% menor. Um segundo grupo de pessoas mostrou a mesma direção.",
+      "Os números 40,5, 23,7 e 15,1 do guia original são mortes por 1.000 pessoas por ano, não percentuais, e a maior parte dessa diferença veio da idade. Após o ajuste, cerca de 48%, 41% e 38% dos grupos de consumo baixo, médio e alto morreram em 20 anos.",
+      "O estudo apenas observou as pessoas e não consegue separar a espermidina de uma alimentação melhor no geral. Um pequeno ensaio de 12 meses que deu suplementos de espermidina a 100 idosos que sentiam piora na memória ou no raciocínio não encontrou melhora na medida principal de raciocínio e não mediu mortes."
     ],
-    "caution": "TODO Varie a alimentação com alimentos comuns, como grãos integrais e feijões.",
-    "myth": "TODO * 亚精胺\n  * [Science：科学背书！从精液中发现的亚精胺，竟然有着抗衰老、抗癌、保护心血管和神经、改善肥胖和2型糖尿病等逆天神效](https://"
+    "caution": "Não compre suplementos de espermidina por causa de uma suposta queda de 60% nas mortes. Se você tem algum problema de saúde, confira qualquer suplemento com seu médico primeiro.",
+    "myth": "O guia original dizia que a espermidina reduz o risco de morte em 30% a 60% e que as taxas de morte nos grupos de consumo baixo, médio e alto eram de 40,5%, 23,7% e 15,1%."
   },
   "smoking": {
-    "question": "TODO 吸烟与戒烟",
-    "answer": "TODO Estudos de longo prazo encontram de forma consistente maior mortalidade em fumantes, mesmo nos que fumam pouco por dia. Quem para tem riscos menores que quem continua.",
+    "question": "Fumar apenas alguns cigarros por dia ainda encurta a vida?",
+    "answer": "Sim. Mesmo quem fumava menos de 10 cigarros por dia teve um risco de morte cerca de 17% maior, e quem fumava 10 ou mais teve cerca de 54% mais risco.",
     "why": [
-      "TODO Estudos de longo prazo encontram de forma consistente maior mortalidade em fumantes, mesmo nos que fumam pouco por dia. Quem para tem riscos menores que quem continua.",
-      "TODO 墨西哥129,151无既往慢病成人，35–89岁；招募1998–2004，随访至2018"
+      "Um estudo de longo prazo no México acompanhou 129.151 adultos de 35 a 89 anos que não tinham doenças crônicas quando entraram, entre 1998 e 2004, e os seguiu até 2018.",
+      "Em comparação com quem nunca fumou, quem fumava menos de 10 por dia teve um risco de morte cerca de 17% maior, e quem fumava 10 ou mais cerca de 54% maior. Quem já havia parado ao entrar no estudo teve uma taxa de morte menor do que quem fumava diariamente.",
+      "Um grande estudo americano constatou que fumantes atuais tinham cerca de três vezes o risco de morte de quem nunca fumou e viviam mais de 10 anos a menos. Quem parou entre os 25 e 34 anos ganhou cerca de 10 anos em comparação com quem continuou fumando.",
+      "A quantidade que as pessoas fumam muda ao longo do tempo, então os números exatos são estimativas."
     ],
-    "caution": "TODO Não comece a fumar; se já fuma, procure parar o quanto antes, com apoio para deixar o cigarro e medicamentos quando necessário.",
+    "caution": "Fumar menos cigarros não elimina o risco. Neste estudo, quem não fumava todos os dias não mostrou diferença clara, mas isso não prova que fumar ocasionalmente seja seguro. Se for difícil parar, um programa para parar de fumar e remédios prescritos por um médico podem ajudar.",
     "myth": null
   },
   "sun-exposure": {
-    "question": "TODO 晒太阳／紫外线",
-    "answer": "TODO Estudos nórdicos encontraram associações entre indicadores de exposição ao sol e sobrevivência. Atividades ao ar livre e hábitos de uso dos serviços de saúde também influenciam os resultados. Não foi definida uma duração de exposição para viver mais.",
+    "question": "Tomar mais sol ajuda a viver mais?",
+    "answer": "Não está claro, e as evidências são fracas. Um estudo dinamarquês encontrou menor risco de morte em pessoas diagnosticadas com câncer de pele, o que não mostra que mais sol faça viver mais.",
     "why": [
-      "TODO Estudos nórdicos encontraram associações entre indicadores de exposição ao sol e sobrevivência. Atividades ao ar livre e hábitos de uso dos serviços de saúde também influenciam os resultados. Não foi definida uma duração de exposição para viver mais.",
-      "TODO 丹麦>40岁440万人，1980–2006；瑞典29,518名女性20年随访"
+      "O estudo dinamarquês usou registros nacionais de 4,4 milhões de pessoas acima de 40 anos entre 1980 e 2006. Ele tratou o diagnóstico de câncer de pele como um sinal aproximado de mais sol e nunca mediu quanto sol ninguém tomou.",
+      "Pessoas diagnosticadas com câncer de pele não melanoma tiveram um risco de morte cerca de 48% menor do que quem não teve diagnóstico, e pessoas com melanoma tiveram cerca de 11% menos risco. Os autores deixam claro que isso não pode ser interpretado como causa e efeito.",
+      "Quem recebe diagnóstico de câncer de pele pode ir mais ao médico, ter melhor condição financeira e passar mais tempo ativo ao ar livre — fatores que podem explicar a diferença.",
+      "Um estudo sueco que acompanhou 29.518 mulheres por 20 anos estimou que quem evitava o sol viveu de 0,6 a 2,1 anos a menos do que quem mais se expunha, e não 6 anos — e ele também apenas observou as pessoas."
     ],
-    "caution": "TODO Aproveite atividades ao ar livre e a luz do dia, evitando queimaduras; adapte a proteção se tiver alto risco de câncer de pele ou sensibilidade à luz.",
-    "myth": "TODO * 晒太阳\n  * [晒太阳和死亡率的关系，如何科学，安全的晒太阳？\n](https://zhuanlan.zhihu.com/p/76301306)\n    "
+    "caution": "Queimaduras solares aumentam o risco de câncer de pele, e esses estudos não definiram uma quantidade ideal de sol. Se você tem doença sensível à luz, toma remédios que deixam a pele sensível ao sol ou tem alto risco de câncer de pele, siga a orientação do seu médico sobre proteção solar.",
+    "myth": "O guia original dizia que um estudo dinamarquês de 26 anos descobriu que mais sol prolonga muito a vida, que mesmo pessoas que tiveram câncer de pele por sol em excesso viveram 6 anos a mais que a média e que o sol reduz o risco de morte em cerca de 40%."
   },
   "nmn": {
-    "question": "TODO NMN",
-    "answer": "TODO Os ensaios em humanos com NMN têm sido principalmente pequenos, curtos e voltados a medidas metabólicas. Não foi demonstrado que prolongue a vida humana; os dados de segurança a longo prazo são limitados.",
+    "question": "Tomar NMN retarda o envelhecimento ou ajuda a viver mais?",
+    "answer": "Não há evidência disso. Os ensaios em humanos feitos até agora são pequenos e curtos, avaliaram apenas açúcar no sangue e marcadores semelhantes e, no conjunto, não mostraram benefício claro.",
     "why": [
-      "TODO Os ensaios em humanos com NMN têm sido principalmente pequenos, curtos e voltados a medidas metabólicas. Não foi demonstrado que prolongue a vida humana; os dados de segurança a longo prazo são limitados.",
-      "TODO 原RCT为超重/肥胖绝经后糖尿病前期女性、10周；综述8试验342人"
+      "Um ensaio em humanos deu NMN ou um comprimido sem princípio ativo por 10 semanas a mulheres após a menopausa com sobrepeso ou obesidade e pré-diabetes, e avaliou como seus músculos respondiam à insulina.",
+      "Uma revisão de 8 ensaios randomizados com 342 pessoas ao todo, tomando de 250 a 2.000 mg por dia por 14 dias a 12 semanas, não encontrou melhora clara nos principais marcadores de saúde medidos.",
+      "Nenhum desses ensaios avaliou mortes ou tempo de vida, e há pouca informação sobre se tomar por anos é seguro."
     ],
-    "caution": "TODO Priorize alimentação, atividade e sono, em vez de tratar o NMN como um medicamento comprovado para viver mais.",
-    "myth": "TODO * NMN"
+    "caution": "Não encare o NMN como um remédio de longevidade comprovado, nem o use no lugar do tratamento de uma doença crônica. Se quiser participar de pesquisas sobre ele, faça isso em um ensaio clínico formal.",
+    "myth": "O guia original dizia que o NMN poderia ajudar a viver mais, mas citava apenas o nome, sem estudos nem números."
   },
   "metformin-diabetes": {
-    "question": "TODO 二甲双胍（超重新诊断2型糖尿病）",
-    "answer": "TODO Um ensaio randomizado em pessoas com sobrepeso e diabetes recém-diagnosticado encontrou menos mortes com metformina. As análises conjuntas de ensaios posteriores foram menos conclusivas. Essas pesquisas tratam do diabetes.",
+    "question": "Para pessoas com sobrepeso e diabetes tipo 2 recém-diagnosticado, a metformina reduz o risco de morte?",
+    "answer": "Não está claro. Trata-se de pessoas com diabetes, não de pessoas saudáveis. Um ensaio mais antigo encontrou cerca de 36% menos mortes, mas 13 ensaios reunidos não mostraram diferença clara.",
     "why": [
-      "TODO Um ensaio randomizado em pessoas com sobrepeso e diabetes recém-diagnosticado encontrou menos mortes com metformina. As análises conjuntas de ensaios posteriores foram menos conclusivas. Essas pesquisas tratam do diabetes.",
-      "TODO UKPDS主随机比较753名超重新诊断2型糖尿病者，均龄53；中位10.7年"
+      "Nesse ensaio randomizado, 753 pacientes com sobrepeso e diabetes tipo 2 recém-diagnosticado, com média de 53 anos, foram divididos por sorteio em dois grupos. Um recebeu controle intensivo da glicose com metformina e o outro recebeu cuidado habitual baseado principalmente em alimentação, com acompanhamento por cerca de 10,7 anos.",
+      "O grupo da metformina teve um risco de morte cerca de 36% menor, com o valor real provavelmente entre 9% e 55% menor.",
+      "Quando 13 ensaios randomizados com 13.110 pessoas foram reunidos mais tarde, a metformina não mostrou diferença clara no risco de morte.",
+      "O tratamento de comparação do ensaio antigo difere do cuidado padrão atual e, no mesmo estudo, acrescentar metformina a um remédio para diabetes já em uso deu resultados diferentes."
     ],
-    "caution": "TODO Com diabetes, siga o plano prescrito, considerando função renal e tolerância; se for saudável, não comece a tomar por conta própria para viver mais.",
+    "caution": "Esses estudos tratam apenas de pessoas com diabetes e não se aplicam a quem não tem a doença. Se você toma metformina, não pare por conta própria. Se e como tomá-la é decisão do seu médico, levando em conta a função dos rins, sua tolerância e sua vitamina B12.",
     "myth": null
   },
   "metformin-longevity": {
-    "question": "TODO Metformina e longevidade em pessoas saudáveis",
-    "answer": "TODO Um estudo observacional comparou pessoas com diabetes que tomavam metformina com um grupo de controle sem diabetes e encontrou maior sobrevida no primeiro grupo. Porém, um acompanhamento aleatorizado de longo prazo não encontrou redução da mortalidade em pessoas com alto risco de diabetes. Não foi demonstrado que a metformina prolongue a vida de pessoas saudáveis.",
+    "question": "Se você não tem diabetes, a metformina pode ajudar a viver mais?",
+    "answer": "Não há evidência disso. Em um ensaio randomizado de longo prazo com pessoas de alto risco para diabetes, quem recebeu metformina não teve risco de morte menor.",
     "why": [
-      "TODO Um estudo observacional comparou pessoas com diabetes que tomavam metformina com um grupo de controle sem diabetes e encontrou maior sobrevida no primeiro grupo. Porém, um acompanhamento aleatorizado de longo prazo não encontrou redução da mortalidade em pessoas com alto risco de diabetes. Não foi demonstrado que a metformina prolongue a vida de pessoas saudáveis.",
-      "TODO 英国CPRD 78,241二甲双胍患者、12,222磺脲患者、90,463匹配非糖尿病人；DPP/DPPOS 3,234高糖尿病风险者、中位21年、453死亡"
+      "Em um ensaio randomizado, 3.234 pessoas com alto risco de diabetes foram sorteadas para tomar metformina ou um comprimido sem princípio ativo e acompanhadas por cerca de 21 anos, período em que 453 morreram. O risco de morte não mostrou diferença clara entre os grupos, embora depois de 2001 o tratamento tenha deixado de ser sigiloso e algumas pessoas tenham trocado.",
+      "A ideia de que a metformina dá anos extras vem de um estudo britânico de 2014 que revisou prontuários médicos antigos. Pessoas com diabetes que tomavam metformina sobreviveram mais do que pessoas parecidas sem diabetes, cujo tempo de sobrevivência foi cerca de 15% menor. Isso não foi um ensaio com pessoas saudáveis tomando o remédio e não mostra um ganho fixo de 3 anos.",
+      "Sobre a alegação de que pais que tomam metformina poderiam causar defeitos congênitos, um estudo de 2024 na Noruega e em Taiwan não encontrou ligação clara depois de levar em conta o próprio diabetes dos pais e outros fatores."
     ],
-    "caution": "TODO Não se automedique contra o envelhecimento; se trata diabetes ou planeja ter filhos, converse com seu médico sobre os medicamentos.",
-    "myth": "TODO * 二甲双胍\n  * [“胍”吹必看 丨我就是神药——二甲双胍](https://zhuanlan.zhihu.com/p/419202902)\n    * 二"
+    "caution": "Se você é saudável, não tome metformina por conta própria para viver mais. Homens com diabetes que planejam ter filhos não devem interromper o remédio por causa de notícias da internet. Converse antes com seu médico.",
+    "myth": "O guia original dizia que a metformina é um remédio milagroso que protege contra câncer, doenças do coração, diabetes, obesidade, doenças do fígado e dos rins e envelhecimento, que pessoas com diabetes que a tomam podem viver 3 anos a mais do que quem não tem diabetes, e citava um relato de que pais tomando metformina poderiam causar defeitos congênitos."
   },
   "multivitamins": {
-    "question": "TODO 复合维生素",
-    "answer": "TODO Ensaios randomizados e grandes estudos de acompanhamento não demonstraram menor mortalidade com multivitamínicos em pessoas geralmente saudáveis. Menos diagnósticos de câncer em alguns estudos são outro desfecho.",
+    "question": "Tomar multivitamínicos todos os dias ajuda a viver mais?",
+    "answer": "Não. Pessoas em geral saudáveis que tomaram um multivitamínico todos os dias não tiveram menor risco de morte.",
     "why": [
-      "TODO Ensaios randomizados e grandes estudos de acompanhamento não demonstraram menor mortalidade com multivitamínicos em pessoas geralmente saudáveis. Menos diagnósticos de câncer em alguns estudos são outro desfecho.",
-      "TODO PHS II 14,641男性医生、11.2年；COSMOS 21,442老年成人、3.6年；2024队列390,124人"
+      "Em um ensaio randomizado, 21.442 idosos tomaram diariamente um multivitamínico ou um comprimido idêntico sem princípio ativo por 3,6 anos. Os dois grupos não tiveram diferença clara no risco de morte.",
+      "Outro ensaio randomizado acompanhou 14.641 médicos homens por 11,2 anos. O grupo do multivitamínico teve cerca de 8% menos diagnósticos de câncer, mas isso conta quem desenvolveu câncer, não mortes, e as mortes por câncer não caíram de forma clara.",
+      "Um estudo de 2024 que acompanhou 390.124 americanos por muitos anos também não encontrou menor risco de morte em quem tomava multivitamínicos todos os dias."
     ],
-    "caution": "TODO Faça suplementação direcionada para deficiências ou necessidades nutricionais específicas e comece por uma boa alimentação cotidiana.",
-    "myth": "TODO * 复合维生素\n  * [服用复合维生素可降低癌症危险8%，其他效果并不显著](https://health.qq.com/a/20121023/000026."
+    "caution": "Isso vale para pessoas em geral saudáveis. Suplementos específicos após avaliação médica são outra questão para quem tem deficiência, passa por uma fase da vida com necessidades especiais ou tem dificuldade de absorver nutrientes. Se um médico indicou um suplemento, não pare por conta própria. Pergunte antes.",
+    "myth": "O guia original dizia que tomar multivitamínicos reduz o risco de câncer em cerca de 8%."
   },
   "glucosamine-chondroitin": {
-    "question": "TODO 葡萄糖胺／软骨素",
-    "answer": "TODO Um estudo de acompanhamento nos EUA associou o uso prolongado de glucosamina e condroitina a menor mortalidade. Os usuários também se exercitavam mais e fumavam menos. Não foi demonstrado que esses suplementos prolonguem a vida de pessoas saudáveis.",
+    "question": "Suplementos de glucosamina ou condroitina ajudam a viver mais?",
+    "answer": "Talvez, mas as evidências são fracas. Quem tomava há muito tempo teve menor risco de morte, mas também fazia mais exercício e fumava menos, então não está mostrado que o suplemento em si tenha feito a diferença.",
     "why": [
-      "TODO Um estudo de acompanhamento nos EUA associou o uso prolongado de glucosamina e condroitina a menor mortalidade. Os usuários também se exercitavam mais e fumavam menos. Não foi demonstrado que esses suplementos prolonguem a vida de pessoas saudáveis.",
-      "TODO NHANES 1999–2010，16,686名≥40岁成人，排除基线CVD及生命状态缺失者；658使用≥1年；中位107个月；3,366死亡"
+      "Este estudo acompanhou 16.686 adultos americanos de 40 anos ou mais, sem doença do coração ou dos vasos sanguíneos no início, por uma mediana de cerca de 107 meses — aproximadamente 9 anos. 658 deles haviam tomado glucosamina ou condroitina por pelo menos um ano.",
+      "Depois de considerar outros fatores tanto quanto possível, quem tomou por um ano ou mais teve um risco de morte cerca de 27% menor e um risco cerca de 58% menor de morrer por doenças do coração e dos vasos sanguíneos.",
+      "Os números de 39% e 65% do guia original foram ajustados apenas pela idade e não são o resultado final. Quem tomava o suplemento também se exercitava mais, fumava menos e tinha mais escolaridade, e a estatística não consegue remover totalmente essas diferenças; logo, o estudo mostra uma ligação, não uma prova."
     ],
-    "caution": "TODO Investigue primeiro a causa de sintomas nas articulações e confira as interações dos suplementos, especialmente se toma anticoagulantes.",
-    "myth": "TODO * 葡萄糖胺\n  * [神奇！氨糖降低心血管死亡率65%，与定期运动效果相当](https://www.sohu.com/a/436372221_1208732"
+    "caution": "Não comece a tomar esses suplementos para viver mais. Se suas articulações doem, descubra a causa primeiro. Se você toma anticoagulantes (remédios para afinar o sangue), pergunte ao médico antes de usar qualquer suplemento, pois podem interagir. Esses suplementos não substituem o exercício regular.",
+    "myth": "O guia original dizia que a glucosamina reduz o risco de morte em 39% e o risco de morte por doenças do coração e dos vasos sanguíneos em 65%, quase tanto quanto fazer exercício regularmente."
   },
   "anti-aging-drugs-review": {
-    "question": "TODO 综合抗衰药候选（综述）",
-    "answer": "TODO Uma revisão sobre medicamentos contra o envelhecimento discutiu várias moléculas candidatas. As evidências vêm principalmente de animais e de estudos humanos limitados. O benefício para a longevidade de pessoas saudáveis continua sem comprovação.",
+    "question": "Medicamentos antienvelhecimento realmente ajudam as pessoas a viver mais?",
+    "answer": "Não está claro, e ainda não há evidência direta. Os dados sobre os remédios candidatos vêm sobretudo de animais e de poucos estudos em humanos, e nenhum provou que ajuda pessoas saudáveis a viver mais.",
     "why": [
-      "TODO Uma revisão sobre medicamentos contra o envelhecimento discutiu várias moléculas candidatas. As evidências vêm principalmente de animais e de estudos humanos limitados. O benefício para a longevidade de pessoas saudáveis continua sem comprovação.",
-      "TODO 以动物模型与有限人类研究为主；不形成健康人死亡干预人群"
+      "Esta é uma revisão de 2020 de pesquisas sobre medicamentos que poderiam retardar o envelhecimento, incluindo rapamicina, metformina, acarbose, espermidina, intensificadores de NAD e lítio.",
+      "Ela classificou os candidatos conforme resultados de estudos em animais e estudos iniciais em humanos. Não reuniu dados sobre mortes entre pessoas saudáveis que os tomaram.",
+      "Esses remédios diferem no que são, nas doses e no que tratam, então não podem ser juntados em um único plano antienvelhecimento. Um remédio que ajuda em uma doença não prolonga, por isso, a vida de pessoas saudáveis."
     ],
-    "caution": "TODO Não combine esses medicamentos por conta própria; tratamentos experimentais devem ocorrer em pesquisas bem conduzidas.",
-    "myth": "TODO * 综合\n  * [《自然》子刊深度综述：如何开发抗衰老药](https://zhuanlan.zhihu.com/p/145495570)\n  * ![如何开"
+    "caution": "Não compre nem combine esses remédios por conta própria. Se você já toma algum deles para uma doença, siga o plano do seu médico e não pare nem mude a dose sozinho. Tratamentos antienvelhecimento experimentais pertencem a estudos clínicos bem conduzidos.",
+    "myth": "O guia original listava, na seção sobre medicamentos, uma revisão aprofundada de uma revista do grupo Nature sobre como desenvolver medicamentos antienvelhecimento."
   },
   "alcohol": {
-    "question": "TODO 酒精／饮酒",
-    "answer": "TODO Uma grande revisão considerou vieses como o de ex-consumidores e não encontrou benefício de pequenas quantidades de álcool sobre a mortalidade. O consumo maior foi associado a maior risco.",
+    "question": "Uma bebida alcoólica por dia faz bem para você?",
+    "answer": "Não. Beber pouco não ajudou as pessoas a viver mais, e quanto mais bebiam, maior era o risco de morte.",
     "why": [
-      "TODO Uma grande revisão considerou vieses como o de ex-consumidores e não encontrou benefício de pequenas quantidades de álcool sobre a mortalidade. O consumo maior foi associado a maior risco.",
-      "TODO 107队列，4,838,825人，425,564死亡"
+      "Pesquisadores reuniram 107 estudos de longo prazo com quase 4,84 milhões de pessoas e compararam quem bebia com quem nunca bebeu.",
+      "A ideia de que um pouco de álcool faz bem veio em parte de incluir, no grupo de quem não bebe, pessoas que pararam por estarem doentes. Quando os estudos corrigiram isso, quem bebia até 25 g de álcool por dia (cerca de duas latas de cerveja) não teve queda clara no risco.",
+      "Quem bebia de 45 a 65 g por dia teve um risco de morte cerca de 19% maior, e quem bebia 65 g ou mais teve cerca de 35% mais risco. Nas mulheres, o risco começou a subir com quantidades menores."
     ],
-    "caution": "TODO Se não bebe, não precisa começar; se bebe, reduza, com apoio médico se houver dependência ou histórico de sintomas de abstinência.",
-    "myth": "TODO 行动节：戒酒（否则+~50% ACM，无上限）；第6节无对应证据条目。"
+    "caution": "Não ver mudança clara no risco com pequenas quantidades não mostra que alguma quantidade seja segura. Isso não foi um ensaio de pessoas parando de beber, então não pode dizer quanto tempo a mais você viveria se parasse. Se você tem dependência de álcool ou já teve sintomas de abstinência, não pare de repente por conta própria. Reduza com ajuda médica.",
+    "myth": "O guia original dizia que, a menos que você pare de beber, seu risco de morte é cerca de 50% maior, sem limite superior."
   },
   "ambient-air-pollution": {
-    "question": "TODO 长期环境PM2.5污染",
-    "answer": "TODO Um grande estudo dos EUA com idosos associou a exposição prolongada a níveis mais altos de partículas finas e ozônio a maior risco de morte.",
+    "question": "Viver em um lugar com poluição do ar encurta a vida?",
+    "answer": "Provavelmente. Quanto maior o nível prolongado de partículas finas (PM2,5) onde as pessoas moravam, maior era o risco de morte.",
     "why": [
-      "TODO Um grande estudo dos EUA com idosos associou a exposição prolongada a níveis mais altos de partículas finas e ozônio a maior risco de morte.",
-      "TODO 美国60,925,443名Medicare受益者；2000–2012；460,310,521人年"
+      "Pesquisadores usaram registros do Medicare, o seguro de saúde público dos EUA para idosos, para acompanhar cerca de 61 milhões de americanos mais velhos de 2000 a 2012.",
+      "Para cada 10 microgramas por metro cúbico a mais na média anual de PM2,5 no local de moradia, o risco de morte foi cerca de 7,3% maior. Para cada 10 partes por bilhão a mais de ozônio, foi cerca de 1,1% maior.",
+      "A poluição foi estimada para a região de cada código postal, não medida no ar que cada pessoa respirava, e faltavam dados detalhados sobre o tabagismo individual."
     ],
-    "caution": "TODO Acompanhe a qualidade do ar, reduza atividades intensas ao ar livre durante poluição elevada e melhore o ar interno quando possível.",
+    "caution": "O estudo avaliou idosos nos EUA, então outras idades e lugares podem diferir. O resultado não significa que um purificador de ar reduzirá seu risco de morte na mesma proporção. Quando a poluição estiver alta, diminua exercícios intensos ao ar livre e melhore o ar dentro de casa quando puder. Ao ventilar a casa, pese a poluição externa contra o risco de infecções em ambientes fechados.",
     "myth": null
   },
   "statins-indicated-patients": {
-    "question": "TODO 他汀降脂（按心血管风险及适应证）",
-    "answer": "TODO Ensaios randomizados analisados em conjunto encontraram menos eventos cardiovasculares com estatinas. Também houve menos mortes entre participantes sem doença vascular prévia. O benefício individual depende do risco inicial.",
+    "question": "Se o médico sugerir uma estatina para o colesterol, ela ajuda a viver mais?",
+    "answer": "Sim, para quem precisa de tratamento para baixar o colesterol. Nos participantes de ensaios com indicação para isso, baixar o colesterol ruim com uma estatina reduziu o risco de morte. Isso não significa que toda pessoa saudável deva tomar.",
     "why": [
-      "TODO Ensaios randomizados analisados em conjunto encontraram menos eventos cardiovasculares com estatinas. Também houve menos mortes entre participantes sem doença vascular prévia. O benefício individual depende do risco inicial.",
-      "TODO 27RCT共174,149人；ACM数字为无既往血管病亚群；中位4.8–5.1年"
+      "Pesquisadores reuniram dados individuais de 27 ensaios randomizados com 174.149 pessoas, comparando estatina com nenhum tratamento, ou um tratamento mais forte com um mais fraco, por uma mediana de cerca de 5 anos.",
+      "Entre pessoas que nunca tinham tido doença do coração ou dos vasos sanguíneos, cada queda de 1 mmol/L no colesterol LDL, o chamado colesterol ruim, veio acompanhada de um risco de morte cerca de 9% menor e cerca de 21% menos eventos graves do coração e dos vasos sanguíneos.",
+      "O tamanho do ganho depende do risco inicial de cada pessoa; por isso, quem tem risco alto e quem tem risco baixo recebem benefícios diferentes."
     ],
-    "caution": "TODO Converse sobre estatinas se atender aos critérios de tratamento e relate sintomas musculares ou outros medicamentos com possíveis interações.",
+    "caution": "Esses resultados vêm de participantes de ensaios com indicação para baixar o colesterol. Pessoas saudáveis com baixo risco não devem começar uma estatina por conta própria para viver mais. Deixe um médico avaliar se você precisa e, se já toma, não pare sozinho. Converse com o médico sobre dores musculares, outros remédios que você usa ou gravidez.",
     "myth": null
   },
   "vitamin-d-general-population": {
-    "question": "TODO 维生素D补充（一般无选择老年成人）",
-    "answer": "TODO Um grande ensaio randomizado não encontrou redução da mortalidade com suplementação rotineira de vitamina D em adultos de meia-idade e idosos geralmente saudáveis. Deficiência e doenças ósseas precisam de avaliação própria.",
+    "question": "Tomar suplemento de vitamina D todo dia ajuda pessoas mais velhas a viver mais?",
+    "answer": "Não. Adultos de meia-idade e idosos que tomaram vitamina D todos os dias não tiveram menor risco de morte.",
     "why": [
-      "TODO Um grande ensaio randomizado não encontrou redução da mortalidade com suplementação rotineira de vitamina D em adultos de meia-idade e idosos geralmente saudáveis. Deficiência e doenças ósseas precisam de avaliação própria.",
-      "TODO 美国25,871人，男性≥50、女性≥55；中位5.3年；978死亡"
+      "Este foi um ensaio randomizado. 25.871 americanos — homens de 50 anos ou mais e mulheres de 55 ou mais — foram divididos por sorteio em dois grupos. Um tomou 2.000 UI de vitamina D3 por dia e o outro um comprimido idêntico sem princípio ativo, por uma mediana de 5,3 anos.",
+      "978 pessoas morreram durante o ensaio, e os dois grupos não tiveram diferença clara no risco de morte.",
+      "A maioria dos participantes não tinha falta de vitamina D. Estudos que apenas observaram pessoas com vitamina D baixa não conseguem mostrar que tomar suplemento ajuda."
     ],
-    "caution": "TODO Use suplementos para riscos identificados de deficiência ou necessidades de saúde óssea, evitando doses altas sem orientação.",
+    "caution": "Isso não se aplica a quem realmente tem falta de vitamina D, doença óssea ou outra necessidade clara; nesses casos, deve-se tomar conforme orientação médica. Não tome doses altas por conta própria para viver mais, pois o ensaio não mostrou que qualquer dose seja segura em longo prazo. Se seu médico prescreveu vitamina D, não pare sozinho.",
     "myth": null
   },
   "racquet-sports": {
-    "question": "TODO 挥拍运动",
-    "answer": "TODO Um estudo britânico de acompanhamento com adultos associou esportes de raquete a menor risco de morte. Prazer, preparo físico e possibilidade de manter a atividade também contam na escolha.",
+    "question": "Esportes de raquete, como badminton e tênis, ajudam a viver mais?",
+    "answer": "Provavelmente. Quem praticava esportes de raquete teve um risco de morte cerca de 47% menor, mas isso vem de observação e não prova que o esporte em si foi a causa.",
     "why": [
-      "TODO Um estudo britânico de acompanhamento com adultos associou esportes de raquete a menor risco de morte. Prazer, preparo físico e possibilidade de manter a atividade também contam na escolha.",
-      "TODO 80,306名英国成年人；平均52±14岁"
+      "Pesquisadores reuniram levantamentos populacionais da Inglaterra e da Escócia e acompanharam 80.306 adultos britânicos com idade média de 52 anos.",
+      "Quem praticava esportes de raquete teve um risco de morte cerca de 47% menor do que quem não praticava, e um risco cerca de 56% menor de morrer por doenças do coração e dos vasos sanguíneos.",
+      "Os participantes informaram os próprios exercícios, e quem joga pode já ser mais saudável e ter melhor condição financeira — fatores que o estudo não consegue descartar totalmente."
     ],
-    "caution": "TODO Escolha um esporte de raquete de que goste e que seu corpo permita, aumentando a atividade aos poucos.",
+    "caution": "O estudo não respalda uma receita fixa como três sessões de 45 a 60 minutos por semana, nem mostra que esportes de raquete superem outros exercícios. O resultado pode não valer para tênis de mesa nem para todas as idades. Escolha um esporte de que você goste e consiga manter, aumentando aos poucos. Se tiver lesão articular ou sintomas cardíacos, consulte um médico antes.",
     "myth": null
   },
   "vigorous-activity": {
-    "question": "TODO 剧烈运动",
-    "answer": "TODO Um estudo de acompanhamento britânico associou até períodos curtos de atividade intensa a menor mortalidade. Os participantes eram principalmente adultos de meia-idade e idosos; dispositivos vestíveis mediram a atividade.",
+    "question": "Apenas 15 minutos de exercício vigoroso por semana já ajudam?",
+    "answer": "Provavelmente. Quem fazia cerca de 15 minutos de atividade vigorosa por semana teve menor risco de morte do que quem não fazia quase nada, e o risco foi ainda menor perto de 54 minutos por semana.",
     "why": [
-      "TODO Um estudo de acompanhamento britânico associou até períodos curtos de atividade intensa a menor mortalidade. Os participantes eram principalmente adultos de meia-idade e idosos; dispositivos vestíveis mediram a atividade.",
-      "TODO 71,893名UK Biobank成年人，中位62.5岁，平均随访5.9年"
+      "Pesquisadores mediram a atividade de 71.893 adultos do Reino Unido, com idade mediana de 62,5 anos, usando aparelhos de pulso que registram movimentos, e os acompanharam por 5,9 anos em média.",
+      "Em comparação com quem fazia cerca de 2 minutos de atividade vigorosa por semana, quem fazia cerca de 15 minutos teve um risco de morte cerca de 18% menor, e quem fazia cerca de 54 minutos teve cerca de 36% menos risco.",
+      "A faixa de 16% a 40% do guia original misturou resultados diferentes. Os 40% referem-se a mortes por doenças do coração e dos vasos sanguíneos perto de 19 minutos por semana, não a mortes por todas as causas. Todos esses números vêm de um modelo estatístico com pessoas observadas, não de um ensaio randomizado."
     ],
-    "caution": "TODO Inclua atividades intensas curtas se já tiver uma base e puder fazê-las com segurança; procure avaliação se tiver sintomas ou doença crônica instável.",
-    "myth": "TODO 每周15–20分钟剧烈运动降低16%–40%的ACM；达到50–57分钟可进一步降低。"
+    "caution": "Esses números não são garantia, e o ponto mais baixo da curva não é uma prescrição para todo mundo. Se você já se exercita e não tem motivo médico para evitar, inclua períodos curtos de esforço mais intenso aos poucos. Se tiver sintomas ou uma doença crônica fora de controle, consulte um médico antes.",
+    "myth": "O guia original dizia que 15 a 20 minutos de exercício vigoroso por semana reduzem o risco de morte em 16% a 40%, e chegar a 50 a 57 minutos reduz ainda mais."
   },
   "walking-steps": {
-    "question": "TODO 走路/每日步数",
-    "answer": "TODO Um estudo dos EUA com adultos de meia-idade associou mais passos por dia a menor mortalidade, sem mostrar que caminhar cada vez mais seja sempre melhor.",
+    "question": "Para adultos de meia-idade, dar mais passos por dia é sempre melhor?",
+    "answer": "Caminhar mais pode ajudar, mas mais nem sempre é melhor, e as evidências ainda são limitadas. Pessoas de meia-idade que davam 7.000 passos ou mais por dia tiveram menor risco de morte, e quem passava de 10.000 não se saiu melhor do que quem ficava entre 7.000 e 9.999.",
     "why": [
-      "TODO Um estudo dos EUA com adultos de meia-idade associou mais passos por dia a menor mortalidade, sem mostrar que caminhar cada vez mais seja sempre melhor.",
-      "TODO CARDIA 2,110名美国黑人/白人成年人，平均45.2岁；随访10.8年，72例死亡"
+      "Pesquisadores pediram a 2.110 adultos americanos de meia-idade, com média de 45,2 anos, que usassem aparelhos para contar passos e os acompanharam por 10,8 anos. Apenas 72 deles morreram nesse período.",
+      "Em comparação com quem dava menos de 7.000 passos por dia, quem dava de 7.000 a 9.999 teve um risco de morte cerca de 72% menor, e quem dava 10.000 ou mais teve cerca de 55% menos risco.",
+      "Os passos foram medidos apenas por um período curto, e quem já está com a saúde fraca pode caminhar menos desde o início; assim, o estudo mostra uma ligação, e 7.000 passos não é uma meta que sirva para todo mundo."
     ],
-    "caution": "TODO Caminhe um pouco mais a partir do seu nível atual, ajustando para doenças cardíacas ou pulmonares, risco de quedas ou limitações de mobilidade.",
+    "caution": "Esse foi um estudo pequeno com americanos de meia-idade. Parta dos passos que você já dá hoje e aumente um pouco de cada vez. Se você tem dificuldade para se locomover, risco de quedas ou doença cardíaca ou pulmonar, adapte a caminhada à sua condição.",
     "myth": null
   },
   "toothbrushing": {
-    "question": "TODO 刷牙",
-    "answer": "TODO Um grande estudo de acompanhamento chinês encontrou maior mortalidade em pessoas que raramente escovavam os dentes. Os cuidados bucais também se relacionam com tabagismo, saúde e acesso à assistência.",
+    "question": "Raramente escovar os dentes afeta quanto tempo você vive?",
+    "answer": "Há uma ligação. Quem raramente ou nunca escovava os dentes teve um risco de morte cerca de 25% maior do que quem escovava regularmente, mas isso não significa que começar a escovar reduzirá o risco nessa proporção.",
     "why": [
-      "TODO Um grande estudo de acompanhamento chinês encontrou maior mortalidade em pessoas que raramente escovavam os dentes. Os cuidados bucais também se relacionam com tabagismo, saúde e acesso à assistência.",
-      "TODO 中国慢性病前瞻性研究512,715人，30–79岁"
+      "O China Kadoorie Biobank acompanhou 512.715 adultos chineses de 30 a 79 anos por muitos anos. Cerca de 9,3% deles raramente ou nunca escovavam os dentes.",
+      "Quem raramente ou nunca escovava teve um risco de morte cerca de 25% maior. O risco de desenvolver câncer, doença pulmonar crônica (DPOC) e cirrose no fígado também foi cerca de 9%, 12% e 25% maior. Esses três números tratam de adoecer, não de morrer.",
+      "A escovação foi informada pelos próprios participantes, e o hábito está ligado a tabagismo, pobreza, saúde prévia e acesso a cuidados médicos; portanto, o estudo não mostra que escovar os dentes em si faça a diferença."
     ],
-    "caution": "TODO Escove os dentes regularmente com creme dental com flúor e trate os problemas dentários.",
+    "caution": "Esse foi um estudo com adultos chineses. Escovar os dentes regularmente com creme dental com flúor e tratar problemas dentários faz sentido, mas não substitui controlar o tabagismo, a pressão arterial e medidas semelhantes.",
     "myth": null
   },
   "tub-bathing": {
-    "question": "TODO 泡澡",
-    "answer": "TODO Um estudo japonês com adultos de meia-idade associou banhos regulares de banheira a menos casos de doença cardiovascular e AVC.",
+    "question": "Tomar banho de banheira todo dia faz bem para o coração e para a longevidade?",
+    "answer": "Para o coração talvez, mas as evidências são fracas e não dizem nada sobre o tempo de vida. Japoneses de meia-idade que tomavam banho de imersão com frequência tiveram menos casos de doença do coração e AVC depois, mas o estudo não informou o risco geral de morte.",
     "why": [
-      "TODO Um estudo japonês com adultos de meia-idade associou banhos regulares de banheira a menos casos de doença cardiovascular e AVC.",
-      "TODO 30,076名40–59岁日本人，基线无CVD或癌症；1990–2009年随访"
+      "Pesquisadores acompanharam 30.076 japoneses de 40 a 59 anos, sem doença do coração e dos vasos sanguíneos nem câncer no início, de 1990 a 2009.",
+      "Em comparação com quem tomava banho de banheira de 0 a 2 vezes por semana, quem fazia isso quase todos os dias teve um risco cerca de 28% menor de doenças do coração e dos vasos sanguíneos, cerca de 26% menor de AVC e cerca de 46% menor de sangramento no cérebro.",
+      "Esses números tratam de adoecer, não de morrer. O estudo não foi um ensaio randomizado, e o hábito japonês de banho de imersão não pode simplesmente ser transferido para o chuveiro."
     ],
-    "caution": "TODO Use uma temperatura confortável; após beber álcool ou com tendência a desmaios ou saúde cardiovascular instável, evite banhos quentes prolongados e tomar banho de banheira sozinho.",
-    "myth": "TODO 每天泡澡相对每周1–2次或不泡澡，CVD风险低28%，卒中低26%，脑出血低46%，未见猝死风险增加关联。"
+    "caution": "Não encontrar ligação com morte súbita não prova que o banho seja totalmente seguro, pois afogamento, superaquecimento e riscos semelhantes não foram descartados. Se você tende a desmaiar, está com doença aguda, bebeu álcool ou tem doença cardíaca instável, evite banhos quentes prolongados e evite tomar banho de banheira sozinho.",
+    "myth": "O guia original dizia que quem toma banho de imersão todo dia, em comparação com quem toma uma ou duas vezes por semana ou nunca, tem risco 28% menor de doenças do coração e dos vasos sanguíneos, 26% menor de AVC e 46% menor de sangramento no cérebro, sem aumento de morte súbita."
   },
   "heavy-housework": {
-    "question": "TODO 重型家务（老年男性）",
-    "answer": "TODO Um estudo de Hong Kong com idosos associou tarefas domésticas pesadas a menor mortalidade nos homens, sem associação clara nas mulheres. Um melhor preparo físico prévio também pode contribuir.",
+    "question": "Fazer trabalho doméstico pesado ajuda homens idosos a viver mais?",
+    "answer": "Talvez, mas as evidências são fracas. Homens mais velhos em Hong Kong que faziam trabalho doméstico pesado tiveram menor risco de morte, talvez em parte porque quem consegue fazer tarefas pesadas já é mais saudável de início. Nas mulheres não houve diferença clara.",
     "why": [
-      "TODO Um estudo de Hong Kong com idosos associou tarefas domésticas pesadas a menor mortalidade nos homens, sem associação clara nas mulheres. Um melhor preparo físico prévio também pode contribuir.",
-      "TODO 香港社区≥65岁老人；排除特定慢病后2867人，平均72岁；452例死亡"
+      "Pesquisadores acompanharam 2.867 pessoas de 65 anos ou mais que moravam em casa em Hong Kong, com idade média de 72 anos, por cerca de 9 anos. 452 delas morreram.",
+      "Depois de considerar peso corporal, fragilidade, com quem moravam e atividades de lazer, os homens que faziam trabalho doméstico pesado tiveram um risco de morte cerca de 29% menor do que os que não faziam. Para as mulheres, não houve diferença clara.",
+      "Quem consegue fazer tarefas pesadas pode já ter saúde melhor, e esse tipo de estudo não consegue separar causa de efeito. 72 anos era apenas a idade média dos participantes, não uma idade a partir da qual o benefício começa."
     ],
-    "caution": "TODO Use tarefas adequadas como atividade cotidiana; evite levantar peso se tiver fragilidade, osteoporose ou problemas nas costas.",
-    "myth": "TODO 72岁之后男性每周做重型家务可以减少29%平均死亡率。"
+    "caution": "Isso não é recomendação para arrastar móveis ou carregar botijões de gás para viver mais. Faça tarefas domésticas compatíveis com sua força. Se você tem fragilidade, osteoporose, problemas nas costas ou risco de quedas, evite levantar peso.",
+    "myth": "O guia original dizia que homens com mais de 72 anos que fazem trabalho doméstico pesado toda semana reduzem sua taxa média de morte em 29%."
   },
   "sleep-duration": {
-    "question": "TODO 睡眠时长",
-    "answer": "TODO Estudos em países asiáticos associaram sono muito prolongado a maior mortalidade. Dormir mais também pode refletir doenças ou problemas de sono.",
+    "question": "Dormir 10 horas ou mais por dia faz mal?",
+    "answer": "Não está claro. Quem dormia 10 horas ou mais teve maior risco de morte, mas dormir muito pode ser sinal de uma doença já existente, então não se sabe se o sono em si prejudica.",
     "why": [
-      "TODO Estudos em países asiáticos associaram sono muito prolongado a maior mortalidade. Dormir mais também pode refletir doenças ou problemas de sono.",
-      "TODO 日本、中国、新加坡、韩国9队列322,721人，平均54.5岁；排除基线自报CVD/癌症及随访前5年死亡者；男性19,419例、女性13,768例死亡"
+      "Pesquisadores reuniram 9 estudos de longo prazo do Japão, da China, de Singapura e da Coreia, somando 322.721 pessoas com idade média de 54,5 anos, acompanhadas por cerca de 13 a 14 anos.",
+      "Em comparação com quem dormia 7 horas, homens que dormiam 10 horas ou mais tiveram um risco de morte cerca de 34% maior e mulheres cerca de 48% maior.",
+      "As pessoas informaram o tempo de sono apenas uma vez, alguns estudos contaram só o sono noturno enquanto outros incluíram cochilos, e não havia dados sobre qualidade do sono ou depressão.",
+      "Os pesquisadores deixaram de fora quem já tinha doença do coração ou câncer no início e quem morreu nos primeiros 5 anos, mas isso não descarta totalmente que uma doença tenha causado o sono longo."
     ],
-    "caution": "TODO Busque sono suficiente e reparador e investigue sonolência, cansaço ou ronco persistentes.",
+    "caution": "Isso não significa que quem dorme muito deva se forçar a reduzir para 7 horas, nem mostra que mudar a duração do sono mudará seu risco de morte. Busque um sono regular e suficiente que deixe você descansado. Se você dorme muito há bastante tempo e também sente cansaço, ronca ou tem sono durante o dia, procure avaliação.",
     "myth": null
   },
   "bedtime": {
-    "question": "TODO 就寝时间",
-    "answer": "TODO Um acompanhamento multinacional associou horários muito precoces ou muito tardios de dormir a um maior risco combinado de morte e eventos cardiovasculares. A associação enfraqueceu bastante após considerar outros fatores.",
+    "question": "A que horas você deve ir dormir? Dormir cedo ou tarde demais encurta a vida?",
+    "answer": "Não está claro, e as evidências são fracas. Ir dormir muito cedo ou muito tarde apareceu ligado a um risco combinado maior de morte ou evento cardíaco grave, mas essa ligação ficou bem mais fraca quando outros fatores foram levados em conta.",
     "why": [
-      "TODO Um acompanhamento multinacional associou horários muito precoces ou muito tardios de dormir a um maior risco combinado de morte e eventos cardiovasculares. A associação enfraqueceu bastante após considerar outros fatores.",
-      "TODO 21国PURE 112,198人；9.2年随访；5633死亡、5346主要心血管事件"
+      "Pesquisadores acompanharam 112.198 pessoas em 21 países por cerca de 9,2 anos. 5.633 delas morreram e houve 5.346 eventos graves do coração e dos vasos sanguíneos.",
+      "Em comparação com dormir entre 22h e meia-noite, ir para a cama antes das 22h ou depois da meia-noite trouxe um risco combinado de morte ou evento cardíaco grave cerca de 29% e 11% maior quando só idade e sexo foram considerados. Quando mais fatores entraram na conta, o aumento caiu para cerca de 9% e 10%.",
+      "O resumo do artigo não traz números separados de morte que batam com os 43% e 15% do guia. Os horários de dormir foram informados pelos próprios participantes, e rotinas diárias e doenças são difíceis de separar da hora de deitar."
     ],
-    "caution": "TODO Mantenha horários regulares que lhe sirvam e permitam dormir o suficiente, sem se forçar a ficar acordado até uma hora específica.",
-    "myth": "TODO 22–24点就寝最好；早睡增加43% ACM，晚睡增加15%，原文注明存在争议。"
+    "caution": "Os limites exatos de horário variam um pouco dentro do próprio artigo, então não encare 22h ou meia-noite como regras rígidas. Mantenha um sono regular e suficiente no seu próprio ritmo. Se dormir cedo funciona bem para você, não há motivo para ficar acordado até mais tarde por causa deste estudo.",
+    "myth": "O guia original dizia que o melhor horário para dormir é entre 22h e meia-noite, que dormir cedo aumenta o risco de morte em 43% e dormir tarde em 15%, e observava que isso é controverso."
   },
   "sedentary-time": {
-    "question": "TODO 久坐及看电视",
-    "answer": "TODO Uma revisão associou mais tempo sentado a maior mortalidade, sobretudo entre quem passava boa parte do dia sentado. As associações também variaram entre assistir à televisão e o tempo sentado total.",
+    "question": "Ficar sentado por muitas horas todo dia aumenta o risco de morte?",
+    "answer": "Provavelmente. Quanto mais tempo as pessoas passavam sentadas, maior era o risco de morte, e esse risco subia mais rápido acima de cerca de 8 horas por dia.",
     "why": [
-      "TODO Uma revisão associou mais tempo sentado a maior mortalidade, sobretudo entre quem passava boa parte do dia sentado. As associações também variaram entre assistir à televisão e o tempo sentado total.",
-      "TODO 34项前瞻研究，共1,331,468名不同结局的独立参与者"
+      "Pesquisadores reuniram 34 estudos de longo prazo com cerca de 1,33 milhão de pessoas e levaram em conta quanto exercício cada uma fazia.",
+      "Até 8 horas sentado por dia, cada hora extra esteve ligada a um risco de morte cerca de 1% maior. Acima de 8 horas, cada hora extra esteve ligada a cerca de 4% mais risco. Assistir TV seguiu um padrão parecido: cerca de 3% por hora até 3,5 horas por dia e cerca de 6% acima disso.",
+      "Portanto, um aumento fixo de 3% por hora não vale para todo nível, e os pontos de 6 a 8 horas e de 3 a 4 horas são curvas de um modelo estatístico, não limites seguros. O tempo sentado foi em grande parte informado pelos próprios participantes, então os resultados mostram uma ligação."
     ],
-    "caution": "TODO Quando seu corpo permitir, troque parte do tempo sentado por caminhadas ou outros movimentos.",
-    "myth": "TODO 久坐每多1小时，CVD发生风险增4%、癌症增1%、ACM增3%；总久坐阈值6–8小时/日，看电视3–4小时/日。"
+    "caution": "Nesta revisão, ficar sentado não teve ligação clara com mortes por câncer, então não confunda isso com o risco de desenvolver câncer. Quando seu corpo permitir, troque parte do tempo sentado por caminhadas ou outro movimento e exercite-se regularmente. Se não puder ficar em pé, siga sua orientação de reabilitação. Não há uma regra comprovada sobre de quanto em quanto tempo se levantar.",
+    "myth": "O guia original dizia que cada hora extra sentado por dia aumenta o risco de doenças do coração e dos vasos sanguíneos em 4%, de câncer em 1% e de morte em 3%, e que o risco começa a subir depois de 6 a 8 horas sentado no total ou 3 a 4 horas de TV por dia."
   },
   "pessimism": {
-    "question": "TODO 悲观/乐观情绪",
-    "answer": "TODO Um estudo australiano com adultos de meia-idade e idosos associou pontuações maiores de pessimismo a maior mortalidade. Humor, saúde física e circunstâncias de vida influenciam-se mutuamente.",
+    "question": "Pessoas pessimistas morrem mais cedo?",
+    "answer": "Talvez, mas as evidências são fracas. Quanto mais pessimistas as pessoas eram, maior o risco de morte. O otimismo não mostrou efeito protetor, e não está claro se o pessimismo em si foi a causa.",
     "why": [
-      "TODO Um estudo australiano com adultos de meia-idade e idosos associou pontuações maiores de pessimismo a maior mortalidade. Humor, saúde física e circunstâncias de vida influenciam-se mutuamente.",
-      "TODO 澳大利亚≥50岁双胞胎相关样本2978人，平均20年后1068人死亡；具体模型因缺失人数减少"
+      "Pesquisadores aplicaram um questionário sobre otimismo e pessimismo a 2.978 australianos de 50 anos ou mais, vindos de um estudo com gêmeos. Cerca de 20 anos depois, em média, 1.068 deles haviam morrido.",
+      "A cada aumento de um desvio-padrão, uma unidade estatística de variação, na pontuação de pessimismo, o risco de morte foi cerca de 13% maior. Depois de considerar também peso, álcool e tabagismo, foi cerca de 16% maior.",
+      "As pontuações de otimismo não tiveram ligação clara com a morte, o que não prova que o otimismo seja inútil. A personalidade não foi sorteada, e o estudo não pode descartar que uma saúde ruim tenha vindo antes e tornado as pessoas mais pessimistas."
     ],
-    "caution": "TODO Converse com alguém de confiança nos momentos difíceis e procure apoio profissional se o humor continuar afetando a vida cotidiana.",
+    "caution": "Nenhum ensaio mostrou que tratar o desânimo reduza o risco de morte. Se pessimismo persistente ou tristeza afetam seu dia a dia, converse com alguém de confiança ou procure ajuda profissional, e não tente substituir tratamento se forçando a ficar alegre.",
     "myth": null
   },
   "wealth": {
-    "question": "TODO 净资产/经济资源",
-    "answer": "TODO Um estudo dos EUA com adultos de meia-idade associou maior patrimônio líquido a menor mortalidade. Recursos, saúde e segurança material muitas vezes se influenciam mutuamente.",
+    "question": "Pessoas mais ricas vivem mais?",
+    "answer": "Talvez, mas as evidências são fracas. Quem tinha mais patrimônio na meia-idade teve um risco de morte ligeiramente menor depois, mas isso não significa que ganhar dinheiro investindo vai prolongar sua vida.",
     "why": [
-      "TODO Um estudo dos EUA com adultos de meia-idade associou maior patrimônio líquido a menor mortalidade. Recursos, saúde e segurança material muitas vezes se influenciam mutuamente.",
-      "TODO 美国MIDUS 5414人，平均46.7岁，近24年随访；1010例死亡；兄弟姐妹/双胞胎2490人"
+      "Pesquisadores acompanharam 5.414 americanos de meia-idade, com média de 46,7 anos, por quase 24 anos a partir de 1994 a 1996. 1.010 deles morreram.",
+      "Cada US$ 50.000 extras de patrimônio líquido estiveram ligados a um risco de morte cerca de 5% menor. Comparando irmãos, irmãs e gêmeos da mesma família (2.490 pessoas), cada US$ 50.000 extras estiveram ligados a um risco cerca de 6% menor. Só entre gêmeos, não houve diferença clara.",
+      "As pessoas informaram o próprio patrimônio, a amostra não representava bem todos os grupos étnicos e doenças também podem consumir economias; assim, é difícil saber se o dinheiro afeta a saúde ou se a saúde afeta o dinheiro."
     ],
-    "caution": "TODO Priorize moradia, acesso à saúde e segurança financeira básica para reduzir pressões evitáveis.",
+    "caution": "Nenhum estudo aqui testou aumentar a renda das pessoas, e investimentos arriscados não são medida de saúde. Coloque moradia estável, acesso a cuidados médicos e segurança financeira básica em primeiro lugar.",
     "myth": null
   },
   "weight-change": {
-    "question": "TODO 成年早期至中年体重变化",
-    "answer": "TODO Um estudo de acompanhamento nos EUA encontrou menor mortalidade em quem passou da obesidade ao sobrepeso entre o início da vida adulta e a meia-idade, em comparação com quem permaneceu com obesidade.",
+    "question": "Se você estava bem acima do peso quando jovem adulto, emagrecer até a meia-idade reduz o risco de morte?",
+    "answer": "Não está claro, e as evidências são fracas. Quem passou de obesidade para sobrepeso teve menor risco de morte, mas quem passou de sobrepeso para peso normal não mostrou diferença clara.",
     "why": [
-      "TODO Um estudo de acompanhamento nos EUA encontrou menor mortalidade em quem passou da obesidade ao sobrepeso entre o início da vida adulta e a meia-idade, em comparação com quem permaneceu com obesidade.",
-      "TODO NHANES 24,205名40–74岁美国成年人；回忆25岁和基线前10年体重；随访10.7年，5846死亡"
+      "Pesquisadores entrevistaram 24.205 adultos americanos de 40 a 74 anos, pediram que lembrassem o peso aos 25 anos e 10 anos antes da entrevista, e os acompanharam por 10,7 anos. 5.846 deles morreram.",
+      "Quem tinha obesidade aos 25 anos e passou para sobrepeso na meia-idade teve um risco de morte cerca de 54% menor do que quem permaneceu com obesidade. Apenas 214 pessoas fizeram essa mudança.",
+      "Quem tinha sobrepeso aos 25 anos e chegou ao peso normal na meia-idade não mostrou diferença clara em relação a quem manteve o sobrepeso, o que não significa que chegar ao peso normal seja inútil ou prejudicial. Isso não foi um ensaio de emagrecimento, então não pode provar que perder peso de propósito gerou a diferença de 54%."
     ],
-    "caution": "TODO Se tiver obesidade, busque controlar o peso e manter a força muscular de forma duradoura; investigue a perda de peso involuntária, especialmente na velhice.",
+    "caution": "Os resultados tratam de mudanças de peso entre os 25 anos e a meia-idade. Não se aplicam a idosos, gravidez nem perda de peso involuntária — e emagrecimento sem explicação na velhice deve ser investigado. Se você tem obesidade, planeje o controle de peso e da força muscular a longo prazo com um profissional de saúde.",
     "myth": null
   },
   "covid-pandemic": {
-    "question": "TODO 新冠疫情与全因超额死亡",
-    "answer": "TODO Registros de óbitos de vários países mostraram excesso importante de mortes na primeira onda de COVID-19. Além da infecção, podem ter contribuído efeitos indiretos como interrupções no atendimento. O resultado reflete aquela fase da pandemia.",
+    "question": "A pandemia de COVID-19 realmente causou muitas mortes extras?",
+    "answer": "Sim. Durante a primeira onda em 2020, 21 países tiveram cerca de 206.000 mortes a mais do que o esperado. Mas essas são estatísticas nacionais, evidências indiretas que não servem para estimar seu risco pessoal.",
     "why": [
-      "TODO Registros de óbitos de vários países mostraram excesso importante de mortes na primeira onda de COVID-19. Além da infecção, podem ter contribuído efeitos indiretos como interrupções no atendimento. O resultado reflete aquela fase da pandemia.",
-      "TODO 21个工业化国家全国死亡登记，2020年第一波；不含美国"
+      "Este foi um estudo de estatísticas nacionais. Pesquisadores usaram registros oficiais de mortes de 21 países industrializados — 19 na Europa mais Austrália e Nova Zelândia, sem os EUA. Eles compararam as mortes de meados de fevereiro ao fim de maio de 2020 com o número que um modelo previa sem a pandemia.",
+      "Houve cerca de 206.000 mortes a mais do que o previsto, com uma faixa provável de 178.100 a 231.000. Essas mortes extras incluem quem morreu da infecção e efeitos indiretos, como interrupção do atendimento médico.",
+      "O artigo não sustenta os números do guia de 1,5% de mortalidade por COVID-19 nos EUA e queda de 2 anos na expectativa de vida. Ele não estudou os EUA, e o número de 1,5% não traz data nem explica em qual grupo de pessoas foi calculado."
     ],
-    "caution": "TODO Reduza a exposição a infecções, mantenha o cuidado com doenças crônicas e procure atendimento adequado em tempo oportuno quando adoecer.",
-    "myth": "TODO 美国新冠死亡率约1.5%，人均预期寿命减少2年；所引论文标题为21个工业化国家疫情第一波ACM。"
+    "caution": "Isso descreve a primeira onda em 2020 e não pode ser aplicado às variantes, à imunidade e aos cuidados médicos de hoje. Reduza suas chances de infecção, mantenha doenças crônicas sob cuidado, procure atendimento rápido ao adoecer e siga as orientações atuais de prevenção e tratamento.",
+    "myth": "O guia original dizia que a taxa de morte por COVID-19 nos EUA era de cerca de 1,5% e que a expectativa média de vida caiu 2 anos."
   },
   "resistance-training": {
-    "question": "TODO 抗阻/肌肉力量训练",
-    "answer": "TODO Uma revisão de estudos de coorte associou atividades de fortalecimento muscular a menor mortalidade. A relação com quantidades específicas de treino permanece incerta.",
+    "question": "Fazer treino de força ajuda a viver mais?",
+    "answer": "Provavelmente. Quem fazia qualquer exercício de fortalecimento muscular teve um risco de morte cerca de 15% menor do que quem não fazia nenhum, mas isso vem de observação e a quantidade ideal de treino ainda não está clara.",
     "why": [
-      "TODO Uma revisão de estudos de coorte associou atividades de fortalecimento muscular a menor mortalidade. A relação com quantidades específicas de treino permanece incerta.",
-      "TODO ACM二分类合成7研究、263,058人、42,133死亡；综述总计16研究"
+      "Pesquisadores reuniram 7 estudos de longo prazo com 263.058 pessoas, das quais 42.133 morreram, comparando quem fazia algum fortalecimento muscular com quem não fazia nenhum e levando em conta o exercício aeróbico quando possível.",
+      "Quem fazia treino de força teve um risco de morte cerca de 15% menor. A curva sugeriu o maior benefício em torno de 30 a 60 minutos por semana, e o efeito de treinar mais ficou incerto.",
+      "Os resultados variaram muito entre os estudos, o treino foi quase sempre informado pelos próprios participantes e pessoas ativas podem já ser mais saudáveis de início; assim, os estudos mostram uma ligação. Nenhum ensaio confirmou a quantidade ideal."
     ],
-    "caution": "TODO Fortaleça os principais grupos musculares aos poucos, junto com atividades aeróbicas; ajuste se houver dor, cirurgia recente ou doença crônica instável.",
+    "caution": "O formato da curva em quantidades maiores não significa que treinar mais faça mal. Se seu corpo permitir, trabalhe os principais grupos musculares gradualmente e combine com atividade aeróbica. Se tiver dor, cirurgia recente ou doença crônica instável, consulte um médico antes e adapte o treino.",
     "myth": null
   },
   "social-isolation": {
-    "question": "TODO 社会隔离、孤独与独居",
-    "answer": "TODO Uma revisão associou isolamento social, solidão e morar sozinho a maior mortalidade, mas são experiências diferentes. Quem mora sozinho também pode ter relações satisfatórias e confiáveis.",
+    "question": "A solidão ou morar sozinho afeta quanto tempo você vive?",
+    "answer": "Há uma ligação. Isolamento social, solidão e morar sozinho estiveram ligados, cada um deles, a um maior risco de morte, mas são coisas diferentes, e morar sozinho não é o mesmo que se sentir sozinho.",
     "why": [
-      "TODO Uma revisão associou isolamento social, solidão e morar sozinho a maior mortalidade, mas são experiências diferentes. Quem mora sozinho também pode ter relações satisfatórias e confiáveis.",
-      "TODO 纳入截至2014年2月的死亡随访研究；各研究人群及调整因素不同"
+      "Pesquisadores reuniram estudos de longo prazo publicados até fevereiro de 2014. Os estudos avaliaram grupos diferentes de pessoas e consideraram fatores distintos.",
+      "Depois de levar outros fatores em conta, a razão de chances de morrer foi cerca de 29% maior no isolamento social, 26% maior na solidão e 32% maior em quem morava sozinho. Essa razão de chances é uma medida estatística e não pode ser convertida diretamente no quanto aumenta a chance individual de morrer.",
+      "A saúde inicial das pessoas influenciou os resultados, e os estudos definiram as três situações de maneiras diferentes. Tampouco ficou provado que aumentar o contato social reduziria o risco na mesma proporção."
     ],
-    "caution": "TODO Mantenha vínculos e formas de pedir ajuda que combinem com seus desejos; cuide de barreiras de audição, mobilidade ou humor.",
+    "caution": "Quem mora sozinho ainda pode ter laços confiáveis, e nem todo mundo precisa dividir casa com outras pessoas. Mantenha os contatos e formas de pedir ajuda que funcionam para você, e trate problemas como perda auditiva, dificuldade de locomoção ou depressão que podem atrapalhar o convívio.",
     "myth": null
   },
   "intensive-bp-control": {
-    "question": "TODO 符合适应条件者的强化降压",
-    "answer": "TODO Um ensaio randomizado encontrou menos mortes com tratamento intensivo da pressão em pessoas com hipertensão, maior risco cardiovascular e sem diabetes. Houve mais eventos adversos, como pressão baixa e problemas renais.",
+    "question": "Para quem tem pressão alta, buscar uma pressão máxima abaixo de 120 ajuda a viver mais?",
+    "answer": "Sim, para pacientes com esse perfil. Em pessoas com pressão máxima (sistólica) de 130 ou mais, risco cardíaco elevado e sem diabetes, buscar ficar abaixo de 120 em vez de abaixo de 140 reduziu o risco de morte. Isso foi um ensaio de tratamento em pacientes, não evidência de que pessoas saudáveis vivam mais tomando remédios de pressão.",
     "why": [
-      "TODO Um ensaio randomizado encontrou menos mortes com tratamento intensivo da pressão em pessoas com hipertensão, maior risco cardiovascular e sem diabetes. Houve mais eventos adversos, como pressão baixa e problemas renais.",
-      "TODO 9,361名SBP≥130mmHg、心血管风险增加且无糖尿病的成人"
+      "Este foi um ensaio randomizado chamado SPRINT. 9.361 adultos com pressão máxima de 130 ou mais, risco elevado de doenças do coração e dos vasos sanguíneos e sem diabetes foram divididos por sorteio em dois grupos. Um buscou pressão máxima abaixo de 120 e o outro abaixo de 140, com acompanhamento mediano de 3,26 anos.",
+      "O grupo com meta mais baixa teve um risco de morte cerca de 27% menor e cerca de 25% menos eventos graves do coração e dos vasos sanguíneos.",
+      "O ensaio foi encerrado antes do previsto, o que pode fazer o benefício parecer maior do que é. Pressão baixa, desmaios, alterações nos sais do sangue e lesão renal súbita foram mais comuns no grupo da meta mais baixa."
     ],
-    "caution": "TODO Defina metas de pressão com seu médico e acompanhe tonturas, função renal e eletrólitos.",
+    "caution": "Isso não se aplica a pessoas com diabetes nem a pessoas de baixo risco com pressão normal. Se você tem pressão alta e risco maior, defina sua meta com seu médico, faça exames de função renal e sais no sangue e fique atento a tonturas ao levantar. Não acrescente nem pare remédios por conta própria, nem persiga a meta do estudo sozinho.",
     "myth": null
   },
   "cardiorespiratory-fitness": {
-    "question": "TODO 心肺适能（CRF）",
-    "answer": "TODO Vários estudos de coorte associaram melhor aptidão cardiorrespiratória no teste de esforço a menor mortalidade. Ela reflete a capacidade física e também é influenciada por doenças e genética.",
+    "question": "Ter melhor condicionamento do coração e dos pulmões significa menor risco de morte?",
+    "answer": "Sim. Pessoas com melhor condicionamento do coração e dos pulmões em um teste de esforço tiveram menor risco de morte, mas isso liga o resultado de um teste à sobrevivência e não promete o mesmo ganho ao se exercitar mais.",
     "why": [
-      "TODO Vários estudos de coorte associaram melhor aptidão cardiorrespiratória no teste de esforço a menor mortalidade. Ela reflete a capacidade física e também é influenciada por doenças e genética.",
-      "TODO 34项成人队列纳入综述；ACM连续剂量分析来自其中子集"
+      "Pesquisadores reuniram 34 estudos que acompanharam adultos cujo condicionamento do coração e dos pulmões havia sido medido em um teste de esforço. Parte desses estudos foi usada para calcular como o condicionamento se ligava ao risco de morte.",
+      "Cada 1 MET a mais de condicionamento (uma unidade de capacidade física que equivale, aproximadamente, à energia gasta sentado em repouso) esteve ligado a um risco de morte cerca de 12% menor.",
+      "Os resultados variaram muito entre os estudos, e o condicionamento também depende de doenças passadas, genética e de como o teste foi feito; portanto, trata-se de uma ligação observada ao acompanhar pessoas, não de prova de causa."
     ],
-    "caution": "TODO Comece pelo seu preparo atual e aumente aos poucos as atividades adequadas para você.",
+    "caution": "Não use esse número para calcular quanto tempo a mais você poderia viver. Encare um teste de condicionamento como uma pista sobre seu corpo e treine aos poucos, de acordo com a sua saúde.",
     "myth": null
   },
   "dapagliflozin-ckd": {
-    "question": "TODO 达格列净（特定慢性肾病）",
-    "answer": "TODO Um ensaio randomizado encontrou menos mortes com dapagliflozina em pessoas com doença renal crônica que atendiam aos critérios do estudo, com ou sem diabetes. Não foi demonstrado benefício para a longevidade de pessoas saudáveis.",
+    "question": "A dapagliflozina ajuda pessoas com doença renal crônica a viver mais?",
+    "answer": "Sim, para pacientes com doença renal crônica que se encaixam no perfil do estudo. Pacientes que tomaram dapagliflozina além do tratamento padrão tiveram menor risco de morte. Isso foi um ensaio com pacientes, não evidência de uma pílula antienvelhecimento para pessoas saudáveis.",
     "why": [
-      "TODO Um ensaio randomizado encontrou menos mortes com dapagliflozina em pessoas com doença renal crônica que atendiam aos critérios do estudo, com ou sem diabetes. Não foi demonstrado benefício para a longevidade de pessoas saudáveis.",
-      "TODO 4304名CKD成人；eGFR 25–75、UACR 200–5000 mg/g；随访中位2.4年，含有/无2型糖尿病者"
+      "Este foi um ensaio randomizado. 4.304 adultos com doença renal crônica — alguns com diabetes tipo 2 e outros sem — e com exames renais dentro de uma faixa definida foram divididos por sorteio em dois grupos além do tratamento padrão. Um tomou 10 mg de dapagliflozina por dia e o outro um comprimido idêntico sem princípio ativo, por uma mediana de 2,4 anos.",
+      "Durante o ensaio, 4,7% do grupo da dapagliflozina morreu, contra 6,8% do grupo do comprimido sem princípio ativo — um risco cerca de 31% menor.",
+      "O ensaio foi encerrado antes do previsto porque o remédio estava funcionando. Os 4,7% e 6,8% são a fatia que morreu durante o ensaio, não um risco para a vida toda."
     ],
-    "caution": "TODO Com doença renal crônica, peça ao médico que avalie a adequação, considerando desidratação, infecção e cetoacidose.",
+    "caution": "Isso não se aplica a pessoas saudáveis sem doença renal, pessoas com diabetes tipo 1 ou tipos de doença renal deixados de fora do ensaio. Um médico deve decidir se ela é adequada para você, pesando riscos como desidratação, infecção e cetoacidose. Não comece nem pare por conta própria.",
     "myth": null
   },
   "semaglutide-select": {
-    "question": "TODO 司美格鲁肽（SELECT适应人群）",
-    "answer": "TODO No SELECT, o grupo com semaglutida teve menos mortes entre participantes com doença cardiovascular, sobrepeso ou obesidade e sem diabetes. Esse resultado de mortalidade é exploratório.",
+    "question": "A semaglutida ajuda pessoas com doença cardíaca e excesso de peso a viver mais?",
+    "answer": "Talvez, mas não é um resultado confirmado e vale apenas para pacientes com doença cardíaca, sobrepeso ou obesidade e sem diabetes. Menos pessoas morreram no grupo da semaglutida, mas esse achado é apenas exploratório.",
     "why": [
-      "TODO No SELECT, o grupo com semaglutida teve menos mortes entre participantes com doença cardiovascular, sobrepeso ou obesidade e sem diabetes. Esse resultado de mortalidade é exploratório.",
-      "TODO 17604人；≥45岁、BMI≥27、已有心血管疾病、无糖尿病；平均随访39.8个月"
+      "Este foi um ensaio randomizado chamado SELECT. 17.604 pessoas de 45 anos ou mais com doença do coração e dos vasos sanguíneos já existente, índice de massa corporal de 27 ou mais e sem diabetes receberam, além do tratamento padrão, uma injeção semanal de 2,4 mg de semaglutida ou uma injeção sem princípio ativo. Elas foram acompanhadas por 39,8 meses em média, cerca de 3,3 anos.",
+      "O grupo da semaglutida teve um risco de morte cerca de 19% menor. Mas o ensaio definiu uma ordem de testes antes de começar, e a etapa anterior — mortes por doenças do coração e dos vasos sanguíneos — não passou; assim, pelas regras do estudo, o resultado para mortes por todas as causas conta apenas como achado exploratório.",
+      "16,6% do grupo da semaglutida parou o remédio por causa de efeitos colaterais, contra 8,2% no grupo da injeção sem princípio ativo. O fabricante do remédio financiou o ensaio."
     ],
-    "caution": "TODO Avalie o tratamento conforme as necessidades clínicas e de controle do peso, incluindo tolerância; o benefício para a longevidade de pessoas saudáveis permanece sem comprovação.",
+    "caution": "Isso não se aplica a pessoas mais jovens, sem doença cardíaca ou com peso normal, e pessoas saudáveis não devem tratá-la como remédio de longevidade. Usar ou não é decisão de um médico com base nas suas necessidades clínicas e de peso. Não comece nem pare por conta própria.",
     "myth": null
   },
   "aspirin-primary-prevention": {
-    "question": "TODO 阿司匹林（老年人初级预防）",
-    "answer": "TODO Um ensaio randomizado em idosos sem doença cardiovascular prévia não encontrou benefício de longevidade com aspirina diária e observou um sinal de maior mortalidade. É uma situação diferente do tratamento após infarto ou AVC.",
+    "question": "Pessoas mais velhas devem tomar aspirina todo dia para viver mais?",
+    "answer": "Não. Idosos sem doença cardíaca nem AVC que tomaram aspirina todos os dias não viveram mais, e um pouco mais deles morreu.",
     "why": [
-      "TODO Um ensaio randomizado em idosos sem doença cardiovascular prévia não encontrou benefício de longevidade com aspirina diária e observou um sinal de maior mortalidade. É uma situação diferente do tratamento após infarto ou AVC.",
-      "TODO 19114名通常≥70岁的社区老人（美国黑人/西语裔≥65岁），无心血管病、痴呆或残疾；中位4.7年"
+      "Este foi um ensaio randomizado. 19.114 pessoas — a maioria com 70 anos ou mais e nenhuma com doença do coração ou dos vasos sanguíneos, demência ou incapacidade — foram divididas por sorteio em dois grupos. Um tomou 100 mg de aspirina por dia e o outro um comprimido idêntico sem princípio ativo, por uma mediana de 4,7 anos.",
+      "No grupo da aspirina morreram cerca de 12,7 pessoas por 1.000 a cada ano, contra cerca de 11,1 no grupo do comprimido sem princípio ativo — um risco cerca de 14% maior.",
+      "As mortes não eram a medida principal do estudo, e os pesquisadores recomendam cautela com essa diferença. O que o ensaio mostra claramente é que a aspirina não trouxe ganho de tempo de vida."
     ],
-    "caution": "TODO Não comece aspirina apenas para viver mais; se a toma por indicação médica, converse com seu médico antes de mudar.",
+    "caution": "Isso vale apenas para idosos sem doença do coração ou dos vasos sanguíneos. Não pode ser estendido a outras idades e não se refere à aspirina tomada após um infarto ou AVC. Se você toma aspirina por causa de um infarto, um AVC ou outro motivo claro, não pare por conta própria. Converse com seu médico primeiro.",
     "myth": null
   },
   "walking-steps-2025": {
-    "question": "TODO 每日步数（2025综述更新）",
-    "answer": "TODO Uma revisão mais recente voltou a associar mais passos diários a menor mortalidade. Saúde dos participantes, dispositivos e métodos de medição também influenciam os resultados.",
+    "question": "Quem caminha 7.000 passos por dia vive mais do que quem caminha 2.000?",
+    "answer": "Em média, sim. Reunindo muitos estudos, quem caminhava 7.000 passos por dia teve um risco de morte cerca de 47% menor do que quem caminhava 2.000, mas isso não significa que passar de 2.000 para 7.000 passos reduzirá seu risco nessa mesma medida.",
     "why": [
-      "TODO Uma revisão mais recente voltou a associar mais passos diários a menor mortalidade. Saúde dos participantes, dispositivos e métodos de medição também influenciam os resultados.",
-      "TODO 成人前瞻性队列；ACM该比较含14项研究；综述检索至2025-02-14"
+      "Esta revisão de 2025 reuniu estudos de adultos cujos passos diários foram contados por aparelhos. 14 estudos de longo prazo compararam os passos com o risco de morte.",
+      "Com base em um modelo estatístico, quem caminhava 7.000 passos por dia teve um risco de morte cerca de 47% menor do que quem caminhava 2.000.",
+      "Isso compara pessoas diferentes, então outras diferenças entre elas podem influenciar. Os estudos também usaram aparelhos distintos, mediram os passos por tempos diferentes e incluíram pessoas com doenças prévias diferentes, e a revisão não tirou conclusões por faixa etária."
     ],
-    "caution": "TODO Escolha uma meta de caminhada ao seu alcance; conforto e constância importam.",
+    "caution": "Dar 7.000 passos pode ser uma meta gradual para algumas pessoas, mas não é uma linha que todo mundo precise atingir. Aumente seus passos dentro da sua capacidade.",
     "myth": null
   },
   "metformin-adverse-events": {
-    "question": "TODO Reações adversas da metformina",
-    "answer": "TODO A metformina pode causar diarreia e outros sintomas digestivos e reduzir os níveis de vitamina B12. A acidose láctica também é um risco importante. As reações variam com a formulação, a dose e a saúde.",
+    "question": "Quão comuns são os efeitos colaterais da metformina?",
+    "answer": "Diarreia é comum, mas os números do guia original vêm de ensaios específicos e não valem para todo mundo que toma o remédio. Em um ensaio da bula americana, cerca de 53% de quem tomou metformina teve diarreia, contra 12% com comprimido sem princípio ativo.",
     "why": [
-      "TODO A metformina pode causar diarreia e outros sintomas digestivos e reduzir os níveis de vitamina B12. A acidose láctica também é um risco importante. As reações variam com a formulação, a dose e a saúde.",
-      "TODO 标签收录美国2型糖尿病试验：药组141人、安慰剂145人；B12数据来自29周试验"
+      "Os números vêm de um ensaio na bula americana da metformina, feito com pessoas com diabetes tipo 2. 141 tomaram o remédio, até 2.550 mg por dia, e 145 tomaram um comprimido sem princípio ativo.",
+      "Cerca de 53% com metformina tiveram diarreia contra 12% no outro grupo, 9% contra 6% sentiram fraqueza e 6% contra 5% tiveram dor de cabeça. São números daquele ensaio, não taxas gerais para todos os usuários do remédio.",
+      "Em outro ensaio de 29 semanas, cerca de 7% ficaram com vitamina B12 abaixo do normal no sangue, o que não é o mesmo que ter sintomas de deficiência. Os 17,4% citados pelo guia original não foram encontrados na bula.",
+      "A acidose láctica traz um alerta especial em destaque na bula. Lesões no fígado vêm de relatos feitos depois que o remédio passou a ser vendido, o que não permite saber com que frequência ocorrem."
     ],
-    "caution": "TODO Use conforme a prescrição, acompanhe tolerância, função renal e vitamina B12 e comunique sintomas prontamente.",
-    "myth": "TODO 维生素B12缺乏7%–17.4%；胃肠不良反应最高53%；疲倦9%、头痛6%；罕见严重乳酸酸中毒、肝损伤。"
+    "caution": "A frequência dos efeitos colaterais varia conforme a apresentação do remédio, a rapidez com que a dose aumenta, a dose e o perfil de quem toma — e taxas de efeitos colaterais não são riscos de morte. Não comece a tomar metformina por conta própria por causa desses números e, se já toma, não pare sozinho.",
+    "myth": "O guia original dizia que os efeitos colaterais comuns da metformina são deficiência de vitamina B12 em 7% a 17,4% das pessoas, problemas de estômago e intestino em até 53%, cansaço em 9% e dor de cabeça em 6%, além de acidose láctica e lesão no fígado raras, porém graves."
   },
   "waist-circumference": {
-    "question": "TODO Cintura e gordura abdominal",
-    "answer": "TODO A cintura traz informações úteis além do peso. Estudos de longo prazo associam uma cintura maior a maior risco de morte, por isso a balança sozinha pode deixar parte do risco passar despercebida.",
+    "question": "Uma cintura maior significa maior risco de morte?",
+    "answer": "Sim. Cada aumento de 10 cm na cintura esteve ligado a um risco de morte cerca de 11% maior, mesmo depois de levar o peso corporal em conta.",
     "why": [
-      "TODO A cintura traz informações úteis além do peso. Estudos de longo prazo associam uma cintura maior a maior risco de morte, por isso a balança sozinha pode deixar parte do risco passar despercebida.",
-      "TODO 综述共72项前瞻性队列、2,528,297人；腰围分析含50项研究"
+      "Pesquisadores reuniram 72 estudos de longo prazo com cerca de 2,53 milhões de adultos. 50 deles analisaram a medida da cintura.",
+      "Cada aumento de 10 cm na cintura esteve ligado a um risco de morte cerca de 11% maior. A ligação se manteve mesmo depois de considerar o índice de massa corporal, uma medida do peso em relação à altura.",
+      "Os estudos variaram bastante e diferiram na forma de medir a cintura, nas doenças prévias e no estilo de vida. A medida da cintura é um sinal de alerta, não uma medição direta da gordura ao redor dos órgãos."
     ],
-    "caution": "TODO Acompanhe a cintura além do peso e inclua atividade física regular e refeições equilibradas na rotina.",
+    "caution": "Essa é uma ligação observada ao acompanhar pessoas e não define uma meta única de peso ou cintura. Acompanhe sua cintura além do peso. Se a gordura na barriga estiver aumentando, melhore alimentação e atividade física e faça um check-up médico.",
     "myth": null
   },
   "obstructive-sleep-apnoea": {
-    "question": "TODO Ronco e apneia do sono",
-    "answer": "TODO Passar a noite inteira na cama nem sempre significa dormir bem. A apneia do sono grave se associa a maior risco de morte; ronco persistente, pausas respiratórias e sonolência diurna merecem atenção.",
+    "question": "Roncar e parar de respirar durante o sono (apneia do sono) pode encurtar a vida?",
+    "answer": "A forma grave está ligada a um maior risco de morte. Pessoas com apneia do sono grave tiveram cerca de 1,9 vez o risco de morte de quem não tem o problema. Ensaios randomizados ainda não mostraram claramente se o tratamento com aparelho respiratório reduz esse risco.",
     "why": [
-      "TODO Passar a noite inteira na cama nem sempre significa dormir bem. A apneia do sono grave se associa a maior risco de morte; ronco persistente, pausas respiratórias e sonolência diurna merecem atenção.",
-      "TODO 风险综述共6项前瞻性观察研究、11,932人；按呼吸暂停严重度分组"
+      "Pesquisadores reuniram 6 estudos observacionais de longo prazo com 11.932 pessoas, divididas conforme a gravidade da apneia do sono.",
+      "Quem tinha apneia do sono grave teve um risco de morte cerca de 90% maior do que quem não tinha o problema.",
+      "Em uma revisão de tratamentos de 2025, os ensaios randomizados sozinhos não mostraram diferença clara no risco de morte com aparelhos respiratórios de pressão positiva. Os estudos não randomizados encontraram um risco cerca de 40% menor, mas não provam causa da mesma forma que os ensaios randomizados.",
+      "Outras doenças que as pessoas já tinham e quem escolheu se tratar também podem ter influenciado os resultados."
     ],
-    "caution": "TODO Peça uma avaliação do sono se você costuma roncar alto, parar de respirar durante o sono ou sentir sonolência durante o dia; se houver diagnóstico, discuta o tratamento adequado.",
+    "caution": "Roncar sozinho não significa que você tem a doença. Se você costuma roncar alto, parar de respirar dormindo ou sentir sono durante o dia, faça uma avaliação do sono e, se o diagnóstico for confirmado, escolha o tratamento com seu médico.",
     "myth": null
   },
   "hepatitis-c-treatment": {
-    "question": "TODO Diagnosticar e tratar a hepatite C",
-    "answer": "TODO A hepatite C pode passar despercebida por anos. Um estudo de acompanhamento de pessoas com infecção crônica associou o tratamento antiviral a menor mortalidade, reforçando a importância do diagnóstico e do cuidado em tempo oportuno.",
+    "question": "Se você tem hepatite C crônica, o tratamento antiviral reduz o risco de morte?",
+    "answer": "Talvez, embora as evidências não sejam fortes — e isso diz respeito a pacientes que já têm hepatite C, não a pessoas saudáveis. Pacientes que receberam tratamento antiviral tiveram um risco de morte cerca de 52% menor.",
     "why": [
-      "TODO A hepatite C pode passar despercebida por anos. Um estudo de acompanhamento de pessoas com infecção crônica associou o tratamento antiviral a menor mortalidade, reforçando a importância do diagnóstico e do cuidado em tempo oportuno.",
-      "TODO 法国32个肝病中心、9,895名慢性丙肝成人；中位随访33.4个月"
+      "Pesquisadores acompanharam 9.895 adultos com hepatite C crônica em 32 centros de fígado na França por uma mediana de 33,4 meses, cerca de 2,8 anos.",
+      "Depois de considerar outros fatores, pacientes tratados com antivirais de ação direta tiveram um risco de morte cerca de 52% menor do que os não tratados.",
+      "O tratamento não foi sorteado, então o estudo mostra uma ligação. Ele também deixou de fora pessoas que já tinham cirrose grave (descompensada), câncer de fígado ou transplante de fígado, entre outros casos."
     ],
-    "caution": "TODO Após um teste positivo de anticorpos, confirme se há infecção atual; se houver, faça uma avaliação do fígado e discuta prontamente o tratamento antiviral.",
+    "caution": "Isso não se aplica a quem não tem hepatite C. Um exame de anticorpos positivo, sozinho, não significa que você ainda está infectado; verifique se o vírus continua presente. Se a infecção atual for confirmada, avalie o fígado e escolha o tratamento antiviral com seu médico. Não compre nem interrompa os remédios por conta própria.",
     "myth": null
   }
 }

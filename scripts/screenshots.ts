@@ -36,7 +36,9 @@ const SHOTS: Shot[] = [
   ...both('en-studies-search', 'en/studies/?q=coffee'),
   ...both('zh-about', 'zh/about/'),
   // Arabic is right to left.
-  ...both('ar-home', 'ar/'),
+  ...(['es', 'fr', 'de', 'pt', 'ja', 'ar'] as const).flatMap((code) => both(`${code}-home`, `${code}/`)),
+  ...both('de-study-alcohol', 'de/studies/alcohol/'),
+  ...both('ja-study-coffee', 'ja/studies/coffee/'),
   ...both('ar-study-aspirin', 'ar/studies/aspirin-primary-prevention/'),
   ...both('ar-lang-open', 'ar/').map((s) => ({ ...s, action: "document.querySelector('.site-lang__details').open = true" })),
   // The root page redirects by browser language: Chinese to zh/, French to fr/, anything unsupported to en/.

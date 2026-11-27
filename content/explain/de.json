@@ -1,642 +1,732 @@
 {
   "poultry-fish": {
-    "question": "TODO 白肉、红肉与加工肉",
-    "answer": "TODO US-Langzeitstudien brachten einen höheren Verzehr von rotem und verarbeitetem Fleisch mit einem höheren Sterberisiko in Verbindung. Bei Fisch und Geflügel waren die Zusammenhänge schwächer. Auch Ersatzlebensmittel und Zubereitung spielen eine Rolle.",
+    "question": "Verkürzen rotes und verarbeitetes Fleisch das Leben? Sind Geflügel und Fisch besser?",
+    "answer": "Teilweise. Menschen, die mehr rotes und verarbeitetes Fleisch aßen, hatten ein leicht höheres Sterberisiko. Bei Geflügel und Fisch zeigte sich kein klarer Zusammenhang in die eine oder andere Richtung; es ist also nicht belegt, dass weißes Fleisch das Leben verlängert.",
     "why": [
-      "TODO US-Langzeitstudien brachten einen höheren Verzehr von rotem und verarbeitetem Fleisch mit einem höheren Sterberisiko in Verbindung. Bei Fisch und Geflügel waren die Zusammenhänge schwächer. Auch Ersatzlebensmittel und Zubereitung spielen eine Rolle.",
-      "TODO JAMA美国6队列29682人，8875死亡；BMJ81469人，14019死亡"
+      "Hier werden zwei US-Langzeitstudien kombiniert, die Menschen über Jahre begleiteten. Eine fasste 6 Studien mit 29.682 Menschen zusammen, von denen 8.875 starben. Die andere begleitete 81.469 Menschen, von denen 14.019 starben.",
+      "Je 2 zusätzliche Portionen verarbeitetes Fleisch pro Woche – oder 2 zusätzliche Portionen rotes Fleisch – gingen mit einem etwa 3 % höheren Sterberisiko einher. Bei zusätzlichem Geflügel oder Fisch gab es keinen klaren Unterschied.",
+      "Wer seinen Verzehr von rotem Fleisch über acht Jahre um mindestens eine halbe Portion pro Tag steigerte (etwa 40 g frisches rotes Fleisch oder 14 g verarbeitetes rotes Fleisch), hatte in den folgenden acht Jahren ein etwa 10 % höheres Sterberisiko als Menschen, deren Verzehr gleich blieb.",
+      "Die Ernährung wurde per Fragebogen erfasst, und die Studien haben die Menschen nur beobachtet. Sie zeigen also einen Zusammenhang, können aber nicht beweisen, dass das Fleisch selbst die Todesfälle verursacht hat."
     ],
-    "caution": "TODO Weniger verarbeitetes Fleisch essen und rotes Fleisch teilweise durch Hülsenfrüchte, Nüsse oder Fisch ersetzen.",
-    "myth": "TODO 行动节：白肉 −11%～−3% ACM；证据节：增加红肉≥半份/天，ACM增加10%；每周两份红肉/加工肉增加3%。"
+    "caution": "Kein klarer Zusammenhang mit dem Sterberisiko beweist nicht, dass Geflügel und Fisch risikofrei sind. In einer der Studien ging mehr Geflügel mit mehr Herz-Kreislauf-Erkrankungen einher. Außerdem deckten die beiden Studien unterschiedliche Zeiträume ab, sodass ihre Zahlen nicht vermischt werden sollten.",
+    "myth": "Im ursprünglichen Leitfaden hieß es, dass weißes Fleisch das Sterberisiko um 3 % bis 11 % senkt, eine halbe Portion rotes Fleisch mehr pro Tag es um 10 % erhöht und zwei Portionen rotes oder verarbeitetes Fleisch pro Woche es um 3 % erhöhen."
   },
   "fresh-fruit-diabetes": {
-    "question": "TODO 新鲜水果（糖尿病人群）",
-    "answer": "TODO In einer chinesischen Langzeitstudie mit Menschen mit Diabetes war mehr frisches Obst mit einem niedrigeren Risiko für Tod und Gefäßkomplikationen verbunden. Untersucht wurde ganzes Obst, kein Saft.",
+    "question": "Sollten Sie bei Diabetes trotzdem Obst essen?",
+    "answer": "Wahrscheinlich ja. Unter chinesischen Erwachsenen mit Diabetes hatten diejenigen, die mehr frisches Obst aßen, ein niedrigeres Sterberisiko. Das stammt aber aus einer einzigen Beobachtungsstudie, daher ist die Evidenz begrenzt.",
     "why": [
-      "TODO In einer chinesischen Langzeitstudie mit Menschen mit Diabetes war mehr frisches Obst mit einem niedrigeren Risiko für Tod und Gefäßkomplikationen verbunden. Untersucht wurde ganzes Obst, kein Saft.",
-      "TODO 中国CKB基线糖尿病30300人，3389死亡，约7年"
+      "Die Studie begleitete 30.300 chinesische Erwachsene, die bereits Diabetes hatten, etwa 7 Jahre lang; in dieser Zeit starben 3.389 von ihnen.",
+      "Je 100 g frisches Obst zusätzlich pro Tag gingen mit einem etwa 17 % niedrigeren Sterberisiko einher. Sie gingen außerdem mit etwa 13 % weniger Komplikationen an großen Blutgefäßen wie Schlaganfall und Herzerkrankungen und etwa 28 % weniger an kleinen Blutgefäßen wie diabetischen Nieren- und Augenerkrankungen einher.",
+      "Die Studie hat die Menschen nur beobachtet. Wer mehr Obst aß, könnte sich auch in anderen Punkten unterschieden haben, sodass sich nicht beweisen lässt, dass das Obst den Vorteil verursacht hat."
     ],
-    "caution": "TODO Obst in mäßigen Mengen essen und die Portionen an Blutzucker und Behandlungsplan anpassen.",
-    "myth": "TODO 每天摄入200克新鲜水果可使死亡率降低17%，糖尿病大血管并发症风险降低13%、微血管并发症降低28%。"
+    "caution": "Die Zahlen gelten pro zusätzlichen 100 g pro Tag, nicht 200 g, und stammen nur von Menschen mit Diabetes; sie bedeuten also nicht, dass alle ein 17 % niedrigeres Risiko bekommen. Untersucht wurde ganzes frisches Obst, und Saft ist kein Ersatz.",
+    "myth": "Im ursprünglichen Leitfaden hieß es, dass 200 g frisches Obst pro Tag die Sterberate um 17 % senken sowie Diabetes-Komplikationen an großen Blutgefäßen um 13 % und an kleinen Blutgefäßen um 28 %."
   },
   "flavonoid-foods": {
-    "question": "TODO 含黄酮食物",
-    "answer": "TODO Eine dänische Langzeitstudie brachte mehr Flavonoide aus der Ernährung mit einem niedrigeren Sterberisiko in Verbindung. Diese Pflanzenstoffe kommen in vielen Lebensmitteln vor; untersucht wurde die alltägliche Ernährung.",
+    "question": "Helfen flavonoidreiche Lebensmittel wie Äpfel, Tee und Brokkoli dabei, länger zu leben?",
+    "answer": "Möglicherweise ein wenig, aber die Evidenz ist begrenzt. Dänische Erwachsene, die über die Ernährung mehr Flavonoide aufnahmen, hatten ein etwa 8 % bis 12 % niedrigeres Sterberisiko – weniger als die 20 %, die der ursprüngliche Leitfaden behauptete.",
     "why": [
-      "TODO Eine dänische Langzeitstudie brachte mehr Flavonoide aus der Ernährung mit einem niedrigeren Sterberisiko in Verbindung. Diese Pflanzenstoffe kommen in vielen Lebensmitteln vor; untersucht wurde die alltägliche Ernährung.",
-      "TODO 丹麦56048人，14083死亡，23年"
+      "Die Studie begleitete 56.048 Menschen in Dänemark 23 Jahre lang; in dieser Zeit starben 14.083. Wie viele Flavonoide jede Person aufnahm, wurde anhand eines einzigen Ernährungsfragebogens geschätzt.",
+      "Die Teilnehmenden wurden von der niedrigsten bis zur höchsten Zufuhr in fünf gleich große Gruppen eingeteilt. Nachdem der Rest der Ernährung berücksichtigt worden war, hatte die mittlere Gruppe ein etwa 12 % niedrigeres Sterberisiko als die niedrigste Gruppe und die höchste Gruppe ein etwa 8 % niedrigeres.",
+      "Oberhalb von rund 500 mg Flavonoiden pro Tag senkte eine noch höhere Aufnahme das Risiko nicht weiter.",
+      "Menschen, die mehr Flavonoide essen, ernähren sich oft insgesamt besser und sind wohlhabender, was einen Teil des Zusammenhangs erklären könnte. Die Studie zeigt daher einen Zusammenhang, keinen Beweis."
     ],
-    "caution": "TODO Gemüse, Obst und Hülsenfrüchte abwechslungsreich genießen.",
-    "myth": "TODO 吃含黄酮食物与死亡风险降低20%相关；举例一杯茶、一个苹果、一个橘子、100克蓝莓或100克西兰花。"
+    "caution": "Hier ging es um normale Lebensmittel; die Studie sagt also nichts über Flavonoid-Nahrungsergänzungsmittel, und diese Lebensmittel gleichen den Schaden durch Rauchen oder Alkohol nicht aus. Niemand hat einen konkreten Plan wie 100 g Brokkoli pro Tag getestet.",
+    "myth": "Im ursprünglichen Leitfaden hieß es, dass flavonoidreiche Lebensmittel das Sterberisiko um 20 % senken, mit Beispielen wie einer Tasse Tee, einem Apfel, einer Orange, 100 g Heidelbeeren oder 100 g Brokkoli."
   },
   "chili-us": {
-    "question": "TODO 红辣椒（美国）",
-    "answer": "TODO In einer US-Beobachtungsstudie hatten Erwachsene, die rote Chili aßen, ein niedrigeres Sterberisiko. Alter, Ernährung und andere Gewohnheiten beeinflussen diesen Zusammenhang ebenfalls.",
+    "question": "Leben Menschen in den USA, die scharfe rote Chilischoten essen, länger?",
+    "answer": "Möglicherweise, aber die Evidenz ist begrenzt. Nachdem Alter und andere Faktoren berücksichtigt wurden, hatten US-Erwachsene, die scharfe rote Chilischoten aßen, ein etwa 13 % niedrigeres Sterberisiko – deutlich weniger, als die rohen Zahlen nahelegen.",
     "why": [
-      "TODO In einer US-Beobachtungsstudie hatten Erwachsene, die rote Chili aßen, ein niedrigeres Sterberisiko. Alter, Ernährung und andere Gewohnheiten beeinflussen diesen Zusammenhang ebenfalls.",
-      "TODO 美国NHANES III 16179成人，中位18.9年"
+      "Forschende nutzten eine landesweite US-Gesundheitsbefragung und begleiteten 16.179 Erwachsene etwa 19 Jahre lang; in dieser Zeit starben 4.946.",
+      "In den rohen Zahlen starben 21,6 % der Chili-Esser gegenüber 33,6 % derer, die keine aßen. Beide Gruppen unterschieden sich jedoch im Alter und in anderen Merkmalen, sodass dieser Abstand nicht direkt verglichen werden kann.",
+      "Nach Berücksichtigung von Alter und anderen Faktoren hatten Menschen, die scharfe rote Chili aßen, ein etwa 13 % niedrigeres Sterberisiko als Menschen, die keine aßen.",
+      "Nach der Ernährung wurde nur einmal zu Beginn gefragt, und die Studie hat die Menschen nur beobachtet. Sie zeigt also einen Zusammenhang, aber nicht, dass Chili ihn verursacht hat."
     ],
-    "caution": "TODO Wer Chili mag und gut verträgt, kann damit sein Essen würzen.",
-    "myth": "TODO 美国16179人随访约19年：食辣者死亡21.6%，不食者33.6%；原段随后称每周>4次ACM降低23%。"
+    "caution": "Das zeigt nicht, dass Chili selbst das Leben verlängert. Die Zahl von 23 %, die oft mit dieser Studie verbunden wird, stammt aus einer anderen Studie in Italien. Wenn Ihnen scharfes Essen auf den Magen schlägt, gibt es keinen Grund, sich zum Mehr-Essen zu zwingen.",
+    "myth": "Im ursprünglichen Leitfaden hieß es, dass in einer US-Studie mit 16.179 Menschen über etwa 19 Jahre 21,6 % der Chili-Esser starben gegenüber 33,6 % der Nicht-Esser und dass Chili mehr als viermal pro Woche das Sterberisiko um 23 % senkt."
   },
   "chili-italy": {
-    "question": "TODO 辣椒（意大利）",
-    "answer": "TODO Eine italienische Beobachtungsstudie verband häufigen Chiliverzehr mit niedrigerer Gesamt- und Herz-Kreislauf-Mortalität.",
+    "question": "Haben Menschen in Italien, die mehr als viermal pro Woche Chili essen, ein niedrigeres Sterberisiko?",
+    "answer": "Möglicherweise, aber die Evidenz ist begrenzt. Italienische Erwachsene, die mehr als viermal pro Woche Chili aßen, hatten ein etwa 23 % niedrigeres Sterberisiko als Menschen, die nie oder selten Chili aßen.",
     "why": [
-      "TODO Eine italienische Beobachtungsstudie verband häufigen Chiliverzehr mit niedrigerer Gesamt- und Herz-Kreislauf-Mortalität.",
-      "TODO 意大利Moli-sani 22811人，1236死亡，中位8.2年"
+      "Die Studie begleitete 22.811 Erwachsene in Italien etwa 8 Jahre lang; in dieser Zeit starben 1.236.",
+      "Verglichen mit Menschen, die nie oder selten Chili aßen, hatten jene, die sie mehr als viermal pro Woche aßen, ein etwa 23 % niedrigeres Sterberisiko und ein etwa 34 % niedrigeres Risiko, an einer Herz-Kreislauf-Erkrankung zu sterben.",
+      "Die weit verbreitete Zahl von 61 % gilt nur für Todesfälle durch Schlaganfälle und andere Erkrankungen der Blutgefäße im Gehirn, nicht für krankheitsbedingte Todesfälle insgesamt.",
+      "Die Studie hat die Menschen nur beobachtet. Häufige Chili-Esser unterscheiden sich möglicherweise in Ernährung und Lebensstil; daher lässt sich nicht zeigen, dass Chili oder ihr scharfer Inhaltsstoff Capsaicin den Unterschied verursacht hat."
     ],
-    "caution": "TODO Wer Chili mag und gut verträgt, kann damit nach Geschmack würzen.",
-    "myth": "TODO 每周吃辣>4次，ACM降低23%、心血管死亡降低34%；二手标题称“患病死亡风险可降低61%”。"
+    "caution": "Die Vergleichsgruppe waren Menschen, die nie oder selten Chili aßen, nicht alle mit weniger als zweimal pro Woche. Chili kann keine Blutdruckkontrolle oder andere Behandlung ersetzen, und wenn sie Ihnen auf den Magen schlägt, essen Sie nur so viel, wie Sie vertragen.",
+    "myth": "Im ursprünglichen Leitfaden hieß es, dass Chili mehr als viermal pro Woche das Sterberisiko um 23 % und Herz-Kreislauf-Todesfälle um 34 % senkt, und eine zitierte Überschrift behauptete ein um 61 % niedrigeres Risiko, an Krankheiten zu sterben."
   },
   "eggs": {
-    "question": "TODO 鸡蛋",
-    "answer": "TODO Eine US-Studie bei Erwachsenen mittleren und höheren Alters verband mehr ganze Eier mit einem höheren Sterberisiko. Ergebnisse anderer Regionen unterscheiden sich. Die gesamte Ernährung sagt mehr aus als Eier allein.",
+    "question": "Erhöhen Eier das Sterberisiko?",
+    "answer": "Möglicherweise ein wenig. Bei US-Erwachsenen mittleren und höheren Alters ging jedes zusätzliche halbe Ei pro Tag mit einem etwa 7 % höheren Sterberisiko einher. Das stammt aber aus einer Beobachtungsstudie und beweist nicht, dass Eier schädlich sind.",
     "why": [
-      "TODO Eine US-Studie bei Erwachsenen mittleren und höheren Alters verband mehr ganze Eier mit einem höheren Sterberisiko. Ergebnisse anderer Regionen unterscheiden sich. Die gesamte Ernährung sagt mehr aus als Eier allein.",
-      "TODO NIH-AARP 521120人，129328死亡，中位16年"
+      "Die Studie begleitete 521.120 US-Amerikanerinnen und US-Amerikaner mittleren und höheren Alters etwa 16 Jahre lang; in dieser Zeit starben 129.328.",
+      "Jedes zusätzliche halbe ganze Ei pro Tag (etwa 25 g) ging mit einem etwa 7 % höheren Sterberisiko einher.",
+      "Die Forschenden schätzten außerdem mit einem statistischen Modell, was passiert, wenn dieses halbe Ei durch die gleiche Menge Eiweiß, Geflügel, Fisch, Milchprodukte, Nüsse oder Hülsenfrüchte ersetzt wird. Jeder Tausch ergab ein um 6 % bis 13 % niedrigeres Risiko, am stärksten bei Nüssen. Das war eine Berechnung, kein Test mit Menschen, die ihre Ernährung tatsächlich umstellten.",
+      "Die Ernährung wurde einmal zu Beginn selbst angegeben, und andere Gewohnheiten könnten weiterhin einen Teil des Zusammenhangs erklären."
     ],
-    "caution": "TODO Eier passend zu Blutfetten und Ernährungsgewohnheiten einplanen; auch Hülsenfrüchten und Nüssen Platz geben.",
+    "caution": "Diese Ergebnisse stammen von US-Erwachsenen mittleren und höheren Alters, und Studien anderswo kamen nicht alle zum selben Schluss; Eier bedeuten also nicht für alle pauschal 7 % mehr Risiko. Eine einzelne Studie ist kein Grund, ganz auf Eier zu verzichten.",
     "myth": null
   },
   "walnuts": {
-    "question": "TODO 核桃",
-    "answer": "TODO US-Langzeitstudien verbanden regelmäßigen Walnussverzehr mit niedrigerem Sterberisiko. Unterschiede in der Lebenserwartung wurden statistisch geschätzt; andere gesunde Gewohnheiten können mitwirken.",
+    "question": "Können Walnüsse zusätzliche Lebensjahre bringen?",
+    "answer": "Möglicherweise. Menschen, die fünf oder mehr Portionen Walnüsse pro Woche aßen, hatten ein etwa 14 % niedrigeres Sterberisiko als Menschen, die keine aßen – die 1,3 zusätzlichen Jahre sind aber nur eine Modellschätzung.",
     "why": [
-      "TODO US-Langzeitstudien verbanden regelmäßigen Walnussverzehr mit niedrigerem Sterberisiko. Unterschiede in der Lebenserwartung wurden statistisch geschätzt; andere gesunde Gewohnheiten können mitwirken.",
-      "TODO NHS/HPFS 93340人，30263死亡，最长20年"
+      "Die Studie fasste zwei US-Langzeitstudien mit 93.340 Menschen zusammen, die bis zu 20 Jahre lang begleitet wurden; in dieser Zeit starben 30.263.",
+      "Wer fünf oder mehr Portionen Walnüsse zu je 28 g pro Woche aß, hatte ein etwa 14 % niedrigeres Sterberisiko als Menschen, die keine aßen.",
+      "Ein Modell schätzte, dass Frauen im Alter von 60 Jahren etwa 1,30 Jahre und Männer etwa 1,26 Jahre länger leben würden. Gemeint ist die gesamte Lebensspanne, nicht Jahre in guter Gesundheit, und es ist keine Garantie.",
+      "Menschen, die regelmäßig Walnüsse essen, achten vielleicht ohnehin mehr auf ihre Gesundheit, und die Arbeit wurde von der Industrie mitfinanziert – beides Gründe, das Ergebnis vorsichtig zu lesen."
     ],
-    "caution": "TODO Ohne Nussallergie einige Snacks durch kleine Portionen ungesalzener Walnüsse ersetzen und deren Energie mitrechnen.",
-    "myth": "TODO ≥5份核桃/周（28克/份），健康预期寿命多1.3岁，ACM低14%，心血管死亡低25%。"
+    "caution": "Das gilt nicht, wenn Sie allergisch auf Nüsse sind. Die Zahlen sind Durchschnittswerte über eine große Gruppe und bedeuten nicht, dass jede einzelne Person ein Jahr oder mehr gewinnt.",
+    "myth": "Im ursprünglichen Leitfaden hieß es, dass fünf oder mehr Portionen Walnüsse zu je 28 g pro Woche 1,3 gesunde Lebensjahre schenken, das Sterberisiko um 14 % und Herz-Kreislauf-Todesfälle um 25 % senken."
   },
   "nuts-general": {
-    "question": "TODO 坚果频率",
-    "answer": "TODO Mehrere Beobachtungsstudien verbanden regelmäßigen Nussverzehr mit niedrigerem Sterberisiko. Sie erfassten unterschiedliche Ernährungsweisen, verglichen aber rohe und geröstete Nüsse nicht direkt.",
+    "question": "Leben Menschen, die öfter Nüsse essen, länger?",
+    "answer": "Wahrscheinlich. Je öfter Menschen Nüsse aßen, desto niedriger war ihr Sterberisiko. Wer sie siebenmal oder öfter pro Woche aß, hatte ein etwa 20 % niedrigeres Risiko als Menschen, die keine aßen.",
     "why": [
-      "TODO Mehrere Beobachtungsstudien verbanden regelmäßigen Nussverzehr mit niedrigerem Sterberisiko. Sie erfassten unterschiedliche Ernährungsweisen, verglichen aber rohe und geröstete Nüsse nicht direkt.",
-      "TODO NEJM118962人27429死亡；PREDIMED7216高CVD风险成人323死亡"
+      "Eine große Langzeitstudie begleitete 118.962 Menschen, von denen 27.429 starben, und teilte sie danach ein, wie oft pro Woche sie Nüsse aßen.",
+      "Verglichen mit Menschen, die keine Nüsse aßen, hatten diejenigen, die sie seltener als einmal, einmal, zwei- bis viermal, fünf- oder sechsmal sowie siebenmal oder öfter pro Woche aßen, ein etwa 7 %, 11 %, 13 %, 15 % und 20 % niedrigeres Sterberisiko.",
+      "Eine zweite Studie mit 7.216 Erwachsenen mit hohem Risiko für Herz-Kreislauf-Erkrankungen fand ein etwa 39 % niedrigeres Sterberisiko bei Menschen, die mehr als drei Portionen pro Woche aßen. Nur 323 von ihnen starben, und die Teilnehmenden wählten ihre Nussmenge selbst; es war also eine Beobachtung, kein Test mit zufälliger Zuteilung."
     ],
-    "caution": "TODO Ungesalzene Nüsse mit wenig Zuckerzusatz nach Geschmack wählen; bei Nussallergie meiden.",
-    "myth": "TODO 原文以1盎司份量描述每周频率，并列死亡降低7%、11%、13%、15%、20%；另称7216人“横断面”研究中>3份/周死亡低39%。"
+    "caution": "Die Studien verglichen keine rohen und gerösteten Nüsse; sie zeigen also nicht, dass Nüsse roh gegessen werden müssen. Wenn Sie eine Nussallergie haben, meiden Sie sie.",
+    "myth": "Im ursprünglichen Leitfaden hieß es, dass bei Portionen von etwa 1 Unze (rund 28 g) häufigerer Nussverzehr pro Woche das Sterberisiko um 7 %, 11 %, 13 %, 15 % und 20 % senkt und dass mehr als drei Portionen pro Woche in einer Studie mit 7.216 Menschen das Risiko um 39 % senkten."
   },
   "sodium-ecological": {
-    "question": "TODO 钠摄入跨国生态关联",
-    "answer": "TODO Ein Ländervergleich fand eine niedrigere Sterblichkeit in Ländern mit höherer Natriumaufnahme. Unterschiede bei Einkommen, Gesundheitsversorgung und weiteren Faktoren beeinflussen diesen Zusammenhang ebenfalls. Die persönliche Salzaufnahme richtet sich besser nach Blutdruck und Gesundheitszustand.",
+    "question": "In Ländern mit höherem Salzkonsum leben die Menschen länger. Sollten Sie mehr Salz essen?",
+    "answer": "Nein. Dies ist nur ein Vergleich zwischen Ländern, die Evidenz ist schwach, und die Forschenden selbst sagen, dass sich daraus keine Empfehlung für einzelne Menschen ableiten lässt.",
     "why": [
-      "TODO Ein Ländervergleich fand eine niedrigere Sterblichkeit in Ländern mit höherer Natriumaufnahme. Unterschiede bei Einkommen, Gesundheitsversorgung und weiteren Faktoren beeinflussen diesen Zusammenhang ebenfalls. Die persönliche Salzaufnahme richtet sich besser nach Blutdruck und Gesundheitszustand.",
-      "TODO 181国家2010年汇总数据；高收入敏感性46国"
+      "Forschende verglichen die durchschnittliche Natriumaufnahme in 181 Ländern im Jahr 2010 mit den Sterberaten und der gesunden Lebenserwartung jedes Landes. Kein einzelner Mensch wurde begleitet.",
+      "Länder mit höherer durchschnittlicher Natriumaufnahme hatten niedrigere Sterberaten und eine längere gesunde Lebenserwartung, und dasselbe galt beim Vergleich von nur 46 Ländern mit hohem Einkommen.",
+      "Länder, in denen mehr Salz gegessen wird, sind oft auch wohlhabender und haben eine bessere medizinische Versorgung, was dieses Muster erzeugen könnte. Zudem wurde die Aufnahme pro Land geschätzt, und ein Landesdurchschnitt sagt nichts über einzelne Menschen dort.",
+      "Die Forschenden schreiben deutlich, dass diese Daten reine Beobachtungen sind und nicht als Grundlage für Ernährungsempfehlungen dienen dürfen."
     ],
-    "caution": "TODO Die Salzzufuhr an den eigenen Blutdruck und medizinischen Bedarf anpassen.",
-    "myth": "TODO 181国生态研究：每增加1克/日钠，出生健康预期寿命β=2.6年，60岁β=0.3年；ACM β=−131；高收入46国β=3.4年、ACM β=−168。"
+    "caution": "Essen Sie nicht mehr Salz, um länger zu leben. Wenn Sie Bluthochdruck oder eine andere Erkrankung haben, halten Sie die Salzmenge im Rahmen, der zu Ihrer Erkrankung passt, und folgen Sie dem Rat Ihrer Ärztin oder Ihres Arztes.",
+    "myth": "Im ursprünglichen Leitfaden hieß es, dass über 181 Länder hinweg jedes zusätzliche 1 g Natrium pro Tag (etwa 2,5 g Salz) mit 2,6 zusätzlichen Jahren gesunder Lebenserwartung bei der Geburt, 0,3 zusätzlichen Jahren im Alter von 60 Jahren und niedrigeren Sterberaten einherging sowie mit 3,4 zusätzlichen Jahren in 46 Ländern mit hohem Einkommen."
   },
   "potassium-salt": {
-    "question": "TODO 低钠富钾盐替代",
-    "answer": "TODO In einer randomisierten Studie im ländlichen China gab es weniger Todesfälle und Herz-Kreislauf-Ereignisse, wenn normales Salz durch natriumärmeres, kaliumreiches Salz ersetzt wurde. Teilnehmende hatten einen früheren Schlaganfall oder waren älter und hatten Bluthochdruck.",
+    "question": "Senkt der Umstieg auf kaliumangereichertes, natriumarmes Salz das Sterberisiko?",
+    "answer": "Ja, für die Hochrisikogruppe in der Studie. Erwachsene auf dem Land in China, die einen Schlaganfall hatten oder mindestens 60 Jahre alt waren und Bluthochdruck hatten, wiesen nach dem Umstieg auf den Salzersatz ein etwa 12 % niedrigeres Sterberisiko auf.",
     "why": [
-      "TODO In einer randomisierten Studie im ländlichen China gab es weniger Todesfälle und Herz-Kreislauf-Ereignisse, wenn normales Salz durch natriumärmeres, kaliumreiches Salz ersetzt wurde. Teilnehmende hatten einen früheren Schlaganfall oder waren älter und hatten Bluthochdruck.",
-      "TODO 中国600村20995人；卒中史或≥60岁且高血压；均随访4.74年"
+      "Dies war eine randomisierte Studie mit 20.995 Menschen in 600 Dörfern im ländlichen China, die alle einen Schlaganfall hatten oder mindestens 60 Jahre alt waren und Bluthochdruck hatten. Die Dörfer wurden per Zufall einem Salzersatz aus 75 % Natriumchlorid und 25 % Kaliumchlorid oder normalem Salz zugeteilt, und die Teilnehmenden wurden im Schnitt 4,74 Jahre begleitet.",
+      "In den Dörfern mit Salzersatz starben jedes Jahr etwa 39,3 von 1.000 Menschen, gegenüber etwa 44,6 bei normalem Salz – ein etwa 12 % niedrigeres Risiko.",
+      "Todesfälle waren nicht das Hauptziel der Studie, alle wussten, welches Salz sie verwendeten, und die Studie kann nicht trennen, ob der Vorteil von weniger Natrium oder von mehr Kalium kam."
     ],
-    "caution": "TODO Vor dem Salzwechsel die Eignung prüfen lassen, besonders bei eingeschränkter Nierenfunktion, hohem Kalium oder kaliumerhöhenden Medikamenten.",
+    "caution": "Wenn Sie Nierenprobleme oder hohe Kaliumwerte im Blut haben oder Medikamente nehmen, die das Kalium erhöhen, wechseln Sie das Salz nicht auf eigene Faust. Fragen Sie zuerst Ihre Ärztin oder Ihren Arzt. Das Ergebnis stammt aus dieser Hochrisikogruppe und sagt nicht, wie viel gesunde Menschen gewinnen würden.",
     "myth": null
   },
   "carbohydrate-share": {
-    "question": "TODO 碳水能量占比",
-    "answer": "TODO Langzeitstudien fanden sowohl bei niedrigem als auch hohem Kohlenhydratanteil eine höhere Mortalität. Auch die Lebensmittel, die Kohlenhydrate ersetzen, beeinflussten die Ergebnisse.",
+    "question": "Ist es für ein langes Leben gut, Kohlenhydrate stark einzuschränken?",
+    "answer": "So pauschal nicht. Sowohl Menschen, die sehr wenig, als auch Menschen, die sehr viel ihrer Energie aus Kohlenhydraten bezogen, hatten ein höheres Sterberisiko; am niedrigsten war das Risiko bei etwa 50 % bis 55 %.",
     "why": [
-      "TODO Langzeitstudien fanden sowohl bei niedrigem als auch hohem Kohlenhydratanteil eine höhere Mortalität. Auch die Lebensmittel, die Kohlenhydrate ersetzen, beeinflussten die Ergebnisse.",
-      "TODO ARIC15428人及荟萃合计432179人"
+      "Forschende begleiteten 15.428 Menschen und fassten außerdem mehrere Langzeitstudien mit insgesamt 432.179 Menschen zusammen.",
+      "Das Sterberisiko war am niedrigsten, wenn Kohlenhydrate etwa 50 % bis 55 % der täglichen Energie lieferten, und an beiden Enden höher.",
+      "Verglichen mit einer mittleren Aufnahme gingen unter 40 % Energie aus Kohlenhydraten mit einem etwa 20 % höheren Risiko einher und über 70 % mit einem etwa 23 % höheren Risiko.",
+      "Auch was die Kohlenhydrate ersetzte, spielte eine Rolle, denn tierische und pflanzliche Lebensmittel zeigten unterschiedliche Ergebnisse. All das beruht auf Beobachtungen von Menschen, die ihre Ernährung selbst angaben."
     ],
-    "caution": "TODO Zunächst auf gute Kohlenhydratquellen wie Vollkorn und Hülsenfrüchte achten; therapeutische Ernährungsformen individuell anpassen.",
+    "caution": "Das bedeutet nicht, dass eine kohlenhydratarme Ernährung das Leben jeder einzelnen Person verkürzt, und es ist kein genau einzuhaltendes Verhältnis. Wenn Sie Diabetes haben oder eine ketogene Diät als medizinische Behandlung nutzen, folgen Sie dem Plan Ihrer Ärztin, Ihres Arztes oder Ihrer Ernährungsfachkraft.",
     "myth": null
   },
   "betel-quid": {
-    "question": "TODO 槟榔/槟榔嚼块",
-    "answer": "TODO Eine gemeinsame Auswertung asiatischer Studien verband das Kauen von Betelbissen mit höherem Sterberisiko. Zusammensetzung sowie gleichzeitiges Rauchen oder Trinken beeinflussen die Stärke des Zusammenhangs.",
+    "question": "Verkürzt das Kauen von Betelpriem das Leben?",
+    "answer": "Wahrscheinlich. Zusammengefasste Studien aus Asien zeigten, dass Menschen, die Betelpriem kauten, ein etwa 21 % höheres Sterberisiko hatten. Da diese Studien die Menschen aber nur beobachteten, ist die Evidenz begrenzt.",
     "why": [
-      "TODO Eine gemeinsame Auswertung asiatischer Studien verband das Kauen von Betelbissen mit höherem Sterberisiko. Zusammensetzung sowie gleichzeitiges Rauchen oder Trinken beeinflussen die Stärke des Zusammenhangs.",
-      "TODO ACM分析179582人，亚洲研究5个比较类别"
+      "Forschende fassten Beobachtungsstudien aus Asien mit 179.582 Menschen zusammen und verglichen jene, die Arekanuss oder Betelpriem kauten, mit jenen, die es nicht taten.",
+      "Wer kaute, hatte ein etwa 21 % höheres Sterberisiko.",
+      "Die Ergebnisse schwankten stark von Studie zu Studie. Die Mischungen unterscheiden sich je nach Region, und viele Konsumierende rauchen und trinken auch Alkohol – all das beeinflusst die Zahl."
     ],
-    "caution": "TODO Betelbissen meiden und bei Abhängigkeit Hilfe zum Aufhören suchen.",
+    "caution": "Eine Mischung ohne Tabak ist deswegen nicht sicher. Diese Studien waren keine Entwöhnungstests und können nicht sagen, wie viel länger Sie leben würden, wenn Sie aufhören.",
     "myth": null
   },
   "calorie-restriction": {
-    "question": "TODO 热量限制（非人灵长类）",
-    "answer": "TODO Studien an Rhesusaffen deuten auf besseres Überleben durch Kalorienbeschränkung hin, mit unterschiedlichen Ergebnissen. Eine Lebensverlängerung beim Menschen ist dadurch bisher nicht belegt.",
+    "question": "Hilft es, weniger Kalorien zu essen, um länger zu leben?",
+    "answer": "Beim Menschen ist das nicht bekannt. Nur Studien an Affen deuten darauf hin, und eine der beiden Affenstudien fand zunächst keinen klaren Unterschied; die Evidenz steht also noch ganz am Anfang.",
     "why": [
-      "TODO Studien an Rhesusaffen deuten auf besseres Überleben durch Kalorienbeschränkung hin, mit unterschiedlichen Ergebnissen. Eine Lebensverlängerung beim Menschen ist dadurch bisher nicht belegt.",
-      "TODO UW76只恒河猴；另NIA猴研究早期生存差异不显著"
+      "Dies ist eine Tierstudie. 76 Rhesusaffen wurden langfristig in zwei Gruppen gehalten: eine normal gefüttert und eine mit etwa 30 % weniger Kalorien.",
+      "Nach den jüngsten Ergebnissen hatten die normal gefütterten Affen ein etwa 78 % höheres Sterberisiko als die knapp gefütterten und ein etwa 2,9-mal so hohes Risiko, an altersbedingten Krankheiten zu sterben.",
+      "Eine ähnliche Affenstudie an einem anderen Zentrum fand zunächst keinen klaren Unterschied beim Überleben, und beide Zentren unterschieden sich bei Futter, Alter der Affen und Futtermenge der Vergleichsgruppe.",
+      "Ergebnisse von Affen lassen sich nicht auf Menschen übertragen, und wie sehr weniger Essen das menschliche Leben verlängern könnte, ist nicht gezeigt."
     ],
-    "caution": "TODO Ausreichend und ausgewogen essen, ohne Übermaß. Bei Untergewicht, Schwangerschaft, Stillzeit, im Wachstum, bei Gebrechlichkeit oder Essstörungen nicht eigenständig Kalorien beschränken.",
-    "myth": "TODO 恒河猴热量限制：普通喂养组的多种疾病风险增加2.9倍，死亡风险增加3.0倍。"
+    "caution": "Kürzen Sie Kalorien nicht auf eigene Faust, um länger zu leben. Das gilt besonders bei Untergewicht, in Schwangerschaft und Stillzeit, für Kinder und Jugendliche, gebrechliche ältere Menschen sowie alle mit einer Essstörung.",
+    "myth": "Im ursprünglichen Leitfaden hieß es, dass bei Rhesusaffen normal gefütterte Tiere das 2,9-fache Risiko für mehrere Krankheiten und das 3,0-fache Sterberisiko hatten wie kalorienreduziert gefütterte Tiere."
   },
   "macronutrient-pattern": {
-    "question": "TODO 综合营养与宏量营养配比",
-    "answer": "TODO Eine große britische Langzeitstudie fand komplexe Zusammenhänge zwischen Fett, Protein, Kohlenhydraten, Ballaststoffen und Gesundheit. Eine ausgewogene Lebensmittelauswahl ist praktischer als ein exakt berechnetes Nährstoffverhältnis.",
+    "question": "Gibt es ein ideales Verhältnis von Eiweiß, Fett und Kohlenhydraten in der Ernährung?",
+    "answer": "Kein bewiesenes. Eine große britische Studie fand für jeden Nährstoff einen Bereich mit niedrigerem Risiko, aber diese Bereiche zusammenzufügen ergibt kein getestetes Rezept.",
     "why": [
-      "TODO Eine große britische Langzeitstudie fand komplexe Zusammenhänge zwischen Fett, Protein, Kohlenhydraten, Ballaststoffen und Gesundheit. Eine ausgewogene Lebensmittelauswahl ist praktischer als ein exakt berechnetes Nährstoffverhältnis.",
-      "TODO UK Biobank195658人4780死亡，平均10.6年"
+      "Die Studie begleitete 195.658 Menschen in Großbritannien im Schnitt 10,6 Jahre lang; in dieser Zeit starben 4.780. Die Ernährung wurde erfasst, indem Teilnehmende angaben, was sie in den letzten 24 Stunden gegessen hatten.",
+      "Menschen mit 15 bis 30 g Ballaststoffen pro Tag hatten ein etwa 32 % niedrigeres Sterberisiko als jene mit 5 g, und Menschen mit 14 % bis 18 % ihrer Energie aus Eiweiß hatten ein etwa 27 % niedrigeres Risiko als jene mit 10 %. Bei Stärke lag das niedrigste Risiko bei 20 % bis 30 % der Energie.",
+      "Die gesamte Fettmenge zeigte keinen klaren Zusammenhang mit dem Sterberisiko; die Studie zeigte also nicht, dass mehr Fett immer schlechter ist.",
+      "Dies sind Beobachtungen, und jeder Tiefpunkt wurde getrennt berechnet; sie zu einem einzigen besten Verhältnis zusammenzusetzen, wurde nie getestet."
     ],
-    "caution": "TODO Gemüse, Obst, Vollkorn, Hülsenfrüchte und passende Proteinquellen kombinieren; bei Nierenkrankheit oder Diabetes dem individuellen Ernährungsplan folgen.",
-    "myth": "TODO 原库称通用最优配比：<24%淀粉、15%–17%蛋白质、>15%单不饱和脂肪、<15%糖、6%饱和及6%多不饱和脂肪、30g+纤维；并描述总脂肪与ACM线性相关"
+    "caution": "Sie müssen keinen genauen Prozentzahlen hinterherjagen, weil die gesamte Qualität der Lebensmittel wichtiger ist. Bei Nierenerkrankung, Diabetes oder Ähnlichem folgen Sie dem Ernährungsplan Ihrer Ärztin, Ihres Arztes oder Ihrer Ernährungsfachkraft.",
+    "myth": "Im ursprünglichen Leitfaden hieß es, dass es eine allgemeingültige Idealverteilung gibt: unter 24 % Stärke, 15 % bis 17 % Eiweiß, über 15 % einfach ungesättigtes Fett, unter 15 % Zucker, je 6 % gesättigtes und mehrfach ungesättigtes Fett sowie 30 g oder mehr Ballaststoffe; außerdem steige das Sterberisiko stetig mit dem Gesamtfett."
   },
   "ultraprocessed-acm": {
-    "question": "TODO 超加工食品与ACM",
-    "answer": "TODO In einer spanischen Beobachtungsstudie war mehr hochverarbeitetes Essen mit höherem Sterberisiko verbunden. Teilnehmende waren überwiegend Hochschulabsolventen; Ernährung und sozialer Hintergrund beeinflussen die Ergebnisse ebenfalls.",
+    "question": "Erhöhen hochverarbeitete Lebensmittel wie Chips und Burger das Risiko, früh zu sterben?",
+    "answer": "Möglicherweise, aber die Evidenz ist begrenzt. In einer spanischen Studie hatten Menschen, die am meisten hochverarbeitete Lebensmittel aßen, ein etwa 62 % höheres Sterberisiko als jene, die am wenigsten davon aßen.",
     "why": [
-      "TODO In einer spanischen Beobachtungsstudie war mehr hochverarbeitetes Essen mit höherem Sterberisiko verbunden. Teilnehmende waren überwiegend Hochschulabsolventen; Ernährung und sozialer Hintergrund beeinflussen die Ergebnisse ebenfalls.",
-      "TODO 西班牙SUN大学毕业生19899人，335死亡，200432人年"
+      "Die Studie begleitete 19.899 Hochschulabsolventinnen und -absolventen in Spanien, und nur 335 von ihnen starben im Studienzeitraum.",
+      "Die Teilnehmenden wurden nach ihrem Verzehr hochverarbeiteter Lebensmittel in vier Gruppen eingeteilt. Die oberste Gruppe mit mehr als vier Portionen pro Tag hatte ein etwa 62 % höheres Sterberisiko als die unterste Gruppe, und jede zusätzliche tägliche Portion ging mit einem etwa 18 % höheren Risiko einher.",
+      "Bei so wenigen Todesfällen ist die wahre Größe des Effekts unsicher. Alle Untersuchten hatten einen hohen Bildungsabschluss, und andere Teile ihrer Ernährung könnten ebenfalls einen Teil des Zusammenhangs erklären.",
+      "Die weit verbreitete Behauptung, Viel-Esser stürben im Schnitt mit 58 Jahren, meint nur das Durchschnittsalter der 335 Verstorbenen. Sie bedeutet nicht, dass Menschen, die solche Lebensmittel essen, nur 58 Jahre alt werden."
     ],
-    "caution": "TODO Häufig gegessene hochverarbeitete Lebensmittel schrittweise durch bezahlbare, weniger verarbeitete Alternativen ersetzen.",
-    "myth": "TODO 行动节：少吃超加工食物 −62%～−18%；引用标题称常吃薯片汉堡巧克力“平均死亡年龄仅58岁”。"
+    "caution": "Diese Ergebnisse stammen von spanischen Hochschulabsolventen und gelten möglicherweise nicht für andere Gruppen. Wenn Sie hochverarbeitete Lebensmittel reduzieren, achten Sie darauf, dass die Alternativen weiterhin genug Nährstoffe liefern und bezahlbar bleiben.",
+    "myth": "Im ursprünglichen Leitfaden hieß es, dass weniger hochverarbeitete Lebensmittel das Sterberisiko um 18 % bis 62 % senken, und es wurde eine Überschrift zitiert, wonach Menschen, die oft Chips, Burger und Schokolade essen, im Schnitt mit nur 58 Jahren sterben."
   },
   "ultraprocessed-cvd": {
-    "question": "TODO Hochverarbeitete Lebensmittel und Herz-Kreislauf-Gesundheit",
-    "answer": "TODO Eine französische Beobachtungsstudie verband einen höheren Anteil hochverarbeiteter Lebensmittel mit höherem Herz-Kreislauf-Erkrankungsrisiko.",
+    "question": "Erhöhen hochverarbeitete Lebensmittel das Risiko für Herz-Kreislauf-Erkrankungen?",
+    "answer": "Möglicherweise, aber die Evidenz ist erst am Anfang, und diese Studie hat keine Todesfälle untersucht. In einer französischen Studie ging ein höherer Anteil hochverarbeiteter Lebensmittel in der Ernährung mit einem höheren Risiko für Herz-Kreislauf-Erkrankungen einher.",
     "why": [
-      "TODO Eine französische Beobachtungsstudie verband einen höheren Anteil hochverarbeiteter Lebensmittel mit höherem Herz-Kreislauf-Erkrankungsrisiko.",
-      "TODO 法国105159成人，1409 CVD事件，中位5.2年"
+      "Die Studie begleitete 105.159 Erwachsene in Frankreich etwa 5 Jahre lang; in dieser Zeit entwickelten 1.409 eine Herz-Kreislauf-Erkrankung.",
+      "Je 10 zusätzliche Prozentpunkte hochverarbeiteter Lebensmittel in der Ernährung gingen mit einem etwa 12 % höheren Risiko für Herz-Kreislauf-Erkrankungen einher.",
+      "Gemessen wurden neue Erkrankungsfälle, keine Todesfälle; die Studie kann also nichts über die Lebensspanne sagen. Die andere daneben zitierte Arbeit ist ein Kommentar ohne eigene Daten."
     ],
-    "caution": "TODO Weniger hochverarbeitete Snacks und Fertiggerichte wählen, dafür mehr einfache Mahlzeiten, die sich im Alltag beibehalten lassen.",
-    "myth": "TODO 超加工食品条目并列SUN全因死亡研究、NutriNet-Santé心血管发病研究和一篇评论。"
+    "caution": "Lesen Sie diese Zahl nicht als Sterberisiko. Sie stützt allgemein den Rat, weniger hochverarbeitete Lebensmittel zu essen, aber die Studie hat die Menschen nur beobachtet und erlaubt keine Berechnung, wie stark weniger Verzehr Ihr Sterberisiko verändern würde.",
+    "myth": "Im ursprünglichen Leitfaden hieß es, dass sein Eintrag zu hochverarbeiteten Lebensmitteln auf drei Arbeiten beruht – einer spanischen Sterblichkeitsstudie, einer französischen Studie zu Herzerkrankungen und einem Kommentar – und alle drei wurden als Belege zum Sterberisiko behandelt."
   },
   "whole-grains": {
-    "question": "TODO 全谷物",
-    "answer": "TODO Eine gemeinsame Auswertung von Langzeitstudien verband mehr Vollkorn mit niedrigerem Sterberisiko. Die Portionsangaben bezogen sich auf das Gewicht der Vollkornlebensmittel.",
+    "question": "Helfen Vollkornprodukte wie Vollkornbrot dabei, länger zu leben?",
+    "answer": "Wahrscheinlich. Über mehrere Studien hinweg gingen je 90 g Vollkornlebensmittel zusätzlich pro Tag mit einem etwa 17 % niedrigeren Sterberisiko einher.",
     "why": [
-      "TODO Eine gemeinsame Auswertung von Langzeitstudien verband mehr Vollkorn mit niedrigerem Sterberisiko. Die Portionsangaben bezogen sich auf das Gewicht der Vollkornlebensmittel.",
-      "TODO ACM合并11项前瞻研究；整体综述45项"
+      "Forschende fassten 11 Langzeitstudien zusammen, die Menschen über Jahre begleiteten, um den Zusammenhang zwischen Vollkornverzehr und Sterberisiko zu untersuchen – als Teil einer Übersicht über 45 Studien.",
+      "Je 90 g Vollkornlebensmittel zusätzlich pro Tag – etwa drei Portionen wie zwei Scheiben Brot und eine Schale Getreideflocken – gingen mit einem etwa 17 % niedrigeren Sterberisiko einher.",
+      "Die 90 g meinen das Gewicht des Vollkornlebensmittels selbst, nicht 90 g trockenes Getreide oder Ballaststoffe.",
+      "Die Ergebnisse schwankten zwischen den Studien deutlich, und alle haben die Menschen nur beobachtet; sie zeigen also einen Zusammenhang, keinen Beweis."
     ],
-    "caution": "TODO Raffinierte Getreideprodukte nach und nach teilweise durch Vollkorn ersetzen; bei Zöliakie glutenfreie Sorten wählen.",
+    "caution": "Das beweist nicht, dass Vollkorn selbst das Leben verlängert. Wenn Sie Zöliakie haben, wählen Sie glutenfreie Vollkornsorten, und wenn Ihr Magen empfindlich ist, steigern Sie die Menge langsam.",
     "myth": null
   },
   "dietary-fiber": {
-    "question": "TODO 膳食纤维",
-    "answer": "TODO Beobachtungsstudien verbanden mehr Ballaststoffe mit niedrigerem Sterberisiko. Klinische Studien fanden außerdem Verbesserungen etwa bei Blutdruck und Cholesterin.",
+    "question": "Hilft es, mehr Ballaststoffe zu essen, um länger zu leben?",
+    "answer": "Wahrscheinlich. Menschen, die am meisten Ballaststoffe aßen, hatten ein niedrigeres Sterberisiko, auch wenn die Übersicht keine genaue Zahl nennt, wie viel niedriger.",
     "why": [
-      "TODO Beobachtungsstudien verbanden mehr Ballaststoffe mit niedrigerem Sterberisiko. Klinische Studien fanden außerdem Verbesserungen etwa bei Blutdruck und Cholesterin.",
-      "TODO 185项前瞻研究及58项试验；试验4635人"
+      "Forschende fassten 185 Langzeitstudien und 58 klinische Studien mit 4.635 Teilnehmenden zusammen.",
+      "In den Langzeitstudien hatten Menschen mit den meisten Ballaststoffen ein niedrigeres Sterberisiko als jene mit den wenigsten. Das um 15 % bis 30 % niedrigere Risiko in der Zusammenfassung der Übersicht fasst mehrere Gesundheitsergebnisse zusammen, nicht Todesfälle allein.",
+      "Am größten schien der Nutzen bei etwa 25 bis 29 g Ballaststoffen pro Tag zu sein.",
+      "Die klinischen Studien zeigten, dass mehr Ballaststoffe Körpergewicht, Blutdruck und Cholesterin verbesserten, maßen aber keine Todesfälle."
     ],
-    "caution": "TODO Ballaststoffe aus Vollkorn, Hülsenfrüchten, Gemüse und Obst langsam steigern und ausreichend trinken; bei Darmverengung oder akuter Magen-Darm-Erkrankung erst ärztlich nachfragen.",
+    "caution": "Die Belege zu Todesfällen stammen nur aus Beobachtungen und können nicht beweisen, dass Ballaststoffe selbst das Leben verlängern. Bei einer Darmverengung oder einer akuten Darmerkrankung fragen Sie Ihre Ärztin oder Ihren Arzt, bevor Sie deutlich mehr Ballaststoffe essen.",
     "myth": null
   },
   "plant-protein": {
-    "question": "TODO 植物蛋白来源",
-    "answer": "TODO Mehrere Kohortenstudien verbanden mehr pflanzliches Protein mit niedrigerem Sterberisiko. Entscheidend für die Einordnung sind die Lebensmittelquellen und was sie ersetzen.",
+    "question": "Hilft mehr pflanzliches Eiweiß, etwa aus Bohnen und Tofu, länger zu leben?",
+    "answer": "Möglicherweise ein wenig. Menschen, die am meisten pflanzliches Eiweiß aßen, hatten ein etwa 8 % niedrigeres Sterberisiko als jene, die am wenigsten davon aßen.",
     "why": [
-      "TODO Mehrere Kohortenstudien verbanden mehr pflanzliches Protein mit niedrigerem Sterberisiko. Entscheidend für die Einordnung sind die Lebensmittelquellen und was sie ersetzen.",
-      "TODO 32队列综述、31项合并，715128人113039死亡"
+      "Forschende fassten 31 Langzeitstudien mit 715.128 Menschen zusammen, von denen 113.039 starben.",
+      "Die Gruppe mit dem meisten pflanzlichen Eiweiß hatte ein etwa 8 % niedrigeres Sterberisiko als die Gruppe mit dem wenigsten. Je 3 % mehr der täglichen Energie aus pflanzlichem Eiweiß gingen mit einem etwa 5 % niedrigeren Risiko einher.",
+      "Die Ergebnisse unterschieden sich zwischen den Studien etwas, und alle haben die Menschen nur beobachtet. Es lässt sich kaum trennen, ob der Vorteil vom Eiweiß selbst kommt, von Lebensmitteln wie Bohnen und Nüssen als Ganzem oder von dem Fleisch, das sie ersetzen."
     ],
-    "caution": "TODO Rotes und verarbeitetes Fleisch teilweise durch Hülsenfrüchte, Sojaprodukte oder Nüsse ersetzen; Nierenkrankheiten und Allergien berücksichtigen.",
+    "caution": "Es geht um pflanzliches Eiweiß aus Lebensmitteln; die Studie zeigt also nicht, dass zusätzliches Eiweißpulver hilft. Bei Nierenerkrankung oder Allergien gegen Hülsenfrüchte, Soja oder Nüsse passen Sie die Auswahl an Ihre Bedürfnisse an.",
     "myth": null
   },
   "dairy": {
-    "question": "TODO 乳制品／牛奶",
-    "answer": "TODO Eine länderübergreifende Beobachtungsstudie verband Milchprodukte mit niedrigerem Sterberisiko; andere Übersichten fanden uneinheitliche Ergebnisse. Milch und Joghurt liefern Nährstoffe, die Auswahl richtet sich auch nach persönlichen Bedürfnissen.",
+    "question": "Hilft tägliches Milchtrinken dabei, länger zu leben?",
+    "answer": "Unklar. Eine Studie über viele Länder hinweg verband mehr Milchprodukte mit einem niedrigeren Sterberisiko, aber andere zusammengefasste Studien fanden keinen stabilen Zusammenhang zwischen Milch und Sterberisiko.",
     "why": [
-      "TODO Eine länderübergreifende Beobachtungsstudie verband Milchprodukte mit niedrigerem Sterberisiko; andere Übersichten fanden uneinheitliche Ergebnisse. Milch und Joghurt liefern Nährstoffe, die Auswahl richtet sich auch nach persönlichen Bedürfnissen.",
-      "TODO 21国136,384人，35–70岁；中位随访9.1年；6,796死亡"
+      "Eine Studie begleitete 136.384 Menschen im Alter von 35 bis 70 Jahren in 21 Ländern etwa 9 Jahre lang; in dieser Zeit starben 6.796.",
+      "Wer mehr als zwei Portionen Milchprodukte pro Tag zu sich nahm – eine Portion entsprach etwa 244 g Milch oder Joghurt, 15 g Käse oder 5 g Butter –, hatte ein etwa 17 % niedrigeres Sterberisiko als Menschen, die keine verzehrten. Das zählt alle Milchprodukte zusammen, nicht Milch allein.",
+      "Beim Risiko, an einer Herz-Kreislauf-Erkrankung zu sterben, gab es keinen klaren Unterschied.",
+      "Eine Übersicht über 8 zusammengefasste Analysen fand keinen klaren Zusammenhang zwischen zusätzlichen 200 bis 244 g Milch pro Tag und dem Sterberisiko."
     ],
-    "caution": "TODO Wer Milchprodukte mag und gut verträgt, kann Milch oder Joghurt mit wenig Zuckerzusatz wählen. Bei Laktoseintoleranz oder Allergie passende Alternativen suchen.",
+    "caution": "Trinken Sie nicht in der Hoffnung auf ein längeres Leben mehr Milch, denn das können diese Studien nicht versprechen. Wenn Sie laktoseintolerant oder gegen Milch allergisch sind, gilt dieses Ergebnis nicht für Sie.",
     "myth": null
   },
   "tea-china-par": {
-    "question": "TODO 饮茶（China-PAR）",
-    "answer": "TODO In einer chinesischen Langzeitstudie hatten regelmäßige Teetrinkende ein niedrigeres Sterberisiko. Lebensweise und soziale sowie wirtschaftliche Umstände können mitwirken.",
+    "question": "Kann Tee mindestens dreimal pro Woche ein zusätzliches Lebensjahr bringen?",
+    "answer": "Möglicherweise, aber die 1,26 zusätzlichen Jahre sind eine Modellschätzung, kein Versprechen. Chinesische Erwachsene, die dreimal oder öfter pro Woche Tee tranken, hatten ein etwa 15 % niedrigeres Sterberisiko.",
     "why": [
-      "TODO In einer chinesischen Langzeitstudie hatten regelmäßige Teetrinkende ein niedrigeres Sterberisiko. Lebensweise und soziale sowie wirtschaftliche Umstände können mitwirken.",
-      "TODO 中国100,902成人；中位7.3年；5,479死亡"
+      "Die Studie fasste drei chinesische Langzeitstudien mit 100.902 Erwachsenen zusammen, die etwa 7 Jahre lang begleitet wurden; in dieser Zeit starben 5.479.",
+      "Wer dreimal oder öfter pro Woche Tee trank, hatte ein etwa 15 % niedrigeres Sterberisiko als Menschen, die nie oder seltener Tee tranken.",
+      "Daraus schätzten die Forschenden, dass regelmäßige Teetrinkende im Alter von 50 Jahren im Schnitt etwa 1,26 Jahre länger leben könnten. Diese Zahl stammt aus einem Modell, nicht aus einem Test, bei dem Menschen Tee verabreicht bekamen.",
+      "Der Teekonsum wurde selbst angegeben, und Teetrinkende können sich auch bei Rauchen, Alkohol, Einkommen und anderen Gewohnheiten unterscheiden. Die Studie zeigt also einen Zusammenhang, keinen Beweis."
     ],
-    "caution": "TODO Ungesüßten, nicht zu heißen Tee genießen; bei Schlafproblemen, Herzklopfen oder nötiger Koffeinbegrenzung weniger trinken.",
+    "caution": "Die Studie unterschied nicht nach Tassengröße, Stärke oder Teesorte und kann daher nicht sagen, welcher Tee oder welche Menge am besten ist. Tee ersetzt weder einen Rauchstopp noch die Behandlung einer Krankheit.",
     "myth": null
   },
   "tea-ckb": {
-    "question": "TODO 饮茶（CKB）",
-    "answer": "TODO Eine weitere große chinesische Langzeitstudie fand den Zusammenhang zwischen Tee und niedrigerer Mortalität vor allem bei Männern. Tägliches Trinken schnitt nicht besser ab als selteneres.",
+    "question": "Ist es besser, jeden Tag Tee zu trinken, als nur ab und zu?",
+    "answer": "Nicht unbedingt. Teetrinkende hatten ein leicht niedrigeres Sterberisiko, aber tägliche Teetrinkende schnitten nicht besser ab als gelegentliche, und der Zusammenhang zeigte sich vor allem bei Männern.",
     "why": [
-      "TODO Eine weitere große chinesische Langzeitstudie fand den Zusammenhang zwischen Tee und niedrigerer Mortalität vor allem bei Männern. Tägliches Trinken schnitt nicht besser ab als selteneres.",
-      "TODO 中国CKB 438,443人；中位11.1年；34,661死亡"
+      "Diese Studie begleitete 438.443 Erwachsene in China etwa 11 Jahre lang; in dieser Zeit starben 34.661.",
+      "Verglichen mit Menschen, die nie Tee tranken, hatten jene, die ihn nicht jeden Tag tranken, ein etwa 11 % niedrigeres Sterberisiko, und tägliche Teetrinkende ein etwa 8 % niedrigeres.",
+      "Das niedrigere Risiko zeigte sich vor allem bei Männern, und nach dem Teetrinken wurde nur einmal zu Beginn gefragt.",
+      "Rauchen und Alkohol können die Ergebnisse verzerren; daher kann die Studie nicht beweisen, dass Tee selbst das Leben verlängert."
     ],
-    "caution": "TODO Ungesüßten Tee nach Geschmack und in angenehmer Temperatur trinken, ohne den Schlaf zu stören.",
+    "caution": "Das ist kein Grund, immer mehr Tee zu trinken, und Tee hebt den Schaden von Rauchen oder starkem Alkoholkonsum nicht auf.",
     "myth": null
   },
   "artificially-sweetened-drinks": {
-    "question": "TODO 人工甜味软饮料",
-    "answer": "TODO Eine große europäische Studie verband mehr künstlich gesüßte Getränke mit höherem Sterberisiko. Menschen mit bestehenden Stoffwechselproblemen wechseln möglicherweise häufiger zu solchen Getränken, was die Einordnung erschwert.",
+    "question": "Erhöhen Light-Getränke mit künstlichen Süßstoffen das Sterberisiko?",
+    "answer": "Möglicherweise, aber es ist unklar, ob die Süßstoffe schuld sind. In einer großen europäischen Studie hatten Menschen, die zwei oder mehr Gläser künstlich gesüßter Erfrischungsgetränke pro Tag tranken, ein etwa 26 % höheres Sterberisiko.",
     "why": [
-      "TODO Eine große europäische Studie verband mehr künstlich gesüßte Getränke mit höherem Sterberisiko. Menschen mit bestehenden Stoffwechselproblemen wechseln möglicherweise häufiger zu solchen Getränken, was die Einordnung erschwert.",
-      "TODO EPIC欧洲10国451,743人；平均16.4年；41,693死亡"
+      "Die Studie begleitete 451.743 Menschen in 10 europäischen Ländern im Schnitt 16,4 Jahre lang; in dieser Zeit starben 41.693.",
+      "Verglichen mit Menschen, die weniger als ein Glas pro Monat tranken, hatten jene mit zwei oder mehr Gläsern pro Tag (ein Glas entsprach etwa 250 ml) ein etwa 26 % höheres Sterberisiko bei künstlich gesüßten Getränken, etwa 8 % höher bei zuckergesüßten Getränken und etwa 17 % höher bei allen Erfrischungsgetränken zusammen.",
+      "Die Zahlen von 18 %, 11 % und 27 % aus dem ursprünglichen Leitfaden gelten nur für Menschen ohne Übergewicht (Body-Mass-Index unter 25), die ein Glas oder mehr pro Tag tranken.",
+      "Menschen, die bereits stark übergewichtig sind oder andere Gesundheitsrisiken haben, greifen eher zu Light-Getränken, und nach Getränken wurde nur einmal gefragt. Die Studie kann also nicht zeigen, dass Süßstoffe Todesfälle verursachen."
     ],
-    "caution": "TODO Im Alltag Wasser gegen Durst wählen. Wer Zuckergetränke durch zuckerfreie ersetzt, muss deshalb nicht wieder zu Zuckergetränken wechseln.",
-    "myth": "TODO * 无糖（甜味）饮料\n  * [「无糖饮料使死亡风险增加 26 %」，是真的吗？](https://www.zhihu.com/question/4185982"
+    "caution": "Das gilt nicht für Wasser sowie ungesüßten Tee und Kaffee. Die Studie hat nicht getestet, ob der Tausch von Zucker- gegen Light-Getränke hilft, und kann keinen einzelnen Süßstoff herausgreifen.",
+    "myth": "Im ursprünglichen Leitfaden hieß es, dass im Vergleich zu weniger als einem Glas Erfrischungsgetränke pro Monat ein Glas oder mehr pro Tag das Sterberisiko um 18 % erhöht – um 11 % bei zuckerhaltigen und um 27 % bei zuckerfreien Getränken."
   },
   "sugar-sweetened-drinks": {
-    "question": "TODO 含糖饮料",
-    "answer": "TODO US-Langzeitstudien verbanden mehr Zuckergetränke mit höherem Gesamt- und Herz-Kreislauf-Sterberisiko.",
+    "question": "Erhöhen zuckerhaltige Getränke wie Limonade und gesüßter Milchtee das Sterberisiko?",
+    "answer": "Wahrscheinlich. In US-Langzeitstudien hatten Menschen, die zwei oder mehr Portionen zuckerhaltiger Getränke pro Tag tranken, ein etwa 21 % höheres Sterberisiko, und mit jeder weiteren Portion stieg das Risiko.",
     "why": [
-      "TODO US-Langzeitstudien verbanden mehr Zuckergetränke mit höherem Gesamt- und Herz-Kreislauf-Sterberisiko.",
-      "TODO 美国NHS 80,647女性、HPFS 37,716男性；最长34年；36,436死亡"
+      "Zwei US-Studien begleiteten 80.647 Frauen und 37.716 Männer, überwiegend aus Gesundheitsberufen, bis zu 34 Jahre lang; in dieser Zeit starben 36.436.",
+      "Verglichen mit Menschen, die weniger als eine Portion pro Monat tranken, hatten jene mit zwei oder mehr Portionen pro Tag ein etwa 21 % höheres Sterberisiko, ein etwa 31 % höheres Risiko für Herz-Kreislauf-Todesfälle und ein etwa 16 % höheres Risiko für Krebstodesfälle.",
+      "Jede zusätzliche Portion pro Tag ging mit einem etwa 7 % höheren Sterberisiko einher, etwa 10 % höher bei Herz-Kreislauf-Todesfällen und etwa 5 % höher bei Krebstodesfällen.",
+      "Der Getränkekonsum wurde selbst angegeben, und andere Gewohnheiten könnten einen Teil des Zusammenhangs erklären."
     ],
-    "caution": "TODO Regelmäßige Zuckergetränke schrittweise durch Wasser oder ungesüßte Getränke ersetzen.",
-    "myth": "TODO * 有糖饮料\n  * [可乐和奶茶，增加全因死亡率高达62%！果汁降低免疫力，影响肝代谢！含糖饮料那些事](https://zhuanlan.zhihu.com"
+    "caution": "Eine Portion in dieser Studie lässt sich nicht direkt in ein Glas aus anderen Studien umrechnen, und die hier genutzten Gruppen sind keine sicheren Obergrenzen. Die oft zusammen mit dieser Studie zitierten 18 % und 12 % betreffen Krebserkrankungen, nicht Krebstodesfälle.",
+    "myth": "Im ursprünglichen Leitfaden hieß es, dass ein zuckerhaltiges Getränk pro Tag das Sterberisiko um 7 % und zwei es um 21 % erhöhen, dass jede zusätzliche Tasse das Krebssterberisiko um 16 % erhöht, und er zitierte eine Überschrift, laut der Cola und Milchtee das Sterberisiko um bis zu 62 % steigern."
   },
   "fruit-juice": {
-    "question": "TODO 100%果汁",
-    "answer": "TODO Eine US-Beobachtungsstudie bei Erwachsenen mittleren und höheren Alters verband mehr reinen Fruchtsaft mit höherem Sterberisiko.",
+    "question": "Ist 100 % Fruchtsaft wirklich so gesund, wie er scheint?",
+    "answer": "In großen Mengen wahrscheinlich nicht, aber die Evidenz ist begrenzt, und sie zeigt nicht, dass Saft schlimmer ist als zuckerhaltige Limonaden. In einer US-Studie gingen je 355 ml reiner Saft zusätzlich pro Tag mit einem etwa 24 % höheren Sterberisiko einher.",
     "why": [
-      "TODO Eine US-Beobachtungsstudie bei Erwachsenen mittleren und höheren Alters verband mehr reinen Fruchtsaft mit höherem Sterberisiko.",
-      "TODO 美国REGARDS 13,440人，≥45岁，均龄63.6；平均6年；1,000死亡"
+      "Die Studie begleitete 13.440 US-Erwachsene ab 45 Jahren mit einem Durchschnittsalter von 63,6 Jahren im Schnitt 6 Jahre lang; in dieser Zeit starben 1.000.",
+      "Je 12 Unzen (etwa 355 ml) 100 % Fruchtsaft zusätzlich pro Tag gingen mit einem etwa 24 % höheren Sterberisiko einher.",
+      "Verglich man die stärksten und die sparsamsten Safttrinkenden direkt, gab es keinen klaren Unterschied, und die Studie hat die Menschen nur beobachtet.",
+      "Die 11 %, die der ursprüngliche Leitfaden für zuckerhaltige Getränke angab, umfassten in Wahrheit zuckergesüßte Getränke und 100 % Saft zusammen und lassen sich daher nicht nutzen, um Saft gegen Limonade abzuwägen."
     ],
-    "caution": "TODO Bei Durst Wasser trinken, Obst möglichst ganz essen und Saft in kleinen Mengen genießen.",
-    "myth": "TODO * 果汁\n  * [JAMA子刊：100%纯果汁可能比含糖饮料更危险](https://zhuanlan.zhihu.com/p/66513350)\n    *"
+    "caution": "Das gilt nicht für das Essen ganzer Früchte. Wenn Sie Diabetes haben oder Zucker begrenzen müssen, ordnen Sie Saft in den Ernährungsplan Ihrer Ärztin oder Ihres Arztes ein.",
+    "myth": "Im ursprünglichen Leitfaden hieß es, dass jede zusätzliche 12-Unzen-Portion pro Tag bei zuckerhaltigen Getränken das Sterberisiko um 11 % und bei Fruchtsaft um 24 % erhöht, sodass 100 % Saft gefährlicher sein könnte als zuckerhaltige Getränke."
   },
   "coffee": {
-    "question": "TODO 咖啡",
-    "answer": "TODO Eine große Forschungsübersicht verband mäßigen Kaffeekonsum mit niedrigerem Sterberisiko. Tassengröße, Zubereitung, Zuckerzusatz und persönliche Verträglichkeit sind ebenfalls wichtig.",
+    "question": "Ist Kaffee ungesund? Sollten Sie damit aufhören?",
+    "answer": "Kein Grund aufzuhören. Menschen, die in Maßen Kaffee tranken, hatten ein leicht niedrigeres Sterberisiko; das ist aber kein Grund, für ein längeres Leben erst damit anzufangen.",
     "why": [
-      "TODO Eine große Forschungsübersicht verband mäßigen Kaffeekonsum mit niedrigerem Sterberisiko. Tassengröße, Zubereitung, Zuckerzusatz und persönliche Verträglichkeit sind ebenfalls wichtig.",
-      "TODO 40研究，3,852,651人，450,256例全因及死因别死亡"
+      "Forschende fassten 40 Studien mit etwa 3,85 Millionen Menschen zusammen, um zu prüfen, wie die Kaffeemenge mit dem Sterberisiko zusammenhängt.",
+      "Menschen, die etwa 3,5 Tassen pro Tag tranken, hatten ein etwa 15 % niedrigeres Sterberisiko als Menschen, die keinen tranken – der niedrigste Wert aller Mengen. Mehr zu trinken senkte das Risiko nicht weiter.",
+      "Diese Studien haben die Menschen nur beobachtet. Kaffeetrinkende können sich auch bei Ernährung, Rauchen und Alkohol unterscheiden, und manche verzichten wegen einer Krankheit auf Kaffee. Die Studien zeigen daher einen Zusammenhang, können aber nicht beweisen, dass Kaffee das Leben verlängert."
     ],
-    "caution": "TODO Bei Verträglichkeit maßvoll mit wenig Zucker genießen; in der Schwangerschaft, bei Schlaflosigkeit oder Herzklopfen die Koffeinzufuhr anpassen.",
+    "caution": "3,5 Tassen sind der Tiefpunkt einer statistischen Kurve, keine Verordnung. Wenn Sie schwanger sind, schlecht schlafen oder Herzklopfen bekommen, trinken Sie weniger. Sparen Sie am Zucker. Wenn Sie keinen Kaffee trinken, müssen Sie für ein längeres Leben nicht damit anfangen.",
     "myth": null
   },
   "spermidine-diet": {
-    "question": "TODO Spermidin aus der Ernährung",
-    "answer": "TODO Beobachtungsstudien verbanden mehr Spermidin aus Lebensmitteln mit niedrigerem Sterberisiko. Supplemente sind eine andere Frage; eine Lebensverlängerung durch sie ist bisher nicht belegt.",
+    "question": "Kann Spermidin aus Lebensmitteln oder Nahrungsergänzungsmitteln das Leben verlängern?",
+    "answer": "Über Lebensmittel möglicherweise, aber die Evidenz ist begrenzt, und es gibt keine Belege dafür, dass Spermidin-Präparate das Leben verlängern.",
     "why": [
-      "TODO Beobachtungsstudien verbanden mehr Spermidin aus Lebensmitteln mit niedrigerem Sterberisiko. Supplemente sind eine andere Frage; eine Lebensverlängerung durch sie ist bisher nicht belegt.",
-      "TODO Bruneck 829人，45–84岁；1995–2015年341死亡；SAPHIR独立验证"
+      "Die Studie begleitete 829 Menschen im Alter von 45 bis 84 Jahren von 1995 bis 2015, von denen 341 starben, und schätzte, wie viel Spermidin jede Person aus normalem Essen aufnahm.",
+      "Nach Berücksichtigung von Alter und anderen Faktoren ging jede Erhöhung der Aufnahme um eine Standardabweichung (eine statistische Maßeinheit für die Streuung) mit einem etwa 24 % niedrigeren Sterberisiko einher. Eine zweite Gruppe zeigte dieselbe Richtung.",
+      "Die Zahlen 40,5, 23,7 und 15,1 im ursprünglichen Leitfaden sind Todesfälle pro 1.000 Menschen und Jahr, keine Prozente, und ein Großteil dieses Abstands lag am Alter. Nach rechnerischer Anpassung starben über 20 Jahre etwa 48 %, 41 % und 38 % in der niedrigen, mittleren und hohen Gruppe.",
+      "Die Studie hat die Menschen nur beobachtet und kann Spermidin nicht von einer insgesamt besseren Ernährung trennen. Eine kleine 12-monatige Studie, die 100 älteren Menschen mit subjektiv nachlassendem Gedächtnis oder Denken Spermidin-Kapseln gab, fand keine Verbesserung im wichtigsten Denktest und maß keine Todesfälle."
     ],
-    "caution": "TODO Mit gewöhnlichen Lebensmitteln wie Vollkorn und Hülsenfrüchten für Abwechslung sorgen.",
-    "myth": "TODO * 亚精胺\n  * [Science：科学背书！从精液中发现的亚精胺，竟然有着抗衰老、抗癌、保护心血管和神经、改善肥胖和2型糖尿病等逆天神效](https://"
+    "caution": "Kaufen Sie keine Spermidin-Präparate wegen einer angeblichen Senkung der Todesfälle um 60 %. Wenn Sie eine Erkrankung haben, sprechen Sie jedes Präparat zuerst mit Ihrer Ärztin oder Ihrem Arzt ab.",
+    "myth": "Im ursprünglichen Leitfaden hieß es, dass Spermidin das Sterberisiko um 30 % bis 60 % senkt und dass die Sterberaten in der niedrigen, mittleren und hohen Gruppe bei 40,5 %, 23,7 % und 15,1 % lagen."
   },
   "smoking": {
-    "question": "TODO 吸烟与戒烟",
-    "answer": "TODO Langzeitstudien finden durchgehend höhere Mortalität bei Rauchenden, auch bei wenigen Zigaretten täglich. Wer aufhört, hat niedrigere Risiken als Menschen, die weiterrauchen.",
+    "question": "Verkürzen auch schon ein paar Zigaretten am Tag das Leben?",
+    "answer": "Ja. Selbst Menschen, die weniger als 10 Zigaretten am Tag rauchten, hatten ein etwa 17 % höheres Sterberisiko, und wer 10 oder mehr rauchte, ein etwa 54 % höheres.",
     "why": [
-      "TODO Langzeitstudien finden durchgehend höhere Mortalität bei Rauchenden, auch bei wenigen Zigaretten täglich. Wer aufhört, hat niedrigere Risiken als Menschen, die weiterrauchen.",
-      "TODO 墨西哥129,151无既往慢病成人，35–89岁；招募1998–2004，随访至2018"
+      "Eine Langzeitstudie in Mexiko begleitete 129.151 Erwachsene zwischen 35 und 89 Jahren, die bei Aufnahme zwischen 1998 und 2004 keine chronische Krankheit hatten, bis 2018.",
+      "Verglichen mit Menschen, die nie geraucht hatten, hatten Personen mit weniger als 10 Zigaretten am Tag ein etwa 17 % höheres Sterberisiko und Personen mit 10 oder mehr ein etwa 54 % höheres. Wer bei Studienbeginn bereits aufgehört hatte, hatte eine niedrigere Sterberate als täglich Rauchende.",
+      "Eine große US-Studie fand, dass aktuell Rauchende ein etwa dreimal so hohes Sterberisiko hatten wie Niemalsrauchende und mehr als 10 Jahre kürzer lebten. Wer zwischen 25 und 34 aufhörte, gewann etwa 10 Jahre gegenüber Menschen, die weiterrauchten.",
+      "Wie viel Menschen rauchen, ändert sich im Laufe der Zeit, sodass die genauen Zahlen Schätzungen sind."
     ],
-    "caution": "TODO Nicht anfangen; wer raucht, möglichst früh aufhören. Bei Bedarf Entwöhnungsangebote und medikamentöse Unterstützung nutzen.",
+    "caution": "Weniger Zigaretten zu rauchen beseitigt das Risiko nicht. In dieser Studie zeigten Menschen, die nicht täglich rauchten, keinen klaren Unterschied, aber das beweist nicht, dass gelegentliches Rauchen sicher ist. Wenn das Aufhören schwerfällt, können eine Entwöhnungsberatung und ärztlich verordnete Medikamente helfen.",
     "myth": null
   },
   "sun-exposure": {
-    "question": "TODO 晒太阳／紫外线",
-    "answer": "TODO Nordische Studien fanden Zusammenhänge zwischen Merkmalen der Sonnenexposition und Überleben. Auch Aktivitäten im Freien und die Nutzung medizinischer Versorgung können die Ergebnisse beeinflussen. Eine Dauer des Sonnenbadens für ein längeres Leben wurde nicht bestimmt.",
+    "question": "Hilft mehr Sonne dabei, länger zu leben?",
+    "answer": "Unklar, und die Evidenz ist schwach. Eine dänische Studie fand bei Menschen mit einer Hautkrebsdiagnose ein niedrigeres Sterberisiko – das zeigt aber nicht, dass mehr Sonne das Leben verlängert.",
     "why": [
-      "TODO Nordische Studien fanden Zusammenhänge zwischen Merkmalen der Sonnenexposition und Überleben. Auch Aktivitäten im Freien und die Nutzung medizinischer Versorgung können die Ergebnisse beeinflussen. Eine Dauer des Sonnenbadens für ein längeres Leben wurde nicht bestimmt.",
-      "TODO 丹麦>40岁440万人，1980–2006；瑞典29,518名女性20年随访"
+      "Die dänische Studie nutzte nationale Register für 4,4 Millionen Menschen über 40 Jahre von 1980 bis 2006. Sie nahm eine Hautkrebsdiagnose als grobes Zeichen für mehr Sonne und maß nie, wie viel Sonne jemand tatsächlich abbekam.",
+      "Menschen mit der Diagnose weißer Hautkrebs (Nicht-Melanom) hatten ein etwa 48 % niedrigeres Sterberisiko als Menschen ohne Diagnose, Menschen mit schwarzem Hautkrebs (Melanom) ein etwa 11 % niedrigeres. Die Autorinnen und Autoren betonen ausdrücklich, dass dies nicht als Ursache und Wirkung gelesen werden darf.",
+      "Wer eine Hautkrebsdiagnose erhält, geht vielleicht häufiger in die Praxis, ist wohlhabender und verbringt mehr aktive Zeit im Freien – all das könnte den Unterschied erklären.",
+      "Eine schwedische Studie, die 29.518 Frauen 20 Jahre lang begleitete, schätzte, dass Sonnenmeidende 0,6 bis 2,1 Jahre kürzer lebten als die Gruppe mit der meisten Sonne – nicht 6 Jahre –, und auch sie hat die Menschen nur beobachtet."
     ],
-    "caution": "TODO Draußen sein und Tageslicht genießen, Sonnenbrand vermeiden. Bei hohem Hautkrebsrisiko oder Lichtempfindlichkeit gezielt schützen.",
-    "myth": "TODO * 晒太阳\n  * [晒太阳和死亡率的关系，如何科学，安全的晒太阳？\n](https://zhuanlan.zhihu.com/p/76301306)\n    "
+    "caution": "Sonnenbrand erhöht das Hautkrebsrisiko, und diese Studien fanden keine ideale Sonnenmenge. Wenn Sie eine lichtempfindliche Erkrankung haben, Medikamente nehmen, die Ihre Haut lichtempfindlich machen, oder ein hohes Hautkrebsrisiko haben, folgen Sie dem ärztlichen Rat zum Sonnenschutz.",
+    "myth": "Im ursprünglichen Leitfaden hieß es, dass eine 26-jährige dänische Studie fand, mehr Sonne verlängere das Leben stark, selbst Menschen mit Hautkrebs durch zu viel Sonne lebten im Schnitt 6 Jahre länger als der Durchschnitt, und Sonne senke das Sterberisiko um etwa 40 %."
   },
   "nmn": {
-    "question": "TODO NMN",
-    "answer": "TODO Humanstudien zu NMN waren bisher meist klein, kurz und auf Stoffwechselwerte ausgerichtet. Eine Verlängerung des menschlichen Lebens ist nicht belegt; langfristige Sicherheitsdaten fehlen weitgehend.",
+    "question": "Kann NMN das Altern verlangsamen oder das Leben verlängern?",
+    "answer": "Dafür gibt es keine Belege. Die bisherigen Studien am Menschen sind klein und kurz, prüften nur Blutzucker und ähnliche Messwerte und zeigten insgesamt keinen klaren Nutzen.",
     "why": [
-      "TODO Humanstudien zu NMN waren bisher meist klein, kurz und auf Stoffwechselwerte ausgerichtet. Eine Verlängerung des menschlichen Lebens ist nicht belegt; langfristige Sicherheitsdaten fehlen weitgehend.",
-      "TODO 原RCT为超重/肥胖绝经后糖尿病前期女性、10周；综述8试验342人"
+      "Eine Studie am Menschen gab übergewichtigen oder stark übergewichtigen Frauen nach den Wechseljahren mit Prädiabetes 10 Wochen lang NMN oder eine Scheintablette und prüfte, wie ihre Muskeln auf Insulin reagierten.",
+      "Eine Übersicht über 8 randomisierte Studien mit insgesamt 342 Menschen, die 14 Tage bis 12 Wochen lang täglich 250 bis 2.000 mg einnahmen, fand keine klare Verbesserung bei den wichtigsten gemessenen Gesundheitswerten.",
+      "Keine dieser Studien untersuchte Todesfälle oder die Lebensspanne, und es gibt kaum Daten dazu, ob eine jahrelange Einnahme sicher ist."
     ],
-    "caution": "TODO Zuerst auf Ernährung, Bewegung und Schlaf achten, statt NMN als bewiesenes Langlebigkeitsmedikament anzusehen.",
-    "myth": "TODO * NMN"
+    "caution": "Behandeln Sie NMN nicht als bewiesenes Mittel für ein längeres Leben und ersetzen Sie damit niemals die Behandlung einer chronischen Krankheit. Wenn Sie an Forschung dazu teilnehmen möchten, tun Sie das im Rahmen einer ordentlichen klinischen Studie.",
+    "myth": "Im ursprünglichen Leitfaden hieß es, dass NMN dabei helfen kann, länger zu leben – genannt wurde aber nur der Name, ohne Studien oder Zahlen."
   },
   "metformin-diabetes": {
-    "question": "TODO 二甲双胍（超重新诊断2型糖尿病）",
-    "answer": "TODO Eine randomisierte Studie bei übergewichtigen Menschen mit neu diagnostiziertem Diabetes fand weniger Todesfälle unter Metformin. Zusammengefasste spätere Studien waren weniger eindeutig. Es geht um Diabetesbehandlung.",
+    "question": "Senkt Metformin bei übergewichtigen Menschen mit neu festgestelltem Typ-2-Diabetes das Sterberisiko?",
+    "answer": "Unklar. Hier geht es um Menschen mit Diabetes, nicht um Gesunde. Eine ältere Studie fand etwa 36 % weniger Todesfälle, aber 13 zusammengefasste Studien zeigten keinen klaren Unterschied.",
     "why": [
-      "TODO Eine randomisierte Studie bei übergewichtigen Menschen mit neu diagnostiziertem Diabetes fand weniger Todesfälle unter Metformin. Zusammengefasste spätere Studien waren weniger eindeutig. Es geht um Diabetesbehandlung.",
-      "TODO UKPDS主随机比较753名超重新诊断2型糖尿病者，均龄53；中位10.7年"
+      "In dieser randomisierten Studie wurden 753 übergewichtige Patientinnen und Patienten mit neu festgestelltem Typ-2-Diabetes, im Schnitt 53 Jahre alt, per Zufall in zwei Gruppen eingeteilt. Eine erhielt eine intensive Blutzuckerkontrolle mit Metformin, die andere eine übliche, vor allem auf Ernährung gestützte Behandlung; begleitet wurden sie etwa 10,7 Jahre lang.",
+      "Die Metformin-Gruppe hatte ein etwa 36 % niedrigeres Sterberisiko, wobei der wahre Wert wahrscheinlich irgendwo zwischen 9 % und 55 % niedriger liegt.",
+      "Als später 13 randomisierte Studien mit 13.110 Menschen zusammengefasst wurden, zeigte Metformin keinen klaren Unterschied beim Sterberisiko.",
+      "Die Vergleichsbehandlung der älteren Studie unterscheidet sich von heutigen Standards, und in derselben Studie führte das Hinzufügen von Metformin zu einem bereits bestehenden Diabetesmedikament zu anderen Ergebnissen."
     ],
-    "caution": "TODO Bei Diabetes dem verordneten Plan folgen und Nierenfunktion sowie Verträglichkeit berücksichtigen; als gesunder Mensch nicht eigenständig für Langlebigkeit beginnen.",
+    "caution": "Diese Studien betreffen nur Menschen mit Diabetes und gelten nicht für Menschen ohne Diabetes. Wenn Sie Metformin nehmen, setzen Sie es nicht eigenständig ab. Ob und wie Sie es nehmen, entscheidet Ihre Ärztin oder Ihr Arzt unter Berücksichtigung Ihrer Nierenfunktion, Verträglichkeit und Ihres Vitamin-B12-Spiegels.",
     "myth": null
   },
   "metformin-longevity": {
-    "question": "TODO Metformin und die Lebensdauer gesunder Menschen",
-    "answer": "TODO Eine Beobachtungsstudie verglich Menschen mit Diabetes, die Metformin einnahmen, mit Kontrollpersonen ohne Diabetes und fand ein besseres Überleben in der Metformin-Gruppe. Eine langfristige randomisierte Nachbeobachtung zeigte jedoch keine geringere Sterblichkeit bei Menschen mit hohem Diabetesrisiko. Eine lebensverlängernde Wirkung bei gesunden Menschen ist nicht belegt.",
+    "question": "Kann Metformin Ihnen helfen, länger zu leben, wenn Sie keinen Diabetes haben?",
+    "answer": "Dafür gibt es keine Belege. In einer langfristigen randomisierten Studie mit Menschen mit hohem Diabetesrisiko hatten jene, die Metformin bekamen, kein niedrigeres Sterberisiko.",
     "why": [
-      "TODO Eine Beobachtungsstudie verglich Menschen mit Diabetes, die Metformin einnahmen, mit Kontrollpersonen ohne Diabetes und fand ein besseres Überleben in der Metformin-Gruppe. Eine langfristige randomisierte Nachbeobachtung zeigte jedoch keine geringere Sterblichkeit bei Menschen mit hohem Diabetesrisiko. Eine lebensverlängernde Wirkung bei gesunden Menschen ist nicht belegt.",
-      "TODO 英国CPRD 78,241二甲双胍患者、12,222磺脲患者、90,463匹配非糖尿病人；DPP/DPPOS 3,234高糖尿病风险者、中位21年、453死亡"
+      "In einer randomisierten Studie wurden 3.234 Menschen mit hohem Diabetesrisiko per Zufall Metformin oder einer Scheintablette zugeteilt und etwa 21 Jahre lang begleitet; in dieser Zeit starben 453. Beim Sterberisiko gab es keinen klaren Unterschied zwischen den Gruppen, wobei nach 2001 nicht mehr geheim war, wer welches Mittel bekam, und manche wechselten.",
+      "Die Vorstellung, Metformin schenke zusätzliche Jahre, stammt aus einer britischen Studie von 2014, die rückblickend Krankenakten auswertete. Menschen mit Diabetes, die Metformin nahmen, überlebten länger als passende Vergleichspersonen ohne Diabetes, deren Überlebenszeit etwa 15 % kürzer war. Das war kein Test mit gesunden Menschen und belegt keinen festen Gewinn von 3 Jahren.",
+      "Zur Behauptung, dass Metformin beim Vater zu Fehlbildungen beim Kind führen könnte, fand eine Studie von 2024 aus Norwegen und Taiwan keinen klaren Zusammenhang, sobald der eigene Diabetes der Väter und andere Faktoren berücksichtigt wurden."
     ],
-    "caution": "TODO Keine Medikamente auf eigene Faust gegen das Altern einnehmen. Bei Diabetes oder Kinderwunsch Fragen zur Medikation ärztlich besprechen.",
-    "myth": "TODO * 二甲双胍\n  * [“胍”吹必看 丨我就是神药——二甲双胍](https://zhuanlan.zhihu.com/p/419202902)\n    * 二"
+    "caution": "Wenn Sie gesund sind, nehmen Sie Metformin nicht auf eigene Faust, um länger zu leben. Männer mit Diabetes und Kinderwunsch sollten ihr Medikament nicht wegen Berichten aus dem Internet absetzen. Sprechen Sie zuerst mit Ihrer Ärztin oder Ihrem Arzt.",
+    "myth": "Im ursprünglichen Leitfaden hieß es, dass Metformin ein Wundermittel ist, das vor Krebs, Herzkrankheiten, Diabetes, starkem Übergewicht, Leber- und Nierenerkrankungen sowie Alterung schützt, dass Menschen mit Diabetes damit 3 Jahre länger leben als Menschen ohne Diabetes, und er zitierte einen Bericht, wonach Metformin beim Vater Fehlbildungen auslösen könnte."
   },
   "multivitamins": {
-    "question": "TODO 复合维生素",
-    "answer": "TODO Randomisierte Studien und große Langzeitbeobachtungen zeigten keine niedrigere Mortalität durch Multivitamine bei allgemein gesunden Menschen. Weniger Krebsdiagnosen in einigen Studien sind ein anderer Endpunkt.",
+    "question": "Helfen tägliche Multivitamintabletten dabei, länger zu leben?",
+    "answer": "Nein. Im Allgemeinen gesunde Menschen, die jeden Tag ein Multivitaminpräparat nahmen, hatten kein niedrigeres Sterberisiko.",
     "why": [
-      "TODO Randomisierte Studien und große Langzeitbeobachtungen zeigten keine niedrigere Mortalität durch Multivitamine bei allgemein gesunden Menschen. Weniger Krebsdiagnosen in einigen Studien sind ein anderer Endpunkt.",
-      "TODO PHS II 14,641男性医生、11.2年；COSMOS 21,442老年成人、3.6年；2024队列390,124人"
+      "In einer randomisierten Studie nahmen 21.442 ältere Erwachsene 3,6 Jahre lang täglich entweder ein Multivitaminpräparat oder eine täuschend ähnliche Scheintablette ein. Beim Sterberisiko gab es keinen klaren Unterschied zwischen beiden Gruppen.",
+      "Eine weitere randomisierte Studie begleitete 14.641 männliche Ärzte 11,2 Jahre lang. In der Multivitamin-Gruppe gab es etwa 8 % weniger Krebsdiagnosen – das zählt aber Erkrankungen, nicht Todesfälle, und die Krebstodesfälle sanken nicht eindeutig.",
+      "Auch eine Studie von 2024, die 390.124 US-Amerikanerinnen und US-Amerikaner über viele Jahre begleitete, fand kein niedrigeres Sterberisiko bei täglicher Einnahme von Multivitaminen."
     ],
-    "caution": "TODO Bei Mangel oder besonderem Nährstoffbedarf gezielt ergänzen und zunächst im Alltag gut essen.",
-    "myth": "TODO * 复合维生素\n  * [服用复合维生素可降低癌症危险8%，其他效果并不显著](https://health.qq.com/a/20121023/000026."
+    "caution": "Dies gilt für allgemein gesunde Menschen. Gezielte Präparate nach einer ärztlichen Untersuchung sind ein anderes Thema – etwa bei nachgewiesenem Mangel, in einer Lebensphase mit besonderem Nährstoffbedarf oder bei Aufnahmestörungen. Wenn Ihnen eine Ärztin oder ein Arzt ein Präparat empfohlen hat, setzen Sie es nicht selbstständig ab, sondern fragen Sie zuerst nach.",
+    "myth": "Im ursprünglichen Leitfaden hieß es, dass Multivitamine das Krebsrisiko um etwa 8 % senken."
   },
   "glucosamine-chondroitin": {
-    "question": "TODO 葡萄糖胺／软骨素",
-    "answer": "TODO Eine US-Beobachtungsstudie verband langfristige Glucosamin- und Chondroitinnutzung mit niedrigerer Mortalität. Nutzende bewegten sich auch häufiger und rauchten seltener. Eine Lebensverlängerung Gesunder durch diese Präparate ist nicht belegt.",
+    "question": "Können Präparate mit Glucosamin oder Chondroitin das Leben verlängern?",
+    "answer": "Möglicherweise, aber die Evidenz ist schwach. Langzeitnutzende hatten ein niedrigeres Sterberisiko, bewegten sich aber auch mehr und rauchten seltener; es ist also nicht gezeigt, dass das Präparat selbst den Unterschied machte.",
     "why": [
-      "TODO Eine US-Beobachtungsstudie verband langfristige Glucosamin- und Chondroitinnutzung mit niedrigerer Mortalität. Nutzende bewegten sich auch häufiger und rauchten seltener. Eine Lebensverlängerung Gesunder durch diese Präparate ist nicht belegt.",
-      "TODO NHANES 1999–2010，16,686名≥40岁成人，排除基线CVD及生命状态缺失者；658使用≥1年；中位107个月；3,366死亡"
+      "Diese Studie begleitete 16.686 US-Erwachsene ab 40 Jahren, die zu Beginn keine Herz-Kreislauf-Erkrankung hatten, im Mittel etwa 107 Monate – also rund 9 Jahre. 658 von ihnen hatten mindestens ein Jahr lang Glucosamin oder Chondroitin eingenommen.",
+      "Nachdem andere Faktoren so gut wie möglich berücksichtigt wurden, hatten Menschen mit mindestens einjähriger Einnahme ein etwa 27 % niedrigeres Sterberisiko und ein etwa 58 % niedrigeres Risiko, an einer Herz-Kreislauf-Erkrankung zu sterben.",
+      "Die Zahlen von 39 % und 65 % aus dem ursprünglichen Leitfaden berücksichtigten nur das Alter und sind nicht das Endergebnis. Nutzende bewegten sich zudem mehr, rauchten seltener und hatten höhere Bildung; Statistik kann diese Unterschiede nicht vollständig herausrechnen. Die Studie zeigt also einen Zusammenhang, keinen Beweis."
     ],
-    "caution": "TODO Bei Gelenkbeschwerden zuerst die Ursache klären; besonders bei Blutverdünnern Wechselwirkungen mit Supplementen prüfen lassen.",
-    "myth": "TODO * 葡萄糖胺\n  * [神奇！氨糖降低心血管死亡率65%，与定期运动效果相当](https://www.sohu.com/a/436372221_1208732"
+    "caution": "Beginnen Sie diese Präparate nicht, um länger zu leben. Wenn Ihre Gelenke schmerzen, klären Sie zuerst die Ursache. Wenn Sie Blutverdünner einnehmen, fragen Sie vor jedem Präparat Ihre Ärztin oder Ihren Arzt wegen möglicher Wechselwirkungen. Diese Präparate ersetzen keine regelmäßige Bewegung.",
+    "myth": "Im ursprünglichen Leitfaden hieß es, dass Glucosamin das Sterberisiko um 39 % und das Risiko für Herz-Kreislauf-Todesfälle um 65 % senkt – etwa so stark wie regelmäßige Bewegung."
   },
   "anti-aging-drugs-review": {
-    "question": "TODO 综合抗衰药候选（综述）",
-    "answer": "TODO Eine Übersicht zu Antiaging-Arzneien behandelte verschiedene Wirkstoffkandidaten. Die Evidenz stammt überwiegend aus Tierstudien und begrenzten Humanstudien. Lebensverlängerung bei Gesunden ist weiterhin unbewiesen.",
+    "question": "Helfen Anti-Aging-Medikamente tatsächlich dabei, länger zu leben?",
+    "answer": "Unklar, und bisher gibt es dafür keine direkten Belege. Die Daten zu den Wirkstoffkandidaten stammen vor allem aus Tierstudien und wenigen Studien am Menschen, und für keines ist gezeigt, dass gesunde Menschen damit länger leben.",
     "why": [
-      "TODO Eine Übersicht zu Antiaging-Arzneien behandelte verschiedene Wirkstoffkandidaten. Die Evidenz stammt überwiegend aus Tierstudien und begrenzten Humanstudien. Lebensverlängerung bei Gesunden ist weiterhin unbewiesen.",
-      "TODO 以动物模型与有限人类研究为主；不形成健康人死亡干预人群"
+      "Dies ist eine Übersichtsarbeit von 2020 über Medikamente, die das Altern verlangsamen könnten, darunter Rapamycin, Metformin, Acarbose, Spermidin, NAD-Verstärker und Lithium.",
+      "Sie ordnete die Kandidaten nach Ergebnissen aus Tierstudien und frühen Studien am Menschen ein. Daten zu Todesfällen bei gesunden Menschen, die sie einnahmen, wurden nicht zusammengefasst.",
+      "Die Mittel unterscheiden sich in Wirkstoff, Dosierung und Einsatzgebiet und lassen sich daher nicht zu einem einzigen Anti-Aging-Plan kombinieren. Ein Medikament, das bei einer bestimmten Krankheit hilft, verlängert deswegen nicht das Leben gesunder Menschen."
     ],
-    "caution": "TODO Antiaging-Arzneien nicht eigenständig kombinieren; experimentelle Behandlungen gehören in sorgfältig durchgeführte Forschung.",
-    "myth": "TODO * 综合\n  * [《自然》子刊深度综述：如何开发抗衰老药](https://zhuanlan.zhihu.com/p/145495570)\n  * ![如何开"
+    "caution": "Kaufen und kombinieren Sie diese Medikamente nicht auf eigene Faust. Wenn Sie eines davon bereits wegen einer Erkrankung nehmen, folgen Sie dem ärztlichen Plan und setzen Sie es weder eigenständig ab noch ändern Sie die Dosis. Experimentelle Anti-Aging-Behandlungen gehören in ordentlich geführte klinische Studien.",
+    "myth": "Im ursprünglichen Leitfaden wurde im Abschnitt zu Medikamenten eine ausführliche Übersichtsarbeit aus der Nature-Zeitschriftenfamilie darüber aufgeführt, wie sich Anti-Aging-Medikamente entwickeln lassen."
   },
   "alcohol": {
-    "question": "TODO 酒精／饮酒",
-    "answer": "TODO Eine große Übersicht berücksichtigte Verzerrungen etwa durch ehemals Trinkende und fand keinen Mortalitätsvorteil geringer Alkoholmengen. Höherer Konsum war mit höherem Risiko verbunden.",
+    "question": "Ist ein alkoholisches Getränk am Tag gesund?",
+    "answer": "Nein. Wenig Alkohol half Menschen nicht dabei, länger zu leben, und je mehr sie tranken, desto höher war ihr Sterberisiko.",
     "why": [
-      "TODO Eine große Übersicht berücksichtigte Verzerrungen etwa durch ehemals Trinkende und fand keinen Mortalitätsvorteil geringer Alkoholmengen. Höherer Konsum war mit höherem Risiko verbunden.",
-      "TODO 107队列，4,838,825人，425,564死亡"
+      "Forschende fassten 107 Langzeitstudien mit fast 4,84 Millionen Menschen zusammen und verglichen Alkoholtrinkende mit Menschen, die nie Alkohol tranken.",
+      "Die Idee, ein wenig Alkohol sei gesund, entstand teilweise dadurch, dass Menschen, die wegen einer Krankheit aufgehört hatten, zu den Nichttrinkenden gezählt wurden. Wurde das korrigiert, hatten Menschen mit bis zu 25 g Alkohol am Tag (etwa zwei Dosen Bier) kein eindeutig niedrigeres Risiko.",
+      "Wer 45 bis 65 g am Tag trank, hatte ein etwa 19 % höheres Sterberisiko, und wer 65 g oder mehr trank, ein etwa 35 % höheres. Bei Frauen stieg das Risiko schon bei geringeren Mengen."
     ],
-    "caution": "TODO Wer nicht trinkt, braucht nicht anzufangen. Wer trinkt, möglichst reduzieren; bei Abhängigkeit oder früherem Entzug mit medizinischer Unterstützung.",
-    "myth": "TODO 行动节：戒酒（否则+~50% ACM，无上限）；第6节无对应证据条目。"
+    "caution": "Kein klarer Unterschied bei kleinen Mengen beweist nicht, dass irgendeine Menge sicher ist. Dies war kein Test zum Aufhören und kann nicht sagen, wie viel länger Sie ohne Alkohol leben würden. Wenn Sie alkoholabhängig sind oder schon Entzugserscheinungen hatten, hören Sie nicht plötzlich allein auf, sondern reduzieren Sie mit ärztlicher Hilfe.",
+    "myth": "Im ursprünglichen Leitfaden hieß es, dass das Sterberisiko ohne Alkoholverzicht um etwa 50 % höher liegt – ohne Obergrenze."
   },
   "ambient-air-pollution": {
-    "question": "TODO 长期环境PM2.5污染",
-    "answer": "TODO Eine große US-Studie bei älteren Erwachsenen verband langfristig höhere Feinstaub- und Ozonbelastung mit höherem Sterberisiko.",
+    "question": "Verkürzt ein Leben in verschmutzter Luft die Lebensspanne?",
+    "answer": "Wahrscheinlich. Je höher die langfristige Belastung durch Feinstaub (PM2,5) am Wohnort war, desto höher war das Sterberisiko.",
     "why": [
-      "TODO Eine große US-Studie bei älteren Erwachsenen verband langfristig höhere Feinstaub- und Ozonbelastung mit höherem Sterberisiko.",
-      "TODO 美国60,925,443名Medicare受益者；2000–2012；460,310,521人年"
+      "Forschende nutzten Daten der staatlichen US-Krankenversicherung Medicare und begleiteten rund 61 Millionen ältere US-Amerikanerinnen und US-Amerikaner von 2000 bis 2012.",
+      "Mit je 10 Mikrogramm pro Kubikmeter höherem Jahresmittel an PM2,5 am Wohnort lag das Sterberisiko etwa 7,3 % höher. Mit je 10 Teilen pro Milliarde (ppb) mehr Ozon lag es etwa 1,1 % höher.",
+      "Die Luftbelastung wurde für das jeweilige Postleitzahlengebiet geschätzt, nicht direkt an der Atemluft jeder Person gemessen, und es fehlten genaue Angaben zum individuellen Rauchen."
     ],
-    "caution": "TODO Auf die Luftqualität achten, bei starker Belastung anstrengende Bewegung im Freien reduzieren und die Raumluft möglichst verbessern.",
+    "caution": "Untersucht wurden ältere Menschen in den USA; andere Altersgruppen und Regionen können abweichen. Das Ergebnis heißt nicht, dass ein Luftreiniger Ihr Sterberisiko im selben Maß senkt. Bei starker Luftbelastung sollten Sie anstrengenden Sport draußen reduzieren und die Innenraumluft nach Möglichkeit verbessern. Wägen Sie beim Lüften Außenluftbelastung und das Risiko von Infektionen in Innenräumen gegeneinander ab.",
     "myth": null
   },
   "statins-indicated-patients": {
-    "question": "TODO 他汀降脂（按心血管风险及适应证）",
-    "answer": "TODO Zusammengefasste randomisierte Studien fanden weniger Herz-Kreislauf-Ereignisse unter Statinen. Auch bei Teilnehmenden ohne frühere Gefäßerkrankung gab es weniger Todesfälle. Der persönliche Nutzen hängt vom Ausgangsrisiko ab.",
+    "question": "Wenn Ihre Ärztin oder Ihr Arzt ein Statin gegen hohes Cholesterin empfiehlt – hilft es, länger zu leben?",
+    "answer": "Ja, für Menschen, die eine cholesterinsenkende Behandlung brauchen. Bei dafür geeigneten Studienteilnehmenden senkte ein Statin das schlechte Cholesterin und damit das Sterberisiko. Das bedeutet nicht, dass jede gesunde Person eines nehmen sollte.",
     "why": [
-      "TODO Zusammengefasste randomisierte Studien fanden weniger Herz-Kreislauf-Ereignisse unter Statinen. Auch bei Teilnehmenden ohne frühere Gefäßerkrankung gab es weniger Todesfälle. Der persönliche Nutzen hängt vom Ausgangsrisiko ab.",
-      "TODO 27RCT共174,149人；ACM数字为无既往血管病亚群；中位4.8–5.1年"
+      "Forschende fassten Einzeldaten aus 27 randomisierten Studien mit 174.149 Menschen zusammen und verglichen über im Mittel rund 5 Jahre ein Statin mit keinem oder eine stärkere mit einer schwächeren Behandlung.",
+      "Unter Menschen, die noch nie eine Herz-Kreislauf-Erkrankung hatten, ging jede Senkung des LDL-Cholesterins, des sogenannten schlechten Cholesterins, um 1 mmol/l mit einem etwa 9 % niedrigeren Sterberisiko und etwa 21 % weniger schweren Herz-Kreislauf-Ereignissen einher.",
+      "Wie stark jemand profitiert, hängt vom Ausgangsrisiko ab; Menschen mit hohem und niedrigem Risiko haben also unterschiedlich viel Nutzen."
     ],
-    "caution": "TODO Bei erfüllten Behandlungskriterien Statine ärztlich besprechen; Muskelbeschwerden und weitere Medikamente mit möglichen Wechselwirkungen ansprechen.",
+    "caution": "Diese Ergebnisse stammen von Studienteilnehmenden, die für eine cholesterinsenkende Behandlung infrage kamen. Gesunde Menschen mit niedrigem Risiko sollten nicht auf eigene Faust ein Statin nehmen, um länger zu leben. Lassen Sie eine Ärztin oder einen Arzt entscheiden, ob Sie eines brauchen, und setzen Sie es nicht selbstständig ab, wenn Sie es bereits nehmen. Sprechen Sie Muskelschmerzen, andere Medikamente oder eine Schwangerschaft ärztlich an.",
     "myth": null
   },
   "vitamin-d-general-population": {
-    "question": "TODO 维生素D补充（一般无选择老年成人）",
-    "answer": "TODO Eine große randomisierte Studie fand keine Mortalitätssenkung durch routinemäßiges Vitamin D bei allgemein gesunden Erwachsenen mittleren und höheren Alters. Mangel und Knochenkrankheiten brauchen eigene Beurteilung.",
+    "question": "Hilft tägliches Vitamin D älteren Erwachsenen dabei, länger zu leben?",
+    "answer": "Nein. Erwachsene mittleren und höheren Alters, die täglich Vitamin D einnahmen, hatten kein niedrigeres Sterberisiko.",
     "why": [
-      "TODO Eine große randomisierte Studie fand keine Mortalitätssenkung durch routinemäßiges Vitamin D bei allgemein gesunden Erwachsenen mittleren und höheren Alters. Mangel und Knochenkrankheiten brauchen eigene Beurteilung.",
-      "TODO 美国25,871人，男性≥50、女性≥55；中位5.3年；978死亡"
+      "Dies war eine randomisierte Studie. 25.871 US-Amerikanerinnen und US-Amerikaner – Männer ab 50 und Frauen ab 55 Jahren – wurden per Zufall in zwei Gruppen eingeteilt. Eine nahm täglich 2.000 IE Vitamin D3, die andere eine täuschend ähnliche Scheintablette, im Mittel 5,3 Jahre lang.",
+      "Während der Studie starben 978 Menschen, und zwischen beiden Gruppen gab es keinen klaren Unterschied beim Sterberisiko.",
+      "Die meisten Teilnehmenden hatten keinen Vitamin-D-Mangel. Studien, die Menschen mit niedrigem Vitamin D nur beobachtet haben, können nicht zeigen, dass ein Präparat hilft."
     ],
-    "caution": "TODO Bei festgestelltem Mangelrisiko oder Bedarf für die Knochengesundheit gezielt ergänzen; keine eigenständigen hohen Dosen.",
+    "caution": "Das gilt nicht für Menschen mit echtem Vitamin-D-Mangel, einer Knochenerkrankung oder einem anderen klaren Bedarf; sie sollten es nach ärztlichem Rat einnehmen. Nehmen Sie keine hohen Dosen auf eigene Faust für ein längeres Leben, da die Studie nicht gezeigt hat, dass jede Dosis langfristig sicher ist. Wenn Vitamin D ärztlich verordnet wurde, setzen Sie es nicht selbstständig ab.",
     "myth": null
   },
   "racquet-sports": {
-    "question": "TODO 挥拍运动",
-    "answer": "TODO Eine britische Beobachtungsstudie bei Erwachsenen verband Rückschlagsport mit niedrigerem Sterberisiko. Freude, Fitness und langfristige Durchführbarkeit gehören ebenfalls zur Sportwahl.",
+    "question": "Helfen Rückschlagsportarten wie Badminton und Tennis dabei, länger zu leben?",
+    "answer": "Wahrscheinlich. Menschen, die Rückschlagsport spielten, hatten ein etwa 47 % niedrigeres Sterberisiko – das stammt aber aus Beobachtungen und beweist nicht, dass der Sport selbst die Ursache war.",
     "why": [
-      "TODO Eine britische Beobachtungsstudie bei Erwachsenen verband Rückschlagsport mit niedrigerem Sterberisiko. Freude, Fitness und langfristige Durchführbarkeit gehören ebenfalls zur Sportwahl.",
-      "TODO 80,306名英国成年人；平均52±14岁"
+      "Forschende fassten Bevölkerungsbefragungen aus England und Schottland zusammen und begleiteten 80.306 britische Erwachsene mit einem Durchschnittsalter von 52 Jahren.",
+      "Wer Rückschlagsport betrieb, hatte ein etwa 47 % niedrigeres Sterberisiko als Menschen, die ihn nicht spielten, und ein etwa 56 % niedrigeres Risiko, an einer Herz-Kreislauf-Erkrankung zu sterben.",
+      "Die Bewegung wurde selbst angegeben, und Menschen, die diese Sportarten spielen, sind vielleicht von vornherein gesünder und wohlhabender – das kann die Studie nicht vollständig ausschließen."
     ],
-    "caution": "TODO Eine passende Rückschlagsportart wählen, die Freude macht, und die Aktivität langsam steigern.",
+    "caution": "Die Studie stützt kein festes Rezept wie dreimal wöchentlich 45 bis 60 Minuten und zeigt nicht, dass Rückschlagsport anderen Sportarten überlegen ist. Das Ergebnis lässt sich nicht ohne Weiteres auf Tischtennis oder jedes Alter übertragen. Wählen Sie eine Sportart, die Ihnen Spaß macht und zu Ihnen passt, und steigern Sie sich langsam. Bei Gelenkverletzungen oder Herzbeschwerden lassen Sie sich zuerst ärztlich untersuchen.",
     "myth": null
   },
   "vigorous-activity": {
-    "question": "TODO 剧烈运动",
-    "answer": "TODO Eine britische Beobachtungsstudie verband schon kurze intensive Aktivität mit niedrigerer Mortalität. Teilnehmende waren vorwiegend mittleren und höheren Alters; tragbare Geräte erfassten die Bewegung.",
+    "question": "Helfen schon 15 Minuten anstrengender Sport pro Woche?",
+    "answer": "Wahrscheinlich. Menschen, die etwa 15 Minuten pro Woche intensiv aktiv waren, hatten ein niedrigeres Sterberisiko als jene, die das fast gar nicht waren, und bei rund 54 Minuten pro Woche war das Risiko noch niedriger.",
     "why": [
-      "TODO Eine britische Beobachtungsstudie verband schon kurze intensive Aktivität mit niedrigerer Mortalität. Teilnehmende waren vorwiegend mittleren und höheren Alters; tragbare Geräte erfassten die Bewegung.",
-      "TODO 71,893名UK Biobank成年人，中位62.5岁，平均随访5.9年"
+      "Forschende maßen die Bewegung von 71.893 britischen Erwachsenen mit einem mittleren Alter von 62,5 Jahren per Aktivitätstracker am Handgelenk und begleiteten sie im Schnitt 5,9 Jahre lang.",
+      "Verglichen mit Menschen, die rund 2 Minuten pro Woche intensiv aktiv waren, hatten jene mit etwa 15 Minuten ein rund 18 % niedrigeres Sterberisiko und jene mit etwa 54 Minuten ein rund 36 % niedrigeres.",
+      "Die Spanne von 16 % bis 40 % im ursprünglichen Leitfaden vermischte verschiedene Ergebnisse. Die 40 % gelten für Herz-Kreislauf-Todesfälle bei etwa 19 Minuten pro Woche, nicht für Todesfälle insgesamt. Alle diese Zahlen stammen aus einem statistischen Modell auf Basis von Beobachtungen, nicht aus einer randomisierten Studie."
     ],
-    "caution": "TODO Wer schon regelmäßig aktiv ist, kann kurze intensive Einheiten ergänzen, sofern gesundheitlich nichts dagegenspricht. Bei Beschwerden oder instabiler chronischer Erkrankung erst ärztlich abklären lassen.",
-    "myth": "TODO 每周15–20分钟剧烈运动降低16%–40%的ACM；达到50–57分钟可进一步降低。"
+    "caution": "Diese Zahlen sind keine Garantie, und der Tiefpunkt der Kurve ist keine Verordnung für alle. Wenn Sie bereits Sport treiben und nichts Medizinisches dagegenspricht, bauen Sie kurze intensivere Abschnitte schrittweise ein. Bei Beschwerden oder einer nicht gut eingestellten chronischen Krankheit holen Sie vorher ärztlichen Rat ein.",
+    "myth": "Im ursprünglichen Leitfaden hieß es, dass 15 bis 20 Minuten intensive Bewegung pro Woche das Sterberisiko um 16 % bis 40 % senken und 50 bis 57 Minuten es noch weiter senken."
   },
   "walking-steps": {
-    "question": "TODO 走路/每日步数",
-    "answer": "TODO Eine US-Studie bei Menschen mittleren Alters verband mehr tägliche Schritte mit niedrigerer Mortalität. Sie zeigte nicht, dass immer mehr Schritte stets besser sind.",
+    "question": "Sind bei Erwachsenen mittleren Alters mehr Schritte am Tag immer besser?",
+    "answer": "Mehr zu gehen hilft möglicherweise, aber mehr ist nicht immer besser, und die Evidenz ist noch begrenzt. Menschen mittleren Alters mit 7.000 Schritten oder mehr am Tag hatten ein niedrigeres Sterberisiko, aber über 10.000 Schritte schnitten nicht besser ab als 7.000 bis 9.999.",
     "why": [
-      "TODO Eine US-Studie bei Menschen mittleren Alters verband mehr tägliche Schritte mit niedrigerer Mortalität. Sie zeigte nicht, dass immer mehr Schritte stets besser sind.",
-      "TODO CARDIA 2,110名美国黑人/白人成年人，平均45.2岁；随访10.8年，72例死亡"
+      "Forschende ließen 2.110 US-Erwachsene mittleren Alters – im Schnitt 45,2 Jahre alt – Schrittzähler tragen und begleiteten sie 10,8 Jahre lang. In dieser Zeit starben nur 72 von ihnen.",
+      "Verglichen mit Menschen unter 7.000 Schritten pro Tag hatten jene mit 7.000 bis 9.999 Schritten ein etwa 72 % niedrigeres Sterberisiko und jene mit 10.000 oder mehr ein etwa 55 % niedrigeres.",
+      "Die Schritte wurden nur über eine kurze Zeit gemessen, und Menschen mit schlechter Gesundheit gehen vielleicht von vornherein weniger. Die Studie zeigt also einen Zusammenhang, und 7.000 Schritte sind kein Ziel, das für alle passt."
     ],
-    "caution": "TODO Vom heutigen Niveau aus etwas mehr gehen; bei Herz- oder Lungenkrankheit, Sturzrisiko oder eingeschränkter Mobilität anpassen.",
+    "caution": "Das war eine kleine Studie mit US-Erwachsenen mittleren Alters. Beginnen Sie bei Ihrer jetzigen Schrittzahl und legen Sie langsam etwas zu. Bei eingeschränkter Beweglichkeit, Sturzgefahr oder Herz- oder Lungenerkrankungen passen Sie das Gehen an Ihre eigene Verfassung an.",
     "myth": null
   },
   "toothbrushing": {
-    "question": "TODO 刷牙",
-    "answer": "TODO Eine große chinesische Beobachtungsstudie fand höhere Mortalität bei seltenem Zähneputzen. Mundpflege hängt auch mit Rauchen, Gesundheit und Versorgungszugang zusammen.",
+    "question": "Beeinflusst seltenes Zähneputzen, wie lange man lebt?",
+    "answer": "Es gibt einen Zusammenhang. Menschen, die selten oder nie die Zähne putzten, hatten ein etwa 25 % höheres Sterberisiko als regelmäßig Putzende – das heißt aber nicht, dass der Beginn des Zähneputzens das Risiko um genau diesen Anteil senkt.",
     "why": [
-      "TODO Eine große chinesische Beobachtungsstudie fand höhere Mortalität bei seltenem Zähneputzen. Mundpflege hängt auch mit Rauchen, Gesundheit und Versorgungszugang zusammen.",
-      "TODO 中国慢性病前瞻性研究512,715人，30–79岁"
+      "Die China Kadoorie Biobank begleitete 512.715 chinesische Erwachsene zwischen 30 und 79 Jahren über viele Jahre. Etwa 9,3 % von ihnen putzten selten oder nie die Zähne.",
+      "Wer selten oder nie putzte, hatte ein etwa 25 % höheres Sterberisiko. Außerdem lag das Risiko, an Krebs, chronischer Lungenerkrankung (COPD) und Leberzirrhose zu erkranken, um etwa 9 %, 12 % und 25 % höher. Diese drei Zahlen betreffen Erkrankungen, nicht Todesfälle.",
+      "Das Putzverhalten wurde selbst angegeben und hängt eng mit Rauchen, Armut, Vorerkrankungen und Zugang zu ärztlicher Versorgung zusammen. Die Studie kann daher nicht zeigen, dass das Zähneputzen selbst den Unterschied macht."
     ],
-    "caution": "TODO Regelmäßig mit Fluoridzahnpasta putzen und Zahnprobleme behandeln lassen.",
+    "caution": "Dies war eine Studie mit chinesischen Erwachsenen. Regelmäßiges Putzen mit fluoridhaltiger Zahnpasta und die Behandlung von Zahnproblemen sind sinnvoll, ersetzen aber nicht Rauchstopp, Blutdruckkontrolle und ähnliche Maßnahmen.",
     "myth": null
   },
   "tub-bathing": {
-    "question": "TODO 泡澡",
-    "answer": "TODO Eine japanische Studie bei Menschen mittleren Alters verband regelmäßiges Wannenbaden mit weniger Herz-Kreislauf-Erkrankungen und Schlaganfällen.",
+    "question": "Ist tägliches Baden in der Wanne gut für Herz und Lebensspanne?",
+    "answer": "Für das Herz möglicherweise, aber die Evidenz ist schwach und sagt nichts über die Lebensspanne. Japanerinnen und Japaner mittleren Alters, die oft badeten, bekamen später seltener Herzkrankheiten und Schlaganfälle; das allgemeine Sterberisiko wurde in der Studie nicht berichtet.",
     "why": [
-      "TODO Eine japanische Studie bei Menschen mittleren Alters verband regelmäßiges Wannenbaden mit weniger Herz-Kreislauf-Erkrankungen und Schlaganfällen.",
-      "TODO 30,076名40–59岁日本人，基线无CVD或癌症；1990–2009年随访"
+      "Forschende begleiteten von 1990 bis 2009 insgesamt 30.076 Menschen in Japan im Alter von 40 bis 59 Jahren, die zu Beginn frei von Herz-Kreislauf-Erkrankungen und Krebs waren.",
+      "Verglichen mit Menschen, die 0- bis 2-mal pro Woche in der Wanne badeten, hatten jene, die fast jeden Tag badeten, ein etwa 28 % niedrigeres Risiko für Herz-Kreislauf-Erkrankungen, ein etwa 26 % niedrigeres Schlaganfallrisiko und ein etwa 46 % niedrigeres Risiko für Hirnblutungen.",
+      "Diese Zahlen betreffen Erkrankungen, nicht Todesfälle. Die Studie war keine randomisierte Studie, und japanische Badegewohnheiten lassen sich nicht einfach auf das Duschen übertragen."
     ],
-    "caution": "TODO Angenehm warm baden; nach Alkohol, bei Ohnmachtsneigung oder instabiler Herz-Kreislauf-Gesundheit lange heiße und unbeaufsichtigte Bäder vermeiden.",
-    "myth": "TODO 每天泡澡相对每周1–2次或不泡澡，CVD风险低28%，卒中低26%，脑出血低46%，未见猝死风险增加关联。"
+    "caution": "Dass kein Zusammenhang mit plötzlichem Tod gefunden wurde, beweist nicht, dass Baden völlig sicher ist, denn Ertrinken, Überhitzung und ähnliche Risiken wurden nicht ausgeschlossen. Wenn Sie zu Ohnmacht neigen, akut krank sind, Alkohol getrunken haben oder eine instabile Herzerkrankung haben, meiden Sie lange heiße Bäder und baden Sie nicht allein.",
+    "myth": "Im ursprünglichen Leitfaden hieß es, dass Menschen, die jeden Tag baden, im Vergleich zu ein- bis zweimal pro Woche oder gar nicht Badenden ein um 28 % niedrigeres Risiko für Herz-Kreislauf-Erkrankungen, ein um 26 % niedrigeres Schlaganfallrisiko und ein um 46 % niedrigeres Risiko für Hirnblutungen haben, ohne Anstieg plötzlicher Todesfälle."
   },
   "heavy-housework": {
-    "question": "TODO 重型家务（老年男性）",
-    "answer": "TODO In einer Hongkonger Studie bei Älteren war schwere Hausarbeit bei Männern mit niedrigerer Mortalität verbunden. Bei Frauen gab es keinen klaren Zusammenhang. Bessere Ausgangsfitness kann mitwirken.",
+    "question": "Hilft schwere Hausarbeit älteren Männern dabei, länger zu leben?",
+    "answer": "Möglicherweise, aber die Evidenz ist schwach. Ältere Männer in Hongkong, die schwere Hausarbeit machten, hatten ein niedrigeres Sterberisiko – vielleicht teils deshalb, weil Männer, die schwere Aufgaben schaffen, von Anfang an gesünder sind. Bei Frauen gab es keinen klaren Unterschied.",
     "why": [
-      "TODO In einer Hongkonger Studie bei Älteren war schwere Hausarbeit bei Männern mit niedrigerer Mortalität verbunden. Bei Frauen gab es keinen klaren Zusammenhang. Bessere Ausgangsfitness kann mitwirken.",
-      "TODO 香港社区≥65岁老人；排除特定慢病后2867人，平均72岁；452例死亡"
+      "Forschende begleiteten 2.867 zu Hause lebende Menschen ab 65 Jahren in Hongkong, im Schnitt 72 Jahre alt, etwa 9 Jahre lang. 452 von ihnen starben.",
+      "Nach Berücksichtigung von Körpergewicht, Gebrechlichkeit, Wohnsituation und Freizeitaktivitäten hatten Männer mit schwerer Hausarbeit ein etwa 29 % niedrigeres Sterberisiko als Männer ohne. Bei Frauen zeigte sich kein klarer Unterschied.",
+      "Wer schwere Hausarbeit schafft, ist vielleicht schon vorher bei besserer Gesundheit, und diese Art Studie kann Ursache und Wirkung nicht trennen. 72 Jahre war einfach das Durchschnittsalter der Teilnehmenden, keine Altersgrenze, ab der ein Nutzen beginnt."
     ],
-    "caution": "TODO Geeignete Hausarbeit als Alltagsbewegung nutzen; bei Gebrechlichkeit, Osteoporose oder Rückenproblemen schweres Heben vermeiden.",
-    "myth": "TODO 72岁之后男性每周做重型家务可以减少29%平均死亡率。"
+    "caution": "Dies ist keine Empfehlung, für ein längeres Leben Möbel zu rücken oder Gasflaschen zu tragen. Erledigen Sie Hausarbeit, die zu Ihrer Kraft passt. Bei Gebrechlichkeit, Osteoporose, Rückenproblemen oder Sturzgefahr vermeiden Sie schweres Heben.",
+    "myth": "Im ursprünglichen Leitfaden hieß es, dass Männer über 72, die jede Woche schwere Hausarbeit erledigen, ihre durchschnittliche Sterberate um 29 % senken."
   },
   "sleep-duration": {
-    "question": "TODO 睡眠时长",
-    "answer": "TODO Studien in mehreren asiatischen Ländern verbanden sehr langen Schlaf mit höherer Mortalität. Längerer Schlaf kann auch auf Erkrankungen oder Schlafprobleme hinweisen.",
+    "question": "Ist es ungesund, 10 Stunden oder mehr pro Tag zu schlafen?",
+    "answer": "Unklar. Menschen, die 10 Stunden oder länger schliefen, hatten ein höheres Sterberisiko, aber langer Schlaf kann ein Zeichen einer bereits bestehenden Krankheit sein; unklar bleibt daher, ob der Schlaf selbst schadet.",
     "why": [
-      "TODO Studien in mehreren asiatischen Ländern verbanden sehr langen Schlaf mit höherer Mortalität. Längerer Schlaf kann auch auf Erkrankungen oder Schlafprobleme hinweisen.",
-      "TODO 日本、中国、新加坡、韩国9队列322,721人，平均54.5岁；排除基线自报CVD/癌症及随访前5年死亡者；男性19,419例、女性13,768例死亡"
+      "Forschende fassten 9 Langzeitstudien aus Japan, China, Singapur und Korea mit 322.721 Menschen im Durchschnittsalter von 54,5 Jahren zusammen, die etwa 13 bis 14 Jahre begleitet wurden.",
+      "Verglichen mit Menschen, die 7 Stunden schliefen, hatten Männer mit 10 Stunden oder mehr ein etwa 34 % höheres Sterberisiko und Frauen ein etwa 48 % höheres.",
+      "Der Schlaf wurde nur einmal selbst angegeben, manche Studien zählten nur den Nachtschlaf und andere auch Mittagsschlaf, und Daten zu Schlafqualität oder Depression fehlten.",
+      "Die Forschenden schlossen zwar Menschen aus, die zu Beginn Herzkrankheiten oder Krebs hatten oder in den ersten 5 Jahren starben, aber das kann nicht völlig ausschließen, dass Krankheiten den langen Schlaf verursacht haben."
     ],
-    "caution": "TODO Ausreichenden, erholsamen Schlaf anstreben; anhaltende Schläfrigkeit, Müdigkeit oder Schnarchen abklären lassen.",
+    "caution": "Das bedeutet nicht, dass Langschläfer sich auf 7 Stunden herunterzwingen sollten, und es zeigt nicht, dass eine Änderung der Schlafdauer das Sterberisiko verändert. Streben Sie ausreichend regelmäßigen Schlaf an, nach dem Sie sich erholt fühlen. Wenn Sie anhaltend sehr lange schlafen und zugleich müde sind, schnarchen oder tagsüber schläfrig sind, lassen Sie das abklären.",
     "myth": null
   },
   "bedtime": {
-    "question": "TODO 就寝时间",
-    "answer": "TODO Eine länderübergreifende Nachbeobachtung verband sehr frühe und sehr späte Schlafenszeiten mit einem höheren kombinierten Risiko für Tod und Herz-Kreislauf-Ereignisse. Nach Berücksichtigung anderer Faktoren war der Zusammenhang deutlich schwächer.",
+    "question": "Wann sollte man ins Bett gehen? Verkürzt zu frühes oder zu spätes Schlafen das Leben?",
+    "answer": "Unklar, und die Evidenz ist schwach. Sehr frühes oder sehr spätes Zubettgehen war mit einem höheren gemeinsamen Risiko für Tod oder schwere Herz-Kreislauf-Ereignisse verbunden, doch dieser Zusammenhang wurde deutlich schwächer, sobald andere Faktoren berücksichtigt wurden.",
     "why": [
-      "TODO Eine länderübergreifende Nachbeobachtung verband sehr frühe und sehr späte Schlafenszeiten mit einem höheren kombinierten Risiko für Tod und Herz-Kreislauf-Ereignisse. Nach Berücksichtigung anderer Faktoren war der Zusammenhang deutlich schwächer.",
-      "TODO 21国PURE 112,198人；9.2年随访；5633死亡、5346主要心血管事件"
+      "Forschende begleiteten 112.198 Menschen in 21 Ländern etwa 9,2 Jahre lang. 5.633 von ihnen starben, und es gab 5.346 schwere Herz-Kreislauf-Ereignisse.",
+      "Verglichen mit dem Zubettgehen zwischen 22 Uhr und Mitternacht gingen Zeiten vor etwa 22 Uhr oder nach Mitternacht mit einem etwa 29 % beziehungsweise 11 % höheren gemeinsamen Risiko für Tod oder schwere Herz-Kreislauf-Ereignisse einher, wenn nur Alter und Geschlecht berücksichtigt wurden. Bei Berücksichtigung weiterer Faktoren waren es nur noch etwa 9 % und 10 %.",
+      "Die Zusammenfassung der Studie liefert keine getrennten Sterbezahlen, die zu den 43 % und 15 % des Leitfadens passen. Die Schlafenszeiten wurden selbst angegeben, und Tagesabläufe sowie Krankheiten lassen sich schwer von der Schlafenszeit trennen."
     ],
-    "caution": "TODO Einen passenden regelmäßigen Rhythmus mit genug Schlaf finden; nicht für eine bestimmte Uhrzeit absichtlich wach bleiben.",
-    "myth": "TODO 22–24点就寝最好；早睡增加43% ACM，晚睡增加15%，原文注明存在争议。"
+    "caution": "Schon in der Studie selbst weichen die genauen Zeitgrenzen leicht voneinander ab; sehen Sie 22 Uhr oder Mitternacht also nicht als starre Regeln. Pflegen Sie regelmäßigen, ausreichenden Schlaf im eigenen Rhythmus. Wenn frühes Zubettgehen für Sie gut funktioniert, gibt es wegen dieser Studie keinen Grund, länger wach zu bleiben.",
+    "myth": "Im ursprünglichen Leitfaden hieß es, dass Zubettgehen zwischen 22 Uhr und Mitternacht am besten ist, frühes Schlafengehen das Sterberisiko um 43 % und spätes um 15 % erhöht, und es wurde angemerkt, dass dies umstritten sei."
   },
   "sedentary-time": {
-    "question": "TODO 久坐及看电视",
-    "answer": "TODO Eine Übersicht verband längeres Sitzen mit höherer Mortalität, besonders bei Menschen, die einen großen Teil des Tages saßen. Fernsehen und Gesamtsitzzeit zeigten unterschiedliche Zusammenhänge.",
+    "question": "Erhöht langes tägliches Sitzen das Sterberisiko?",
+    "answer": "Wahrscheinlich. Je länger Menschen saßen, desto höher war ihr Sterberisiko, und jenseits von etwa 8 Stunden am Tag stieg es schneller an.",
     "why": [
-      "TODO Eine Übersicht verband längeres Sitzen mit höherer Mortalität, besonders bei Menschen, die einen großen Teil des Tages saßen. Fernsehen und Gesamtsitzzeit zeigten unterschiedliche Zusammenhänge.",
-      "TODO 34项前瞻研究，共1,331,468名不同结局的独立参与者"
+      "Forschende fassten 34 Langzeitstudien mit rund 1,33 Millionen Menschen zusammen und berücksichtigten dabei, wie viel sich jede Person bewegte.",
+      "Bis zu 8 Stunden Sitzen am Tag ging jede zusätzliche Stunde mit einem etwa 1 % höheren Sterberisiko einher. Über 8 Stunden hinaus waren es pro zusätzlicher Stunde etwa 4 %. Beim Fernsehen zeigte sich ein ähnliches Muster: etwa 3 % pro Stunde bis 3,5 Stunden am Tag und etwa 6 % darüber hinaus.",
+      "Pauschale 3 % pro Stunde gelten also nicht auf jedem Niveau, und die Marken von 6 bis 8 Stunden sowie 3 bis 4 Stunden sind Knicke einer statistischen Kurve, keine sicheren Obergrenzen. Die Sitzzeit wurde meist selbst angegeben, sodass die Ergebnisse einen Zusammenhang zeigen."
     ],
-    "caution": "TODO Soweit körperlich möglich einen Teil der Sitzzeit durch Gehen oder andere Bewegung ersetzen.",
-    "myth": "TODO 久坐每多1小时，CVD发生风险增4%、癌症增1%、ACM增3%；总久坐阈值6–8小时/日，看电视3–4小时/日。"
+    "caution": "In dieser Übersicht hing Sitzen nicht eindeutig mit Krebstodesfällen zusammen – verwechseln Sie das also nicht mit dem Risiko, an Krebs zu erkranken. Tauschen Sie, soweit es Ihr Körper zulässt, einen Teil der Sitzzeit gegen Gehen oder andere Bewegung und trainieren Sie regelmäßig. Wenn Sie nicht stehen können, folgen Sie Ihrem Reha-Plan. Eine feste Regel, wie oft man aufstehen muss, ist nicht bewiesen.",
+    "myth": "Im ursprünglichen Leitfaden hieß es, dass jede zusätzliche Sitzstunde am Tag das Risiko für Herz-Kreislauf-Erkrankungen um 4 %, für Krebs um 1 % und das Sterberisiko um 3 % erhöht und dass das Risiko ab 6 bis 8 Stunden Gesamtsitzen oder 3 bis 4 Stunden Fernsehen pro Tag zu steigen beginnt."
   },
   "pessimism": {
-    "question": "TODO 悲观/乐观情绪",
-    "answer": "TODO Eine australische Beobachtungsstudie bei Erwachsenen mittleren und höheren Alters verband höhere Pessimismuswerte mit höherer Mortalität. Stimmung, körperliche Gesundheit und Lebensumstände beeinflussen sich gegenseitig.",
+    "question": "Sterben Pessimisten jünger?",
+    "answer": "Möglicherweise, aber die Evidenz ist schwach. Je pessimistischer Menschen waren, desto höher war ihr Sterberisiko. Optimismus zeigte keinen Schutzeffekt, und es ist nicht klar, ob der Pessimismus selbst die Ursache war.",
     "why": [
-      "TODO Eine australische Beobachtungsstudie bei Erwachsenen mittleren und höheren Alters verband höhere Pessimismuswerte mit höherer Mortalität. Stimmung, körperliche Gesundheit und Lebensumstände beeinflussen sich gegenseitig.",
-      "TODO 澳大利亚≥50岁双胞胎相关样本2978人，平均20年后1068人死亡；具体模型因缺失人数减少"
+      "Forschende gaben 2.978 Australierinnen und Australiern ab 50 Jahren aus einer Zwillingsstudie einen Fragebogen zu Optimismus und Pessimismus. Im Schnitt etwa 20 Jahre später waren 1.068 von ihnen gestorben.",
+      "Mit jedem Anstieg des Pessimismus-Werts um eine Standardabweichung, eine statistische Maßeinheit für die Streuung, lag das Sterberisiko etwa 13 % höher. Nach zusätzlicher Berücksichtigung von Gewicht, Alkohol und Rauchen waren es etwa 16 %.",
+      "Optimismus-Werte zeigten keinen klaren Zusammenhang mit dem Sterberisiko, was aber nicht beweist, dass Optimismus nutzlos ist. Die Persönlichkeit wurde nicht zufällig zugeteilt, und die Studie kann nicht ausschließen, dass schlechte Gesundheit zuerst da war und Menschen pessimistischer machte."
     ],
-    "caution": "TODO In schwierigen Zeiten mit vertrauten Menschen sprechen; bei anhaltender Alltagsbeeinträchtigung professionelle Unterstützung suchen.",
+    "caution": "Keine Studie hat gezeigt, dass die Behandlung gedrückter Stimmung das Sterberisiko senkt. Wenn anhaltender Pessimismus oder gedrückte Stimmung Ihren Alltag belasten, sprechen Sie mit jemandem, dem Sie vertrauen, oder suchen Sie professionelle Hilfe, und versuchen Sie nicht, eine Behandlung durch erzwungene Fröhlichkeit zu ersetzen.",
     "myth": null
   },
   "wealth": {
-    "question": "TODO 净资产/经济资源",
-    "answer": "TODO Eine US-Studie bei Menschen mittleren Alters verband größeres Nettovermögen mit niedrigerer Mortalität. Finanzielle Mittel, Gesundheit und Sicherheit beeinflussen sich oft gegenseitig.",
+    "question": "Leben wohlhabendere Menschen länger?",
+    "answer": "Möglicherweise, aber die Evidenz ist schwach. Menschen mit höherem Vermögen in der Lebensmitte hatten später ein leicht niedrigeres Sterberisiko – das bedeutet aber nicht, dass Geldanlagen Ihr Leben verlängern.",
     "why": [
-      "TODO Eine US-Studie bei Menschen mittleren Alters verband größeres Nettovermögen mit niedrigerer Mortalität. Finanzielle Mittel, Gesundheit und Sicherheit beeinflussen sich oft gegenseitig.",
-      "TODO 美国MIDUS 5414人，平均46.7岁，近24年随访；1010例死亡；兄弟姐妹/双胞胎2490人"
+      "Forschende begleiteten 5.414 US-Erwachsene mittleren Alters, im Schnitt 46,7 Jahre alt, beginnend zwischen 1994 und 1996 fast 24 Jahre lang. 1.010 von ihnen starben.",
+      "Je 50.000 US-Dollar mehr Nettovermögen gingen mit einem etwa 5 % niedrigeren Sterberisiko einher. Beim Vergleich von Geschwistern und Zwillingen innerhalb derselben Familie (2.490 Menschen) gingen je 50.000 US-Dollar mehr mit einem etwa 6 % niedrigeren Risiko einher. Unter Zwillingen allein gab es keinen klaren Unterschied.",
+      "Die Teilnehmenden gaben ihr Vermögen selbst an, die Stichprobe bildete nicht alle Bevölkerungsgruppen gut ab, und Krankheit kann ebenfalls Ersparnisse aufzehren. Es lässt sich also schwer sagen, ob Geld die Gesundheit beeinflusst oder Gesundheit das Geld."
     ],
-    "caution": "TODO Wohnen, Gesundheitsversorgung und finanzielle Grundsicherheit priorisieren, um vermeidbare Belastungen zu reduzieren.",
+    "caution": "Keine Studie hier hat getestet, das Einkommen von Menschen zu erhöhen, und riskante Geldanlagen sind keine Gesundheitsmaßnahme. Setzen Sie stabiles Wohnen, Zugang zu medizinischer Versorgung und finanzielle Grundsicherheit an erste Stelle.",
     "myth": null
   },
   "weight-change": {
-    "question": "TODO 成年早期至中年体重变化",
-    "answer": "TODO Eine US-Beobachtungsstudie fand niedrigere Mortalität bei Menschen, die zwischen frühem Erwachsenenalter und Lebensmitte von Adipositas zu Übergewicht wechselten, als bei Menschen mit anhaltender Adipositas.",
+    "question": "Wenn Sie als junger Erwachsener stark übergewichtig waren – senkt Abnehmen bis zur Lebensmitte das Sterberisiko?",
+    "answer": "Unklar, und die Evidenz ist schwach. Menschen, die von starkem Übergewicht (Adipositas) zu einfachem Übergewicht abnahmen, hatten ein niedrigeres Sterberisiko, doch bei Menschen, die von Übergewicht auf Normalgewicht abnahmen, gab es keinen klaren Unterschied.",
     "why": [
-      "TODO Eine US-Beobachtungsstudie fand niedrigere Mortalität bei Menschen, die zwischen frühem Erwachsenenalter und Lebensmitte von Adipositas zu Übergewicht wechselten, als bei Menschen mit anhaltender Adipositas.",
-      "TODO NHANES 24,205名40–74岁美国成年人；回忆25岁和基线前10年体重；随访10.7年，5846死亡"
+      "Forschende befragten 24.205 US-Erwachsene zwischen 40 und 74 Jahren nach ihrem erinnerten Gewicht mit 25 Jahren und 10 Jahre vor der Befragung und begleiteten sie 10,7 Jahre lang. 5.846 von ihnen starben.",
+      "Menschen, die mit 25 stark übergewichtig waren und bis zur Lebensmitte nur noch übergewichtig waren, hatten ein etwa 54 % niedrigeres Sterberisiko als jene, die stark übergewichtig blieben. Nur 214 Menschen schafften diesen Wechsel.",
+      "Menschen, die mit 25 übergewichtig waren und bis zur Lebensmitte Normalgewicht erreichten, zeigten keinen klaren Unterschied zu denen, die übergewichtig blieben – das bedeutet nicht, dass Normalgewicht nutzlos oder schädlich ist. Dies war keine Abnehmstudie und kann nicht beweisen, dass gezieltes Abnehmen den Abstand von 54 % bewirkt hat."
     ],
-    "caution": "TODO Bei Adipositas das Gewicht langfristig regulieren und die Muskelkraft erhalten; ungewollten Gewichtsverlust besonders im Alter abklären lassen.",
+    "caution": "Die Ergebnisse betreffen Gewichtsveränderungen zwischen dem 25. Lebensjahr und der Lebensmitte. Sie gelten nicht für ältere Menschen, Schwangerschaften oder ungewollten Gewichtsverlust, und unerklärter Gewichtsverlust im Alter sollte abgeklärt werden. Bei starkem Übergewicht planen Sie langfristiges Gewichts- und Muskelkraftmanagement mit einer medizinischen Fachkraft.",
     "myth": null
   },
   "covid-pandemic": {
-    "question": "TODO 新冠疫情与全因超额死亡",
-    "answer": "TODO Sterberegister mehrerer Länder zeigten in der ersten COVID-19-Welle deutliche Übersterblichkeit. Neben Infektionen können indirekte Folgen wie unterbrochene Versorgung beitragen. Das bildet die damalige Pandemiephase ab.",
+    "question": "Hat die COVID-19-Pandemie wirklich viele zusätzliche Todesfälle verursacht?",
+    "answer": "Ja. Während der ersten Welle 2020 gab es in 21 Ländern etwa 206.000 mehr Todesfälle als erwartet. Das sind aber Länderstatistiken – also indirekte Evidenz, mit der sich Ihr persönliches Risiko nicht abschätzen lässt.",
     "why": [
-      "TODO Sterberegister mehrerer Länder zeigten in der ersten COVID-19-Welle deutliche Übersterblichkeit. Neben Infektionen können indirekte Folgen wie unterbrochene Versorgung beitragen. Das bildet die damalige Pandemiephase ab.",
-      "TODO 21个工业化国家全国死亡登记，2020年第一波；不含美国"
+      "Dies war eine Studie mit Länderstatistiken. Forschende nutzten nationale Sterberegister aus 21 Industrieländern – 19 in Europa plus Australien und Neuseeland, ohne die USA. Sie verglichen die Todesfälle von Mitte Februar bis Ende Mai 2020 mit der Zahl, die ein Modell ohne Pandemie vorhersagte.",
+      "Es gab etwa 206.000 mehr Todesfälle als vorhergesagt, mit einem wahrscheinlichen Bereich von 178.100 bis 231.000. Diese zusätzlichen Todesfälle umfassen Menschen, die an der Infektion starben, sowie indirekte Folgen wie unterbrochene medizinische Versorgung.",
+      "Die Arbeit stützt nicht die Angaben des Leitfadens von 1,5 % COVID-19-Sterblichkeit in den USA und 2 Jahren weniger Lebenserwartung. Sie hat die USA nicht untersucht, und die Zahl von 1,5 % nennt weder ein Datum noch, auf welche Personengruppe sie bezogen wurde."
     ],
-    "caution": "TODO Infektionsexposition verringern, chronische Erkrankungen gut versorgen und bei Krankheit rechtzeitig geeignete Hilfe holen.",
-    "myth": "TODO 美国新冠死亡率约1.5%，人均预期寿命减少2年；所引论文标题为21个工业化国家疫情第一波ACM。"
+    "caution": "Dies beschreibt die erste Welle 2020 und lässt sich nicht auf heutige Varianten, Immunität und medizinische Versorgung übertragen. Senken Sie Ihr Infektionsrisiko, lassen Sie chronische Krankheiten weiter gut behandeln, holen Sie im Krankheitsfall rasch ärztliche Hilfe und folgen Sie den aktuellen Empfehlungen zu Vorbeugung und Behandlung.",
+    "myth": "Im ursprünglichen Leitfaden hieß es, dass die COVID-19-Sterberate in den USA bei etwa 1,5 % lag und die durchschnittliche Lebenserwartung um 2 Jahre sank."
   },
   "resistance-training": {
-    "question": "TODO 抗阻/肌肉力量训练",
-    "answer": "TODO Eine Übersicht von Kohortenstudien verband Muskelkräftigung mit niedrigerer Mortalität. Der Zusammenhang mit bestimmten Trainingsmengen bleibt unsicher.",
+    "question": "Hilft Krafttraining dabei, länger zu leben?",
+    "answer": "Wahrscheinlich. Menschen, die überhaupt muskelkräftigende Übungen machten, hatten ein etwa 15 % niedrigeres Sterberisiko als Menschen, die keine machten – das stammt aber aus Beobachtungen, und die beste Trainingsmenge ist noch unklar.",
     "why": [
-      "TODO Eine Übersicht von Kohortenstudien verband Muskelkräftigung mit niedrigerer Mortalität. Der Zusammenhang mit bestimmten Trainingsmengen bleibt unsicher.",
-      "TODO ACM二分类合成7研究、263,058人、42,133死亡；综述总计16研究"
+      "Forschende fassten 7 Langzeitstudien mit 263.058 Menschen zusammen, von denen 42.133 starben, verglichen Menschen mit jeglichem Muskeltraining mit solchen ohne und berücksichtigten nach Möglichkeit auch Ausdauerbewegung.",
+      "Menschen, die Krafttraining machten, hatten ein etwa 15 % niedrigeres Sterberisiko. Die Kurve deutete den größten Nutzen bei etwa 30 bis 60 Minuten pro Woche an, während die Wirkung größerer Mengen unklar blieb.",
+      "Die Ergebnisse schwankten stark zwischen den Studien, das Training wurde meist selbst angegeben, und aktive Menschen sind vielleicht von vornherein gesünder. Die Studien zeigen also einen Zusammenhang; keine randomisierte Studie hat die beste Menge bestätigt."
     ],
-    "caution": "TODO Große Muskelgruppen langsam zusätzlich zur Ausdauer trainieren; bei Schmerzen, nach Operationen oder instabiler chronischer Erkrankung anpassen.",
+    "caution": "Der Verlauf der Kurve bei größeren Mengen bedeutet nicht, dass mehr Training schadet. Wenn Ihr Körper es zulässt, trainieren Sie die großen Muskelgruppen schrittweise und kombinieren Sie das mit Ausdauerbewegung. Bei Schmerzen, einer kürzlichen Operation oder einer instabilen chronischen Krankheit holen Sie zuerst ärztlichen Rat ein und passen das Training an.",
     "myth": null
   },
   "social-isolation": {
-    "question": "TODO 社会隔离、孤独与独居",
-    "answer": "TODO Eine Übersicht verband soziale Isolation, Einsamkeit und Alleinleben mit höherer Mortalität. Das sind unterschiedliche Erfahrungen. Auch Alleinlebende können erfüllende, zuverlässige Kontakte haben.",
+    "question": "Beeinflussen Einsamkeit oder Alleinleben, wie lange man lebt?",
+    "answer": "Es gibt einen Zusammenhang. Soziale Isolation, Einsamkeit und Alleinleben hingen jeweils mit einem höheren Sterberisiko zusammen – aber das sind unterschiedliche Dinge, und allein zu leben bedeutet nicht automatisch, einsam zu sein.",
     "why": [
-      "TODO Eine Übersicht verband soziale Isolation, Einsamkeit und Alleinleben mit höherer Mortalität. Das sind unterschiedliche Erfahrungen. Auch Alleinlebende können erfüllende, zuverlässige Kontakte haben.",
-      "TODO 纳入截至2014年2月的死亡随访研究；各研究人群及调整因素不同"
+      "Forschende fassten Langzeitstudien zusammen, die bis Februar 2014 veröffentlicht wurden. Die Studien untersuchten verschiedene Personengruppen und berücksichtigten unterschiedliche Faktoren.",
+      "Nach Berücksichtigung anderer Faktoren lag das statistische Chancenverhältnis für einen Todesfall bei sozialer Isolation um etwa 29 % höher, bei Einsamkeit um 26 % und beim Alleinleben um 32 %. Ein solches Chancenverhältnis ist eine statistische Kennzahl und lässt sich nicht direkt darin umrechnen, wie stark das persönliche Sterberisiko steigt.",
+      "Die Gesundheit zu Studienbeginn beeinflusste die Ergebnisse, und die Studien definierten die drei Situationen unterschiedlich. Es ist auch nicht gezeigt, dass mehr soziale Kontakte das Risiko im selben Ausmaß senken würden."
     ],
-    "caution": "TODO Nach eigenen Wünschen verlässliche Kontakte und Hilfswege pflegen; Hindernisse durch Hör-, Bewegungs- oder Stimmungsprobleme beachten.",
+    "caution": "Alleinlebende Menschen können trotzdem verlässliche Beziehungen haben, und nicht jede Person muss mit anderen zusammenwohnen. Pflegen Sie Kontakte und Hilfsmöglichkeiten, die zu Ihnen passen, und gehen Sie Hindernisse wie schlechtes Hören, eingeschränkte Beweglichkeit oder Depressionen an.",
     "myth": null
   },
   "intensive-bp-control": {
-    "question": "TODO 符合适应条件者的强化降压",
-    "answer": "TODO Eine randomisierte Studie bei Menschen mit Bluthochdruck, erhöhtem Herz-Kreislauf-Risiko und ohne Diabetes fand weniger Todesfälle unter intensiver Blutdruckbehandlung. Hypotonie und Nierenprobleme traten jedoch häufiger auf.",
+    "question": "Hilft es Menschen mit Bluthochdruck, den oberen Wert unter 120 zu senken, um länger zu leben?",
+    "answer": "Ja, für geeignete Patientinnen und Patienten. Bei Menschen mit einem oberen (systolischen) Blutdruckwert von 130 oder mehr, erhöhtem Herzrisiko und ohne Diabetes senkte ein Zielwert unter 120 im Vergleich zu unter 140 das Sterberisiko. Dies war eine Behandlungsstudie mit Betroffenen, kein Beleg, dass Gesunde mit Blutdrucktabletten länger leben.",
     "why": [
-      "TODO Eine randomisierte Studie bei Menschen mit Bluthochdruck, erhöhtem Herz-Kreislauf-Risiko und ohne Diabetes fand weniger Todesfälle unter intensiver Blutdruckbehandlung. Hypotonie und Nierenprobleme traten jedoch häufiger auf.",
-      "TODO 9,361名SBP≥130mmHg、心血管风险增加且无糖尿病的成人"
+      "Dies war eine randomisierte Studie namens SPRINT. 9.361 Erwachsene mit einem oberen Blutdruckwert von 130 oder mehr, erhöhtem Herz-Kreislauf-Risiko und ohne Diabetes wurden per Zufall in zwei Gruppen eingeteilt. Eine peilte einen oberen Wert unter 120 an, die andere unter 140; die mittlere Beobachtungszeit lag bei 3,26 Jahren.",
+      "Die Gruppe mit dem niedrigeren Zielwert hatte ein etwa 27 % niedrigeres Sterberisiko und etwa 25 % weniger schwere Herz-Kreislauf-Ereignisse.",
+      "Die Studie wurde vorzeitig beendet, was den Nutzen größer erscheinen lassen kann, als er ist. Niedriger Blutdruck, Ohnmacht, veränderte Blutsalzwerte und plötzliche Nierenschäden kamen in der Gruppe mit dem niedrigeren Zielwert häufiger vor."
     ],
-    "caution": "TODO Blutdruckziele gemeinsam ärztlich festlegen und auf Schwindel, Nierenfunktion sowie Elektrolyte achten.",
+    "caution": "Das gilt nicht für Menschen mit Diabetes oder für Personen mit niedrigem Risiko und normalem Blutdruck. Wenn Sie Bluthochdruck und ein erhöhtes Risiko haben, legen Sie Ihren Zielwert mit Ihrer Ärztin oder Ihrem Arzt fest, lassen Sie Nierenfunktion und Blutsalze prüfen und achten Sie auf Schwindel beim Aufstehen. Nehmen oder setzen Sie Medikamente nicht eigenständig ab und verfolgen Sie das Studienziel nicht auf eigene Faust.",
     "myth": null
   },
   "cardiorespiratory-fitness": {
-    "question": "TODO 心肺适能（CRF）",
-    "answer": "TODO Mehrere Kohortenstudien verbanden bessere Herz-Lungen-Fitness im Belastungstest mit niedrigerer Mortalität. Sie zeigt körperliche Leistungsfähigkeit, wird aber auch von Krankheiten und Genetik beeinflusst.",
+    "question": "Bedeutet eine bessere Herz-Lungen-Fitness ein niedrigeres Sterberisiko?",
+    "answer": "Ja. Menschen mit besserer Herz-Lungen-Fitness in einem Belastungstest hatten ein niedrigeres Sterberisiko – das verknüpft aber ein Testergebnis mit dem Überleben und verspricht nicht denselben Gewinn durch mehr Training.",
     "why": [
-      "TODO Mehrere Kohortenstudien verbanden bessere Herz-Lungen-Fitness im Belastungstest mit niedrigerer Mortalität. Sie zeigt körperliche Leistungsfähigkeit, wird aber auch von Krankheiten und Genetik beeinflusst.",
-      "TODO 34项成人队列纳入综述；ACM连续剂量分析来自其中子集"
+      "Forschende fassten 34 Studien zusammen, die Erwachsene begleiteten, deren Herz-Lungen-Fitness in einem Belastungstest gemessen worden war. Ein Teil dieser Studien wurde genutzt, um den Zusammenhang zwischen Fitness und Sterberisiko zu berechnen.",
+      "Jede Steigerung der Fitness um 1 MET (eine Einheit für die Belastbarkeit, etwa der Energieverbrauch beim ruhigen Sitzen) ging mit einem etwa 12 % niedrigeren Sterberisiko einher.",
+      "Die Ergebnisse schwankten zwischen den Studien sehr stark, und Fitness hängt auch von Vorerkrankungen, Genen und der Art des Tests ab. Es handelt sich also um einen beobachteten Zusammenhang, nicht um einen Ursachenbeweis."
     ],
-    "caution": "TODO Von der aktuellen Fitness aus passende Bewegung langsam aufbauen.",
+    "caution": "Nutzen Sie diese Zahl nicht, um auszurechnen, wie viel länger Sie leben könnten. Sehen Sie einen Fitnesstest als Hinweis auf Ihren körperlichen Zustand und trainieren Sie schrittweise passend zu Ihrer Gesundheit.",
     "myth": null
   },
   "dapagliflozin-ckd": {
-    "question": "TODO 达格列净（特定慢性肾病）",
-    "answer": "TODO Eine randomisierte Studie fand weniger Todesfälle unter Dapagliflozin bei Teilnehmenden mit chronischer Nierenkrankheit, die die Studienkriterien erfüllten, mit oder ohne Diabetes. Eine Lebensverlängerung Gesunder ist nicht belegt.",
+    "question": "Hilft Dapagliflozin Menschen mit chronischer Nierenerkrankung, länger zu leben?",
+    "answer": "Ja, für geeignete Patientinnen und Patienten mit chronischer Nierenerkrankung. Betroffene, die zusätzlich zur Standardbehandlung Dapagliflozin einnahmen, hatten ein niedrigeres Sterberisiko. Dies war eine Studie an Erkrankten, kein Beleg für eine Anti-Aging-Tablette für Gesunde.",
     "why": [
-      "TODO Eine randomisierte Studie fand weniger Todesfälle unter Dapagliflozin bei Teilnehmenden mit chronischer Nierenkrankheit, die die Studienkriterien erfüllten, mit oder ohne Diabetes. Eine Lebensverlängerung Gesunder ist nicht belegt.",
-      "TODO 4304名CKD成人；eGFR 25–75、UACR 200–5000 mg/g；随访中位2.4年，含有/无2型糖尿病者"
+      "Dies war eine randomisierte Studie. 4.304 Erwachsene mit chronischer Nierenerkrankung – teils mit Typ-2-Diabetes, teils ohne – und mit Nierenwerten in einem festgelegten Bereich wurden zusätzlich zur Standardbehandlung per Zufall in zwei Gruppen eingeteilt. Eine nahm täglich 10 mg Dapagliflozin, die andere eine täuschend ähnliche Scheintablette, im Mittel 2,4 Jahre lang.",
+      "Während der Studie starben 4,7 % der Dapagliflozin-Gruppe gegenüber 6,8 % der Scheintabletten-Gruppe – ein etwa 31 % niedrigeres Risiko.",
+      "Die Studie wurde vorzeitig beendet, weil das Medikament wirkte. Die 4,7 % und 6,8 % sind der Anteil der Verstorbenen während der Studie, kein lebenslanges Risiko."
     ],
-    "caution": "TODO Bei chronischer Nierenkrankheit ärztlich auf Eignung prüfen lassen; dabei Austrocknung, Infektionen und Ketoazidose berücksichtigen.",
+    "caution": "Das gilt nicht für gesunde Menschen ohne Nierenerkrankung, für Menschen mit Typ-1-Diabetes oder für Nierenerkrankungen, die aus der Studie ausgeschlossen waren. Ob es für Sie infrage kommt, sollte eine Ärztin oder ein Arzt entscheiden und dabei Risiken wie Flüssigkeitsmangel, Infektionen und Ketoazidose abwägen. Beginnen oder beenden Sie die Einnahme nicht auf eigene Faust.",
     "myth": null
   },
   "semaglutide-select": {
-    "question": "TODO 司美格鲁肽（SELECT适应人群）",
-    "answer": "TODO In SELECT gab es unter Semaglutid weniger Todesfälle bei Teilnehmenden mit Herz-Kreislauf-Erkrankung, Übergewicht oder Adipositas und ohne Diabetes. Dieser Mortalitätsbefund ist explorativ.",
+    "question": "Hilft Semaglutid Menschen mit Herzerkrankung und Übergewicht, länger zu leben?",
+    "answer": "Möglicherweise, aber es ist kein bestätigtes Ergebnis, und es betrifft nur Patientinnen und Patienten mit Herzerkrankung, Übergewicht oder starkem Übergewicht und ohne Diabetes. In der Semaglutid-Gruppe starben weniger Menschen, aber dieses Ergebnis ist nur vorläufig.",
     "why": [
-      "TODO In SELECT gab es unter Semaglutid weniger Todesfälle bei Teilnehmenden mit Herz-Kreislauf-Erkrankung, Übergewicht oder Adipositas und ohne Diabetes. Dieser Mortalitätsbefund ist explorativ.",
-      "TODO 17604人；≥45岁、BMI≥27、已有心血管疾病、无糖尿病；平均随访39.8个月"
+      "Dies war eine randomisierte Studie namens SELECT. 17.604 Menschen ab 45 Jahren mit bestehender Herz-Kreislauf-Erkrankung, einem Body-Mass-Index von mindestens 27 und ohne Diabetes erhielten zusätzlich zur Standardbehandlung einmal wöchentlich entweder 2,4 mg Semaglutid als Spritze oder eine Scheinspritze. Begleitet wurden sie im Schnitt 39,8 Monate, also etwa 3,3 Jahre.",
+      "Die Semaglutid-Gruppe hatte ein etwa 19 % niedrigeres Sterberisiko. Die Studie hatte jedoch vorab eine feste Reihenfolge für die statistischen Prüfungen festgelegt, und der vorherige Schritt – Todesfälle durch Herz-Kreislauf-Erkrankungen – bestand die Prüfung nicht. Nach den Studienregeln zählt das Ergebnis zu Todesfällen insgesamt daher nur als vorläufiger Hinweis.",
+      "16,6 % der Semaglutid-Gruppe brachen das Mittel wegen Nebenwirkungen ab, gegenüber 8,2 % in der Scheinspritzen-Gruppe. Der Hersteller des Medikaments finanzierte die Studie."
     ],
-    "caution": "TODO Behandlung nach Krankheits- und Gewichtsmanagementbedarf sowie Verträglichkeit beurteilen; Lebensverlängerung Gesunder bleibt unbewiesen.",
+    "caution": "Das gilt nicht für jüngere Menschen, Menschen ohne Herzerkrankung oder Normalgewichtige, und Gesunde sollten es nicht als Langlebigkeitsmittel ansehen. Ob es eingesetzt wird, entscheidet eine Ärztin oder ein Arzt anhand Ihres medizinischen und gewichtsbezogenen Bedarfs. Beginnen oder beenden Sie es nicht eigenständig.",
     "myth": null
   },
   "aspirin-primary-prevention": {
-    "question": "TODO 阿司匹林（老年人初级预防）",
-    "answer": "TODO Eine randomisierte Studie bei Älteren ohne frühere Herz-Kreislauf-Erkrankung fand keine Lebensverlängerung durch tägliches Aspirin und ein Signal höherer Mortalität. Das ist eine andere Situation als die Behandlung nach Herzinfarkt oder Schlaganfall.",
+    "question": "Sollten ältere Menschen täglich Aspirin nehmen, um länger zu leben?",
+    "answer": "Nein. Ältere Menschen ohne Herzerkrankung oder Schlaganfall, die jeden Tag Aspirin nahmen, lebten nicht länger, und es starben sogar etwas mehr von ihnen.",
     "why": [
-      "TODO Eine randomisierte Studie bei Älteren ohne frühere Herz-Kreislauf-Erkrankung fand keine Lebensverlängerung durch tägliches Aspirin und ein Signal höherer Mortalität. Das ist eine andere Situation als die Behandlung nach Herzinfarkt oder Schlaganfall.",
-      "TODO 19114名通常≥70岁的社区老人（美国黑人/西语裔≥65岁），无心血管病、痴呆或残疾；中位4.7年"
+      "Dies war eine randomisierte Studie. 19.114 Menschen, die meisten 70 Jahre oder älter und niemand mit Herz-Kreislauf-Erkrankung, Demenz oder Behinderung, wurden per Zufall in zwei Gruppen eingeteilt. Eine nahm täglich 100 mg Aspirin, die andere eine täuschend ähnliche Scheintablette, im Mittel 4,7 Jahre lang.",
+      "In der Aspirin-Gruppe starben jedes Jahr etwa 12,7 von 1.000 Menschen, gegenüber etwa 11,1 in der Scheintabletten-Gruppe – ein etwa 14 % höheres Risiko.",
+      "Todesfälle waren nicht das Hauptziel der Studie, und die Forschenden raten bei diesem Abstand zur Vorsicht. Was die Studie aber klar zeigt: Aspirin brachte keinen Lebenszeitgewinn."
     ],
-    "caution": "TODO Nicht allein zur Lebensverlängerung mit der Einnahme von Aspirin beginnen; bei bestehender medizinischer Indikation Änderungen zuerst ärztlich besprechen.",
+    "caution": "Das gilt nur für ältere Menschen ohne Herz-Kreislauf-Erkrankung. Es lässt sich nicht auf andere Altersgruppen ausweiten und betrifft nicht Aspirin nach einem Herzinfarkt oder Schlaganfall. Wenn Sie Aspirin wegen eines Herzinfarkts, eines Schlaganfalls oder aus einem anderen klaren Grund einnehmen, setzen Sie es nicht auf eigene Faust ab, sondern sprechen Sie zuerst mit Ihrer Ärztin oder Ihrem Arzt.",
     "myth": null
   },
   "walking-steps-2025": {
-    "question": "TODO 每日步数（2025综述更新）",
-    "answer": "TODO Eine neuere Übersicht verband erneut mehr tägliche Schritte mit niedrigerer Mortalität. Gesundheitszustand, Geräte und Messmethoden beeinflussen die Ergebnisse ebenfalls.",
+    "question": "Leben Menschen, die 7.000 Schritte am Tag gehen, länger als solche mit 2.000 Schritten?",
+    "answer": "Im Durchschnitt ja. Über viele zusammengefasste Studien hinweg hatten Menschen mit 7.000 Schritten am Tag ein etwa 47 % niedrigeres Sterberisiko als solche mit 2.000 Schritten – das bedeutet aber nicht, dass der eigene Wechsel von 2.000 auf 7.000 Schritte Ihr Risiko um genau so viel senkt.",
     "why": [
-      "TODO Eine neuere Übersicht verband erneut mehr tägliche Schritte mit niedrigerer Mortalität. Gesundheitszustand, Geräte und Messmethoden beeinflussen die Ergebnisse ebenfalls.",
-      "TODO 成人前瞻性队列；ACM该比较含14项研究；综述检索至2025-02-14"
+      "Diese Übersicht von 2025 fasste Studien mit Erwachsenen zusammen, deren tägliche Schritte mit Messgeräten gezählt wurden. 14 Langzeitstudien verglichen die Schrittzahl mit dem Sterberisiko.",
+      "Nach einem statistischen Modell hatten Menschen mit 7.000 Schritten am Tag ein etwa 47 % niedrigeres Sterberisiko als jene mit 2.000 Schritten.",
+      "Dabei werden verschiedene Menschen verglichen, sodass andere Unterschiede zwischen ihnen mitspielen können. Zudem nutzten die Studien unterschiedliche Geräte, maßen verschieden lange und schlossen Menschen mit unterschiedlichen Vorerkrankungen ein, und die Übersicht zog keine Schlüsse nach Altersgruppen."
     ],
-    "caution": "TODO Ein erreichbares Gehziel wählen; angenehm gehen und dranbleiben sind wichtig.",
+    "caution": "7.000 Schritte können für manche ein schrittweises Ziel sein, sind aber keine Grenze, die jede und jeder erreichen muss. Steigern Sie Ihre Schritte im Rahmen Ihrer Möglichkeiten.",
     "myth": null
   },
   "metformin-adverse-events": {
-    "question": "TODO Nebenwirkungen von Metformin",
-    "answer": "TODO Metformin kann Durchfall und andere Verdauungsbeschwerden verursachen und den Vitamin-B12-Spiegel senken. Auch Laktatazidose ist ein wichtiges Risiko. Reaktionen hängen von Präparat, Dosis und Gesundheit ab.",
+    "question": "Wie häufig sind Nebenwirkungen von Metformin?",
+    "answer": "Durchfall ist häufig, aber die Zahlen des ursprünglichen Leitfadens stammen aus einzelnen Studien und gelten nicht für alle, die das Mittel nehmen. In einer Studie aus der US-Fachinformation bekamen etwa 53 % unter Metformin Durchfall, gegenüber 12 % unter einer Scheintablette.",
     "why": [
-      "TODO Metformin kann Durchfall und andere Verdauungsbeschwerden verursachen und den Vitamin-B12-Spiegel senken. Auch Laktatazidose ist ein wichtiges Risiko. Reaktionen hängen von Präparat, Dosis und Gesundheit ab.",
-      "TODO 标签收录美国2型糖尿病试验：药组141人、安慰剂145人；B12数据来自29周试验"
+      "Die Zahlen stammen aus einer Studie in der US-Fachinformation für Metformin bei Menschen mit Typ-2-Diabetes. 141 nahmen das Medikament in Dosen bis 2.550 mg pro Tag ein, 145 erhielten eine Scheintablette.",
+      "Unter Metformin bekamen etwa 53 % Durchfall gegenüber 12 % unter der Scheintablette, 9 % gegenüber 6 % fühlten sich schwach und 6 % gegenüber 5 % hatten Kopfschmerzen. Das sind Zahlen aus dieser einen Studie, keine allgemeinen Raten für alle Behandelten.",
+      "In einer anderen 29-wöchigen Studie entwickelten etwa 7 % unterdurchschnittliche Vitamin-B12-Werte im Blut – das ist nicht dasselbe wie spürbare Mangelsymptome. Die 17,4 % aus dem ursprünglichen Leitfaden ließen sich in der Fachinformation nicht finden.",
+      "Für Laktatazidose trägt die Fachinformation einen besonders hervorgehobenen Warnhinweis. Hinweise auf Leberschäden stammen aus Meldungen nach der Markteinführung, aus denen sich nicht ablesen lässt, wie oft sie vorkommen."
     ],
-    "caution": "TODO Nach Verordnung einnehmen, Verträglichkeit, Nierenfunktion und Vitamin B12 beobachten und Beschwerden zeitnah melden.",
-    "myth": "TODO 维生素B12缺乏7%–17.4%；胃肠不良反应最高53%；疲倦9%、头痛6%；罕见严重乳酸酸中毒、肝损伤。"
+    "caution": "Wie häufig Nebenwirkungen auftreten, hängt von der Darreichungsform, der Geschwindigkeit der Dosissteigerung, der Dosis und den Behandelten ab, und Nebenwirkungsraten sind keine Sterberisiken. Beginnen Sie Metformin nicht wegen dieser Zahlen auf eigene Faust, und setzen Sie es nicht selbstständig ab, wenn Sie es bereits einnehmen.",
+    "myth": "Im ursprünglichen Leitfaden hieß es, dass häufige Nebenwirkungen von Metformin Vitamin-B12-Mangel bei 7 % bis 17,4 %, Magen-Darm-Beschwerden bei bis zu 53 %, Müdigkeit bei 9 % und Kopfschmerzen bei 6 % seien, neben seltener, aber schwerer Laktatazidose und Leberschäden."
   },
   "waist-circumference": {
-    "question": "TODO Taillenumfang und Bauchfett",
-    "answer": "TODO Der Taillenumfang liefert neben dem Gewicht weitere nützliche Informationen. Langzeitstudien verbinden einen größeren Taillenumfang mit höherem Sterberisiko; die Waage allein erfasst daher nicht das ganze Bild.",
+    "question": "Bedeutet ein größerer Taillenumfang ein höheres Sterberisiko?",
+    "answer": "Ja. Je 10 cm mehr Taillenumfang gingen mit einem etwa 11 % höheren Sterberisiko einher – selbst dann, wenn das Körpergewicht bereits berücksichtigt war.",
     "why": [
-      "TODO Der Taillenumfang liefert neben dem Gewicht weitere nützliche Informationen. Langzeitstudien verbinden einen größeren Taillenumfang mit höherem Sterberisiko; die Waage allein erfasst daher nicht das ganze Bild.",
-      "TODO 综述共72项前瞻性队列、2,528,297人；腰围分析含50项研究"
+      "Forschende fassten 72 Langzeitstudien mit rund 2,53 Millionen Erwachsenen zusammen. 50 davon untersuchten den Taillenumfang.",
+      "Je 10 cm mehr Taillenumfang gingen mit einem etwa 11 % höheren Sterberisiko einher. Der Zusammenhang blieb auch nach Berücksichtigung des Body-Mass-Index bestehen, eines Maßes für das Gewicht im Verhältnis zur Körpergröße.",
+      "Die Studien unterschieden sich stark voneinander, etwa darin, wie die Taille gemessen wurde, sowie bei Vorerkrankungen und Lebensstil. Der Taillenumfang ist ein Warnzeichen, keine direkte Messung des Fetts rund um die Organe."
     ],
-    "caution": "TODO Neben dem Gewicht auch den Taillenumfang verfolgen und regelmäßige Bewegung sowie ausgewogene Mahlzeiten in den Alltag einbauen.",
+    "caution": "Dies ist ein beobachteter Zusammenhang, und er legt kein einzelnes Ziel für Gewicht oder Taillenumfang fest. Behalten Sie neben dem Gewicht auch Ihre Taille im Blick. Wenn das Bauchfett zunimmt, achten Sie auf Ernährung und Bewegung und lassen Sie sich ärztlich durchchecken.",
     "myth": null
   },
   "obstructive-sleep-apnoea": {
-    "question": "TODO Schnarchen und Schlafapnoe",
-    "answer": "TODO Eine ganze Nacht im Bett bedeutet nicht immer erholsamen Schlaf. Schwere Schlafapnoe ist mit höherem Sterberisiko verbunden; anhaltendes Schnarchen, Atemaussetzer und Tagesschläfrigkeit verdienen Aufmerksamkeit.",
+    "question": "Können Schnarchen und Atemaussetzer im Schlaf (Schlafapnoe) das Leben verkürzen?",
+    "answer": "Die schwere Form hängt mit einem höheren Sterberisiko zusammen. Menschen mit schwerer Schlafapnoe hatten etwa das 1,9-fache Sterberisiko von Menschen ohne diese Erkrankung. Randomisierte Studien haben bisher nicht klar gezeigt, ob eine Behandlung mit einem Atemgerät dieses Risiko senkt.",
     "why": [
-      "TODO Eine ganze Nacht im Bett bedeutet nicht immer erholsamen Schlaf. Schwere Schlafapnoe ist mit höherem Sterberisiko verbunden; anhaltendes Schnarchen, Atemaussetzer und Tagesschläfrigkeit verdienen Aufmerksamkeit.",
-      "TODO 风险综述共6项前瞻性观察研究、11,932人；按呼吸暂停严重度分组"
+      "Forschende fassten 6 langfristige Beobachtungsstudien mit 11.932 Menschen zusammen, eingeteilt nach dem Schweregrad ihrer Schlafapnoe.",
+      "Menschen mit schwerer Schlafapnoe hatten ein etwa 90 % höheres Sterberisiko als Menschen ohne diese Erkrankung.",
+      "In einer Behandlungsübersicht von 2025 zeigten allein die randomisierten Studien keinen klaren Unterschied beim Sterberisiko durch Überdruck-Atemgeräte. Die nicht randomisierten Studien fanden ein etwa 40 % niedrigeres Risiko, können Ursache und Wirkung aber nicht so belegen wie randomisierte Studien.",
+      "Auch andere bestehende Erkrankungen und die Frage, wer sich für eine Behandlung entschied, könnten die Ergebnisse beeinflusst haben."
     ],
-    "caution": "TODO Bei häufigem lautem Schnarchen, Atemaussetzern im Schlaf oder Tagesschläfrigkeit eine Schlafuntersuchung veranlassen und nach gesicherter Diagnose eine passende Behandlung besprechen.",
+    "caution": "Schnarchen allein heißt noch nicht, dass Sie diese Erkrankung haben. Wenn Sie oft laut schnarchen, im Schlaf Atemaussetzer haben oder tagsüber schläfrig sind, lassen Sie Ihren Schlaf untersuchen und wählen Sie bei einer Diagnose gemeinsam mit Ihrer Ärztin oder Ihrem Arzt die passende Behandlung.",
     "myth": null
   },
   "hepatitis-c-treatment": {
-    "question": "TODO Hepatitis C erkennen und behandeln",
-    "answer": "TODO Hepatitis C kann jahrelang unbemerkt bleiben. Eine Verlaufsstudie bei Menschen mit chronischer Infektion verband antivirale Behandlung mit geringerer Sterblichkeit; das spricht dafür, die Infektion abzuklären und rechtzeitig behandeln zu lassen.",
+    "question": "Senkt eine antivirale Behandlung bei chronischer Hepatitis C das Sterberisiko?",
+    "answer": "Möglicherweise, auch wenn die Evidenz nicht stark ist – und sie betrifft Menschen, die bereits Hepatitis C haben, keine Gesunden. Patientinnen und Patienten mit antiviraler Behandlung hatten ein etwa 52 % niedrigeres Sterberisiko.",
     "why": [
-      "TODO Hepatitis C kann jahrelang unbemerkt bleiben. Eine Verlaufsstudie bei Menschen mit chronischer Infektion verband antivirale Behandlung mit geringerer Sterblichkeit; das spricht dafür, die Infektion abzuklären und rechtzeitig behandeln zu lassen.",
-      "TODO 法国32个肝病中心、9,895名慢性丙肝成人；中位随访33.4个月"
+      "Forschende begleiteten 9.895 Erwachsene mit chronischer Hepatitis C an 32 Leberzentren in Frankreich im Mittel 33,4 Monate lang, also etwa 2,8 Jahre.",
+      "Nach Berücksichtigung anderer Faktoren hatten Betroffene, die direkt wirkende antivirale Medikamente erhielten, ein etwa 52 % niedrigeres Sterberisiko als unbehandelte Patientinnen und Patienten.",
+      "Die Behandlung wurde nicht per Zufall zugeteilt, sodass die Studie einen Zusammenhang zeigt. Außerdem schloss sie unter anderem Menschen aus, die bereits eine schwere (dekompensierte) Leberzirrhose, Leberkrebs oder eine Lebertransplantation hatten."
     ],
-    "caution": "TODO Nach positivem Antikörpertest auf eine aktuelle Infektion prüfen lassen. Bei Bestätigung die Leber untersuchen lassen und zeitnah eine antivirale Behandlung besprechen.",
+    "caution": "Das gilt nicht für Menschen ohne Hepatitis C. Ein positiver Antikörpertest allein bedeutet noch nicht, dass Sie weiterhin infiziert sind; lassen Sie prüfen, ob das Virus noch vorhanden ist. Bestätigt sich eine aktuelle Infektion, lassen Sie Ihre Leber untersuchen und wählen Sie mit Ihrer Ärztin oder Ihrem Arzt eine antivirale Behandlung. Kaufen oder beenden Sie die Medikamente nicht auf eigene Faust.",
     "myth": null
   }
 }

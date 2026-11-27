@@ -244,9 +244,10 @@
 
 /* Text */
 
-/* Chinese and Japanese titles break at punctuation, not mid-phrase; a run too long for the line still wraps. */
-.page-title,
-.study-card__title {
+/* Chinese titles break at punctuation, not mid-phrase; a run too long for the line still wraps.
+   Japanese keeps normal breaking: its long unspaced runs would otherwise split anywhere, even before a question mark. */
+:lang(zh) .page-title,
+:lang(zh) .study-card__title {
   word-break: keep-all;
   overflow-wrap: anywhere;
 }
