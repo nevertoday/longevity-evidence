@@ -23,10 +23,16 @@ const SHOTS: Shot[] = [
   ...both('en-home', 'en/', ['light', 'dark']),
   ...both('zh-study-alcohol', 'zh/studies/alcohol/'),
   ...both('en-study-spermidine', 'en/studies/spermidine-diet/'),
+  // Strong evidence of harm and of no effect: these must not read as advice to take them.
+  ...both('zh-study-aspirin', 'zh/studies/aspirin-primary-prevention/'),
+  ...both('en-study-aspirin', 'en/studies/aspirin-primary-prevention/'),
+  ...both('zh-study-vitamin-d', 'zh/studies/vitamin-d-general-population/'),
+  ...both('en-study-vitamin-d', 'en/studies/vitamin-d-general-population/'),
   ...both('zh-myths', 'zh/myths/'),
   ...both('en-myths', 'en/myths/'),
   ...both('zh-studies-filtered', 'zh/studies/?topic=drinking&grade=B'),
   ...both('en-studies-filtered', 'en/studies/?q=coffee'),
+  ...both('en-studies-no-effect', 'en/studies/?direction=no-effect'),
   ...both('en-topic-eating', 'en/topics/eating/'),
   ...both('zh-about', 'zh/about/'),
   // The root page redirects by browser language: Chinese to zh/, anything unsupported to en/.

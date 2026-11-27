@@ -53,7 +53,9 @@ npm run sync -- /tmp/HowToLiveLonger
 npm run build && npm run check
 ```
 
-`src/model.ts` 在边界上把上游文件解析成 `Study`。子分类、结论和等级都查表转换，遇到不认识的值会直接报错。话题由子分类表决定，另有 8 条按 ID 的例外。医学内容的修改请提交到上游，见它的 [CONTRIBUTING.md](https://github.com/geekan/HowToLiveLonger/blob/main/CONTRIBUTING.md)。
+`src/model.ts` 在边界上把上游文件解析成 `Study`。子分类、结论和等级都查表转换，遇到不认识的值会直接报错。话题由子分类表决定，另有 8 条按 ID 的例外。
+
+证据等级只说证据有多可靠，不说有益还是有害。`src/directions.ts` 给每条记录定一个方向（有益、有害、没看到效果、好坏不定），附一行依据，只看上游的效应量、区间、比较对象和研究发现。上游新增或删除记录而这张表没跟上，构建会报错。首页按方向分成「有较强证据支持去做的」和「有较强证据说没用或有害的」，`npm run check` 会核对前者里没有有害或没效果的研究。医学内容的修改请提交到上游，见它的 [CONTRIBUTING.md](https://github.com/geekan/HowToLiveLonger/blob/main/CONTRIBUTING.md)。
 
 ### 许可
 
@@ -110,7 +112,9 @@ npm run sync -- /tmp/HowToLiveLonger
 npm run build && npm run check
 ```
 
-`src/model.ts` parses the upstream files into `Study` records at the boundary. Subcategories, verdicts and grades go through lookup tables, and an unknown value stops the build. A subcategory table picks each study's topic, with eight per-ID exceptions. Send medical corrections upstream, following its [CONTRIBUTING.md](https://github.com/geekan/HowToLiveLonger/blob/main/CONTRIBUTING.md).
+`src/model.ts` parses the upstream files into `Study` records at the boundary. Subcategories, verdicts and grades go through lookup tables, and an unknown value stops the build. A subcategory table picks each study's topic, with eight per-ID exceptions.
+
+An evidence grade says how reliable the evidence is, not whether the thing helps. `src/directions.ts` gives every record a direction (helps, harms, no effect found, mixed or unclear) with a one-line reason, read only from upstream's effect estimate, interval, comparison and findings. If upstream adds or drops a record and the table does not follow, the build stops. The home page splits strong evidence by direction, and `npm run check` confirms that nothing that harms or has no effect sits in the "these help" list. Send medical corrections upstream, following its [CONTRIBUTING.md](https://github.com/geekan/HowToLiveLonger/blob/main/CONTRIBUTING.md).
 
 ### License
 
@@ -126,6 +130,7 @@ scripts/sync-upstream.ts
 scripts/screenshots.ts
 src/locales.ts       the eight languages and which are on
 src/model.ts         parses upstream into Study records; topic tables
+src/directions.ts    which way each record's evidence points, with the reason
 src/pages.ts         routes, layout and one renderer per page kind
 src/claim.ts         renders the archived Markdown in original claims
 src/ui/<code>.json   interface text; zh.json defines the keys
