@@ -37,3 +37,22 @@ Every paper in the shard must have at least one line, either a finding or a skip
 The validator cannot tell whether the bot named the exposure and the comparison correctly. Read a random sample of findings against their abstracts before importing a batch.
 
 `out/` is not committed.
+
+## Claims found on the web
+
+The pipeline above starts from PubMed. This one starts from what people say. A web bot searches one language, topic and channel at a time (a card such as `zh-eating-factcheck`). It records each health claim it finds, where it saw the claim, a verdict, and evidence quoted word for word from PubMed abstracts or official health sites. The instructions the bot follows are a standalone document kept outside the repo. The format is defined in `claims.ts`.
+
+```sh
+node collect/import-claims.ts --pages <dir>/*.jsonl
+```
+
+The importer accepts a claim only when all of these hold:
+
+- Its fields and enums are valid.
+- Every PubMed quote is in that PMID's title or abstract. The importer fetches the abstract itself.
+- Every official page is on the `AUTHORITY_HOSTS` list. With `--pages`, the page also has to open and contain the quote.
+- The verdict and grade follow from the evidence. For example, `false` needs refuting evidence, and grade `A` needs a meta-analysis, systematic review or RCT.
+
+Accepted claims are merged by `claimKey` into `out/claims/claims.jsonl`, with every language's version kept. `out/claims/done/<card>.txt` lists the keys a card already has. Paste it into the bot's next session so it skips them.
+
+The importer cannot tell whether a sighting really says what the bot claims, or whether the verdict reads the evidence fairly. Read a random sample against the sources before using a batch.

@@ -1,6 +1,6 @@
 // Layer 0: fetch every PubMed record a query matches into out/papers.jsonl and cut the PMIDs into shards a bot can
 // finish in one sitting. Rerunning skips PMIDs already fetched and never rewrites a shard, so a crash loses nothing.
-// Usage: node collect/fetch-pubmed.ts --term '<PubMed query>' [--max 200] [--shard-size 50]
+// Usage: node collect/fetch-pubmed.ts --term '<PubMed query>' [--max 200] [--shard-size 50] [--no-shards]
 // NCBI allows 3 requests a second, or 10 with NCBI_API_KEY set.
 import { appendFileSync, existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
@@ -8,7 +8,7 @@ import { parseArgs } from 'node:util';
 import type { AbstractSection, Paper } from './schema.ts';
 
 process.chdir(fileURLToPath(new URL('.', import.meta.url)));
-const { values } = parseArgs({ options: { term: { type: 'string' }, max: { type: 'string' }, 'shard-size': { type: 'string', default: '50' } } });
+const { values } = parseArgs({ options: { term: { type: 'string' }, max: { type: 'string' }, 'shard-size': { type: 'string', default: '50' }, 'no-shards': { type: 'boolean', default: false } } });
 if (!values.term) {
   console.error("Usage: node collect/fetch-pubmed.ts --term '<PubMed query>' [--max N] [--shard-size 50]");
   process.exit(1);
@@ -109,7 +109,7 @@ for (let i = 0; i < todo.length; i += 200) {
   console.log(`fetched ${Math.min(i + 200, todo.length)}/${todo.length}`);
 }
 
-const unsharded = ids.filter((id) => have.has(id) && !sharded.has(id));
+const unsharded = values['no-shards'] ? [] : ids.filter((id) => have.has(id) && !sharded.has(id));
 let next = readdirSync(SHARDS).length + 1;
 for (let i = 0; i < unsharded.length; i += SHARD_SIZE) {
   writeFileSync(`${SHARDS}/${String(next++).padStart(5, '0')}.txt`, `${unsharded.slice(i, i + SHARD_SIZE).join('\n')}\n`);
