@@ -63,8 +63,12 @@ const numOrNull = (v: unknown) => v === null || num(v);
 const text = (v: unknown): v is string => typeof v === 'string' && v.trim().length > 0;
 
 // Whitespace and dash variants differ between PubMed XML and what a model types back; nothing else may.
+// Lancet abstracts write decimals with a middle dot, some abstracts write PM₁₀ or m³, and bots type plain digits.
+const SCRIPT_DIGITS: Record<string, string> = Object.fromEntries([...'⁰¹²³⁴⁵⁶⁷⁸⁹'].concat([...'₀₁₂₃₄₅₆₇₈₉']).map((c, i) => [c, String(i % 10)]));
 export const normalize = (s: string) =>
   s
+    .replace(/[⁰¹²³⁴⁵⁶⁷⁸⁹₀₁₂₃₄₅₆₇₈₉]/g, (c) => SCRIPT_DIGITS[c] ?? c)
+    .replace(/(\d)[·•](\d)/g, '$1.$2')
     .replace(/[‐-―−]/g, '-')
     .replace(/\s+/g, ' ')
     .trim();
@@ -98,7 +102,11 @@ export function checkRow(raw: unknown, papers: Map<string, Paper>, shard: Set<st
   if (r.section !== null && typeof r.section !== 'string') return { ok: false, error: 'section must be a string or null' };
   if (!text(r.quote)) return { ok: false, error: 'quote is required' };
 
-  const sections = r.section === null ? paper.abstract : paper.abstract.filter((s) => s.label === r.section);
+  // PubMed's web page shows "Results:" where its XML says "RESULTS".
+  const label = (l: string | null) => l?.replace(/:\s*$/, '').trim().toLowerCase();
+  // An abstract with no headings gives a bot nothing to name, so any section it names there is ignored.
+  const unlabeled = paper.abstract.every((s) => s.label === null);
+  const sections = r.section === null || unlabeled ? paper.abstract : paper.abstract.filter((s) => label(s.label) === label(r.section as string));
   if (!sections.length) return { ok: false, error: `section "${String(r.section)}" is not in the abstract` };
   if (!normalize(sections.map((s) => s.text).join(' ')).includes(normalize(r.quote))) return { ok: false, error: 'quote is not in the abstract' };
   for (const k of ['value', 'ciLow', 'ciHigh'] as const) {

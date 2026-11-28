@@ -16,7 +16,10 @@ Bots never search the web and never decide which papers to read. The PubMed quer
 node collect/fetch-pubmed.ts --term '<PubMed query>' --shard-size 20   # set NCBI_API_KEY to go 3x faster
 node collect/run.ts --bot claude --shards 10 --parallel 2              # or --bot codex
 node collect/validate.ts                                               # exits 1 if any shard fails
+node collect/import-batch.ts <dir>/*.jsonl                             # batches a web bot wrote by hand
 ```
+
+Web bots such as Grok or Muse cannot run these scripts. They follow a standalone instruction document instead. That document gives each topic-and-design card a frozen PubMed query, which is cut into 20-paper batches. The bot writes each batch as JSON lines, starting with a manifest that lists the PMIDs it read. `import-batch.ts` fetches those PMIDs from PubMed itself, so every quote is checked against PubMed's text and never against text the bot supplied.
 
 Every command can be stopped and run again. Papers already fetched are not fetched again, shards are never rewritten, and a shard whose output passes is never sent to a bot again. A shard that fails goes back to its bot once more, with the rejected lines and the reasons attached.
 
