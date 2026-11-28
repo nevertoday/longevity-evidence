@@ -4,7 +4,7 @@ import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { ENABLED_LOCALES } from '../src/locales.ts';
 import { loadUpstream } from '../src/model.ts';
-import { renderPage, renderRoot, sitePages } from '../src/pages.ts';
+import { outFile, renderPage, renderRoot, sitePages } from '../src/pages.ts';
 import { loadUi } from '../src/ui.ts';
 
 process.chdir(fileURLToPath(new URL('..', import.meta.url)));
@@ -24,10 +24,7 @@ const up = loadUpstream();
 const locales = ENABLED_LOCALES.map((locale) => ({ locale, t: loadUi(locale) }));
 const pages = sitePages(up);
 for (const { locale, t } of locales) {
-  for (const page of pages) {
-    const out = renderPage(locale, t, up, page);
-    write(join(out.path, 'index.html'), out.html);
-  }
+  for (const page of pages) write(outFile(locale.code, page), renderPage(locale, t, up, page));
 }
 write('index.html', renderRoot(locales, up));
 for (const file of VENDOR_FILES) cpSync(join('vendor/xxd', file), join(TMP, 'vendor/xxd', file));

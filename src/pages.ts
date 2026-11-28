@@ -43,6 +43,9 @@ export function pagePath(code: LocaleCode, page: Page): string {
   }
 }
 
+// The file under dist/ that holds the page.
+export const outFile = (code: LocaleCode, page: Page) => `${pagePath(code, page)}index.html`;
+
 export function sitePages(up: Upstream): Page[] {
   return [
     { kind: 'home' },
@@ -54,12 +57,12 @@ export function sitePages(up: Upstream): Page[] {
   ];
 }
 
-type Ctx = { locale: Locale; t: T; guide: Guide; up: Upstream; path: string };
+// `base` prefixes every internal link and asset.
+type Ctx = { locale: Locale; t: T; guide: Guide; up: Upstream; base: string };
 type Content = { title: string; description: string; body: Html };
 
 const toRoot = (path: string) => '../'.repeat(path.split('/').filter(Boolean).length);
-const link = (ctx: Ctx, page: Page, code: LocaleCode = ctx.locale.code) => toRoot(ctx.path) + pagePath(code, page);
-const asset = (ctx: Ctx, file: string) => toRoot(ctx.path) + file;
+const link = (ctx: Ctx, page: Page, code: LocaleCode = ctx.locale.code) => ctx.base + pagePath(code, page);
 const attr = (name: string, value: string | null) => (value === null ? null : html` ${raw(name)}="${value}"`);
 const commitUrl = (up: Upstream) => `${up.source.repository}/tree/${up.source.commit}`;
 
@@ -170,17 +173,33 @@ function topicCard(ctx: Ctx, topic: TopicId): Html {
 </a>`;
 }
 
-function crumbs(ctx: Ctx, trail: { label: string; page: Page }[]): Html {
-  return html`<nav aria-label="${ctx.t('breadcrumb.label')}"><ol class="xxd-breadcrumbs">${trail.map(
-    (c) => html`<li><a href="${link(ctx, c.page)}">${c.label}</a></li>`,
-  )}</ol></nav>`;
+type Crumb = { label: string; page: Page };
+
+// From the home page down to the page itself.
+function trail(ctx: Ctx, page: Extract<Page, { kind: 'topic' | 'study' }>): Crumb[] {
+  const { t } = ctx;
+  const home: Crumb = { label: t('breadcrumb.home'), page: { kind: 'home' } };
+  const topic = (id: TopicId): Crumb => ({ label: t(`topic.${id}` as const), page: { kind: 'topic', topic: id } });
+  switch (page.kind) {
+    case 'topic':
+      return [home, topic(page.topic)];
+    case 'study':
+      return [home, topic(page.study.topic), { label: page.study.explain[ctx.locale.code].question, page }];
+  }
 }
 
-type Header = { trail?: { label: string; page: Page }[]; icon?: string; lead?: string };
+// The visible trail leaves out the page the reader is on.
+function crumbs(ctx: Ctx, page: Extract<Page, { kind: 'topic' | 'study' }>): Html {
+  return html`<nav aria-label="${ctx.t('breadcrumb.label')}"><ol class="xxd-breadcrumbs">${trail(ctx, page)
+    .slice(0, -1)
+    .map((c) => html`<li><a href="${link(ctx, c.page)}">${c.label}</a></li>`)}</ol></nav>`;
+}
+
+type Header = { crumbs?: Html; icon?: string; lead?: string };
 
 function pageHeader(ctx: Ctx, title: string, desc: Part[], opts: Header = {}): Html {
   return html`<header class="xxd-page-header">
-${opts.trail?.length ? crumbs(ctx, opts.trail) : null}
+${opts.crumbs ?? null}
 <div class="xxd-page-header__row"><h1 class="xxd-page-header__title">${opts.icon ? icon(opts.icon, 20) : null}${title}</h1></div>
 ${opts.lead ? html`<p class="page-lead">${opts.lead}</p>` : null}
 ${desc.map((d) => html`<p class="xxd-page-header__desc">${d}</p>`)}
@@ -288,7 +307,7 @@ function topicPage(ctx: Ctx, topic: TopicId): Content {
     title: name,
     description: `${t(`topic.${topic}.question` as const)} ${desc}`,
     body: html`${pageHeader(ctx, name, [desc, t('topic.intro', { count: t.studies(studies.length) })], {
-      trail: [{ label: t('breadcrumb.home'), page: { kind: 'home' } }],
+      crumbs: crumbs(ctx, { kind: 'topic', topic }),
       icon: TOPIC_ICON[topic],
       lead: t(`topic.${topic}.question` as const),
     })}
@@ -341,10 +360,7 @@ function studyPage(ctx: Ctx, s: Study): Content {
     description: e.answer,
     body: html`<article class="story">
 <header class="story__head">
-${crumbs(ctx, [
-  { label: t('breadcrumb.home'), page: { kind: 'home' } },
-  { label: topicName, page: topicRef },
-])}
+${crumbs(ctx, { kind: 'study', study: s })}
 <p class="eyebrow">${icon(TOPIC_ICON[s.topic], 14)}${topicName}</p>
 <h1 class="page-title">${e.question}</h1>
 <p class="story__answer">${e.answer}</p>
@@ -526,24 +542,24 @@ const NAV: [Page, UiKey][] = [
   [{ kind: 'about' }, 'nav.about'],
 ];
 
-function head(ctx: Ctx, title: string, description: string, links: Part): Html {
+function head(base: string, title: string, description: string, links: Part): Html {
   return html`<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${title}</title>
 <meta name="description" content="${description}">
 ${links}
 <meta name="color-scheme" content="light dark">
-<script src="${asset(ctx, 'vendor/xxd/boot.js')}" data-key="${APPEARANCE_KEY}" data-default-theme="system"></script>
-<link rel="stylesheet" href="${asset(ctx, 'vendor/xxd/xxd.css')}">
-<link rel="stylesheet" href="${asset(ctx, 'assets/site.css')}">
-<script defer src="${asset(ctx, 'vendor/xxd/icons.js')}"></script>
-<script defer src="${asset(ctx, 'vendor/xxd/xxd.js')}"></script>
-<script defer src="${asset(ctx, 'assets/site.js')}"></script>`;
+<script src="${base}vendor/xxd/boot.js" data-key="${APPEARANCE_KEY}" data-default-theme="system"></script>
+<link rel="stylesheet" href="${base}vendor/xxd/xxd.css">
+<link rel="stylesheet" href="${base}assets/site.css">
+<script defer src="${base}vendor/xxd/icons.js"></script>
+<script defer src="${base}vendor/xxd/xxd.js"></script>
+<script defer src="${base}assets/site.js"></script>`;
 }
 
-export function renderPage(locale: Locale, t: T, up: Upstream, page: Page): { path: string; html: string } {
+export function renderPage(locale: Locale, t: T, up: Upstream, page: Page): string {
   const path = pagePath(locale.code, page);
-  const ctx: Ctx = { locale, t, guide: up.guide[locale.code], up, path };
+  const ctx: Ctx = { locale, t, guide: up.guide[locale.code], up, base: toRoot(path) };
   const c = content(ctx, page);
   const title = page.kind === 'home' ? `${t('site.name')} · ${c.title}` : `${c.title} · ${t('site.name')}`;
   const links = html`<link rel="canonical" href="${SITE_ORIGIN}/${path}">
@@ -553,7 +569,7 @@ ${ENABLED_LOCALES.map((l) => html`<link rel="alternate" hreflang="${l.htmlLang}"
   const doc = html`<!doctype html>
 <html lang="${locale.htmlLang}" dir="${locale.dir}">
 <head>
-${head(ctx, title, c.description, links)}
+${head(ctx.base, title, c.description, links)}
 </head>
 <body class="xxd-page">
 <a class="xxd-sr-only-focusable" href="#main">${t('skip')}</a>
@@ -588,7 +604,7 @@ ${c.body}
 </body>
 </html>
 `;
-  return { path, html: doc.value };
+  return doc.value;
 }
 
 // The root page picks a language from the browser's preferred languages and lists every language as a link.
@@ -596,7 +612,6 @@ export function renderRoot(locales: { locale: Locale; t: T }[], up: Upstream): s
   const codes = locales.map((l) => l.locale.code);
   const fallback = locales.find((l) => l.locale.code === FALLBACK_LOCALE) ?? locales[0];
   if (!fallback) throw new Error('no enabled locales');
-  const ctx: Ctx = { locale: fallback.locale, t: fallback.t, guide: up.guide[fallback.locale.code], up, path: '' };
   const redirect = `(function(){var codes=${JSON.stringify(codes)};var langs=navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||""];for(var i=0;i<langs.length;i++){var c=String(langs[i]).toLowerCase().split("-")[0];if(codes.indexOf(c)>=0){location.replace(c+"/");return}}location.replace(${JSON.stringify(FALLBACK_LOCALE)}+"/")})();`;
   const links = html`<link rel="canonical" href="${SITE_ORIGIN}/">
 ${locales.map((l) => html`<link rel="alternate" hreflang="${l.locale.htmlLang}" href="${SITE_ORIGIN}/${l.locale.code}/">\n`)}<link rel="alternate" hreflang="x-default" href="${SITE_ORIGIN}/">`;
@@ -606,7 +621,7 @@ ${locales.map((l) => html`<link rel="alternate" hreflang="${l.locale.htmlLang}" 
 <html lang="${fallback.locale.htmlLang}" dir="${fallback.locale.dir}">
 <head>
 <script>${raw(redirect)}</script>
-${head(ctx, title, description, links)}
+${head('', title, description, links)}
 </head>
 <body class="xxd-page">
 <main id="main" class="site-main">
