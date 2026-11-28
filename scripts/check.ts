@@ -71,7 +71,20 @@ const fileFor = (urlPath: string) => (urlPath === '' || urlPath.endsWith('/') ? 
 // Cloudflare serves the nearest 404.html at any missing URL, so these are never indexed and link only root-absolute.
 const NOT_FOUND = ['404.html', ...ENABLED_LOCALES.map((l) => `${l.code}/404.html`)];
 const isNotFound = (file: string) => file === '404.html' || file.endsWith('/404.html');
-for (const file of NOT_FOUND) if (!files.has(file)) problems.push(`dist/${file} is missing`);
+for (const file of [...NOT_FOUND, 'sitemap.xml', 'robots.txt']) if (!files.has(file)) problems.push(`dist/${file} is missing`);
+const distText = (file: string) => (files.has(file) ? readFileSync(join('dist', file), 'utf8') : '');
+
+// The sitemap lists every indexable page and the root once, each with the alternates its own <head> names.
+const sitemap = new Map<string, string>();
+for (const m of distText('sitemap.xml').matchAll(/<url>([\s\S]*?)<\/url>/g)) {
+  const body = m[1] as string;
+  const loc = /<loc>([^<]*)<\/loc>/.exec(body)?.[1] ?? '';
+  if (sitemap.has(loc)) problems.push(`dist/sitemap.xml lists ${loc} twice`);
+  sitemap.set(loc, [...body.matchAll(/<xhtml:link rel="alternate" hreflang="([^"]+)" href="([^"]+)"\/>/g)].map((a) => `${a[1]} ${a[2]}`).sort().join('\n'));
+}
+const notInSitemap = new Set(sitemap.keys());
+const sitemapLine = `Sitemap: ${SITE_ORIGIN}/sitemap.xml`;
+if (!distText('robots.txt').split('\n').includes(sitemapLine)) problems.push(`dist/robots.txt has no "${sitemapLine}" line`);
 
 let links = 0;
 let notFoundLinks = 0;
@@ -126,7 +139,13 @@ for (const file of pages) {
     problems.push(`${at}: canonical ${JSON.stringify(canonicals)}, expected ["${SITE_ORIGIN}/${urlPath}"]`);
   }
 
-  const alternates = new Map([...text.matchAll(/<link rel="alternate" hreflang="([^"]+)" href="([^"]+)">/g)].map((a) => [a[1] as string, a[2] as string]));
+  const alternateLinks = [...text.matchAll(/<link rel="alternate" hreflang="([^"]+)" href="([^"]+)">/g)];
+  const alternates = new Map(alternateLinks.map((a) => [a[1] as string, a[2] as string]));
+  const url = `${SITE_ORIGIN}/${urlPath}`;
+  const listed = sitemap.get(url);
+  if (listed === undefined) problems.push(`${at}: not in dist/sitemap.xml`);
+  else if (listed !== alternateLinks.map((a) => `${a[1]} ${a[2]}`).sort().join('\n')) problems.push(`${at}: its alternates in dist/sitemap.xml differ from its hreflang links`);
+  notInSitemap.delete(url);
   for (const l of ENABLED_LOCALES) {
     const href = alternates.get(l.htmlLang);
     if (!href) {
@@ -139,6 +158,8 @@ for (const file of pages) {
     if (l === locale && href !== `${SITE_ORIGIN}/${urlPath}`) problems.push(`${at}: its own hreflang alternate is not its canonical URL`);
   }
 }
+
+for (const loc of notInSitemap) problems.push(`dist/sitemap.xml lists ${loc}, which is not an indexable page in dist/`);
 
 // Every study page exists in every enabled language and shows the upstream text, this site's explanation and its direction.
 // A direction chip is an optional kit icon followed by the label.
@@ -206,5 +227,7 @@ console.log(`ui: src/ui/{${ENABLED_LOCALES.map((l) => l.code).join(',')}}.json h
 console.log(`pages: ${pages.length} HTML files, ${links} internal links and assets resolve`);
 console.log(`h1: every page has exactly one <h1>`);
 console.log(`head: every page has <html lang dir>, a <title> and a meta description; every page but 404.html has a unique <title>, its canonical URL and hreflang for ${codes}`);
+console.log(`sitemap: ${sitemap.size} URLs, exactly the indexable pages plus the root, each with the alternates its page's hreflang links name`);
+console.log(`robots: dist/robots.txt has "${sitemapLine}"`);
 console.log(`404: ${NOT_FOUND.map((f) => `dist/${f}`).join(', ')} are noindex with no canonical or hreflang, and all ${notFoundLinks} of their links and assets are root-absolute`);
 console.log('check passed');

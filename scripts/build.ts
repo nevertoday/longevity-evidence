@@ -4,7 +4,8 @@ import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { ENABLED_LOCALES, FALLBACK_LOCALE } from '../src/locales.ts';
 import { loadUpstream } from '../src/model.ts';
-import { outFile, renderPage, renderRoot, sitePages, type Page } from '../src/pages.ts';
+import { alternates, outFile, pageUrl, renderPage, renderRoot, ROOT_URL, sitePages, type Page } from '../src/pages.ts';
+import { robotsTxt, sitemapXml } from '../src/seo.ts';
 import { loadUi } from '../src/ui.ts';
 
 process.chdir(fileURLToPath(new URL('..', import.meta.url)));
@@ -32,6 +33,14 @@ write('index.html', renderRoot(locales, up));
 const fallback = locales.find((l) => l.locale.code === FALLBACK_LOCALE);
 if (!fallback) throw new Error(`FALLBACK_LOCALE ${FALLBACK_LOCALE} is not enabled`);
 write('404.html', renderPage(fallback.locale, fallback.t, up, notFound));
+write(
+  'sitemap.xml',
+  sitemapXml([
+    { loc: ROOT_URL, alternates: alternates({ kind: 'home' }) },
+    ...pages.flatMap((page) => locales.map(({ locale }) => ({ loc: pageUrl(locale.code, page), alternates: alternates(page) }))),
+  ]),
+);
+write('robots.txt', robotsTxt());
 for (const file of VENDOR_FILES) cpSync(join('vendor/xxd', file), join(TMP, 'vendor/xxd', file));
 cpSync('src/assets', join(TMP, 'assets'), { recursive: true });
 

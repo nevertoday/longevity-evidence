@@ -15,6 +15,7 @@ import {
   type Upstream,
   type VerdictId,
 } from './model.ts';
+import type { Alternate } from './seo.ts';
 import { APPEARANCE_KEY, SITE_ORIGIN, SOURCE_REPO, UPSTREAM_CONTRIBUTING } from './site.ts';
 import type { T, UiKey } from './ui.ts';
 
@@ -51,6 +52,17 @@ export function pagePath(code: LocaleCode, page: IndexablePage): string {
 
 // The file under dist/ that holds the page. Cloudflare serves the nearest 404.html up the missing URL's path.
 export const outFile = (code: LocaleCode, page: Page) => (isIndexable(page) ? `${pagePath(code, page)}index.html` : `${code}/404.html`);
+
+export const ROOT_URL = `${SITE_ORIGIN}/`;
+export const pageUrl = (code: LocaleCode, page: IndexablePage) => `${SITE_ORIGIN}/${pagePath(code, page)}`;
+
+// Every language version of a page names the same set. Home pages also name the root as the default for other languages.
+export function alternates(page: IndexablePage): Alternate[] {
+  return [
+    ...ENABLED_LOCALES.map((l) => ({ hreflang: l.htmlLang, href: pageUrl(l.code, page) })),
+    ...(page.kind === 'home' ? [{ hreflang: 'x-default', href: ROOT_URL }] : []),
+  ];
+}
 
 export function sitePages(up: Upstream): IndexablePage[] {
   return [
@@ -565,6 +577,9 @@ const NAV: [IndexablePage, UiKey][] = [
   [{ kind: 'about' }, 'nav.about'],
 ];
 
+const indexLinks = (url: string, page: IndexablePage) => html`<link rel="canonical" href="${url}">
+${alternates(page).map((a) => html`<link rel="alternate" hreflang="${a.hreflang}" href="${a.href}">\n`)}`;
+
 function head(base: string, title: string, description: string, links: Part): Html {
   return html`<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -585,12 +600,7 @@ export function renderPage(locale: Locale, t: T, up: Upstream, page: Page): stri
   const ctx: Ctx = { locale, t, guide: up.guide[locale.code], up, base: here ? toRoot(pagePath(locale.code, here)) : '/' };
   const c = content(ctx, page);
   const title = page.kind === 'home' ? `${t('site.name')} · ${c.title}` : `${c.title} · ${t('site.name')}`;
-  const links = here
-    ? html`<link rel="canonical" href="${SITE_ORIGIN}/${pagePath(locale.code, here)}">
-${ENABLED_LOCALES.map((l) => html`<link rel="alternate" hreflang="${l.htmlLang}" href="${SITE_ORIGIN}/${pagePath(l.code, here)}">\n`)}${
-        here.kind === 'home' ? html`<link rel="alternate" hreflang="x-default" href="${SITE_ORIGIN}/">` : null
-      }`
-    : html`<meta name="robots" content="noindex">`;
+  const links = here ? indexLinks(pageUrl(locale.code, here), here) : html`<meta name="robots" content="noindex">`;
   const doc = html`<!doctype html>
 <html lang="${locale.htmlLang}" dir="${locale.dir}">
 <head>
@@ -638,8 +648,7 @@ export function renderRoot(locales: { locale: Locale; t: T }[], up: Upstream): s
   const fallback = locales.find((l) => l.locale.code === FALLBACK_LOCALE) ?? locales[0];
   if (!fallback) throw new Error('no enabled locales');
   const redirect = `(function(){var codes=${JSON.stringify(codes)};var langs=navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||""];for(var i=0;i<langs.length;i++){var c=String(langs[i]).toLowerCase().split("-")[0];if(codes.indexOf(c)>=0){location.replace(c+"/");return}}location.replace(${JSON.stringify(FALLBACK_LOCALE)}+"/")})();`;
-  const links = html`<link rel="canonical" href="${SITE_ORIGIN}/">
-${locales.map((l) => html`<link rel="alternate" hreflang="${l.locale.htmlLang}" href="${SITE_ORIGIN}/${l.locale.code}/">\n`)}<link rel="alternate" hreflang="x-default" href="${SITE_ORIGIN}/">`;
+  const links = indexLinks(ROOT_URL, { kind: 'home' });
   const title = locales.map((l) => l.t('site.name')).join(' · ');
   const description = locales.map((l) => l.t('site.description', { count: up.studies.length })).join(' ');
   return html`<!doctype html>
