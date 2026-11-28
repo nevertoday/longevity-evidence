@@ -329,18 +329,28 @@ ${section(
 
 function topicPage(ctx: Ctx, topic: TopicId): Content {
   const { t, up } = ctx;
-  const studies = sortByGrade(up.studies.filter((s) => s.topic === topic));
+  const studies = up.studies.filter((s) => s.topic === topic);
   const name = t(`topic.${topic}` as const);
+  const question = t(`topic.${topic}.question` as const);
   const desc = t(`topic.${topic}.desc` as const);
   return {
-    title: name,
-    description: `${t(`topic.${topic}.question` as const)} ${desc}`,
+    title: question,
+    description: `${question} ${desc}`,
     body: html`${pageHeader(ctx, name, [desc, t('topic.intro', { count: t.studies(studies.length) })], {
       crumbs: crumbs(ctx, { kind: 'topic', topic }),
       icon: TOPIC_ICON[topic],
-      lead: t(`topic.${topic}.question` as const),
+      lead: question,
     })}
-${studyCards(ctx, studies, 2)}`,
+${DIRECTIONS.map((d) => {
+  const group = sortByGrade(studies.filter((s) => s.direction === d));
+  return group.length
+    ? section(
+        `direction-${d}`,
+        `${t(`direction.${d}` as const)} · ${group.length}`,
+        html`<p class="section__intro">${t(`direction.${d}.desc` as const)}</p>${studyCards(ctx, group, 3)}`,
+      )
+    : null;
+})}`,
   };
 }
 

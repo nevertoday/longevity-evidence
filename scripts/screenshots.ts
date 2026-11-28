@@ -31,6 +31,8 @@ const SHOTS: Shot[] = [
   // The closed "raw data" fold, opened.
   ...both('zh-study-alcohol-raw', 'zh/studies/alcohol/').map((s) => ({ ...s, action: "document.querySelector('details.raw').open = true" })),
   ...both('zh-topic-drinking', 'zh/topics/drinking/'),
+  // The largest topic: studies that help, harm and point both ways, each in its own group.
+  ...both('zh-topic-eating', 'zh/topics/eating/'),
   ...both('zh-myths', 'zh/myths/'),
   ...both('zh-studies-filtered', 'zh/studies/?topic=drinking&grade=B'),
   ...both('en-studies-search', 'en/studies/?q=coffee'),
