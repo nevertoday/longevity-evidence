@@ -5,7 +5,7 @@ description: Drive the 活得更久 / Live Longer static site (longevity.xiaoxia
 
 # Verify the Live Longer site
 
-The site is static. `npm run build` writes 625 pages in 8 languages to `dist/`, and Cloudflare Workers static assets serves them (`wrangler.jsonc`). There is no login, no database and no server code. Readers do six things, and each has a journey in `journeys/` and a recipe in `features/`.
+The site is static. `npm run build` writes 625 pages in 8 languages to `dist/`, and Cloudflare Workers static assets serves them (`wrangler.jsonc`). There is no login, no database and no server code. Readers do seven things, and each has a journey in `journeys/` and a recipe in `features/`.
 
 The helper `drive.ts` does everything: it checks the build, starts one `wrangler dev` and one headless Chrome, plays a journey, saves evidence and stops both. Run every command from the repo root.
 

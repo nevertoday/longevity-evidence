@@ -131,6 +131,7 @@
 
   "myths.title": "Popular claims: true or false?",
   "myths.intro": "These {count} claims come from the original edition of HowToLiveLonger, a guide that spread widely online. Its reviewers checked each one against the cited research and found it wrong, overstated or without direct evidence. Each entry shows the claim and then what the research found.",
+  "myths.claim": "The claim",
   "myths.evidence": "What the research found",
 
   "studies.title": "All studies",

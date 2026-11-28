@@ -9,7 +9,7 @@
       "Diets were recorded by questionnaire, and the studies only observed people, so they show a link but cannot prove the meat itself caused the deaths."
     ],
     "caution": "No clear link with death does not prove poultry and fish are risk-free. In one of the studies, eating more poultry went with more heart and blood vessel disease. The two studies also covered different time spans, so their figures should not be mixed together.",
-    "myth": "The original guide said white meat lowers the risk of death by 3% to 11%, that eating half a serving more red meat a day raises it by 10%, and that two servings of red or processed meat a week raise it by 3%."
+    "myth": "White meat lowers your risk of death by 3% to 11%, and more red meat raises it."
   },
   "fresh-fruit-diabetes": {
     "question": "If you have diabetes, should you still eat fruit?",
@@ -20,7 +20,7 @@
       "The study only observed people. Those who ate more fruit may have differed in other ways, so it cannot prove the fruit caused the benefit."
     ],
     "caution": "The figures are per extra 100 g a day, not 200 g, and they come only from people with diabetes, so they do not mean everyone gets a 17% lower risk. The study looked at whole fresh fruit, and juice is no substitute.",
-    "myth": "The original guide said eating 200 g of fresh fruit a day cuts the death rate by 17%, diabetes complications in large blood vessels by 13% and in small blood vessels by 28%."
+    "myth": "For people with diabetes, 200 g of fresh fruit a day cuts the death rate by 17%."
   },
   "flavonoid-foods": {
     "question": "Do flavonoid-rich foods like apples, tea and broccoli help you live longer?",
@@ -32,7 +32,7 @@
       "People who eat more flavonoids also tend to eat better overall and be better off, which could explain part of the link, so the study shows a link, not proof."
     ],
     "caution": "This was about ordinary food, so it says nothing about flavonoid supplements, and these foods do not cancel out the harm of smoking or drinking. No one tested a specific plan such as 100 g of broccoli a day.",
-    "myth": "The original guide said flavonoid-rich foods cut the risk of death by 20%, giving examples such as a cup of tea, an apple, an orange, 100 g of blueberries or 100 g of broccoli."
+    "myth": "Flavonoid-rich foods like tea, apples and blueberries cut the risk of death by 20%."
   },
   "chili-us": {
     "question": "Do Americans who eat hot red chili peppers live longer?",
@@ -44,7 +44,7 @@
       "Diet was asked about only once at the start, and the study only observed people, so it shows a link but not that chili caused it."
     ],
     "caution": "This does not show that chili itself extends life. The 23% figure often attached to this study comes from a separate study in Italy. If spicy food upsets your stomach, there is no reason to force yourself to eat more.",
-    "myth": "The original guide said that in a US study of 16,179 people followed for about 19 years, 21.6% of chili eaters died against 33.6% of non-eaters, and that eating chili more than four times a week cut the risk of death by 23%."
+    "myth": "Only 21.6% of chili eaters died, against 33.6% of people who did not eat chili."
   },
   "chili-italy": {
     "question": "Do Italians who eat chili more than four times a week have a lower risk of death?",
@@ -56,7 +56,7 @@
       "The study only observed people. Frequent chili eaters may differ in diet and lifestyle, so it cannot show that chili or its hot ingredient, capsaicin, caused the difference."
     ],
     "caution": "The comparison group was people who never or rarely ate chili, not everyone who ate it fewer than twice a week. Chili cannot replace blood pressure control or other treatment, and if it upsets your stomach, eat only what you tolerate.",
-    "myth": "The original guide said eating chili more than four times a week cuts the risk of death by 23% and of heart and blood vessel death by 34%, and a headline it cited claimed a 61% lower risk of dying from illness."
+    "myth": "Eating chili more than four times a week cuts the risk of death by 23%, and of dying from illness by up to 61%."
   },
   "eggs": {
     "question": "Do eggs raise your risk of death?",
@@ -80,7 +80,7 @@
       "Regular walnut eaters may already look after their health more, and the work received industry funding, both reasons to read the result with care."
     ],
     "caution": "This does not apply if you are allergic to nuts. The figures are averages across a large group and do not mean any one person will gain a year or more.",
-    "myth": "The original guide said five or more 28 g servings of walnuts a week add 1.3 years of healthy life, lower the risk of death by 14% and lower heart and blood vessel deaths by 25%."
+    "myth": "Five servings of walnuts a week add 1.3 years of healthy life."
   },
   "nuts-general": {
     "question": "Do people who eat nuts more often live longer?",
@@ -91,7 +91,7 @@
       "A second study of 7,216 adults at high risk of heart and blood vessel disease found about a 39% lower risk of death among people who ate more than three servings a week. Only 323 of them died, and people chose how many nuts to eat, so this was an observation, not a test where nuts were assigned by chance."
     ],
     "caution": "The studies did not compare raw and roasted nuts, so they do not show nuts must be eaten raw. If you are allergic to nuts, avoid them.",
-    "myth": "The original guide said that, counting servings of about 1 ounce (about 28 g), eating nuts more often each week lowers the risk of death by 7%, 11%, 13%, 15% and 20%, and that in a study of 7,216 people, more than three servings a week lowered it by 39%."
+    "myth": "The more nuts the better: more than three servings a week lowers the risk of death by 39%."
   },
   "sodium-ecological": {
     "question": "Countries that eat more salt live longer. Should you eat more salt?",
@@ -103,7 +103,7 @@
       "The researchers state plainly that these data are observational and should not be used as a basis for nutrition advice."
     ],
     "caution": "Do not eat more salt to live longer. If you have high blood pressure or another illness, keep salt to the level that suits your condition and follow your doctor's advice.",
-    "myth": "The original guide said that, across 181 countries, each extra 1 g of sodium a day (about 2.5 g of salt) went with 2.6 more years of healthy life expectancy at birth, 0.3 more years at age 60 and lower death rates, and with 3.4 more years in 46 high-income countries."
+    "myth": "More salt means a longer life: each extra 1 g of sodium a day adds 2.6 years of healthy life."
   },
   "potassium-salt": {
     "question": "Does switching to a potassium-enriched low-sodium salt lower your risk of death?",
@@ -149,7 +149,7 @@
       "Monkey results cannot be carried over to people, and how much eating less might extend human life has not been shown."
     ],
     "caution": "Do not cut calories on your own to live longer. This matters most for people who are underweight, pregnant or breastfeeding, children and teenagers, frail older adults, and anyone with an eating disorder.",
-    "myth": "The original guide said that in rhesus monkeys, normally fed animals had 2.9 times the risk of several diseases and 3.0 times the risk of death compared with calorie-restricted ones."
+    "myth": "Eating less extends life: in a monkey study, fully fed monkeys had 3 times the risk of death."
   },
   "macronutrient-pattern": {
     "question": "Is there an ideal ratio of protein, fat and carbohydrate to eat?",
@@ -161,7 +161,7 @@
       "These are observations, and each low point was worked out separately, so combining them into one best ratio has never been tested."
     ],
     "caution": "There is no need to chase exact percentages, because the overall quality of food matters more. If you have kidney disease, diabetes or a similar condition, follow the eating plan your doctor or dietitian gives you.",
-    "myth": "The original guide said there is a universal best mix: under 24% starch, 15% to 17% protein, over 15% monounsaturated fat, under 15% sugar, 6% saturated and 6% polyunsaturated fat, and 30 g or more of fiber. It also said the risk of death rises steadily with total fat."
+    "myth": "There is one best diet mix, such as under 24% starch and 15% to 17% protein."
   },
   "ultraprocessed-acm": {
     "question": "Do ultra-processed foods like chips and burgers raise your risk of dying early?",
@@ -173,7 +173,7 @@
       "The widely shared claim that frequent eaters die at 58 on average refers only to the average age of the 335 people who died. It does not mean people who eat these foods live only to 58."
     ],
     "caution": "These results come from Spanish university graduates and may not hold for other groups. If you cut back on ultra-processed food, make sure what you eat instead still gives you enough nutrition and is affordable.",
-    "myth": "The original guide said eating less ultra-processed food lowers the risk of death by 18% to 62%, and cited a headline claiming that people who often eat chips, burgers and chocolate die at only 58 on average."
+    "myth": "Eating less ultra-processed food lowers the risk of death by 18% to 62%."
   },
   "ultraprocessed-cvd": {
     "question": "Do ultra-processed foods raise your risk of heart and blood vessel disease?",
@@ -184,7 +184,7 @@
       "It measured new cases of disease, not deaths, so it cannot say anything about lifespan. The other paper cited alongside it is a commentary with no data of its own."
     ],
     "caution": "Do not read this figure as a risk of death. It supports eating less ultra-processed food in general, but it only observed people and cannot be used to work out how much eating less would change your risk of dying.",
-    "myth": "The original guide said its entry on ultra-processed food rests on three papers, a Spanish study of deaths, a French study of heart disease and a commentary, and treated all three as evidence about death."
+    "myth": "Ultra-processed food shortens life, based partly on a French study of heart disease."
   },
   "whole-grains": {
     "question": "Do whole grains like whole-wheat bread help you live longer?",
@@ -267,7 +267,7 @@
       "People who are already obese or have other health risks may switch to diet drinks, and drinks were asked about only once, so the study cannot show that sweeteners cause death."
     ],
     "caution": "This does not apply to water or to unsweetened tea and coffee. The study did not test swapping sugary drinks for diet ones, and it cannot single out any one sweetener.",
-    "myth": "The original guide said that compared with less than one glass of soft drinks a month, one or more a day raised the risk of death by 18%, by 11% for sugary drinks and by 27% for sugar-free ones."
+    "myth": "Sugar-free drinks are worse than sugary ones: one or more a day raises the risk of death by 27%."
   },
   "sugar-sweetened-drinks": {
     "question": "Do sugary drinks like soda and sweetened milk tea raise your risk of death?",
@@ -279,7 +279,7 @@
       "Drinks were self-reported, and other habits may explain part of the link."
     ],
     "caution": "A serving in this study does not convert directly into a cup in other studies, and the groups used here are not safe limits. The 18% and 12% figures often quoted alongside this study are about getting cancer, not dying.",
-    "myth": "The original guide said one sugary drink a day raises the risk of death by 7% and two by 21%, that each extra cup raises the risk of cancer death by 16%, and quoted a headline claiming that cola and milk tea raise the risk of death by as much as 62%."
+    "myth": "Two sugary drinks a day raise the risk of death by 21%, and cola and milk tea by up to 62%."
   },
   "fruit-juice": {
     "question": "Is 100% fruit juice as healthy as it seems?",
@@ -291,7 +291,7 @@
       "The 11% figure the original guide gave for sugary drinks actually covered sugar-sweetened drinks and 100% juice together, so it cannot be used to rank juice against soda."
     ],
     "caution": "This does not apply to eating whole fruit. If you have diabetes or need to limit sugar, fit juice into the eating plan your doctor gives you.",
-    "myth": "The original guide said each extra 12-ounce serving a day of sugary drinks raises the risk of death by 11% and of fruit juice by 24%, so 100% juice may be more dangerous than sugary drinks."
+    "myth": "100% fruit juice is more dangerous than sugary drinks: an extra serving a day raises the risk of death by 24%."
   },
   "coffee": {
     "question": "Is coffee bad for you? Should you quit?",
@@ -314,7 +314,7 @@
       "The study only observed people and cannot separate spermidine from a better diet overall. A small 12-month trial that gave spermidine supplements to 100 older adults who felt their memory or thinking had declined found no improvement in its main measure of thinking and did not measure deaths."
     ],
     "caution": "Do not buy spermidine supplements because of a claimed 60% drop in deaths. If you have a medical condition, check any supplement with your doctor first.",
-    "myth": "The original guide said spermidine lowers the risk of death by 30% to 60%, and that the death rates in the low, middle and high intake groups were 40.5%, 23.7% and 15.1%."
+    "myth": "Spermidine lowers the risk of death by 30% to 60%."
   },
   "smoking": {
     "question": "Does smoking just a few cigarettes a day still shorten your life?",
@@ -338,7 +338,7 @@
       "A Swedish study that followed 29,518 women for 20 years estimated that sun avoiders lived 0.6 to 2.1 years less than those with the most sun, not 6 years, and it too only observed people."
     ],
     "caution": "Sunburn raises the risk of skin cancer, and these studies did not find a best amount of sun. If you have a light-sensitive condition, take medicines that make your skin sensitive to light, or have a high risk of skin cancer, follow your doctor's advice on sun protection.",
-    "myth": "The original guide said a 26-year Danish study found that more sun greatly extends life, that even people who got skin cancer from too much sun lived 6 years longer than average, and that sun lowers the risk of death by about 40%."
+    "myth": "More sun extends life, and even people who got skin cancer lived 6 years longer."
   },
   "nmn": {
     "question": "Can taking NMN slow aging or help you live longer?",
@@ -349,7 +349,7 @@
       "None of these trials looked at deaths or lifespan, and there is little information on whether taking it for years is safe."
     ],
     "caution": "Do not treat NMN as a proven longevity drug, and never use it in place of treatment for a long-term illness. If you want to take part in research on it, do so through a proper clinical trial.",
-    "myth": "The original guide said NMN could help you live longer, but listed only its name, with no studies or figures."
+    "myth": "NMN helps you live longer."
   },
   "metformin-diabetes": {
     "question": "For overweight people newly diagnosed with type 2 diabetes, does metformin lower the risk of death?",
@@ -372,7 +372,7 @@
       "On the claim that fathers taking metformin may cause birth defects, a 2024 study in Norway and Taiwan found no clear link once the fathers' own diabetes and other factors were taken into account."
     ],
     "caution": "If you are healthy, do not take metformin on your own to live longer. Men with diabetes who are planning to have a child should not stop their medicine because of reports online. Talk to your doctor first.",
-    "myth": "The original guide said metformin is a miracle drug that protects against cancer, heart disease, diabetes, obesity, liver and kidney disease and aging, that people with diabetes who take it can live 3 years longer than people without diabetes, and it cited a report that fathers taking metformin may cause birth defects."
+    "myth": "Metformin is a miracle drug: people with diabetes who take it live 3 years longer than people without diabetes."
   },
   "multivitamins": {
     "question": "Do daily multivitamins help you live longer?",
@@ -383,7 +383,7 @@
       "A 2024 study that followed 390,124 Americans over many years also found no lower risk of death among people who took a multivitamin daily."
     ],
     "caution": "This applies to generally healthy people. Targeted supplements after a check-up are a separate matter for people with a deficiency, a stage of life with special nutritional needs, or trouble absorbing nutrients. If a doctor told you to take a supplement, do not stop on your own. Ask first.",
-    "myth": "The original guide said that taking multivitamins lowers cancer risk by about 8%."
+    "myth": "Multivitamins lower cancer risk by about 8%."
   },
   "glucosamine-chondroitin": {
     "question": "Can glucosamine or chondroitin supplements help you live longer?",
@@ -394,7 +394,7 @@
       "The original guide's 39% and 65% figures were adjusted for age only, so they are not the final result. Users also exercised more, smoked less and had more education, and statistics cannot fully remove those differences, so the study shows a link, not proof."
     ],
     "caution": "Do not start these supplements to live longer. If your joints hurt, find out why first. If you take blood thinners, ask your doctor before taking any supplement, because they can interact. These supplements are no substitute for regular exercise.",
-    "myth": "The original guide said glucosamine cuts the risk of death by 39% and the risk of dying from heart and blood vessel disease by 65%, about as much as regular exercise."
+    "myth": "Taking glucosamine for years cuts the risk of death by 39%, about as much as regular exercise."
   },
   "anti-aging-drugs-review": {
     "question": "Do anti-aging drugs actually help people live longer?",
@@ -405,7 +405,7 @@
       "The drugs differ in what they are, their doses and what they treat, so they cannot be combined into one anti-aging plan. A drug that helps with one disease does not, for that reason, extend the lives of healthy people."
     ],
     "caution": "Do not buy and combine these drugs on your own. If you already take one of them for a medical condition, follow your doctor's plan and do not stop it or change the dose on your own. Experimental anti-aging treatments belong in properly run clinical studies.",
-    "myth": "The original guide listed, in its section on drugs, an in-depth Nature-family review on how to develop anti-aging drugs."
+    "myth": "A review on how to develop anti-aging drugs was listed as grounds for taking drugs to live longer."
   },
   "alcohol": {
     "question": "Is a drink a day good for you?",
@@ -416,7 +416,7 @@
       "People who drank 45 to 65 g a day had about a 19% higher risk of death, and those who drank 65 g or more about 35% higher. For women, the risk started to rise at lower amounts."
     ],
     "caution": "Seeing no clear change in risk at low amounts does not show that any amount is safe. This was not a trial of quitting, so it cannot say how much longer you would live if you stopped. If you depend on alcohol or have had withdrawal symptoms, do not stop suddenly on your own. Cut down with a doctor's help.",
-    "myth": "The original guide said that unless you quit, your risk of death is about 50% higher, with no upper limit."
+    "myth": "Unless you quit drinking, your risk of death is about 50% higher, with no upper limit."
   },
   "ambient-air-pollution": {
     "question": "Does living with air pollution shorten your life?",
@@ -471,7 +471,7 @@
       "The original guide's 16% to 40% range mixed different outcomes. The 40% figure is for deaths from heart and blood vessel disease at about 19 minutes a week, not deaths from all causes. All of these figures come from a statistical model of observed people, not a trial."
     ],
     "caution": "These figures are not a guarantee, and the lowest point on the curve is not a prescription for everyone. If you already exercise and have no medical reason to avoid it, add short bursts of harder activity gradually. If you have symptoms or a chronic illness that is not under control, see a doctor first.",
-    "myth": "The original guide said 15 to 20 minutes of vigorous exercise a week lowers the risk of death by 16% to 40%, and reaching 50 to 57 minutes lowers it further."
+    "myth": "15 to 20 minutes of vigorous exercise a week lowers the risk of death by 16% to 40%."
   },
   "walking-steps": {
     "question": "For middle-aged adults, are more daily steps always better?",
@@ -504,7 +504,7 @@
       "These figures are about getting ill, not about dying. The study was not a trial, and Japanese tub bathing habits cannot simply be read as applying to showers."
     ],
     "caution": "Finding no link with sudden death does not prove bathing is completely safe, since drowning, overheating and similar risks were not ruled out. If you tend to faint, are acutely ill, have been drinking or have unstable heart disease, avoid long hot baths and avoid bathing alone.",
-    "myth": "The original guide said that people who bathe every day, compared with those who bathe once or twice a week or not at all, have a 28% lower risk of heart and blood vessel disease, a 26% lower risk of stroke and a 46% lower risk of bleeding in the brain, with no rise in sudden death."
+    "myth": "A bath every day lowers the risk of heart disease by 28% and of stroke by 26%."
   },
   "heavy-housework": {
     "question": "Does heavy housework help older men live longer?",
@@ -515,7 +515,7 @@
       "People who can do heavy housework may already be in better health, and this kind of study cannot separate cause from effect. Age 72 was simply the average age of the participants, not an age after which the benefit begins."
     ],
     "caution": "This is not a prescription to move furniture or carry gas cylinders to live longer. Do housework that suits your strength. If you are frail, or have osteoporosis, back problems or a risk of falls, avoid heavy lifting.",
-    "myth": "The original guide said that men over 72 who do heavy housework every week cut their average death rate by 29%."
+    "myth": "Men over 72 who do heavy housework every week cut their death rate by 29%."
   },
   "sleep-duration": {
     "question": "Is sleeping 10 or more hours a day bad for you?",
@@ -538,7 +538,7 @@
       "The paper's summary gives no separate death figures matching the guide's 43% and 15%. Bedtimes were self-reported, and daily routines and illness are hard to separate from bedtime."
     ],
     "caution": "The exact time limits differ slightly within the paper itself, so do not treat 10 pm or midnight as hard rules. Keep regular sleep of enough length that suits your own rhythm. If going to bed early works for you, there is no reason to stay up later because of this study.",
-    "myth": "The original guide said bedtime between 10 pm and midnight is best, that going to bed early raises the risk of death by 43% and going to bed late by 15%, and noted that this is disputed."
+    "myth": "Bedtime between 10 pm and midnight is best, and going to bed early raises the risk of death by 43%."
   },
   "sedentary-time": {
     "question": "Does sitting for long hours each day raise your risk of death?",
@@ -549,7 +549,7 @@
       "So a fixed 3% per hour does not hold at every level, and the 6 to 8 hour and 3 to 4 hour points are bends in a statistical curve, not safe limits. Sitting time was mostly self-reported, so the results show a link."
     ],
     "caution": "In this review, sitting was not clearly linked to deaths from cancer, so do not mix that up with the risk of getting cancer. When your body allows, swap some sitting for walking or other movement and exercise regularly. If you cannot stand, follow your rehabilitation advice. No set rule for how often to get up has been proven.",
-    "myth": "The original guide said each extra hour of sitting a day raises the risk of heart and blood vessel disease by 4%, cancer by 1% and death by 3%, and that risk starts to rise past 6 to 8 hours of total sitting or 3 to 4 hours of TV a day."
+    "myth": "Each extra hour of sitting a day raises the risk of death by 3%, and risk starts to climb past 6 to 8 hours."
   },
   "pessimism": {
     "question": "Do pessimists die younger?",
@@ -593,7 +593,7 @@
       "The paper does not support the guide's figures of 1.5% COVID-19 mortality in the US and 2 years off life expectancy. It did not study the US, and the 1.5% figure gives no date and does not say which people it was counted among."
     ],
     "caution": "This describes the first wave in 2020 and cannot be applied to today's variants, immunity and medical care. Reduce your chances of infection, keep long-term illnesses under care, get medical help promptly when ill, and follow current guidance for prevention and treatment.",
-    "myth": "The original guide said the US COVID-19 death rate was about 1.5% and that average life expectancy fell by 2 years."
+    "myth": "The US COVID-19 death rate was about 1.5%, and life expectancy fell by 2 years."
   },
   "resistance-training": {
     "question": "Does strength training help you live longer?",
@@ -693,7 +693,7 @@
       "Lactic acidosis carries a special boxed warning on the label. Liver injury comes from reports made after the drug went on sale, which cannot show how often it happens."
     ],
     "caution": "How often side effects happen varies with the form of the drug, how fast the dose is raised, the dose and the people taking it, and side effect rates are not death risks. Do not start metformin on your own because of these figures, and if you take it, do not stop on your own.",
-    "myth": "The original guide said metformin's common side effects are vitamin B12 deficiency in 7% to 17.4% of people, stomach and gut problems in up to 53%, tiredness in 9% and headache in 6%, with rare but serious lactic acidosis and liver injury."
+    "myth": "Up to 53% of people on metformin get stomach and gut problems, and 7% to 17% lack vitamin B12."
   },
   "waist-circumference": {
     "question": "Does a bigger waist mean a higher risk of death?",

@@ -174,14 +174,16 @@ ${topicLabel(ctx, s.topic)}
 const studyCards = (ctx: Ctx, studies: readonly Study[], level: 2 | 3) =>
   html`<ul class="card-grid">${studies.map((s) => html`<li>${studyCard(ctx, s, level)}</li>`)}</ul>`;
 
+// Same title as a study card, so the finding below answers a question the reader can see.
 function mythCard(ctx: Ctx, s: Study, level: 2 | 3): Html {
   const e = s.explain[ctx.locale.code];
   const h = raw(`h${level}`);
   return html`<a class="xxd-card study-card myth-card" href="${link(ctx, { kind: 'study', study: s })}">
-<${h} class="study-card__title">${e.myth}</${h}>
-<span class="kicker">${ctx.t('myths.evidence')}</span>
-<p class="study-card__text">${e.answer}</p>
-<span class="card-foot">${verdictChip(ctx, s.verdict)}${topicLabel(ctx, s.topic)}</span>
+${topicLabel(ctx, s.topic)}
+<${h} class="study-card__title">${e.question}</${h}>
+<p class="myth-card__line"><span class="kicker">${ctx.t('myths.claim')}</span>${e.myth}</p>
+<p class="myth-card__line"><span class="kicker">${ctx.t('myths.evidence')}</span>${e.answer}</p>
+<span class="card-foot">${verdictChip(ctx, s.verdict)}${strength(ctx, s.grade)}</span>
 </a>`;
 }
 

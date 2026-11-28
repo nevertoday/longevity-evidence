@@ -1,0 +1,24 @@
+{
+  "name": "myths",
+  "steps": [
+    { "go": "/zh/myths/", "width": 1440, "expectStatus": 200 },
+    { "read": "document.querySelectorAll('.myth-card').length", "label": "myth cards" },
+    { "expect": "document.querySelectorAll('.myth-card').length === 30", "label": "30 myth cards" },
+    { "expect": "[...document.querySelectorAll('.myth-card')].every(c => c.querySelector('.study-card__title') && c.querySelectorAll('.myth-card__line .kicker').length === 2)", "label": "every card has a question, a claim and a finding" },
+    { "read": "Math.max(...[...document.querySelectorAll('.myth-card .myth-card__line:first-of-type')].map(p => p.innerText.length))", "label": "longest claim line incl. label" },
+    { "shot": "myths-1440", "viewport": true },
+    { "click": ".myth-card[href$='/studies/nuts-general/']", "nav": true },
+    { "expect": "location.pathname === '/zh/studies/nuts-general/' && document.querySelector('section[aria-labelledby=claim] blockquote').innerText.includes('39%')", "label": "card opens the study, whose claim section repeats the short claim" },
+    { "click": "details.raw > summary" },
+    { "expect": "document.querySelector('details.raw').innerText.includes('7216')", "label": "full original claim still in the raw-data fold" },
+    { "go": "/zh/myths/", "width": 390 },
+    { "shot": "myths-390-top", "viewport": true },
+    { "go": "/en/myths/", "width": 1440 },
+    { "expect": "document.querySelectorAll('.myth-card').length === 30", "label": "English myths page" },
+    { "shot": "myths-en-1440", "viewport": true },
+    { "go": "/de/myths/", "width": 390 },
+    { "shot": "myths-de-390", "viewport": true },
+    { "go": "/zh/", "width": 1440 },
+    { "expect": "document.querySelectorAll('#myths ~ * .myth-card, .myth-card').length > 0", "label": "home teaser uses the same card" }
+  ]
+}

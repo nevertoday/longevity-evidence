@@ -508,10 +508,14 @@
   padding-top: var(--space-3);
 }
 
-.myth-card .study-card__title {
-  margin-bottom: var(--space-2);
-  font-size: var(--text-lg);
+.myth-card__line {
+  margin: 0;
+  font-size: var(--text-md);
   line-height: var(--leading-md);
+}
+
+.myth-card__line + .myth-card__line {
+  margin-top: var(--space-1);
 }
 
 /* Evidence strength: four short bars and a plain label. */

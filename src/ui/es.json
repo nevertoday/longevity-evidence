@@ -131,6 +131,7 @@
 
   "myths.title": "Afirmaciones populares: ¿cierto o falso?",
   "myths.intro": "Estas {count} afirmaciones provienen de la edición original de HowToLiveLonger, una guía que se difundió ampliamente en internet. Sus revisores contrastaron cada una con la investigación citada y comprobaron que era incorrecta, exagerada o carente de evidencia directa. Cada entrada muestra primero la afirmación y luego lo que encontró la investigación.",
+  "myths.claim": "Lo que se dice",
   "myths.evidence": "Qué encontró la investigación",
 
   "studies.title": "Todos los estudios",

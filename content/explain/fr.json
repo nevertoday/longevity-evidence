@@ -9,7 +9,7 @@
       "L'alimentation était recueillie par questionnaire et les études se sont contentées d'observer les participants : elles montrent donc un lien, mais ne peuvent pas prouver que la viande elle-même a causé ces décès."
     ],
     "caution": "L'absence de lien clair avec les décès ne prouve pas que la volaille et le poisson soient sans risque. Dans l'une des études, manger plus de volaille allait de pair avec davantage de maladies du cœur et des vaisseaux sanguins. Les deux études couvraient aussi des périodes différentes : leurs chiffres ne doivent donc pas être mélangés.",
-    "myth": "Le guide original disait que la viande blanche réduit le risque de décès de 3 % à 11 %, que manger une demi-portion de viande rouge en plus par jour l'augmente de 10 % et que deux portions de viande rouge ou transformée par semaine l'augmentent de 3 %."
+    "myth": "La viande blanche réduit le risque de décès de 3 % à 11 %, et manger plus de viande rouge l'augmente."
   },
   "fresh-fruit-diabetes": {
     "question": "Si vous avez du diabète, devez-vous quand même manger des fruits ?",
@@ -20,7 +20,7 @@
       "L'étude s'est contentée d'observer les personnes. Celles qui mangeaient plus de fruits pouvaient différer sur d'autres plans : cela ne prouve donc pas que les fruits ont causé ce bénéfice."
     ],
     "caution": "Les chiffres valent pour 100 g supplémentaires par jour, et non 200 g, et proviennent uniquement de personnes diabétiques : ils ne signifient donc pas que tout le monde obtient un risque réduit de 17 %. L'étude portait sur des fruits frais entiers, et le jus ne les remplace pas.",
-    "myth": "Le guide original disait que manger 200 g de fruits frais par jour réduit la mortalité de 17 %, les complications du diabète dans les gros vaisseaux sanguins de 13 % et celles dans les petits vaisseaux de 28 %."
+    "myth": "Chez les personnes diabétiques, manger 200 g de fruits frais par jour réduit la mortalité de 17 %."
   },
   "flavonoid-foods": {
     "question": "Les aliments riches en flavonoïdes comme les pommes, le thé et le brocoli aident-ils à vivre plus longtemps ?",
@@ -32,7 +32,7 @@
       "Les personnes qui consomment plus de flavonoïdes ont aussi tendance à mieux manger en général et à être plus aisées, ce qui peut expliquer une partie du lien : l'étude montre donc un lien, pas une preuve."
     ],
     "caution": "L'étude portait sur des aliments ordinaires : elle ne dit donc rien des compléments de flavonoïdes, et ces aliments n'annulent pas les méfaits du tabac ou de l'alcool. Personne n'a testé un programme précis comme 100 g de brocoli par jour.",
-    "myth": "Le guide original disait que les aliments riches en flavonoïdes réduisent le risque de décès de 20 %, en donnant comme exemples une tasse de thé, une pomme, une orange, 100 g de myrtilles ou 100 g de brocoli."
+    "myth": "Les aliments riches en flavonoïdes comme le thé, les pommes et les myrtilles réduisent le risque de décès de 20 %."
   },
   "chili-us": {
     "question": "Les Américains qui mangent du piment rouge fort vivent-ils plus longtemps ?",
@@ -44,7 +44,7 @@
       "L'alimentation n'a été demandée qu'une seule fois au départ et l'étude s'est contentée d'observer les participants : elle montre donc un lien, mais pas que le piment en soit la cause."
     ],
     "caution": "Cela ne montre pas que le piment lui-même allonge la vie. Le chiffre de 23 % souvent rattaché à cette étude provient en fait d'une autre étude menée en Italie. Si les plats épicés vous irritent l'estomac, il n'y a aucune raison de vous forcer à en manger plus.",
-    "myth": "Le guide original disait que, dans une étude américaine de 16 179 personnes suivies pendant environ 19 ans, 21,6 % des consommateurs de piment étaient décédés contre 33,6 % des non-consommateurs, et que manger du piment plus de quatre fois par semaine réduisait le risque de décès de 23 %."
+    "myth": "Seuls 21,6 % des consommateurs de piment sont décédés, contre 33,6 % des non-consommateurs."
   },
   "chili-italy": {
     "question": "Les Italiens qui mangent du piment plus de quatre fois par semaine ont-ils un risque de décès plus faible ?",
@@ -56,7 +56,7 @@
       "L'étude s'est contentée d'observer les participants. Les grands amateurs de piment peuvent différer par leur alimentation et leur mode de vie : elle ne peut donc pas montrer que le piment ou son composant piquant, la capsaïcine, est à l'origine de la différence."
     ],
     "caution": "Le groupe de comparaison était composé des personnes qui n'en mangeaient jamais ou rarement, pas de toutes celles qui en mangeaient moins de deux fois par semaine. Le piment ne remplace ni le contrôle de la tension artérielle ni d'autres traitements, et s'il vous irrite l'estomac, contentez-vous de ce que vous tolérez.",
-    "myth": "Le guide original disait que manger du piment plus de quatre fois par semaine réduit le risque de décès de 23 % et celui de décès par maladie du cœur et des vaisseaux sanguins de 34 %, et un titre qu'il citait affirmait un risque de mourir de maladie réduit de 61 %."
+    "myth": "Manger du piment plus de quatre fois par semaine réduit le risque de décès de 23 %, et de mourir de maladie jusqu'à 61 %."
   },
   "eggs": {
     "question": "Les œufs augmentent-ils votre risque de décès ?",
@@ -80,7 +80,7 @@
       "Les personnes qui mangent régulièrement des noix prennent peut-être déjà davantage soin de leur santé, et ces travaux ont reçu un financement de la filière : deux raisons de lire ce résultat avec prudence."
     ],
     "caution": "Cela ne s'applique pas si vous êtes allergique aux fruits à coque. Ces chiffres sont des moyennes sur un grand groupe et ne signifient pas qu'une personne donnée gagnera un an ou plus.",
-    "myth": "Le guide original disait que cinq portions ou plus de 28 g de noix par semaine ajoutent 1,3 an de vie en bonne santé, réduisent le risque de décès de 14 % et réduisent les décès par maladie du cœur et des vaisseaux sanguins de 25 %."
+    "myth": "Cinq portions de noix par semaine ajoutent 1,3 an de vie en bonne santé."
   },
   "nuts-general": {
     "question": "Les personnes qui mangent plus souvent des fruits à coque vivent-elles plus longtemps ?",
@@ -91,7 +91,7 @@
       "Une seconde étude portant sur 7 216 adultes à risque élevé de maladie du cœur et des vaisseaux sanguins a trouvé un risque de décès plus faible d'environ 39 % chez ceux qui mangeaient plus de trois portions par semaine. Seuls 323 d'entre eux sont décédés, et les participants choisissaient combien en manger : il s'agissait donc d'une observation, pas d'un test où les fruits à coque étaient attribués au hasard."
     ],
     "caution": "Les études n'ont pas comparé les fruits à coque crus et grillés : elles ne montrent donc pas qu'il faille les manger crus. Si vous êtes allergique aux fruits à coque, évitez-les.",
-    "myth": "Le guide original disait qu'en comptant des portions d'environ 1 once (environ 28 g), manger des fruits à coque plus souvent chaque semaine réduit le risque de décès de 7 %, 11 %, 13 %, 15 % et 20 %, et que dans une étude de 7 216 personnes, plus de trois portions par semaine le réduisaient de 39 %."
+    "myth": "Plus on mange de fruits à coque, mieux c'est : plus de trois portions par semaine réduisent le risque de décès de 39 %."
   },
   "sodium-ecological": {
     "question": "Les pays qui consomment plus de sel vivent plus longtemps. Devez-vous manger plus salé ?",
@@ -103,7 +103,7 @@
       "Les chercheurs indiquent clairement que ces données sont observationnelles et ne doivent pas servir de base à des conseils nutritionnels."
     ],
     "caution": "Ne mangez pas plus de sel pour vivre plus longtemps. Si vous souffrez d'hypertension artérielle ou d'une autre maladie, gardez un apport en sel adapté à votre état et suivez l'avis de votre médecin.",
-    "myth": "Le guide original disait que, dans 181 pays, chaque ajout de 1 g de sodium par jour (environ 2,5 g de sel) allait de pair avec 2,6 ans d'espérance de vie en bonne santé en plus à la naissance, 0,3 an en plus à 60 ans et des taux de mortalité plus bas, ainsi qu'avec 3,4 ans en plus dans 46 pays à revenu élevé."
+    "myth": "Plus de sel fait vivre plus longtemps : chaque 1 g de sodium en plus par jour ajoute 2,6 ans de vie en bonne santé."
   },
   "potassium-salt": {
     "question": "Passer à un sel pauvre en sodium enrichi en potassium réduit-il votre risque de décès ?",
@@ -149,7 +149,7 @@
       "Les résultats obtenus chez le singe ne peuvent pas être transposés à l'humain, et l'on n'a pas démontré de combien manger moins pourrait prolonger la vie humaine."
     ],
     "caution": "Ne réduisez pas vos calories de vous-même pour vivre plus longtemps. Cela vaut tout particulièrement si vous êtes en sous-poids, enceinte ou allaitante, enfant ou adolescent, personne âgée fragile ou si vous souffrez d'un trouble du comportement alimentaire.",
-    "myth": "Le guide original disait que, chez des macaques rhésus, les animaux nourris normalement avaient un risque 2,9 fois plus élevé de plusieurs maladies et un risque de décès 3,0 fois plus élevé que ceux soumis à une restriction calorique."
+    "myth": "Manger moins prolonge la vie : dans une étude sur des singes, ceux nourris à satiété avaient un risque de décès 3 fois plus élevé."
   },
   "macronutrient-pattern": {
     "question": "Existe-t-il une proportion idéale de protéines, de lipides et de glucides à manger ?",
@@ -161,7 +161,7 @@
       "Ce sont des observations, et chaque point bas a été calculé séparément : les combiner en une seule proportion optimale n'a donc jamais été testé."
     ],
     "caution": "Il est inutile de chercher des pourcentages exacts, car la qualité globale de l'alimentation compte davantage. Si vous avez une maladie rénale, du diabète ou une affection similaire, suivez le plan alimentaire donné par votre médecin ou votre diététicien.",
-    "myth": "Le guide original disait qu'il existe une répartition optimale universelle : moins de 24 % d'amidon, 15 % à 17 % de protéines, plus de 15 % de graisses mono-insaturées, moins de 15 % de sucre, 6 % de graisses saturées et 6 % de graisses polyinsaturées, et 30 g ou plus de fibres. Il disait aussi que le risque de décès augmente régulièrement avec les graisses totales."
+    "myth": "Il existe une répartition alimentaire idéale, comme moins de 24 % d'amidon et 15 % à 17 % de protéines."
   },
   "ultraprocessed-acm": {
     "question": "Les aliments ultratransformés comme les chips et les hamburgers augmentent-ils le risque de mourir tôt ?",
@@ -173,7 +173,7 @@
       "L'affirmation largement reprise selon laquelle les consommateurs fréquents meurent en moyenne à 58 ans ne renvoie qu'à l'âge moyen des 335 personnes décédées. Cela ne veut pas dire que les personnes qui mangent ces aliments ne vivent que jusqu'à 58 ans."
     ],
     "caution": "Ces résultats proviennent de diplômés universitaires espagnols et peuvent ne pas valoir pour d'autres populations. Si vous réduisez les aliments ultratransformés, veillez à ce que ce que vous mangez à la place reste suffisamment nourrissant et abordable.",
-    "myth": "Le guide original disait que manger moins d'aliments ultratransformés réduit le risque de décès de 18 % à 62 %, et citait un titre affirmant que les personnes qui mangent souvent des chips, des hamburgers et du chocolat meurent en moyenne à seulement 58 ans."
+    "myth": "Manger moins d'aliments ultratransformés réduit le risque de décès de 18 % à 62 %."
   },
   "ultraprocessed-cvd": {
     "question": "Les aliments ultratransformés augmentent-ils votre risque de maladie du cœur et des vaisseaux sanguins ?",
@@ -184,7 +184,7 @@
       "Elle mesurait les nouveaux cas de maladie, pas les décès, et ne peut donc rien dire sur la durée de vie. L'autre article cité à ses côtés est un commentaire sans données propres."
     ],
     "caution": "Ne lisez pas ce chiffre comme un risque de décès. Il va dans le sens d'une consommation moindre d'aliments ultratransformés en général, mais l'étude s'est contentée d'observer des personnes et ne permet pas de calculer de combien manger moins réduirait votre risque de mourir.",
-    "myth": "Le guide original disait que sa fiche sur les aliments ultratransformés reposait sur trois articles, une étude espagnole sur les décès, une étude française sur les maladies du cœur et un commentaire, et traitait les trois comme des preuves concernant les décès."
+    "myth": "Les aliments ultratransformés raccourcissent la vie, d'après notamment une étude française sur les maladies du cœur."
   },
   "whole-grains": {
     "question": "Les céréales complètes comme le pain complet aident-elles à vivre plus longtemps ?",
@@ -267,7 +267,7 @@
       "Les personnes déjà obèses ou ayant d'autres risques de santé peuvent se tourner vers les boissons light, et les boissons n'ont été demandées qu'une fois : l'étude ne peut donc pas montrer que les édulcorants causent des décès."
     ],
     "caution": "Cela ne concerne ni l'eau, ni le thé et le café non sucrés. L'étude n'a pas testé le remplacement des boissons sucrées par des boissons light, et ne permet pas de mettre en cause un édulcorant précis.",
-    "myth": "Le guide original disait que, par rapport à moins d'un verre de soda par mois, un verre ou plus par jour augmentait le risque de décès de 18 %, de 11 % pour les boissons sucrées et de 27 % pour les boissons sans sucre."
+    "myth": "Les boissons sans sucre sont pires que les boissons sucrées : un verre ou plus par jour augmente le risque de décès de 27 %."
   },
   "sugar-sweetened-drinks": {
     "question": "Les boissons sucrées comme les sodas et le thé au lait sucré augmentent-elles votre risque de décès ?",
@@ -279,7 +279,7 @@
       "Les boissons étaient autodéclarées, et d'autres habitudes peuvent expliquer une partie du lien."
     ],
     "caution": "Une portion dans cette étude ne se convertit pas directement en verre ou en tasse d'autres études, et les catégories utilisées ici ne sont pas des seuils sans danger. Les chiffres de 18 % et 12 % souvent cités à côté de cette étude concernent le risque de développer un cancer, pas celui d'en mourir.",
-    "myth": "Le guide original disait qu'une boisson sucrée par jour augmente le risque de décès de 7 % et deux de 21 %, que chaque verre supplémentaire augmente le risque de décès par cancer de 16 %, et citait un titre affirmant que le cola et le thé au lait augmentent le risque de décès jusqu'à 62 %."
+    "myth": "Deux boissons sucrées par jour augmentent le risque de décès de 21 %, et le cola ou le thé au lait jusqu'à 62 %."
   },
   "fruit-juice": {
     "question": "Le jus 100 % pur fruit est-il aussi sain qu'il en a l'air ?",
@@ -291,7 +291,7 @@
       "Le chiffre de 11 % attribué par le guide original aux boissons sucrées regroupait en réalité les boissons sucrées et le jus 100 % pur fruit ensemble : on ne peut donc pas s'en servir pour classer le jus face aux sodas."
     ],
     "caution": "Cela ne s'applique pas aux fruits entiers. Si vous avez du diabète ou devez limiter le sucre, intégrez le jus dans le plan alimentaire établi par votre médecin.",
-    "myth": "Le guide original disait que chaque portion supplémentaire de 12 onces par jour de boissons sucrées augmente le risque de décès de 11 % et celle de jus de fruits de 24 %, de sorte que le jus 100 % pourrait être plus dangereux que les boissons sucrées."
+    "myth": "Le jus 100 % pur fruit est plus dangereux que les boissons sucrées : une portion en plus par jour augmente le risque de décès de 24 %."
   },
   "coffee": {
     "question": "Le café est-il mauvais pour la santé ? Faut-il arrêter ?",
@@ -314,7 +314,7 @@
       "L'étude se contentait d'observer les participants et ne peut pas séparer la spermidine d'une meilleure alimentation globale. Un petit essai de 12 mois donnant des compléments de spermidine à 100 adultes âgés qui ressentaient une baisse de leur mémoire ou de leurs capacités mentales n'a trouvé aucune amélioration sur son critère principal et n'a pas mesuré les décès."
     ],
     "caution": "N'achetez pas de compléments de spermidine sur la promesse d'une baisse de 60 % des décès. Si vous avez une maladie, vérifiez tout complément auprès de votre médecin au préalable.",
-    "myth": "Le guide original disait que la spermidine réduit le risque de décès de 30 % à 60 %, et que les taux de mortalité dans les groupes aux apports faible, moyen et élevé étaient de 40,5 %, 23,7 % et 15,1 %."
+    "myth": "La spermidine réduit le risque de décès de 30 % à 60 %."
   },
   "smoking": {
     "question": "Fumer seulement quelques cigarettes par jour raccourcit-il quand même la vie ?",
@@ -338,7 +338,7 @@
       "Une étude suédoise ayant suivi 29 518 femmes pendant 20 ans a estimé que celles qui évitaient le soleil vivaient de 0,6 à 2,1 ans de moins que les plus exposées, pas 6 ans, et elle se contentait elle aussi d'observer."
     ],
     "caution": "Les coups de soleil augmentent le risque de cancer de la peau, et ces études n'ont pas trouvé de dose idéale de soleil. Si vous souffrez d'une maladie sensible à la lumière, prenez des médicaments photosensibilisants ou avez un risque élevé de cancer de la peau, suivez les conseils de votre médecin sur la protection solaire.",
-    "myth": "Le guide original disait qu'une étude danoise sur 26 ans avait trouvé que s'exposer davantage au soleil prolonge nettement la vie, que même les personnes ayant eu un cancer de la peau à cause d'un excès de soleil vivaient 6 ans de plus que la moyenne, et que le soleil réduit le risque de décès d'environ 40 %."
+    "myth": "S'exposer davantage au soleil prolonge la vie, et même les personnes ayant eu un cancer de la peau ont vécu 6 ans de plus."
   },
   "nmn": {
     "question": "Prendre du NMN peut-il ralentir le vieillissement ou vous aider à vivre plus longtemps ?",
@@ -349,7 +349,7 @@
       "Aucun de ces essais n'a mesuré les décès ni la durée de vie, et l'on dispose de peu d'informations sur la sécurité d'une prise pendant des années."
     ],
     "caution": "Ne considérez pas le NMN comme un médicament de longévité prouvé, et ne l'utilisez jamais à la place du traitement d'une maladie chronique. Si vous souhaitez participer à des recherches à son sujet, faites-le dans le cadre d'un véritable essai clinique.",
-    "myth": "Le guide original disait que le NMN pouvait aider à vivre plus longtemps, mais ne citait que son nom, sans étude ni chiffre."
+    "myth": "Le NMN aide à vivre plus longtemps."
   },
   "metformin-diabetes": {
     "question": "Chez les personnes en surpoids nouvellement diagnostiquées avec un diabète de type 2, la metformine réduit-elle le risque de décès ?",
@@ -372,7 +372,7 @@
       "Sur l'affirmation selon laquelle la prise de metformine par les pères pourrait provoquer des malformations congénitales, une étude de 2024 en Norvège et à Taïwan n'a trouvé aucun lien clair une fois pris en compte le diabète des pères et d'autres facteurs."
     ],
     "caution": "Si vous êtes en bonne santé, ne prenez pas de metformine de vous-même pour vivre plus longtemps. Les hommes diabétiques qui envisagent d'avoir un enfant ne doivent pas arrêter leur médicament à cause d'articles en ligne. Parlez-en d'abord à votre médecin.",
-    "myth": "Le guide original disait que la metformine est un médicament miracle qui protège contre le cancer, les maladies du cœur, le diabète, l'obésité, les maladies du foie et des reins et le vieillissement, que les diabétiques qui en prennent peuvent vivre 3 ans de plus que les non-diabétiques, et citait un article affirmant que la prise de metformine par les pères peut causer des malformations congénitales."
+    "myth": "La metformine est un médicament miracle : les diabétiques qui en prennent vivent 3 ans de plus que les non-diabétiques."
   },
   "multivitamins": {
     "question": "Prendre des multivitamines tous les jours aide-t-il à vivre plus longtemps ?",
@@ -383,7 +383,7 @@
       "Une étude de 2024 ayant suivi 390 124 Américains pendant de nombreuses années n'a pas non plus trouvé de risque de décès plus faible chez les personnes prenant une multivitamine chaque jour."
     ],
     "caution": "Cela concerne les personnes généralement en bonne santé. Une supplémentation ciblée après un bilan est une autre question en cas de carence, d'étape de vie aux besoins nutritionnels particuliers ou de troubles de l'absorption. Si un médecin vous a conseillé un complément, ne l'arrêtez pas de vous-même. Demandez d'abord.",
-    "myth": "Le guide original disait que prendre des multivitamines réduit le risque de cancer d'environ 8 %."
+    "myth": "Les multivitamines réduisent le risque de cancer d'environ 8 %."
   },
   "glucosamine-chondroitin": {
     "question": "Les compléments de glucosamine ou de chondroïtine peuvent-ils vous aider à vivre plus longtemps ?",
@@ -394,7 +394,7 @@
       "Les chiffres de 39 % et 65 % du guide original n'étaient ajustés que sur l'âge : ce ne sont donc pas les résultats finaux. Les utilisateurs faisaient aussi plus d'exercice, fumaient moins et étaient plus diplômés, et les statistiques ne peuvent pas effacer totalement ces différences : l'étude montre donc un lien, pas une preuve."
     ],
     "caution": "Ne commencez pas ces compléments pour vivre plus longtemps. Si vos articulations vous font mal, cherchez d'abord pourquoi. Si vous prenez des anticoagulants, demandez conseil à votre médecin avant tout complément, en raison des risques d'interaction. Ces compléments ne remplacent pas une activité physique régulière.",
-    "myth": "Le guide original disait que la glucosamine réduit le risque de décès de 39 % et le risque de décès par maladie du cœur et des vaisseaux sanguins de 65 %, à peu près autant que l'exercice régulier."
+    "myth": "Prendre de la glucosamine pendant des années réduit le risque de décès de 39 %, presque autant que l'exercice régulier."
   },
   "anti-aging-drugs-review": {
     "question": "Les médicaments anti-âge aident-ils vraiment à vivre plus longtemps ?",
@@ -405,7 +405,7 @@
       "Ces médicaments diffèrent par leur nature, leurs doses et ce qu'ils traitent : ils ne peuvent donc pas être combinés en un seul protocole anti-âge. Un médicament utile contre une maladie ne prolonge pas pour autant la vie des personnes en bonne santé."
     ],
     "caution": "N'achetez pas et ne combinez pas ces médicaments de vous-même. Si vous prenez déjà l'un d'eux pour une maladie, suivez le plan de votre médecin sans l'arrêter ni modifier la dose seul. Les approches anti-âge expérimentales relèvent d'études cliniques encadrées.",
-    "myth": "Le guide original citait, dans sa section sur les médicaments, une revue approfondie d'une revue du groupe Nature sur la manière de développer des médicaments anti-âge."
+    "myth": "Une revue sur la manière de développer des médicaments anti-âge a été citée comme base pour en prendre afin de vivre plus longtemps."
   },
   "alcohol": {
     "question": "Un verre par jour est-il bon pour vous ?",
@@ -416,7 +416,7 @@
       "Les personnes buvant de 45 à 65 g par jour avaient un risque de décès plus élevé d'environ 19 %, et celles buvant 65 g ou plus d'environ 35 %. Chez les femmes, le risque commençait à monter à des quantités moindres."
     ],
     "caution": "Ne pas voir de variation claire du risque à faible dose ne prouve pas qu'une quantité soit sans danger. Ce n'était pas un essai d'arrêt : cela ne peut donc pas dire combien de temps de plus vous vivriez en arrêtant. Si vous dépendez de l'alcool ou avez déjà eu des symptômes de sevrage, n'arrêtez pas brusquement seul. Réduisez avec l'aide d'un médecin.",
-    "myth": "Le guide original disait qu'à moins d'arrêter l'alcool, votre risque de décès est plus élevé d'environ 50 %, sans limite supérieure."
+    "myth": "À moins d'arrêter l'alcool, votre risque de décès est plus élevé d'environ 50 %, sans limite supérieure."
   },
   "ambient-air-pollution": {
     "question": "Vivre dans la pollution de l'air raccourcit-il votre vie ?",
@@ -471,7 +471,7 @@
       "La fourchette de 16 % à 40 % du guide original mélangeait différents résultats. Le chiffre de 40 % concerne les décès par maladie du cœur et des vaisseaux sanguins autour de 19 minutes par semaine, pas les décès toutes causes confondues. Tous ces chiffres proviennent d'un modèle statistique sur des personnes observées, pas d'un essai."
     ],
     "caution": "Ces chiffres ne sont pas une garantie, et le point le plus bas de la courbe n'est pas une prescription universelle. Si vous faites déjà de l'exercice et n'avez aucune contre-indication médicale, ajoutez progressivement de courts passages plus intenses. En cas de symptômes ou de maladie chronique mal stabilisée, consultez d'abord un médecin.",
-    "myth": "Le guide original disait que 15 à 20 minutes d'exercice soutenu par semaine réduisent le risque de décès de 16 % à 40 %, et qu'atteindre 50 à 57 minutes le réduit encore davantage."
+    "myth": "15 à 20 minutes d'exercice soutenu par semaine réduisent le risque de décès de 16 % à 40 %."
   },
   "walking-steps": {
     "question": "Pour les adultes d'âge moyen, faire plus de pas chaque jour est-il toujours mieux ?",
@@ -504,7 +504,7 @@
       "Ces chiffres concernent la survenue de maladies, pas les décès. L'étude n'était pas un essai, et les habitudes japonaises de bain en baignoire ne se transposent pas simplement aux douches."
     ],
     "caution": "Ne pas trouver de lien avec la mort subite ne prouve pas que le bain soit totalement sans danger, car la noyade, la surchauffe et d'autres risques n'ont pas été écartés. Si vous êtes sujet aux malaises, souffrez d'une maladie aiguë, avez bu de l'alcool ou avez une maladie cardiaque instable, évitez les longs bains chauds et évitez de vous baigner seul.",
-    "myth": "Le guide original disait que les personnes qui prennent un bain chaque jour, par rapport à celles qui en prennent une ou deux fois par semaine ou pas du tout, ont un risque réduit de 28 % de maladie du cœur et des vaisseaux sanguins, de 26 % d'accident vasculaire cérébral et de 46 % d'hémorragie cérébrale, sans hausse de la mort subite."
+    "myth": "Prendre un bain chaque jour réduit de 28 % le risque de maladie du cœur et de 26 % celui d'accident vasculaire cérébral."
   },
   "heavy-housework": {
     "question": "Les gros travaux ménagers aident-ils les hommes âgés à vivre plus longtemps ?",
@@ -515,7 +515,7 @@
       "Les personnes capables d'effectuer de gros travaux ménagers sont peut-être déjà en meilleure santé, et ce type d'étude ne peut pas séparer cause et effet. L'âge de 72 ans était simplement la moyenne d'âge des participants, pas un seuil à partir duquel le bénéfice commencerait."
     ],
     "caution": "Ce n'est pas une ordonnance pour déplacer des meubles ou porter des bouteilles de gaz afin de vivre plus longtemps. Faites des tâches ménagères adaptées à vos forces. En cas de fragilité, d'ostéoporose, de problèmes de dos ou de risque de chute, évitez de soulever des charges lourdes.",
-    "myth": "Le guide original disait que les hommes de plus de 72 ans qui font chaque semaine de gros travaux ménagers réduisent leur taux moyen de mortalité de 29 %."
+    "myth": "Les hommes de plus de 72 ans qui font chaque semaine de gros travaux ménagers réduisent leur taux de mortalité de 29 %."
   },
   "sleep-duration": {
     "question": "Dormir 10 heures ou plus par jour est-il mauvais pour la santé ?",
@@ -538,7 +538,7 @@
       "Le résumé de l'article ne donne pas de chiffres séparés sur les décès correspondant aux 43 % et 15 % du guide. Les heures de coucher étaient autodéclarées, et il est difficile de démêler les rythmes quotidiens et les maladies de l'heure du coucher."
     ],
     "caution": "Les bornes horaires exactes varient légèrement dans l'article lui-même : ne prenez donc pas 22 h ou minuit pour des règles strictes. Gardez un sommeil régulier et suffisant, adapté à votre propre rythme. Si vous coucher tôt vous convient bien, il n'y a aucune raison de veiller plus tard à cause de cette étude.",
-    "myth": "Le guide original disait que se coucher entre 22 h et minuit est idéal, que se coucher tôt augmente le risque de décès de 43 % et se coucher tard de 15 %, tout en signalant que cela fait débat."
+    "myth": "Se coucher entre 22 h et minuit est idéal, et se coucher tôt augmente le risque de décès de 43 %."
   },
   "sedentary-time": {
     "question": "Rester assis de longues heures chaque jour augmente-t-il votre risque de décès ?",
@@ -549,7 +549,7 @@
       "Un taux fixe de 3 % par heure ne vaut donc pas à tous les niveaux, et les seuils de 6 à 8 heures et de 3 à 4 heures sont des inflexions d'une courbe statistique, pas des limites sans danger. Le temps passé assis étant surtout autodéclaré, ces résultats montrent un lien."
     ],
     "caution": "Dans cette synthèse, le temps passé assis n'était pas clairement lié aux décès par cancer : ne le confondez donc pas avec le risque d'avoir un cancer. Si votre état le permet, remplacez une partie du temps assis par de la marche ou d'autres mouvements et faites régulièrement de l'exercice. Si vous ne pouvez pas rester debout, suivez les conseils de rééducation. Aucune règle précise sur la fréquence à laquelle se lever n'a été démontrée.",
-    "myth": "Le guide original disait que chaque heure supplémentaire passée assis par jour augmente le risque de maladie du cœur et des vaisseaux sanguins de 4 %, de cancer de 1 % et de décès de 3 %, et que le risque commence à monter au-delà de 6 à 8 heures assis au total ou de 3 à 4 heures de télévision par jour."
+    "myth": "Chaque heure supplémentaire assis par jour augmente le risque de décès de 3 %, et le risque monte au-delà de 6 à 8 heures."
   },
   "pessimism": {
     "question": "Les pessimistes meurent-ils plus jeunes ?",
@@ -593,7 +593,7 @@
       "L'article ne confirme pas les chiffres du guide évoquant une mortalité de 1,5 % due au COVID-19 aux États-Unis et 2 ans d'espérance de vie en moins. Il n'a pas étudié les États-Unis, et le chiffre de 1,5 % ne précise ni la date ni sur quelle population il a été calculé."
     ],
     "caution": "Ces données décrivent la première vague de 2020 et ne s'appliquent pas aux variants, à l'immunité et aux soins d'aujourd'hui. Limitez les risques d'infection, poursuivez le suivi des maladies chroniques, consultez rapidement en cas de maladie et suivez les recommandations actuelles de prévention et de traitement.",
-    "myth": "Le guide original disait que le taux de mortalité du COVID-19 aux États-Unis était d'environ 1,5 % et que l'espérance de vie moyenne avait baissé de 2 ans."
+    "myth": "Le taux de mortalité du COVID-19 aux États-Unis était d'environ 1,5 %, et l'espérance de vie a baissé de 2 ans."
   },
   "resistance-training": {
     "question": "Le renforcement musculaire aide-t-il à vivre plus longtemps ?",
@@ -693,7 +693,7 @@
       "L'acidose lactique fait l'objet d'un avertissement encadré spécial sur la notice. Les atteintes hépatiques proviennent de signalements faits après la mise sur le marché, ce qui ne permet pas d'en connaître la fréquence."
     ],
     "caution": "La fréquence des effets indésirables varie selon la forme du médicament, la vitesse d'augmentation de la dose, la dose elle-même et les patients, et ces taux d'effets indésirables ne sont pas des risques de décès. Ne commencez pas la metformine seul à cause de ces chiffres et, si vous en prenez, ne l'arrêtez pas seul.",
-    "myth": "Le guide original disait que les effets indésirables courants de la metformine sont une carence en vitamine B12 chez 7 % à 17,4 % des personnes, des troubles digestifs jusqu'à 53 %, de la fatigue chez 9 % et des maux de tête chez 6 %, avec de rares mais graves acidoses lactiques et atteintes hépatiques."
+    "myth": "Jusqu'à 53 % des personnes sous metformine ont des troubles digestifs, et 7 % à 17 % manquent de vitamine B12."
   },
   "waist-circumference": {
     "question": "Un tour de taille plus grand signifie-t-il un risque de décès plus élevé ?",

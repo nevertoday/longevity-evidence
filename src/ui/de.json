@@ -131,6 +131,7 @@
 
   "myths.title": "Verbreitete Aussagen: wahr oder falsch?",
   "myths.intro": "Diese {count} Aussagen stammen aus der ursprünglichen Ausgabe von HowToLiveLonger, einem im Internet weit verbreiteten Leitfaden. Die Prüfenden glichen jede Aussage mit den zitierten Studien ab und stellten fest, dass sie falsch, übertrieben oder ohne direkte Belege ist. Jeder Eintrag zeigt zuerst die Aussage und dann, was die Forschung fand.",
+  "myths.claim": "Die Behauptung",
   "myths.evidence": "Was die Forschung fand",
 
   "studies.title": "Alle Studien",

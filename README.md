@@ -57,7 +57,7 @@ npm run sync -- /tmp/HowToLiveLonger
 npm run build && npm run check
 ```
 
-`src/model.ts` 在边界上把上游文件解析成 `Study`。子分类、结论和等级都查表转换，遇到不认识的值会直接报错。话题由子分类表决定，另有 8 条按 ID 的例外。`src/explain.ts` 读 `content/explain/`，每种语言每条记录都要有问题、回答、两到四句解释、注意事项，以及（原说法有问题时）流行说法；它还按研究设计把每条记录分成随机试验、跟踪观察和间接证据三类。
+`src/model.ts` 在边界上把上游文件解析成 `Study`。子分类、结论和等级都查表转换，遇到不认识的值会直接报错。话题由子分类表决定，另有 8 条按 ID 的例外。`src/explain.ts` 读 `content/explain/`，每种语言每条记录都要有问题、回答、两到四句解释、注意事项，以及（原说法有问题时）流行说法。流行说法只写原说法里被研究否定的那部分，一句话说完，中文不超过 40 字，超长会构建失败；原说法全文留在研究页的「原始数据」里。它还按研究设计把每条记录分成随机试验、跟踪观察和间接证据三类。
 
 上游可能只改某条记录的数字而不改 ID。`src/fingerprint.ts` 给每条记录的中文原文算一个指纹，`content/upstream-fingerprints.json` 记着本站的方向、研究类型、话题例外和白话解读上次核对时它的指纹。同步后如果有记录变了，`npm run check` 会列出这些 ID；对照 `git diff -- data/upstream` 改好本站的几层内容，再运行 `npm run mark-checked -- <ID>`。`src/explain.ts` 里的 `EXPLAIN_STAGE` 记着每种语言的解读审到了哪一步（机器翻译、已对照上游核对、已有人审读），关于页会照实告诉读者。
 
@@ -130,7 +130,7 @@ npm run sync -- /tmp/HowToLiveLonger
 npm run build && npm run check
 ```
 
-`src/model.ts` parses the upstream files into `Study` records at the boundary. Subcategories, verdicts and grades go through lookup tables, and an unknown value stops the build. A subcategory table picks each study's topic, with eight per-ID exceptions. `src/explain.ts` reads `content/explain/`. Every record needs, in every language, a question, an answer, two to four sentences of explanation, a caution, and the popular claim when the verdict questions it. It also sorts each record by study design into randomized trials, observational studies and indirect evidence.
+`src/model.ts` parses the upstream files into `Study` records at the boundary. Subcategories, verdicts and grades go through lookup tables, and an unknown value stops the build. A subcategory table picks each study's topic, with eight per-ID exceptions. `src/explain.ts` reads `content/explain/`. Every record needs, in every language, a question, an answer, two to four sentences of explanation, a caution, and the popular claim when the verdict questions it. The popular claim states only the part the research disputes, in one sentence, with a per-language length limit that fails the build (40 characters in Chinese, 120 in English). The full original wording stays in the study page's raw data. It also sorts each record by study design into randomized trials, observational studies and indirect evidence.
 
 Upstream can change a record's numbers without changing its id. `src/fingerprint.ts` fingerprints each record's Chinese source text, and `content/upstream-fingerprints.json` keeps the fingerprint each record had when this site's direction, kind, topic override and explanations were last checked against it. After a sync, `npm run check` lists every record that changed. Compare with `git diff -- data/upstream`, update this site's layers to fit, then run `npm run mark-checked -- <id>`. `EXPLAIN_STAGE` in `src/explain.ts` records how far each language's explanations have been reviewed (machine-translated, checked against upstream, read by a person), and the about page tells readers.
 

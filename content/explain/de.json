@@ -9,7 +9,7 @@
       "Die Ernährung wurde per Fragebogen erfasst, und die Studien haben die Menschen nur beobachtet. Sie zeigen also einen Zusammenhang, können aber nicht beweisen, dass das Fleisch selbst die Todesfälle verursacht hat."
     ],
     "caution": "Kein klarer Zusammenhang mit dem Sterberisiko beweist nicht, dass Geflügel und Fisch risikofrei sind. In einer der Studien ging mehr Geflügel mit mehr Herz-Kreislauf-Erkrankungen einher. Außerdem deckten die beiden Studien unterschiedliche Zeiträume ab, sodass ihre Zahlen nicht vermischt werden sollten.",
-    "myth": "Im ursprünglichen Leitfaden hieß es, dass weißes Fleisch das Sterberisiko um 3 % bis 11 % senkt, eine halbe Portion rotes Fleisch mehr pro Tag es um 10 % erhöht und zwei Portionen rotes oder verarbeitetes Fleisch pro Woche es um 3 % erhöhen."
+    "myth": "Weißes Fleisch senkt das Sterberisiko um 3 % bis 11 %, mehr rotes Fleisch erhöht es."
   },
   "fresh-fruit-diabetes": {
     "question": "Sollten Sie bei Diabetes trotzdem Obst essen?",
@@ -20,7 +20,7 @@
       "Die Studie hat die Menschen nur beobachtet. Wer mehr Obst aß, könnte sich auch in anderen Punkten unterschieden haben, sodass sich nicht beweisen lässt, dass das Obst den Vorteil verursacht hat."
     ],
     "caution": "Die Zahlen gelten pro zusätzlichen 100 g pro Tag, nicht 200 g, und stammen nur von Menschen mit Diabetes; sie bedeuten also nicht, dass alle ein 17 % niedrigeres Risiko bekommen. Untersucht wurde ganzes frisches Obst, und Saft ist kein Ersatz.",
-    "myth": "Im ursprünglichen Leitfaden hieß es, dass 200 g frisches Obst pro Tag die Sterberate um 17 % senken sowie Diabetes-Komplikationen an großen Blutgefäßen um 13 % und an kleinen Blutgefäßen um 28 %."
+    "myth": "Bei Diabetes senken 200 g frisches Obst pro Tag die Sterberate um 17 %."
   },
   "flavonoid-foods": {
     "question": "Helfen flavonoidreiche Lebensmittel wie Äpfel, Tee und Brokkoli dabei, länger zu leben?",
@@ -32,7 +32,7 @@
       "Menschen, die mehr Flavonoide essen, ernähren sich oft insgesamt besser und sind wohlhabender, was einen Teil des Zusammenhangs erklären könnte. Die Studie zeigt daher einen Zusammenhang, keinen Beweis."
     ],
     "caution": "Hier ging es um normale Lebensmittel; die Studie sagt also nichts über Flavonoid-Nahrungsergänzungsmittel, und diese Lebensmittel gleichen den Schaden durch Rauchen oder Alkohol nicht aus. Niemand hat einen konkreten Plan wie 100 g Brokkoli pro Tag getestet.",
-    "myth": "Im ursprünglichen Leitfaden hieß es, dass flavonoidreiche Lebensmittel das Sterberisiko um 20 % senken, mit Beispielen wie einer Tasse Tee, einem Apfel, einer Orange, 100 g Heidelbeeren oder 100 g Brokkoli."
+    "myth": "Flavonoidreiche Lebensmittel wie Tee, Äpfel und Heidelbeeren senken das Sterberisiko um 20 %."
   },
   "chili-us": {
     "question": "Leben Menschen in den USA, die scharfe rote Chilischoten essen, länger?",
@@ -44,7 +44,7 @@
       "Nach der Ernährung wurde nur einmal zu Beginn gefragt, und die Studie hat die Menschen nur beobachtet. Sie zeigt also einen Zusammenhang, aber nicht, dass Chili ihn verursacht hat."
     ],
     "caution": "Das zeigt nicht, dass Chili selbst das Leben verlängert. Die Zahl von 23 %, die oft mit dieser Studie verbunden wird, stammt aus einer anderen Studie in Italien. Wenn Ihnen scharfes Essen auf den Magen schlägt, gibt es keinen Grund, sich zum Mehr-Essen zu zwingen.",
-    "myth": "Im ursprünglichen Leitfaden hieß es, dass in einer US-Studie mit 16.179 Menschen über etwa 19 Jahre 21,6 % der Chili-Esser starben gegenüber 33,6 % der Nicht-Esser und dass Chili mehr als viermal pro Woche das Sterberisiko um 23 % senkt."
+    "myth": "Nur 21,6 % der Chili-Esser starben, gegenüber 33,6 % der Menschen, die kein Chili aßen."
   },
   "chili-italy": {
     "question": "Haben Menschen in Italien, die mehr als viermal pro Woche Chili essen, ein niedrigeres Sterberisiko?",
@@ -56,7 +56,7 @@
       "Die Studie hat die Menschen nur beobachtet. Häufige Chili-Esser unterscheiden sich möglicherweise in Ernährung und Lebensstil; daher lässt sich nicht zeigen, dass Chili oder ihr scharfer Inhaltsstoff Capsaicin den Unterschied verursacht hat."
     ],
     "caution": "Die Vergleichsgruppe waren Menschen, die nie oder selten Chili aßen, nicht alle mit weniger als zweimal pro Woche. Chili kann keine Blutdruckkontrolle oder andere Behandlung ersetzen, und wenn sie Ihnen auf den Magen schlägt, essen Sie nur so viel, wie Sie vertragen.",
-    "myth": "Im ursprünglichen Leitfaden hieß es, dass Chili mehr als viermal pro Woche das Sterberisiko um 23 % und Herz-Kreislauf-Todesfälle um 34 % senkt, und eine zitierte Überschrift behauptete ein um 61 % niedrigeres Risiko, an Krankheiten zu sterben."
+    "myth": "Mehr als viermal pro Woche Chili zu essen senkt das Sterberisiko um 23 % und das Risiko, an Krankheiten zu sterben, um bis zu 61 %."
   },
   "eggs": {
     "question": "Erhöhen Eier das Sterberisiko?",
@@ -80,7 +80,7 @@
       "Menschen, die regelmäßig Walnüsse essen, achten vielleicht ohnehin mehr auf ihre Gesundheit, und die Arbeit wurde von der Industrie mitfinanziert – beides Gründe, das Ergebnis vorsichtig zu lesen."
     ],
     "caution": "Das gilt nicht, wenn Sie allergisch auf Nüsse sind. Die Zahlen sind Durchschnittswerte über eine große Gruppe und bedeuten nicht, dass jede einzelne Person ein Jahr oder mehr gewinnt.",
-    "myth": "Im ursprünglichen Leitfaden hieß es, dass fünf oder mehr Portionen Walnüsse zu je 28 g pro Woche 1,3 gesunde Lebensjahre schenken, das Sterberisiko um 14 % und Herz-Kreislauf-Todesfälle um 25 % senken."
+    "myth": "Fünf Portionen Walnüsse pro Woche schenken 1,3 gesunde Lebensjahre."
   },
   "nuts-general": {
     "question": "Leben Menschen, die öfter Nüsse essen, länger?",
@@ -91,7 +91,7 @@
       "Eine zweite Studie mit 7.216 Erwachsenen mit hohem Risiko für Herz-Kreislauf-Erkrankungen fand ein etwa 39 % niedrigeres Sterberisiko bei Menschen, die mehr als drei Portionen pro Woche aßen. Nur 323 von ihnen starben, und die Teilnehmenden wählten ihre Nussmenge selbst; es war also eine Beobachtung, kein Test mit zufälliger Zuteilung."
     ],
     "caution": "Die Studien verglichen keine rohen und gerösteten Nüsse; sie zeigen also nicht, dass Nüsse roh gegessen werden müssen. Wenn Sie eine Nussallergie haben, meiden Sie sie.",
-    "myth": "Im ursprünglichen Leitfaden hieß es, dass bei Portionen von etwa 1 Unze (rund 28 g) häufigerer Nussverzehr pro Woche das Sterberisiko um 7 %, 11 %, 13 %, 15 % und 20 % senkt und dass mehr als drei Portionen pro Woche in einer Studie mit 7.216 Menschen das Risiko um 39 % senkten."
+    "myth": "Je mehr Nüsse, desto besser: Mehr als drei Portionen pro Woche senken das Sterberisiko um 39 %."
   },
   "sodium-ecological": {
     "question": "In Ländern mit höherem Salzkonsum leben die Menschen länger. Sollten Sie mehr Salz essen?",
@@ -103,7 +103,7 @@
       "Die Forschenden schreiben deutlich, dass diese Daten reine Beobachtungen sind und nicht als Grundlage für Ernährungsempfehlungen dienen dürfen."
     ],
     "caution": "Essen Sie nicht mehr Salz, um länger zu leben. Wenn Sie Bluthochdruck oder eine andere Erkrankung haben, halten Sie die Salzmenge im Rahmen, der zu Ihrer Erkrankung passt, und folgen Sie dem Rat Ihrer Ärztin oder Ihres Arztes.",
-    "myth": "Im ursprünglichen Leitfaden hieß es, dass über 181 Länder hinweg jedes zusätzliche 1 g Natrium pro Tag (etwa 2,5 g Salz) mit 2,6 zusätzlichen Jahren gesunder Lebenserwartung bei der Geburt, 0,3 zusätzlichen Jahren im Alter von 60 Jahren und niedrigeren Sterberaten einherging sowie mit 3,4 zusätzlichen Jahren in 46 Ländern mit hohem Einkommen."
+    "myth": "Mehr Salz verlängert das Leben: Jedes zusätzliche 1 g Natrium pro Tag bringt 2,6 Jahre gesunde Lebenserwartung."
   },
   "potassium-salt": {
     "question": "Senkt der Umstieg auf kaliumangereichertes, natriumarmes Salz das Sterberisiko?",
@@ -149,7 +149,7 @@
       "Ergebnisse von Affen lassen sich nicht auf Menschen übertragen, und wie sehr weniger Essen das menschliche Leben verlängern könnte, ist nicht gezeigt."
     ],
     "caution": "Kürzen Sie Kalorien nicht auf eigene Faust, um länger zu leben. Das gilt besonders bei Untergewicht, in Schwangerschaft und Stillzeit, für Kinder und Jugendliche, gebrechliche ältere Menschen sowie alle mit einer Essstörung.",
-    "myth": "Im ursprünglichen Leitfaden hieß es, dass bei Rhesusaffen normal gefütterte Tiere das 2,9-fache Risiko für mehrere Krankheiten und das 3,0-fache Sterberisiko hatten wie kalorienreduziert gefütterte Tiere."
+    "myth": "Weniger essen verlängert das Leben: In einer Affenstudie hatten satt gefütterte Affen ein 3-fach höheres Sterberisiko."
   },
   "macronutrient-pattern": {
     "question": "Gibt es ein ideales Verhältnis von Eiweiß, Fett und Kohlenhydraten in der Ernährung?",
@@ -161,7 +161,7 @@
       "Dies sind Beobachtungen, und jeder Tiefpunkt wurde getrennt berechnet; sie zu einem einzigen besten Verhältnis zusammenzusetzen, wurde nie getestet."
     ],
     "caution": "Sie müssen keinen genauen Prozentzahlen hinterherjagen, weil die gesamte Qualität der Lebensmittel wichtiger ist. Bei Nierenerkrankung, Diabetes oder Ähnlichem folgen Sie dem Ernährungsplan Ihrer Ärztin, Ihres Arztes oder Ihrer Ernährungsfachkraft.",
-    "myth": "Im ursprünglichen Leitfaden hieß es, dass es eine allgemeingültige Idealverteilung gibt: unter 24 % Stärke, 15 % bis 17 % Eiweiß, über 15 % einfach ungesättigtes Fett, unter 15 % Zucker, je 6 % gesättigtes und mehrfach ungesättigtes Fett sowie 30 g oder mehr Ballaststoffe; außerdem steige das Sterberisiko stetig mit dem Gesamtfett."
+    "myth": "Es gibt eine ideale Nährstoffverteilung, etwa unter 24 % Stärke und 15 % bis 17 % Eiweiß."
   },
   "ultraprocessed-acm": {
     "question": "Erhöhen hochverarbeitete Lebensmittel wie Chips und Burger das Risiko, früh zu sterben?",
@@ -173,7 +173,7 @@
       "Die weit verbreitete Behauptung, Viel-Esser stürben im Schnitt mit 58 Jahren, meint nur das Durchschnittsalter der 335 Verstorbenen. Sie bedeutet nicht, dass Menschen, die solche Lebensmittel essen, nur 58 Jahre alt werden."
     ],
     "caution": "Diese Ergebnisse stammen von spanischen Hochschulabsolventen und gelten möglicherweise nicht für andere Gruppen. Wenn Sie hochverarbeitete Lebensmittel reduzieren, achten Sie darauf, dass die Alternativen weiterhin genug Nährstoffe liefern und bezahlbar bleiben.",
-    "myth": "Im ursprünglichen Leitfaden hieß es, dass weniger hochverarbeitete Lebensmittel das Sterberisiko um 18 % bis 62 % senken, und es wurde eine Überschrift zitiert, wonach Menschen, die oft Chips, Burger und Schokolade essen, im Schnitt mit nur 58 Jahren sterben."
+    "myth": "Weniger hochverarbeitete Lebensmittel senken das Sterberisiko um 18 % bis 62 %."
   },
   "ultraprocessed-cvd": {
     "question": "Erhöhen hochverarbeitete Lebensmittel das Risiko für Herz-Kreislauf-Erkrankungen?",
@@ -184,7 +184,7 @@
       "Gemessen wurden neue Erkrankungsfälle, keine Todesfälle; die Studie kann also nichts über die Lebensspanne sagen. Die andere daneben zitierte Arbeit ist ein Kommentar ohne eigene Daten."
     ],
     "caution": "Lesen Sie diese Zahl nicht als Sterberisiko. Sie stützt allgemein den Rat, weniger hochverarbeitete Lebensmittel zu essen, aber die Studie hat die Menschen nur beobachtet und erlaubt keine Berechnung, wie stark weniger Verzehr Ihr Sterberisiko verändern würde.",
-    "myth": "Im ursprünglichen Leitfaden hieß es, dass sein Eintrag zu hochverarbeiteten Lebensmitteln auf drei Arbeiten beruht – einer spanischen Sterblichkeitsstudie, einer französischen Studie zu Herzerkrankungen und einem Kommentar – und alle drei wurden als Belege zum Sterberisiko behandelt."
+    "myth": "Hochverarbeitete Lebensmittel verkürzen das Leben, unter anderem laut einer französischen Studie zu Herzerkrankungen."
   },
   "whole-grains": {
     "question": "Helfen Vollkornprodukte wie Vollkornbrot dabei, länger zu leben?",
@@ -267,7 +267,7 @@
       "Menschen, die bereits stark übergewichtig sind oder andere Gesundheitsrisiken haben, greifen eher zu Light-Getränken, und nach Getränken wurde nur einmal gefragt. Die Studie kann also nicht zeigen, dass Süßstoffe Todesfälle verursachen."
     ],
     "caution": "Das gilt nicht für Wasser sowie ungesüßten Tee und Kaffee. Die Studie hat nicht getestet, ob der Tausch von Zucker- gegen Light-Getränke hilft, und kann keinen einzelnen Süßstoff herausgreifen.",
-    "myth": "Im ursprünglichen Leitfaden hieß es, dass im Vergleich zu weniger als einem Glas Erfrischungsgetränke pro Monat ein Glas oder mehr pro Tag das Sterberisiko um 18 % erhöht – um 11 % bei zuckerhaltigen und um 27 % bei zuckerfreien Getränken."
+    "myth": "Zuckerfreie Getränke sind schlimmer als zuckerhaltige: Ein Glas oder mehr pro Tag erhöht das Sterberisiko um 27 %."
   },
   "sugar-sweetened-drinks": {
     "question": "Erhöhen zuckerhaltige Getränke wie Limonade und gesüßter Milchtee das Sterberisiko?",
@@ -279,7 +279,7 @@
       "Der Getränkekonsum wurde selbst angegeben, und andere Gewohnheiten könnten einen Teil des Zusammenhangs erklären."
     ],
     "caution": "Eine Portion in dieser Studie lässt sich nicht direkt in ein Glas aus anderen Studien umrechnen, und die hier genutzten Gruppen sind keine sicheren Obergrenzen. Die oft zusammen mit dieser Studie zitierten 18 % und 12 % betreffen Krebserkrankungen, nicht Krebstodesfälle.",
-    "myth": "Im ursprünglichen Leitfaden hieß es, dass ein zuckerhaltiges Getränk pro Tag das Sterberisiko um 7 % und zwei es um 21 % erhöhen, dass jede zusätzliche Tasse das Krebssterberisiko um 16 % erhöht, und er zitierte eine Überschrift, laut der Cola und Milchtee das Sterberisiko um bis zu 62 % steigern."
+    "myth": "Zwei zuckerhaltige Getränke pro Tag erhöhen das Sterberisiko um 21 %, Cola und Milchtee um bis zu 62 %."
   },
   "fruit-juice": {
     "question": "Ist 100 % Fruchtsaft wirklich so gesund, wie er scheint?",
@@ -291,7 +291,7 @@
       "Die 11 %, die der ursprüngliche Leitfaden für zuckerhaltige Getränke angab, umfassten in Wahrheit zuckergesüßte Getränke und 100 % Saft zusammen und lassen sich daher nicht nutzen, um Saft gegen Limonade abzuwägen."
     ],
     "caution": "Das gilt nicht für das Essen ganzer Früchte. Wenn Sie Diabetes haben oder Zucker begrenzen müssen, ordnen Sie Saft in den Ernährungsplan Ihrer Ärztin oder Ihres Arztes ein.",
-    "myth": "Im ursprünglichen Leitfaden hieß es, dass jede zusätzliche 12-Unzen-Portion pro Tag bei zuckerhaltigen Getränken das Sterberisiko um 11 % und bei Fruchtsaft um 24 % erhöht, sodass 100 % Saft gefährlicher sein könnte als zuckerhaltige Getränke."
+    "myth": "100 % Fruchtsaft ist gefährlicher als zuckerhaltige Getränke: Eine zusätzliche Portion pro Tag erhöht das Sterberisiko um 24 %."
   },
   "coffee": {
     "question": "Ist Kaffee ungesund? Sollten Sie damit aufhören?",
@@ -314,7 +314,7 @@
       "Die Studie hat die Menschen nur beobachtet und kann Spermidin nicht von einer insgesamt besseren Ernährung trennen. Eine kleine 12-monatige Studie, die 100 älteren Menschen mit subjektiv nachlassendem Gedächtnis oder Denken Spermidin-Kapseln gab, fand keine Verbesserung im wichtigsten Denktest und maß keine Todesfälle."
     ],
     "caution": "Kaufen Sie keine Spermidin-Präparate wegen einer angeblichen Senkung der Todesfälle um 60 %. Wenn Sie eine Erkrankung haben, sprechen Sie jedes Präparat zuerst mit Ihrer Ärztin oder Ihrem Arzt ab.",
-    "myth": "Im ursprünglichen Leitfaden hieß es, dass Spermidin das Sterberisiko um 30 % bis 60 % senkt und dass die Sterberaten in der niedrigen, mittleren und hohen Gruppe bei 40,5 %, 23,7 % und 15,1 % lagen."
+    "myth": "Spermidin senkt das Sterberisiko um 30 % bis 60 %."
   },
   "smoking": {
     "question": "Verkürzen auch schon ein paar Zigaretten am Tag das Leben?",
@@ -338,7 +338,7 @@
       "Eine schwedische Studie, die 29.518 Frauen 20 Jahre lang begleitete, schätzte, dass Sonnenmeidende 0,6 bis 2,1 Jahre kürzer lebten als die Gruppe mit der meisten Sonne – nicht 6 Jahre –, und auch sie hat die Menschen nur beobachtet."
     ],
     "caution": "Sonnenbrand erhöht das Hautkrebsrisiko, und diese Studien fanden keine ideale Sonnenmenge. Wenn Sie eine lichtempfindliche Erkrankung haben, Medikamente nehmen, die Ihre Haut lichtempfindlich machen, oder ein hohes Hautkrebsrisiko haben, folgen Sie dem ärztlichen Rat zum Sonnenschutz.",
-    "myth": "Im ursprünglichen Leitfaden hieß es, dass eine 26-jährige dänische Studie fand, mehr Sonne verlängere das Leben stark, selbst Menschen mit Hautkrebs durch zu viel Sonne lebten im Schnitt 6 Jahre länger als der Durchschnitt, und Sonne senke das Sterberisiko um etwa 40 %."
+    "myth": "Mehr Sonne verlängert das Leben, und selbst Menschen mit Hautkrebs lebten 6 Jahre länger."
   },
   "nmn": {
     "question": "Kann NMN das Altern verlangsamen oder das Leben verlängern?",
@@ -349,7 +349,7 @@
       "Keine dieser Studien untersuchte Todesfälle oder die Lebensspanne, und es gibt kaum Daten dazu, ob eine jahrelange Einnahme sicher ist."
     ],
     "caution": "Behandeln Sie NMN nicht als bewiesenes Mittel für ein längeres Leben und ersetzen Sie damit niemals die Behandlung einer chronischen Krankheit. Wenn Sie an Forschung dazu teilnehmen möchten, tun Sie das im Rahmen einer ordentlichen klinischen Studie.",
-    "myth": "Im ursprünglichen Leitfaden hieß es, dass NMN dabei helfen kann, länger zu leben – genannt wurde aber nur der Name, ohne Studien oder Zahlen."
+    "myth": "NMN hilft dabei, länger zu leben."
   },
   "metformin-diabetes": {
     "question": "Senkt Metformin bei übergewichtigen Menschen mit neu festgestelltem Typ-2-Diabetes das Sterberisiko?",
@@ -372,7 +372,7 @@
       "Zur Behauptung, dass Metformin beim Vater zu Fehlbildungen beim Kind führen könnte, fand eine Studie von 2024 aus Norwegen und Taiwan keinen klaren Zusammenhang, sobald der eigene Diabetes der Väter und andere Faktoren berücksichtigt wurden."
     ],
     "caution": "Wenn Sie gesund sind, nehmen Sie Metformin nicht auf eigene Faust, um länger zu leben. Männer mit Diabetes und Kinderwunsch sollten ihr Medikament nicht wegen Berichten aus dem Internet absetzen. Sprechen Sie zuerst mit Ihrer Ärztin oder Ihrem Arzt.",
-    "myth": "Im ursprünglichen Leitfaden hieß es, dass Metformin ein Wundermittel ist, das vor Krebs, Herzkrankheiten, Diabetes, starkem Übergewicht, Leber- und Nierenerkrankungen sowie Alterung schützt, dass Menschen mit Diabetes damit 3 Jahre länger leben als Menschen ohne Diabetes, und er zitierte einen Bericht, wonach Metformin beim Vater Fehlbildungen auslösen könnte."
+    "myth": "Metformin ist ein Wundermittel: Menschen mit Diabetes leben damit 3 Jahre länger als Menschen ohne Diabetes."
   },
   "multivitamins": {
     "question": "Helfen tägliche Multivitamintabletten dabei, länger zu leben?",
@@ -383,7 +383,7 @@
       "Auch eine Studie von 2024, die 390.124 US-Amerikanerinnen und US-Amerikaner über viele Jahre begleitete, fand kein niedrigeres Sterberisiko bei täglicher Einnahme von Multivitaminen."
     ],
     "caution": "Dies gilt für allgemein gesunde Menschen. Gezielte Präparate nach einer ärztlichen Untersuchung sind ein anderes Thema – etwa bei nachgewiesenem Mangel, in einer Lebensphase mit besonderem Nährstoffbedarf oder bei Aufnahmestörungen. Wenn Ihnen eine Ärztin oder ein Arzt ein Präparat empfohlen hat, setzen Sie es nicht selbstständig ab, sondern fragen Sie zuerst nach.",
-    "myth": "Im ursprünglichen Leitfaden hieß es, dass Multivitamine das Krebsrisiko um etwa 8 % senken."
+    "myth": "Multivitamine senken das Krebsrisiko um etwa 8 %."
   },
   "glucosamine-chondroitin": {
     "question": "Können Präparate mit Glucosamin oder Chondroitin das Leben verlängern?",
@@ -394,7 +394,7 @@
       "Die Zahlen von 39 % und 65 % aus dem ursprünglichen Leitfaden berücksichtigten nur das Alter und sind nicht das Endergebnis. Nutzende bewegten sich zudem mehr, rauchten seltener und hatten höhere Bildung; Statistik kann diese Unterschiede nicht vollständig herausrechnen. Die Studie zeigt also einen Zusammenhang, keinen Beweis."
     ],
     "caution": "Beginnen Sie diese Präparate nicht, um länger zu leben. Wenn Ihre Gelenke schmerzen, klären Sie zuerst die Ursache. Wenn Sie Blutverdünner einnehmen, fragen Sie vor jedem Präparat Ihre Ärztin oder Ihren Arzt wegen möglicher Wechselwirkungen. Diese Präparate ersetzen keine regelmäßige Bewegung.",
-    "myth": "Im ursprünglichen Leitfaden hieß es, dass Glucosamin das Sterberisiko um 39 % und das Risiko für Herz-Kreislauf-Todesfälle um 65 % senkt – etwa so stark wie regelmäßige Bewegung."
+    "myth": "Glucosamin über Jahre einzunehmen senkt das Sterberisiko um 39 %, etwa so stark wie regelmäßige Bewegung."
   },
   "anti-aging-drugs-review": {
     "question": "Helfen Anti-Aging-Medikamente tatsächlich dabei, länger zu leben?",
@@ -405,7 +405,7 @@
       "Die Mittel unterscheiden sich in Wirkstoff, Dosierung und Einsatzgebiet und lassen sich daher nicht zu einem einzigen Anti-Aging-Plan kombinieren. Ein Medikament, das bei einer bestimmten Krankheit hilft, verlängert deswegen nicht das Leben gesunder Menschen."
     ],
     "caution": "Kaufen und kombinieren Sie diese Medikamente nicht auf eigene Faust. Wenn Sie eines davon bereits wegen einer Erkrankung nehmen, folgen Sie dem ärztlichen Plan und setzen Sie es weder eigenständig ab noch ändern Sie die Dosis. Experimentelle Anti-Aging-Behandlungen gehören in ordentlich geführte klinische Studien.",
-    "myth": "Im ursprünglichen Leitfaden wurde im Abschnitt zu Medikamenten eine ausführliche Übersichtsarbeit aus der Nature-Zeitschriftenfamilie darüber aufgeführt, wie sich Anti-Aging-Medikamente entwickeln lassen."
+    "myth": "Eine Übersichtsarbeit zur Entwicklung von Anti-Aging-Medikamenten wurde als Grund angeführt, Medikamente für ein längeres Leben zu nehmen."
   },
   "alcohol": {
     "question": "Ist ein alkoholisches Getränk am Tag gesund?",
@@ -416,7 +416,7 @@
       "Wer 45 bis 65 g am Tag trank, hatte ein etwa 19 % höheres Sterberisiko, und wer 65 g oder mehr trank, ein etwa 35 % höheres. Bei Frauen stieg das Risiko schon bei geringeren Mengen."
     ],
     "caution": "Kein klarer Unterschied bei kleinen Mengen beweist nicht, dass irgendeine Menge sicher ist. Dies war kein Test zum Aufhören und kann nicht sagen, wie viel länger Sie ohne Alkohol leben würden. Wenn Sie alkoholabhängig sind oder schon Entzugserscheinungen hatten, hören Sie nicht plötzlich allein auf, sondern reduzieren Sie mit ärztlicher Hilfe.",
-    "myth": "Im ursprünglichen Leitfaden hieß es, dass das Sterberisiko ohne Alkoholverzicht um etwa 50 % höher liegt – ohne Obergrenze."
+    "myth": "Ohne Alkoholverzicht liegt das Sterberisiko um etwa 50 % höher, ohne Obergrenze."
   },
   "ambient-air-pollution": {
     "question": "Verkürzt ein Leben in verschmutzter Luft die Lebensspanne?",
@@ -471,7 +471,7 @@
       "Die Spanne von 16 % bis 40 % im ursprünglichen Leitfaden vermischte verschiedene Ergebnisse. Die 40 % gelten für Herz-Kreislauf-Todesfälle bei etwa 19 Minuten pro Woche, nicht für Todesfälle insgesamt. Alle diese Zahlen stammen aus einem statistischen Modell auf Basis von Beobachtungen, nicht aus einer randomisierten Studie."
     ],
     "caution": "Diese Zahlen sind keine Garantie, und der Tiefpunkt der Kurve ist keine Verordnung für alle. Wenn Sie bereits Sport treiben und nichts Medizinisches dagegenspricht, bauen Sie kurze intensivere Abschnitte schrittweise ein. Bei Beschwerden oder einer nicht gut eingestellten chronischen Krankheit holen Sie vorher ärztlichen Rat ein.",
-    "myth": "Im ursprünglichen Leitfaden hieß es, dass 15 bis 20 Minuten intensive Bewegung pro Woche das Sterberisiko um 16 % bis 40 % senken und 50 bis 57 Minuten es noch weiter senken."
+    "myth": "15 bis 20 Minuten intensive Bewegung pro Woche senken das Sterberisiko um 16 % bis 40 %."
   },
   "walking-steps": {
     "question": "Sind bei Erwachsenen mittleren Alters mehr Schritte am Tag immer besser?",
@@ -504,7 +504,7 @@
       "Diese Zahlen betreffen Erkrankungen, nicht Todesfälle. Die Studie war keine randomisierte Studie, und japanische Badegewohnheiten lassen sich nicht einfach auf das Duschen übertragen."
     ],
     "caution": "Dass kein Zusammenhang mit plötzlichem Tod gefunden wurde, beweist nicht, dass Baden völlig sicher ist, denn Ertrinken, Überhitzung und ähnliche Risiken wurden nicht ausgeschlossen. Wenn Sie zu Ohnmacht neigen, akut krank sind, Alkohol getrunken haben oder eine instabile Herzerkrankung haben, meiden Sie lange heiße Bäder und baden Sie nicht allein.",
-    "myth": "Im ursprünglichen Leitfaden hieß es, dass Menschen, die jeden Tag baden, im Vergleich zu ein- bis zweimal pro Woche oder gar nicht Badenden ein um 28 % niedrigeres Risiko für Herz-Kreislauf-Erkrankungen, ein um 26 % niedrigeres Schlaganfallrisiko und ein um 46 % niedrigeres Risiko für Hirnblutungen haben, ohne Anstieg plötzlicher Todesfälle."
+    "myth": "Tägliches Baden senkt das Risiko für Herz-Kreislauf-Erkrankungen um 28 % und für Schlaganfälle um 26 %."
   },
   "heavy-housework": {
     "question": "Hilft schwere Hausarbeit älteren Männern dabei, länger zu leben?",
@@ -515,7 +515,7 @@
       "Wer schwere Hausarbeit schafft, ist vielleicht schon vorher bei besserer Gesundheit, und diese Art Studie kann Ursache und Wirkung nicht trennen. 72 Jahre war einfach das Durchschnittsalter der Teilnehmenden, keine Altersgrenze, ab der ein Nutzen beginnt."
     ],
     "caution": "Dies ist keine Empfehlung, für ein längeres Leben Möbel zu rücken oder Gasflaschen zu tragen. Erledigen Sie Hausarbeit, die zu Ihrer Kraft passt. Bei Gebrechlichkeit, Osteoporose, Rückenproblemen oder Sturzgefahr vermeiden Sie schweres Heben.",
-    "myth": "Im ursprünglichen Leitfaden hieß es, dass Männer über 72, die jede Woche schwere Hausarbeit erledigen, ihre durchschnittliche Sterberate um 29 % senken."
+    "myth": "Männer über 72, die jede Woche schwere Hausarbeit erledigen, senken ihre Sterberate um 29 %."
   },
   "sleep-duration": {
     "question": "Ist es ungesund, 10 Stunden oder mehr pro Tag zu schlafen?",
@@ -538,7 +538,7 @@
       "Die Zusammenfassung der Studie liefert keine getrennten Sterbezahlen, die zu den 43 % und 15 % des Leitfadens passen. Die Schlafenszeiten wurden selbst angegeben, und Tagesabläufe sowie Krankheiten lassen sich schwer von der Schlafenszeit trennen."
     ],
     "caution": "Schon in der Studie selbst weichen die genauen Zeitgrenzen leicht voneinander ab; sehen Sie 22 Uhr oder Mitternacht also nicht als starre Regeln. Pflegen Sie regelmäßigen, ausreichenden Schlaf im eigenen Rhythmus. Wenn frühes Zubettgehen für Sie gut funktioniert, gibt es wegen dieser Studie keinen Grund, länger wach zu bleiben.",
-    "myth": "Im ursprünglichen Leitfaden hieß es, dass Zubettgehen zwischen 22 Uhr und Mitternacht am besten ist, frühes Schlafengehen das Sterberisiko um 43 % und spätes um 15 % erhöht, und es wurde angemerkt, dass dies umstritten sei."
+    "myth": "Zwischen 22 Uhr und Mitternacht ins Bett zu gehen ist am besten, und frühes Schlafengehen erhöht das Sterberisiko um 43 %."
   },
   "sedentary-time": {
     "question": "Erhöht langes tägliches Sitzen das Sterberisiko?",
@@ -549,7 +549,7 @@
       "Pauschale 3 % pro Stunde gelten also nicht auf jedem Niveau, und die Marken von 6 bis 8 Stunden sowie 3 bis 4 Stunden sind Knicke einer statistischen Kurve, keine sicheren Obergrenzen. Die Sitzzeit wurde meist selbst angegeben, sodass die Ergebnisse einen Zusammenhang zeigen."
     ],
     "caution": "In dieser Übersicht hing Sitzen nicht eindeutig mit Krebstodesfällen zusammen – verwechseln Sie das also nicht mit dem Risiko, an Krebs zu erkranken. Tauschen Sie, soweit es Ihr Körper zulässt, einen Teil der Sitzzeit gegen Gehen oder andere Bewegung und trainieren Sie regelmäßig. Wenn Sie nicht stehen können, folgen Sie Ihrem Reha-Plan. Eine feste Regel, wie oft man aufstehen muss, ist nicht bewiesen.",
-    "myth": "Im ursprünglichen Leitfaden hieß es, dass jede zusätzliche Sitzstunde am Tag das Risiko für Herz-Kreislauf-Erkrankungen um 4 %, für Krebs um 1 % und das Sterberisiko um 3 % erhöht und dass das Risiko ab 6 bis 8 Stunden Gesamtsitzen oder 3 bis 4 Stunden Fernsehen pro Tag zu steigen beginnt."
+    "myth": "Jede zusätzliche Sitzstunde am Tag erhöht das Sterberisiko um 3 %, und ab 6 bis 8 Stunden steigt das Risiko an."
   },
   "pessimism": {
     "question": "Sterben Pessimisten jünger?",
@@ -593,7 +593,7 @@
       "Die Arbeit stützt nicht die Angaben des Leitfadens von 1,5 % COVID-19-Sterblichkeit in den USA und 2 Jahren weniger Lebenserwartung. Sie hat die USA nicht untersucht, und die Zahl von 1,5 % nennt weder ein Datum noch, auf welche Personengruppe sie bezogen wurde."
     ],
     "caution": "Dies beschreibt die erste Welle 2020 und lässt sich nicht auf heutige Varianten, Immunität und medizinische Versorgung übertragen. Senken Sie Ihr Infektionsrisiko, lassen Sie chronische Krankheiten weiter gut behandeln, holen Sie im Krankheitsfall rasch ärztliche Hilfe und folgen Sie den aktuellen Empfehlungen zu Vorbeugung und Behandlung.",
-    "myth": "Im ursprünglichen Leitfaden hieß es, dass die COVID-19-Sterberate in den USA bei etwa 1,5 % lag und die durchschnittliche Lebenserwartung um 2 Jahre sank."
+    "myth": "Die COVID-19-Sterberate in den USA lag bei etwa 1,5 %, und die Lebenserwartung sank um 2 Jahre."
   },
   "resistance-training": {
     "question": "Hilft Krafttraining dabei, länger zu leben?",
@@ -693,7 +693,7 @@
       "Für Laktatazidose trägt die Fachinformation einen besonders hervorgehobenen Warnhinweis. Hinweise auf Leberschäden stammen aus Meldungen nach der Markteinführung, aus denen sich nicht ablesen lässt, wie oft sie vorkommen."
     ],
     "caution": "Wie häufig Nebenwirkungen auftreten, hängt von der Darreichungsform, der Geschwindigkeit der Dosissteigerung, der Dosis und den Behandelten ab, und Nebenwirkungsraten sind keine Sterberisiken. Beginnen Sie Metformin nicht wegen dieser Zahlen auf eigene Faust, und setzen Sie es nicht selbstständig ab, wenn Sie es bereits einnehmen.",
-    "myth": "Im ursprünglichen Leitfaden hieß es, dass häufige Nebenwirkungen von Metformin Vitamin-B12-Mangel bei 7 % bis 17,4 %, Magen-Darm-Beschwerden bei bis zu 53 %, Müdigkeit bei 9 % und Kopfschmerzen bei 6 % seien, neben seltener, aber schwerer Laktatazidose und Leberschäden."
+    "myth": "Bis zu 53 % der Menschen unter Metformin bekommen Magen-Darm-Beschwerden, und 7 % bis 17 % haben Vitamin-B12-Mangel."
   },
   "waist-circumference": {
     "question": "Bedeutet ein größerer Taillenumfang ein höheres Sterberisiko?",

@@ -67,7 +67,11 @@ function text(v: unknown, at: string): string {
   return v;
 }
 
-function parseExplainer(v: unknown, at: string, isMyth: boolean): Explainer {
+// A myth card shows the claim in one line under the question, so the claim keeps only the part the research disputes.
+// The full original wording stays on the study page under "the original claim".
+const MYTH_MAX_CHARS: Record<LocaleCode, number> = { zh: 40, ja: 60, en: 120, es: 150, fr: 150, de: 150, pt: 150, ar: 130 };
+
+function parseExplainer(v: unknown, at: string, isMyth: boolean, code: LocaleCode): Explainer {
   if (typeof v !== 'object' || v === null || Array.isArray(v)) throw new Error(`${at}: expected an object`);
   const e = v as Obj;
   const extra = Object.keys(e).filter((k) => !['question', 'answer', 'why', 'caution', 'myth'].includes(k));
@@ -75,6 +79,9 @@ function parseExplainer(v: unknown, at: string, isMyth: boolean): Explainer {
   if (!Array.isArray(e.why) || e.why.length < 2 || e.why.length > 4) throw new Error(`${at}.why: expected 2 to 4 sentences`);
   if (isMyth && (e.myth === null || e.myth === undefined)) throw new Error(`${at}.myth: the verdict questions the original claim, so state the claim`);
   if (!isMyth && e.myth !== null && e.myth !== undefined) throw new Error(`${at}.myth: the verdict supports the claim, so leave myth null`);
+  if (isMyth && typeof e.myth === 'string' && [...e.myth].length > MYTH_MAX_CHARS[code]) {
+    throw new Error(`${at}.myth: ${[...e.myth].length} characters; keep the claim under ${MYTH_MAX_CHARS[code]} by stating only the part the research disputes`);
+  }
   return {
     question: text(e.question, `${at}.question`),
     answer: text(e.answer, `${at}.answer`),
@@ -94,7 +101,7 @@ export function loadExplainers(studies: readonly { id: string; isMyth: boolean }
     for (const id of Object.keys(json)) if (!ids.has(id)) throw new Error(`${file}: "${id}" is not an upstream record`);
     for (const s of studies) {
       if (!(s.id in json)) throw new Error(`${file}: no explanation for "${s.id}"`);
-      out[s.id]![code] = parseExplainer(json[s.id], `${file} ${s.id}`, s.isMyth);
+      out[s.id]![code] = parseExplainer(json[s.id], `${file} ${s.id}`, s.isMyth, code);
     }
   }
   return out as Record<string, Record<LocaleCode, Explainer>>;

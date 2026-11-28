@@ -131,6 +131,7 @@
 
   "myths.title": "Affirmations répandues : vrai ou faux ?",
   "myths.intro": "Ces {count} affirmations proviennent de l'édition originale de HowToLiveLonger, un guide qui s'est largement diffusé en ligne. Ses vérificateurs ont comparé chacune d'elles aux études citées et constaté qu'elle était fausse, exagérée ou dépourvue de preuve directe. Chaque entrée présente d'abord l'affirmation, puis ce que la recherche a trouvé.",
+  "myths.claim": "Ce qu’on dit",
   "myths.evidence": "Ce que la recherche a trouvé",
 
   "studies.title": "Toutes les études",

@@ -40,6 +40,7 @@ Each feature file starts with an H1 title and one paragraph describing the reade
 
 - [Browse by topic](./browse.md) covers home → topic → study and the breadcrumb back.
 - [Read a study](./study-page.md) covers the storyline, dates, sources, the raw-data fold and structured data.
+- [Check a popular claim](./myths.md) covers the myths page cards, their verdict groups and the link to the full original claim.
 - [Find studies](./study-list.md) covers search, topic, grade and direction filters, the empty state, reset, shareable URLs and no-JS.
 - [Switch language](./languages.md) covers the language menu, right-to-left Arabic and the root page's language redirect.
 - [Choose appearance](./appearance.md) covers the theme popover and its persistence across pages.

@@ -131,6 +131,7 @@
 
   "myths.title": "流行说法，真的假的？",
   "myths.intro": "这 {count} 条说法来自网上流传很广的《程序员延寿指南》原版。HowToLiveLonger 的核验者找出它引用的论文逐条对照，发现它们说错了、说大了，或者缺少直接证据。每条先列网上的说法，再列研究发现了什么。",
+  "myths.claim": "网上说",
   "myths.evidence": "研究实际发现",
 
   "studies.title": "全部研究",
