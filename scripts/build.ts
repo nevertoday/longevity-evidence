@@ -1,10 +1,11 @@
 // Render every enabled locale into dist/. The old dist/ is replaced only after the new one is complete.
+import { execFileSync } from 'node:child_process';
 import { cpSync, mkdirSync, renameSync, rmSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { ENABLED_LOCALES, FALLBACK_LOCALE } from '../src/locales.ts';
 import { loadUpstream } from '../src/model.ts';
-import { alternates, outFile, pageUrl, renderPage, renderRoot, ROOT_URL, sitePages, type Page } from '../src/pages.ts';
+import { alternates, outFile, pageUrl, renderPage, renderRoot, ROOT_URL, sitePages, type Page, type Site } from '../src/pages.ts';
 import { robotsTxt, sitemapXml } from '../src/seo.ts';
 import { loadUi } from '../src/ui.ts';
 
@@ -23,16 +24,19 @@ const write = (path: string, text: string) => {
 
 const up = loadUpstream();
 const locales = ENABLED_LOCALES.map((locale) => ({ locale, t: loadUi(locale) }));
+const explainedAt = execFileSync('git', ['log', '-1', '--format=%cs', '--', 'content/explain'], { encoding: 'utf8' }).trim();
+if (!explainedAt) throw new Error('git log has no commit for content/explain, so study pages cannot say when their explanations were revised');
+const site: Site = { up, langs: locales, explainedAt };
 const pages = sitePages(up);
 const notFound: Page = { kind: 'notfound' };
-for (const { locale, t } of locales) {
-  for (const page of [...pages, notFound]) write(outFile(locale.code, page), renderPage(locale, t, up, page));
+for (const lang of locales) {
+  for (const page of [...pages, notFound]) write(outFile(lang.locale.code, page), renderPage(site, lang, page));
 }
-write('index.html', renderRoot(locales, up));
+write('index.html', renderRoot(site));
 // For a missing URL outside every language folder.
 const fallback = locales.find((l) => l.locale.code === FALLBACK_LOCALE);
 if (!fallback) throw new Error(`FALLBACK_LOCALE ${FALLBACK_LOCALE} is not enabled`);
-write('404.html', renderPage(fallback.locale, fallback.t, up, notFound));
+write('404.html', renderPage(site, fallback, notFound));
 write(
   'sitemap.xml',
   sitemapXml([

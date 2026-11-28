@@ -115,6 +115,7 @@
   "study.caution.title": "気をつけたいこと",
   "study.evidence.title": "エビデンスの確かさ",
   "study.sources.title": "元の論文",
+  "study.dates": "研究データは {data} 時点のものです。このサイトの解説は {explain} に改訂しました。",
   "study.raw.title": "元のデータを見ますか？",
   "study.raw.intro": "こちらは HowToLiveLonger によるこの研究の元の記録です。数値、研究デザイン、限界、略語の説明が載っており、このサイトでは手を加えていません。",
   "study.raw.sources": "各論文で読んだ範囲",

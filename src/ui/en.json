@@ -115,6 +115,7 @@
   "study.caution.title": "Keep in mind",
   "study.evidence.title": "How solid is the evidence",
   "study.sources.title": "The original papers",
+  "study.dates": "The study data is as of {data}, and this site last revised its explanation on {explain}.",
   "study.raw.title": "Want the raw data?",
   "study.raw.intro": "This is HowToLiveLonger's original record for this study, with the numbers, the study design, its limits and the abbreviations. This site has not changed it.",
   "study.raw.sources": "What was read in each paper",

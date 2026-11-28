@@ -115,6 +115,7 @@
   "study.caution.title": "À garder en tête",
   "study.evidence.title": "Les preuves sont-elles solides ?",
   "study.sources.title": "Les articles originaux",
+  "study.dates": "Données de l'étude à jour au {data}. Ce site a révisé son explication pour la dernière fois le {explain}.",
   "study.raw.title": "Voir les données brutes ?",
   "study.raw.intro": "Voici la fiche d'origine de HowToLiveLonger pour cette étude, avec les chiffres, le plan d'étude, ses limites et les abréviations. Ce site ne l'a pas modifiée.",
   "study.raw.sources": "Ce qui a été lu dans chaque article",

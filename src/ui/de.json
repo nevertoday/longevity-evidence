@@ -115,6 +115,7 @@
   "study.caution.title": "Wichtig zu wissen",
   "study.evidence.title": "Wie belastbar die Evidenz ist",
   "study.sources.title": "Die Originalstudien",
+  "study.dates": "Studiendaten mit Stand vom {data}. Diese Website hat ihre Erklärung zuletzt am {explain} überarbeitet.",
   "study.raw.title": "Möchten Sie die Rohdaten sehen?",
   "study.raw.intro": "Dies ist der ursprüngliche Eintrag von HowToLiveLonger zu dieser Studie – mit den Zahlen, dem Studiendesign, den Grenzen und den Abkürzungen. Diese Seite hat ihn nicht verändert.",
   "study.raw.sources": "Was in jeder Studie gelesen wurde",

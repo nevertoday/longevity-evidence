@@ -115,6 +115,7 @@
   "study.caution.title": "要注意",
   "study.evidence.title": "证据有多可靠",
   "study.sources.title": "原始论文",
+  "study.dates": "研究数据截至 {data}，本站解读修订于 {explain}。",
   "study.raw.title": "想看原始数据？",
   "study.raw.intro": "下面是 HowToLiveLonger 核验这项研究时的原始记录，包括数字、研究设计、局限和缩写说明，本站没有改动。",
   "study.raw.sources": "每篇论文读了什么",

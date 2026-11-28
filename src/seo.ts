@@ -1,5 +1,5 @@
-// What search engines and link previews read: sitemap.xml, robots.txt and Open Graph tags.
-import { escape, html, type Html } from './html.ts';
+// What search engines and link previews read: sitemap.xml, robots.txt, Open Graph tags and JSON-LD.
+import { escape, html, raw, type Html } from './html.ts';
 import { ENABLED_LOCALES, type Locale } from './locales.ts';
 import { SITE_ORIGIN } from './site.ts';
 
@@ -28,6 +28,12 @@ export function openGraph(og: OpenGraph): Html {
 <meta property="og:locale" content="${og.locale.ogLocale}">
 ${ENABLED_LOCALES.filter((l) => l.code !== og.locale.code).map((l) => html`<meta property="og:locale:alternate" content="${l.ogLocale}">\n`)}<meta name="twitter:card" content="summary">`;
 }
+
+export type JsonLd = Record<string, unknown>;
+
+// `<` is escaped so no string in the data can close the script element.
+export const jsonLd = (graph: JsonLd[]) =>
+  html`<script type="application/ld+json">${raw(JSON.stringify({ '@context': 'https://schema.org', '@graph': graph }).replaceAll('<', '\\u003c'))}</script>`;
 
 export const robotsTxt = () => `User-agent: *
 Allow: /

@@ -89,6 +89,10 @@ if (!distText('robots.txt').split('\n').includes(sitemapLine)) problems.push(`di
 let links = 0;
 let notFoundLinks = 0;
 let ogPages = 0;
+let ldBlocks = 0;
+let crumbItems = 0;
+type Node = Record<string, unknown>;
+const graphs = new Map<string, Node[]>();
 const titles = new Map<string, string>();
 for (const file of pages) {
   const text = readFileSync(join('dist', file), 'utf8');
@@ -106,6 +110,30 @@ for (const file of pages) {
     }
     const target = decodeURIComponent(new URL(ref, `https://site.invalid/${urlPath}`).pathname.slice(1));
     if (!files.has(fileFor(target))) problems.push(`${at}: link "${ref}" points to missing ${fileFor(target)}`);
+  }
+
+  for (const m of text.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)) {
+    ldBlocks++;
+    let graph: unknown;
+    try {
+      graph = (JSON.parse(m[1] as string) as Node)['@graph'];
+    } catch (e) {
+      problems.push(`${at}: JSON-LD does not parse: ${(e as Error).message}`);
+      continue;
+    }
+    if (!Array.isArray(graph)) {
+      problems.push(`${at}: JSON-LD has no @graph array`);
+      continue;
+    }
+    graphs.set(file, [...(graphs.get(file) ?? []), ...(graph as Node[])]);
+  }
+  for (const node of (graphs.get(file) ?? []).filter((n) => n['@type'] === 'BreadcrumbList')) {
+    for (const item of node.itemListElement as { item: string }[]) {
+      crumbItems++;
+      if (!item.item.startsWith(`${SITE_ORIGIN}/`) || !files.has(fileFor(item.item.slice(SITE_ORIGIN.length + 1)))) {
+        problems.push(`${at}: BreadcrumbList item ${item.item} points to no page in dist/`);
+      }
+    }
   }
 
   const h1s = text.match(/<h1[\s>]/g)?.length ?? 0;
@@ -129,6 +157,7 @@ for (const file of pages) {
       ['a canonical', /<link rel="canonical"/],
       ['an hreflang alternate', /<link rel="alternate" hreflang=/],
       ['an Open Graph tag', /<meta property="og:/],
+      ['JSON-LD', /<script type="application\/ld\+json">/],
     ] as const) {
       if (pattern.test(text)) problems.push(`${at}: has ${what}`);
     }
@@ -171,6 +200,7 @@ for (const file of pages) {
 
 for (const loc of notInSitemap) problems.push(`dist/sitemap.xml lists ${loc}, which is not an indexable page in dist/`);
 
+let citations = 0;
 // Every study page exists in every enabled language and shows the upstream text, this site's explanation and its direction.
 // A direction chip is an optional kit icon followed by the label.
 const directionTag = (text: string) =>
@@ -195,6 +225,12 @@ for (const locale of ENABLED_LOCALES) {
     if (!tags.length || tags.some((tag) => tag.direction !== s.direction || tag.label !== label)) {
       problems.push(`dist/${file} tags ${JSON.stringify(tags)}, expected only "${s.direction}" labelled "${label}"`);
     }
+    const medical = (graphs.get(file) ?? []).filter((n) => n['@type'] === 'MedicalWebPage');
+    const cited = medical.map((n) => (Array.isArray(n.citation) ? n.citation.length : 0));
+    if (cited.length !== 1 || cited[0] !== s.sources.length) {
+      problems.push(`dist/${file}: MedicalWebPage citations ${JSON.stringify(cited)}, expected one MedicalWebPage citing ${s.sources.length}`);
+    }
+    citations += s.sources.length;
   }
 }
 
@@ -237,8 +273,11 @@ console.log(`ui: src/ui/{${ENABLED_LOCALES.map((l) => l.code).join(',')}}.json h
 console.log(`pages: ${pages.length} HTML files, ${links} internal links and assets resolve`);
 console.log(`h1: every page has exactly one <h1>`);
 console.log(`head: every page has <html lang dir>, a <title> and a meta description; every page but 404.html has a unique <title>, its canonical URL and hreflang for ${codes}`);
+console.log(`json-ld: all ${ldBlocks} JSON-LD blocks parse`);
+console.log(`breadcrumbs: all ${crumbItems} BreadcrumbList items point to pages in dist/`);
+console.log(`medical: every study page has one MedicalWebPage that cites each of its sources (${citations} citations in ${up.studies.length * ENABLED_LOCALES.length} pages)`);
 console.log(`og: all ${ogPages} indexable pages have og:url equal to their canonical, and og:title and og:description equal to their <title> and meta description`);
 console.log(`sitemap: ${sitemap.size} URLs, exactly the indexable pages plus the root, each with the alternates its page's hreflang links name`);
 console.log(`robots: dist/robots.txt has "${sitemapLine}"`);
-console.log(`404: ${NOT_FOUND.map((f) => `dist/${f}`).join(', ')} are noindex with no canonical, hreflang or Open Graph tags, and all ${notFoundLinks} of their links and assets are root-absolute`);
+console.log(`404: ${NOT_FOUND.map((f) => `dist/${f}`).join(', ')} are noindex with no canonical, hreflang, Open Graph tags or JSON-LD, and all ${notFoundLinks} of their links and assets are root-absolute`);
 console.log('check passed');

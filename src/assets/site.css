@@ -327,6 +327,10 @@
   line-height: var(--leading-md);
 }
 
+.section__note time {
+  white-space: nowrap;
+}
+
 .more {
   margin: var(--space-5) 0 0;
   font-size: var(--text-lg);

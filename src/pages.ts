@@ -15,7 +15,7 @@ import {
   type Upstream,
   type VerdictId,
 } from './model.ts';
-import { openGraph, type Alternate } from './seo.ts';
+import { jsonLd, openGraph, type Alternate, type JsonLd } from './seo.ts';
 import { APPEARANCE_KEY, SITE_ORIGIN, SOURCE_REPO, UPSTREAM_CONTRIBUTING } from './site.ts';
 import type { T, UiKey } from './ui.ts';
 
@@ -75,14 +75,20 @@ export function sitePages(up: Upstream): IndexablePage[] {
   ];
 }
 
+export type Lang = { locale: Locale; t: T };
+// Everything the build renders from. explainedAt is the date of the last commit to content/explain.
+export type Site = { up: Upstream; langs: readonly Lang[]; explainedAt: string };
+
 // `base` prefixes every internal link and asset.
-type Ctx = { locale: Locale; t: T; guide: Guide; up: Upstream; base: string };
+type Ctx = { locale: Locale; t: T; guide: Guide; up: Upstream; base: string; explainedAt: string };
 type Content = { title: string; description: string; body: Html };
 
 const toRoot = (path: string) => '../'.repeat(path.split('/').filter(Boolean).length);
 const link = (ctx: Ctx, page: IndexablePage, code: LocaleCode = ctx.locale.code) => ctx.base + pagePath(code, page);
 const attr = (name: string, value: string | null) => (value === null ? null : html` ${raw(name)}="${value}"`);
 const commitUrl = (up: Upstream) => `${up.source.repository}/tree/${up.source.commit}`;
+const dataDate = (up: Upstream) => up.source.committedAt.slice(0, 10);
+const date = (iso: string) => html`<time datetime="${iso}">${iso}</time>`;
 
 const isMyth = (s: Study) => MYTH_VERDICTS.includes(s.verdict);
 
@@ -193,8 +199,10 @@ function topicCard(ctx: Ctx, topic: TopicId): Html {
 
 type Crumb = { label: string; page: IndexablePage };
 
+type TrailPage = Extract<Page, { kind: 'topic' | 'study' }>;
+
 // From the home page down to the page itself.
-function trail(ctx: Ctx, page: Extract<Page, { kind: 'topic' | 'study' }>): Crumb[] {
+function trail(ctx: Ctx, page: TrailPage): Crumb[] {
   const { t } = ctx;
   const home: Crumb = { label: t('breadcrumb.home'), page: { kind: 'home' } };
   const topic = (id: TopicId): Crumb => ({ label: t(`topic.${id}` as const), page: { kind: 'topic', topic: id } });
@@ -210,7 +218,7 @@ const topicSection = (ctx: Ctx) =>
   section('topics', ctx.t('home.topics.title'), html`<ul class="topic-grid">${TOPICS.map((topic) => html`<li>${topicCard(ctx, topic)}</li>`)}</ul>`);
 
 // The visible trail leaves out the page the reader is on.
-function crumbs(ctx: Ctx, page: Extract<Page, { kind: 'topic' | 'study' }>): Html {
+function crumbs(ctx: Ctx, page: TrailPage): Html {
   return html`<nav aria-label="${ctx.t('breadcrumb.label')}"><ol class="xxd-breadcrumbs">${trail(ctx, page)
     .slice(0, -1)
     .map((c) => html`<li><a href="${link(ctx, c.page)}">${c.label}</a></li>`)}</ol></nav>`;
@@ -409,7 +417,8 @@ ${section(
   t('study.sources.title'),
   html`<ol class="sources">${s.sources.map(
     (src) => html`<li class="source"><a class="xxd-link source__title" href="${src.url}" rel="noopener noreferrer">${src.title}</a> <span class="source__year">${src.year}</span></li>`,
-  )}</ol>`,
+  )}</ol>
+<p class="section__note">${t.html('study.dates', { data: date(dataDate(up)), explain: date(ctx.explainedAt) })}</p>`,
 )}
 <details class="xxd-collapse raw">
 <summary><h2 class="raw__title" id="raw">${t('study.raw.title')}</h2></summary>
@@ -530,7 +539,7 @@ ${section('disclaimer', t('about.disclaimer.title'), html`<p class="prose-text">
 ${section(
   'source',
   t('about.source.title'),
-  html`<p class="prose-text">${t.html('about.source.text', { repo, commit, date: up.source.committedAt.slice(0, 10) })}</p><p class="prose-text">${t('about.source.kit')}</p>`,
+  html`<p class="prose-text">${t.html('about.source.text', { repo, commit, date: dataDate(up) })}</p><p class="prose-text">${t('about.source.kit')}</p>`,
 )}
 ${section(
   'contribute',
@@ -577,13 +586,75 @@ const NAV: [IndexablePage, UiKey][] = [
   [{ kind: 'about' }, 'nav.about'],
 ];
 
+const WEBSITE_ID = `${ROOT_URL}#website`;
+// Named in Chinese, the language the site was written in. The same node sits on the root and every home page.
+const SITE_LANG: LocaleCode = 'zh';
+
+function website(langs: readonly Lang[]): JsonLd {
+  const own = langs.find((l) => l.locale.code === SITE_LANG);
+  if (!own) throw new Error(`${SITE_LANG} is not enabled`);
+  return {
+    '@type': 'WebSite',
+    '@id': WEBSITE_ID,
+    url: ROOT_URL,
+    name: own.t('site.name'),
+    alternateName: langs.filter((l) => l !== own).map((l) => l.t('site.name')),
+  };
+}
+
+function breadcrumbList(ctx: Ctx, page: TrailPage): JsonLd {
+  return {
+    '@type': 'BreadcrumbList',
+    itemListElement: trail(ctx, page).map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: c.label, item: pageUrl(ctx.locale.code, c.page) })),
+  };
+}
+
+// Says where the page's claims come from and when they last changed. It names no author or reviewer, because none has signed off.
+function medicalWebPage(ctx: Ctx, s: Study): JsonLd {
+  const e = s.explain[ctx.locale.code];
+  const data = dataDate(ctx.up);
+  return {
+    '@type': 'MedicalWebPage',
+    url: pageUrl(ctx.locale.code, { kind: 'study', study: s }),
+    name: e.question,
+    description: e.answer,
+    inLanguage: ctx.locale.htmlLang,
+    isPartOf: { '@id': WEBSITE_ID },
+    about: { '@type': 'Thing', name: s.text[ctx.locale.code].factor },
+    citation: s.sources.map((src) => ({
+      '@type': 'ScholarlyArticle',
+      name: src.title,
+      url: src.url,
+      datePublished: String(src.year),
+      ...(src.doi ? { sameAs: `https://doi.org/${src.doi}` } : {}),
+    })),
+    isBasedOn: commitUrl(ctx.up),
+    dateModified: data > ctx.explainedAt ? data : ctx.explainedAt,
+  };
+}
+
+function structuredData(ctx: Ctx, site: Site, page: IndexablePage): JsonLd[] {
+  switch (page.kind) {
+    case 'home':
+      return [website(site.langs)];
+    case 'topic':
+      return [breadcrumbList(ctx, page)];
+    case 'study':
+      return [breadcrumbList(ctx, page), medicalWebPage(ctx, page.study)];
+    case 'studies':
+    case 'myths':
+    case 'about':
+      return [];
+  }
+}
+
 // What an indexable page tells search engines about itself. A page without it gets noindex.
-type Index = { url: string; page: IndexablePage; locale: Locale; siteName: string };
+type Index = { url: string; page: IndexablePage; locale: Locale; siteName: string; graph: JsonLd[] };
 
 function indexMeta(index: Index, title: string, description: string): Html {
   const og = openGraph({ type: index.page.kind === 'study' ? 'article' : 'website', siteName: index.siteName, title, description, url: index.url, locale: index.locale });
   return html`<link rel="canonical" href="${index.url}">
-${alternates(index.page).map((a) => html`<link rel="alternate" hreflang="${a.hreflang}" href="${a.href}">\n`)}${og}`;
+${alternates(index.page).map((a) => html`<link rel="alternate" hreflang="${a.hreflang}" href="${a.href}">\n`)}${og}${index.graph.length ? html`\n${jsonLd(index.graph)}` : null}`;
 }
 
 function head(base: string, title: string, description: string, index: Index | null): Html {
@@ -601,15 +672,17 @@ ${index ? indexMeta(index, title, description) : html`<meta name="robots" conten
 <script defer src="${base}assets/site.js"></script>`;
 }
 
-export function renderPage(locale: Locale, t: T, up: Upstream, page: Page): string {
+export function renderPage(site: Site, { locale, t }: Lang, page: Page): string {
+  const { up } = site;
   const here = isIndexable(page) ? page : null;
-  const ctx: Ctx = { locale, t, guide: up.guide[locale.code], up, base: here ? toRoot(pagePath(locale.code, here)) : '/' };
+  const base = here ? toRoot(pagePath(locale.code, here)) : '/';
+  const ctx: Ctx = { locale, t, guide: up.guide[locale.code], up, base, explainedAt: site.explainedAt };
   const c = content(ctx, page);
   const title = page.kind === 'home' ? `${t('site.name')} · ${c.title}` : `${c.title} · ${t('site.name')}`;
   const doc = html`<!doctype html>
 <html lang="${locale.htmlLang}" dir="${locale.dir}">
 <head>
-${head(ctx.base, title, c.description, here && { url: pageUrl(locale.code, here), page: here, locale, siteName: t('site.name') })}
+${head(base, title, c.description, here && { url: pageUrl(locale.code, here), page: here, locale, siteName: t('site.name'), graph: structuredData(ctx, site, here) })}
 </head>
 <body class="xxd-page">
 <a class="xxd-sr-only-focusable" href="#main">${t('skip')}</a>
@@ -648,7 +721,8 @@ ${c.body}
 }
 
 // The root page picks a language from the browser's preferred languages and lists every language as a link.
-export function renderRoot(locales: { locale: Locale; t: T }[], up: Upstream): string {
+export function renderRoot(site: Site): string {
+  const { up, langs: locales } = site;
   const codes = locales.map((l) => l.locale.code);
   const fallback = locales.find((l) => l.locale.code === FALLBACK_LOCALE) ?? locales[0];
   if (!fallback) throw new Error('no enabled locales');
@@ -659,7 +733,7 @@ export function renderRoot(locales: { locale: Locale; t: T }[], up: Upstream): s
 <html lang="${fallback.locale.htmlLang}" dir="${fallback.locale.dir}">
 <head>
 <script>${raw(redirect)}</script>
-${head('', title, description, { url: ROOT_URL, page: { kind: 'home' }, locale: fallback.locale, siteName: fallback.t('site.name') })}
+${head('', title, description, { url: ROOT_URL, page: { kind: 'home' }, locale: fallback.locale, siteName: fallback.t('site.name'), graph: [website(locales)] })}
 </head>
 <body class="xxd-page">
 <main id="main" class="site-main">
