@@ -13,5 +13,5 @@
     "skipLibCheck": true,
     "types": ["node"]
   },
-  "include": ["src", "scripts", "collect"]
+  "include": ["src", "scripts", "collect", ".claude/skills"]
 }

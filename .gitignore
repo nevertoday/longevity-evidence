@@ -3,3 +3,5 @@ dist.tmp/
 node_modules/
 .screenshots/
 collect/out/
+.wrangler/
+.verify/

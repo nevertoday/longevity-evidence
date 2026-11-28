@@ -1,0 +1,16 @@
+{
+  "name": "not-found-and-crawlers",
+  "steps": [
+    { "fetch": "/zh/about", "label": "missing slash redirects", "expectStatus": 307 },
+    { "fetch": "/robots.txt", "label": "robots.txt", "expectStatus": 200 },
+    { "fetch": "/sitemap.xml", "label": "sitemap.xml", "expectStatus": 200 },
+    { "go": "/fr/pas-de-page/", "expectStatus": 404 },
+    { "expect": "document.documentElement.lang === 'fr' && document.querySelector('meta[name=robots]').content === 'noindex'", "label": "French 404, noindex" },
+    { "expect": "!document.querySelector('link[rel=canonical]')", "label": "404 has no canonical" },
+    { "click": "main a[href='/fr/studies/']", "nav": true },
+    { "expect": "location.pathname === '/fr/studies/'", "label": "404 leads on to the study list" },
+    { "go": "/no-such-page/", "expectStatus": 404 },
+    { "expect": "document.documentElement.lang === 'en'", "label": "root 404 is English" },
+    { "shot": "root-404" }
+  ]
+}

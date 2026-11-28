@@ -1,0 +1,21 @@
+{
+  "name": "browse",
+  "steps": [
+    { "go": "/zh/", "expectStatus": 200 },
+    { "expect": "document.querySelector('h1').innerText.trim().length > 0", "label": "home has a heading" },
+    { "read": "document.querySelectorAll('a.topic-card').length", "label": "topic cards on home" },
+    { "expect": "document.querySelectorAll('a.topic-card').length === 10", "label": "10 topic cards" },
+    { "shot": "home" },
+    { "click": "a.topic-card[href$='/topics/drinking/']", "nav": true },
+    { "expect": "location.pathname === '/zh/topics/drinking/'", "label": "on the drinking topic" },
+    { "read": "document.title", "label": "topic title" },
+    { "expect": "document.querySelector(\"a.study-card[href$='/studies/alcohol/']\")", "label": "alcohol card listed under drinking" },
+    { "snapshot": "topic-drinking" },
+    { "click": "a.study-card[href$='/studies/alcohol/']", "nav": true },
+    { "expect": "location.pathname === '/zh/studies/alcohol/'", "label": "on the alcohol study" },
+    { "expect": "[...document.querySelectorAll('nav[aria-label=\"位置\"] a')].map(a => a.getAttribute('href')).some(h => h.endsWith('/zh/topics/drinking/'))", "label": "breadcrumb leads back to the topic" },
+    { "click": "nav[aria-label='位置'] a[href$='/topics/drinking/']", "nav": true },
+    { "expect": "location.pathname === '/zh/topics/drinking/'", "label": "breadcrumb returned to the topic" },
+    { "shot": "topic-drinking" }
+  ]
+}

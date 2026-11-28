@@ -1,0 +1,17 @@
+{
+  "name": "appearance",
+  "steps": [
+    { "go": "/zh/", "scheme": "light" },
+    { "waitFor": "!document.querySelector('.xxd-appearance-btn').hidden" },
+    { "read": "document.documentElement.dataset.theme", "label": "theme before" },
+    { "click": ".xxd-appearance-btn" },
+    { "waitFor": "document.querySelector('#appearance-pop').matches(':popover-open')" },
+    { "shot": "popover", "viewport": true },
+    { "read": "[...document.querySelectorAll('#appearance-pop button')].map(b => b.innerText.trim())", "label": "popover buttons" },
+    { "click": "#appearance-pop button", "text": "暗" },
+    { "expect": "document.documentElement.dataset.theme === 'dark'", "label": "dark applied while system is light" },
+    { "go": "/en/about/", "scheme": "light" },
+    { "expect": "document.documentElement.dataset.theme === 'dark'", "label": "dark survives navigation" },
+    { "shot": "about-dark" }
+  ]
+}

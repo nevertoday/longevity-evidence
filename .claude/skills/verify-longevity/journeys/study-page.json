@@ -1,0 +1,22 @@
+{
+  "name": "study-page",
+  "steps": [
+    { "go": "/zh/studies/alcohol/", "expectStatus": 200 },
+    { "read": "document.querySelector('h1.page-title').innerText", "label": "question heading" },
+    { "expect": "['todo','why','claim','caution','evidence','sources'].every(id => document.getElementById(id))", "label": "storyline sections in place" },
+    { "expect": "[...document.querySelectorAll('#todo, #why, #claim, #caution, #evidence, #sources')].map(e => e.id).join() === 'todo,why,claim,caution,evidence,sources'", "label": "storyline in reading order" },
+    { "read": "[...document.querySelectorAll('.section__note time')].map(t => t.getAttribute('datetime'))", "label": "data and revision dates" },
+    { "expect": "document.querySelectorAll('.section__note time').length === 2", "label": "both dates shown" },
+    { "expect": "document.querySelector('a.source__title[href^=\"https://pubmed.ncbi.nlm.nih.gov/\"]')", "label": "source links to PubMed" },
+    { "expect": "!document.querySelector('details.raw').open", "label": "raw data starts closed" },
+    { "click": "details.raw > summary" },
+    { "expect": "document.querySelector('details.raw').open", "label": "raw data opened by click" },
+    { "expect": "document.querySelector('details.raw').innerText.length > 200", "label": "raw data has upstream text" },
+    { "expect": "JSON.parse(document.querySelector('script[type=\"application/ld+json\"]').textContent)['@graph'].some(n => n['@type'] === 'MedicalWebPage')", "label": "MedicalWebPage structured data" },
+    { "snapshot": "alcohol" },
+    { "shot": "alcohol-raw-open" },
+    { "go": "/en/studies/alcohol/", "width": 1440 },
+    { "expect": "document.documentElement.lang === 'en' && document.querySelectorAll('.section__note time').length === 2", "label": "English page has the same storyline" },
+    { "shot": "alcohol-en-1440" }
+  ]
+}

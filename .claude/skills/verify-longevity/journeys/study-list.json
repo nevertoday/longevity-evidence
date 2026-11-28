@@ -1,0 +1,32 @@
+{
+  "name": "study-list",
+  "steps": [
+    { "go": "/zh/studies/" },
+    { "waitFor": "!document.querySelector('#filter').hidden" },
+    { "read": "document.querySelector('[data-filter-count]').innerText", "label": "count before filtering" },
+    { "expect": "document.querySelector('[data-filter-count]').innerText.includes('64 / 64')", "label": "all 64 shown" },
+    { "choose": "#filter-topic", "value": "drinking" },
+    { "read": "document.querySelector('[data-filter-count]').innerText", "label": "count after topic=drinking" },
+    { "expect": "[...document.querySelector('[data-filter-list]').children].filter(c => !c.hidden).every(c => c.dataset.topic === 'drinking')", "label": "only drinking studies visible" },
+    { "expect": "location.search === '?topic=drinking'", "label": "URL carries the topic" },
+    { "expect": "!document.querySelector('[data-filter-reset]').hidden", "label": "reset offered" },
+    { "type": "#filter-q", "text": "咖啡" },
+    { "read": "[...document.querySelector('[data-filter-list]').children].filter(c => !c.hidden).map(c => c.querySelector('a').getAttribute('href'))", "label": "visible after search 咖啡" },
+    { "expect": "[...document.querySelector('[data-filter-list]').children].some(c => !c.hidden && c.querySelector(\"a[href$='/studies/coffee/']\"))", "label": "coffee study found" },
+    { "expect": "new URLSearchParams(location.search).get('q') === '咖啡'", "label": "URL carries the query" },
+    { "shot": "filtered" },
+    { "type": "#filter-q", "text": "火山" },
+    { "expect": "document.querySelector('#filter-q').value === '火山' && !document.querySelector('[data-filter-empty]').hidden", "label": "empty state shown for a miss" },
+    { "shot": "empty" },
+    { "click": "[data-filter-reset]" },
+    { "waitFor": "document.querySelector('[data-filter-count]').innerText.includes('64 / 64')" },
+    { "expect": "location.search === '' && document.querySelector('[data-filter-reset]').hidden", "label": "reset cleared URL and filters" },
+    { "go": "/zh/studies/?topic=drinking&grade=B" },
+    { "waitFor": "!document.querySelector('#filter').hidden" },
+    { "expect": "document.querySelector('#filter-topic').value === 'drinking' && document.querySelector('#filter-grade').value === 'B'", "label": "shared link restores filters" },
+    { "read": "document.querySelector('[data-filter-count]').innerText", "label": "count for drinking + B" },
+    { "go": "/zh/studies/?topic=drinking", "noScript": true },
+    { "expect": "document.querySelectorAll('[data-filter-list] > *').length === 64", "label": "without JS all 64 cards are in the page" },
+    { "shot": "nojs" }
+  ]
+}
