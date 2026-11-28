@@ -147,6 +147,9 @@
   "studies.empty.text": "Versuchen Sie ein anderes Stichwort oder löschen Sie die Filter.",
   "studies.reset": "Filter löschen",
 
+  "notfound.title": "Seite nicht gefunden",
+  "notfound.text": "Die Adresse ist vielleicht falsch geschrieben, oder die Seite wurde verschoben. Lesen Sie über eine der Seiten oder eines der Themen unten weiter.",
+
   "about.title": "Über diese Seite",
   "about.lead": "Diese Website bereitet die Studienprüfungen von HowToLiveLonger als nach Themen geordnete Seiten auf. Die medizinischen Inhalte und die Bewertung jeder Aussage stammen unverändert aus diesem Projekt. Die verständlichen Fragen, Antworten und Erklärungen auf jeder Seite wurden aus den Daten des Projekts verfasst und können vereinfachen. Auf jeder Seite bleibt der vollständige Text des Projekts unter „Möchten Sie die Rohdaten sehen?“ erhalten.",
   "about.method.title": "Woher die Inhalte stammen",

@@ -68,21 +68,34 @@ const walk = (dir: string): string[] =>
 const files = new Set(walk('dist').map((f) => relative('dist', f)));
 const pages = [...files].filter((f) => f.endsWith('.html')).sort();
 const fileFor = (urlPath: string) => (urlPath === '' || urlPath.endsWith('/') ? `${urlPath}index.html` : urlPath);
+// Cloudflare serves the nearest 404.html at any missing URL, so these are never indexed and link only root-absolute.
+const NOT_FOUND = ['404.html', ...ENABLED_LOCALES.map((l) => `${l.code}/404.html`)];
+const isNotFound = (file: string) => file === '404.html' || file.endsWith('/404.html');
+for (const file of NOT_FOUND) if (!files.has(file)) problems.push(`dist/${file} is missing`);
 
 let links = 0;
+let notFoundLinks = 0;
 const titles = new Map<string, string>();
 for (const file of pages) {
   const text = readFileSync(join('dist', file), 'utf8');
   const urlPath = file.replace(/index\.html$/, '');
   const at = `dist/${file}`;
+  const notFound = isNotFound(file);
 
   for (const m of text.matchAll(/\s(?:href|src)="([^"]*)"/g)) {
     const ref = (m[1] as string).replaceAll('&amp;', '&');
     if (/^(?:[a-z][a-z0-9+.-]*:|\/\/|#)/i.test(ref)) continue;
     links++;
+    if (notFound) {
+      notFoundLinks++;
+      if (!ref.startsWith('/')) problems.push(`${at}: link "${ref}" is not root-absolute`);
+    }
     const target = decodeURIComponent(new URL(ref, `https://site.invalid/${urlPath}`).pathname.slice(1));
     if (!files.has(fileFor(target))) problems.push(`${at}: link "${ref}" points to missing ${fileFor(target)}`);
   }
+
+  const h1s = text.match(/<h1[\s>]/g)?.length ?? 0;
+  if (h1s !== 1) problems.push(`${at}: ${h1s} <h1> elements, expected 1`);
 
   const locale = ENABLED_LOCALES.find((l) => urlPath.startsWith(`${l.code}/`));
   const tag = /<html lang="([^"]+)" dir="([^"]+)">/.exec(text);
@@ -93,9 +106,20 @@ for (const file of pages) {
 
   const title = /<title>([^<]*)<\/title>/.exec(text)?.[1]?.trim();
   if (!title) problems.push(`${at}: empty or missing <title>`);
-  else if (titles.has(title)) problems.push(`${at}: same <title> as dist/${titles.get(title)}`);
-  else titles.set(title, file);
   if (!/<meta name="description" content="[^"]+">/.test(text)) problems.push(`${at}: empty or missing meta description`);
+
+  if (notFound) {
+    if (!text.includes('<meta name="robots" content="noindex">')) problems.push(`${at}: no robots noindex meta`);
+    for (const [what, pattern] of [
+      ['canonical', /<link rel="canonical"/],
+      ['hreflang alternate', /<link rel="alternate" hreflang=/],
+    ] as const) {
+      if (pattern.test(text)) problems.push(`${at}: has a ${what}`);
+    }
+    continue;
+  }
+  if (title && titles.has(title)) problems.push(`${at}: same <title> as dist/${titles.get(title)}`);
+  else if (title) titles.set(title, file);
 
   const canonicals = [...text.matchAll(/<link rel="canonical" href="([^"]+)">/g)].map((c) => c[1]);
   if (canonicals.length !== 1 || canonicals[0] !== `${SITE_ORIGIN}/${urlPath}`) {
@@ -180,5 +204,7 @@ console.log(`direction: every study page shows its tag (${DIRECTIONS.map((d) => 
 console.log(`home: no harms or no-effect study under "helps" (${homeCounts.join(', ')})`);
 console.log(`ui: src/ui/{${ENABLED_LOCALES.map((l) => l.code).join(',')}}.json have every key and placeholder of zh.json, and no value starts with TODO`);
 console.log(`pages: ${pages.length} HTML files, ${links} internal links and assets resolve`);
-console.log(`head: every page has <html lang dir>, a unique <title>, a meta description, its canonical URL and hreflang for ${codes}`);
+console.log(`h1: every page has exactly one <h1>`);
+console.log(`head: every page has <html lang dir>, a <title> and a meta description; every page but 404.html has a unique <title>, its canonical URL and hreflang for ${codes}`);
+console.log(`404: ${NOT_FOUND.map((f) => `dist/${f}`).join(', ')} are noindex with no canonical or hreflang, and all ${notFoundLinks} of their links and assets are root-absolute`);
 console.log('check passed');

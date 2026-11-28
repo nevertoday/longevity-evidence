@@ -24,9 +24,15 @@ export type Page =
   | { kind: 'studies' }
   | { kind: 'study'; study: Study }
   | { kind: 'myths' }
-  | { kind: 'about' };
+  | { kind: 'about' }
+  // Served at whatever missing URL the reader asked for, so it links root-absolute and is never indexed.
+  | { kind: 'notfound' };
 
-export function pagePath(code: LocaleCode, page: Page): string {
+// Every page except notfound has its own URL, canonical, hreflang alternates, Open Graph tags and sitemap entry.
+export type IndexablePage = Exclude<Page, { kind: 'notfound' }>;
+export const isIndexable = (page: Page): page is IndexablePage => page.kind !== 'notfound';
+
+export function pagePath(code: LocaleCode, page: IndexablePage): string {
   switch (page.kind) {
     case 'home':
       return `${code}/`;
@@ -43,10 +49,10 @@ export function pagePath(code: LocaleCode, page: Page): string {
   }
 }
 
-// The file under dist/ that holds the page.
-export const outFile = (code: LocaleCode, page: Page) => `${pagePath(code, page)}index.html`;
+// The file under dist/ that holds the page. Cloudflare serves the nearest 404.html up the missing URL's path.
+export const outFile = (code: LocaleCode, page: Page) => (isIndexable(page) ? `${pagePath(code, page)}index.html` : `${code}/404.html`);
 
-export function sitePages(up: Upstream): Page[] {
+export function sitePages(up: Upstream): IndexablePage[] {
   return [
     { kind: 'home' },
     ...TOPICS.map((topic) => ({ kind: 'topic', topic }) as const),
@@ -62,7 +68,7 @@ type Ctx = { locale: Locale; t: T; guide: Guide; up: Upstream; base: string };
 type Content = { title: string; description: string; body: Html };
 
 const toRoot = (path: string) => '../'.repeat(path.split('/').filter(Boolean).length);
-const link = (ctx: Ctx, page: Page, code: LocaleCode = ctx.locale.code) => ctx.base + pagePath(code, page);
+const link = (ctx: Ctx, page: IndexablePage, code: LocaleCode = ctx.locale.code) => ctx.base + pagePath(code, page);
 const attr = (name: string, value: string | null) => (value === null ? null : html` ${raw(name)}="${value}"`);
 const commitUrl = (up: Upstream) => `${up.source.repository}/tree/${up.source.commit}`;
 
@@ -173,7 +179,7 @@ function topicCard(ctx: Ctx, topic: TopicId): Html {
 </a>`;
 }
 
-type Crumb = { label: string; page: Page };
+type Crumb = { label: string; page: IndexablePage };
 
 // From the home page down to the page itself.
 function trail(ctx: Ctx, page: Extract<Page, { kind: 'topic' | 'study' }>): Crumb[] {
@@ -187,6 +193,9 @@ function trail(ctx: Ctx, page: Extract<Page, { kind: 'topic' | 'study' }>): Crum
       return [home, topic(page.study.topic), { label: page.study.explain[ctx.locale.code].question, page }];
   }
 }
+
+const topicSection = (ctx: Ctx) =>
+  section('topics', ctx.t('home.topics.title'), html`<ul class="topic-grid">${TOPICS.map((topic) => html`<li>${topicCard(ctx, topic)}</li>`)}</ul>`);
 
 // The visible trail leaves out the page the reader is on.
 function crumbs(ctx: Ctx, page: Extract<Page, { kind: 'topic' | 'study' }>): Html {
@@ -282,7 +291,7 @@ ${section(
 ${mythCards(ctx, teaser, 3)}
 <p class="more"><a class="xxd-link" href="${mythsPage}">${t('home.myths.more', { count: myths.length })}</a></p>`,
 )}
-${section('topics', t('home.topics.title'), html`<ul class="topic-grid">${TOPICS.map((topic) => html`<li>${topicCard(ctx, topic)}</li>`)}</ul>`)}
+${topicSection(ctx)}
 ${section(
   'read',
   t('home.read.title'),
@@ -519,6 +528,18 @@ ${section(
   };
 }
 
+function notFoundPage(ctx: Ctx): Content {
+  const { t } = ctx;
+  const go = (page: IndexablePage, key: UiKey) => html`<a class="xxd-link" href="${link(ctx, page)}">${t(key)}</a>`;
+  return {
+    title: t('notfound.title'),
+    description: t('notfound.text'),
+    body: html`${pageHeader(ctx, t('notfound.title'), [t('notfound.text')])}
+<p class="more">${go({ kind: 'home' }, 'breadcrumb.home')} · ${go({ kind: 'myths' }, 'nav.myths')} · ${go({ kind: 'studies' }, 'nav.studies')}</p>
+${topicSection(ctx)}`,
+  };
+}
+
 function content(ctx: Ctx, page: Page): Content {
   switch (page.kind) {
     case 'home':
@@ -533,10 +554,12 @@ function content(ctx: Ctx, page: Page): Content {
       return mythsPage(ctx);
     case 'about':
       return aboutPage(ctx);
+    case 'notfound':
+      return notFoundPage(ctx);
   }
 }
 
-const NAV: [Page, UiKey][] = [
+const NAV: [IndexablePage, UiKey][] = [
   [{ kind: 'myths' }, 'nav.myths'],
   [{ kind: 'studies' }, 'nav.studies'],
   [{ kind: 'about' }, 'nav.about'],
@@ -558,14 +581,16 @@ ${links}
 }
 
 export function renderPage(locale: Locale, t: T, up: Upstream, page: Page): string {
-  const path = pagePath(locale.code, page);
-  const ctx: Ctx = { locale, t, guide: up.guide[locale.code], up, base: toRoot(path) };
+  const here = isIndexable(page) ? page : null;
+  const ctx: Ctx = { locale, t, guide: up.guide[locale.code], up, base: here ? toRoot(pagePath(locale.code, here)) : '/' };
   const c = content(ctx, page);
   const title = page.kind === 'home' ? `${t('site.name')} · ${c.title}` : `${c.title} · ${t('site.name')}`;
-  const links = html`<link rel="canonical" href="${SITE_ORIGIN}/${path}">
-${ENABLED_LOCALES.map((l) => html`<link rel="alternate" hreflang="${l.htmlLang}" href="${SITE_ORIGIN}/${pagePath(l.code, page)}">\n`)}${
-    page.kind === 'home' ? html`<link rel="alternate" hreflang="x-default" href="${SITE_ORIGIN}/">` : null
-  }`;
+  const links = here
+    ? html`<link rel="canonical" href="${SITE_ORIGIN}/${pagePath(locale.code, here)}">
+${ENABLED_LOCALES.map((l) => html`<link rel="alternate" hreflang="${l.htmlLang}" href="${SITE_ORIGIN}/${pagePath(l.code, here)}">\n`)}${
+        here.kind === 'home' ? html`<link rel="alternate" hreflang="x-default" href="${SITE_ORIGIN}/">` : null
+      }`
+    : html`<meta name="robots" content="noindex">`;
   const doc = html`<!doctype html>
 <html lang="${locale.htmlLang}" dir="${locale.dir}">
 <head>
@@ -585,7 +610,7 @@ ${head(ctx.base, title, c.description, links)}
 <summary class="xxd-btn site-lang__trigger" data-size="sm" data-variant="ghost"><i data-xxd-icon="Languages" data-size="16"></i><span>${locale.label}</span><span class="site-lang__caret" aria-hidden="true"></span></summary>
 <div class="xxd-menu site-lang__menu" role="menu" aria-label="${t('lang.label')}">${ENABLED_LOCALES.map(
     (l) =>
-      html`<a class="xxd-menu__item" role="menuitem" href="${link(ctx, page, l.code)}" hreflang="${l.htmlLang}" lang="${l.htmlLang}"${attr('aria-current', l.code === locale.code ? 'true' : null)}>${l.label}</a>`,
+      html`<a class="xxd-menu__item" role="menuitem" href="${link(ctx, here ?? { kind: 'home' }, l.code)}" hreflang="${l.htmlLang}" lang="${l.htmlLang}"${attr('aria-current', l.code === locale.code ? 'true' : null)}>${l.label}</a>`,
   )}</div>
 </details>
 </nav>

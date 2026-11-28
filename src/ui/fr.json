@@ -147,6 +147,9 @@
   "studies.empty.text": "Essayez un autre mot-clé ou effacez les filtres.",
   "studies.reset": "Effacer les filtres",
 
+  "notfound.title": "Page introuvable",
+  "notfound.text": "L'adresse est peut-être mal saisie, ou la page a été déplacée. Poursuivez depuis l'une des pages ou l'un des thèmes ci-dessous.",
+
   "about.title": "À propos de ce site",
   "about.lead": "Ce site transforme les vérifications de HowToLiveLonger en pages lisibles par thème. Le contenu médical et la conclusion sur chaque affirmation proviennent sans modification de ce projet. Ce site rédige la question, la réponse et l'explication en langage simple de chaque page à partir des données du projet, ce qui peut les simplifier. Chaque page conserve le texte intégral du projet sous « Voir les données brutes ? ».",
   "about.method.title": "D'où provient le contenu",

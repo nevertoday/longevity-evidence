@@ -147,6 +147,9 @@
   "studies.empty.text": "Try another keyword or clear the filters.",
   "studies.reset": "Clear filters",
 
+  "notfound.title": "Page not found",
+  "notfound.text": "The address may be mistyped, or the page has moved. Carry on from one of the pages or topics below.",
+
   "about.title": "About this site",
   "about.lead": "This site turns the research checks of HowToLiveLonger into pages you can read by topic. The medical content and the verdict on each claim come unchanged from that project. This site writes the plain-language question, answer and explanation on each page from the project's data, and they may simplify it. Every page keeps the project's full text under \"Want the raw data?\".",
   "about.method.title": "Where the content comes from",

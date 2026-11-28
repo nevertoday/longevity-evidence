@@ -147,6 +147,9 @@
   "studies.empty.text": "Prueba con otra palabra clave o borra los filtros.",
   "studies.reset": "Borrar filtros",
 
+  "notfound.title": "No encontramos esta página",
+  "notfound.text": "Puede que la dirección esté mal escrita o que la página se haya movido. Sigue desde una de las páginas o temas de abajo.",
+
   "about.title": "Acerca de este sitio",
   "about.lead": "Este sitio convierte las verificaciones de estudios de HowToLiveLonger en páginas que puedes leer por tema. El contenido médico y la conclusión sobre cada afirmación proceden sin cambios de ese proyecto. Este sitio redacta la pregunta, la respuesta y la explicación en lenguaje sencillo de cada página a partir de los datos del proyecto, y pueden simplificarlo. Cada página conserva el texto completo del proyecto en «¿Quieres ver los datos originales?».",
   "about.method.title": "De dónde proviene el contenido",

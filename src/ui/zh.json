@@ -147,6 +147,9 @@
   "studies.empty.text": "换个关键词，或清除筛选。",
   "studies.reset": "清除筛选",
 
+  "notfound.title": "找不到这个页面",
+  "notfound.text": "地址可能有误，或者页面已经移走了。可以从下面的页面或话题接着看。",
+
   "about.title": "关于本站",
   "about.lead": "本站把 HowToLiveLonger 的研究核验整理成按话题阅读的网站。医学内容和对每条说法的结论原样来自这个项目。每页的白话问题、回答和解释由本站根据它的数据写成，可能有简化；每页「想看原始数据？」里都保留了它的完整原文。",
   "about.method.title": "内容从哪里来",

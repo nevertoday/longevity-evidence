@@ -35,6 +35,9 @@ const SHOTS: Shot[] = [
   ...both('zh-studies-filtered', 'zh/studies/?topic=drinking&grade=B'),
   ...both('en-studies-search', 'en/studies/?q=coffee'),
   ...both('zh-about', 'zh/about/'),
+  // python's http.server ignores 404.html, so load the not-found pages by file. Cloudflare serves them at missing URLs.
+  ...both('zh-404', 'zh/404.html'),
+  ...both('en-404', '404.html'),
   // Arabic is right to left.
   ...(['es', 'fr', 'de', 'pt', 'ja', 'ar'] as const).flatMap((code) => both(`${code}-home`, `${code}/`)),
   ...both('de-study-alcohol', 'de/studies/alcohol/'),
