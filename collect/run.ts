@@ -18,7 +18,8 @@ if (BOT !== 'claude' && BOT !== 'codex') throw new Error(`--bot ${BOT}: use clau
 
 const busy = (() => {
   try {
-    return execFileSync('pgrep', ['-f', 'agy -p|agy --dangerously|codex exec|claude -p'], { encoding: 'utf8' }).split('\n').filter(Boolean).length;
+    // The pattern from ~/.claude/CLAUDE.md, which also counts `agy --gemini_dir` and `codex -a never` workers.
+    return execFileSync('pgrep', ['-f', '^([^ ]*/)?(agy (-p|--dangerously|--gemini_dir)|codex (exec|-a never)|claude -p)'], { encoding: 'utf8' }).split('\n').filter(Boolean).length;
   } catch {
     return 0;
   }
