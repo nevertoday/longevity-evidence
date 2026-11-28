@@ -19,6 +19,21 @@ export type Explainer = {
   myth: string | null;
 };
 
+// Who has read each language's explanations, from least to most. Move a language up when its review is done;
+// the about page tells readers where their language stands.
+export const EXPLAIN_STAGES = ['machine-translated', 'checked-against-upstream', 'human-reviewed'] as const;
+export type ExplainStage = (typeof EXPLAIN_STAGES)[number];
+export const EXPLAIN_STAGE: Record<LocaleCode, ExplainStage> = {
+  zh: 'checked-against-upstream',
+  en: 'checked-against-upstream',
+  es: 'machine-translated',
+  fr: 'machine-translated',
+  de: 'machine-translated',
+  pt: 'machine-translated',
+  ja: 'machine-translated',
+  ar: 'machine-translated',
+};
+
 // How directly the evidence can show cause and effect. Language-independent, so it lives here rather than in content/.
 export const EVIDENCE_KINDS = ['trial', 'observational', 'indirect'] as const;
 export type EvidenceKind = (typeof EVIDENCE_KINDS)[number];

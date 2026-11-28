@@ -1,6 +1,6 @@
 import { renderClaim } from './claim.ts';
 import { DIRECTIONS, type Direction } from './directions.ts';
-import { EVIDENCE_KINDS, type EvidenceKind } from './explain.ts';
+import { EVIDENCE_KINDS, EXPLAIN_STAGE, type EvidenceKind } from './explain.ts';
 import { html, raw, type Html, type Part } from './html.ts';
 import { ENABLED_LOCALES, FALLBACK_LOCALE, type Locale, type LocaleCode } from './locales.ts';
 import {
@@ -474,7 +474,7 @@ function aboutPage(ctx: Ctx): Content {
 ${section(
   'method',
   t('about.method.title'),
-  html`<p class="prose-text">${t('about.method.text', { original: n((s) => s.origin === 'original'), added: n((s) => s.origin === 'added') })}</p><p class="prose-text">${t('about.method.limits')}</p>`,
+  html`<p class="prose-text">${t('about.method.text', { original: n((s) => s.origin === 'original'), added: n((s) => s.origin === 'added') })}</p><p class="prose-text">${t('about.method.limits')}</p><p class="prose-text">${t(`about.review.${EXPLAIN_STAGE[ctx.locale.code]}` as const)}</p>`,
 )}
 ${section('grades', t('about.grades.title'), html`<p class="section__intro">${ctx.guide.gradeNote}</p>${gradeFacts(ctx)}`)}
 ${section('directions', t('about.directions.title'), html`<p class="section__intro">${t('about.directions.intro')}</p>${directionFacts(ctx)}`)}

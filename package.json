@@ -8,6 +8,7 @@
   },
   "scripts": {
     "sync": "node scripts/sync-upstream.ts",
+    "mark-checked": "node scripts/mark-checked.ts",
     "build": "node scripts/build.ts",
     "check": "node scripts/check.ts",
     "typecheck": "tsc",

@@ -3,7 +3,8 @@ import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import { join, relative } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { DIRECTIONS, type Direction } from '../src/directions.ts';
-import type { Explainer } from '../src/explain.ts';
+import { EXPLAIN_STAGE, type Explainer } from '../src/explain.ts';
+import { FINGERPRINT_FILE, readFingerprints } from '../src/fingerprint.ts';
 import { escape } from '../src/html.ts';
 import { ENABLED_LOCALES } from '../src/locales.ts';
 import { loadUpstream, MYTH_VERDICTS } from '../src/model.ts';
@@ -42,6 +43,20 @@ for (const locale of ENABLED_LOCALES) {
 // The myths page says these claims all come from the original guide.
 for (const s of up.studies) {
   if (MYTH_VERDICTS.includes(s.verdict) && s.origin !== 'original') problems.push(`study ${s.id} is on the myths page but was added in review`);
+}
+
+// The site-written layers must have been checked against each record as upstream has it now.
+const checked = readFingerprints();
+for (const id of Object.keys(checked)) {
+  if (!up.studies.some((s) => s.id === id)) problems.push(`${FINGERPRINT_FILE} names "${id}", which upstream no longer has`);
+}
+const stale = up.studies.filter((s) => checked[s.id] !== s.fingerprint).map((s) => s.id);
+if (stale.length) {
+  problems.push(
+    `upstream changed ${stale.length} records since this site's direction, kind, topic and explanations were checked against them: ${stale.join(', ')}. ` +
+      'See what changed with `git diff -- data/upstream` (or `git log -p -- data/upstream`), update src/directions.ts, src/explain.ts, ' +
+      `TOPIC_OVERRIDES in src/model.ts and content/explain/*.json to fit, then run \`npm run mark-checked -- ${stale.join(' ')}\``,
+  );
 }
 
 if (!existsSync('dist')) {
@@ -159,6 +174,8 @@ if (problems.length) {
 }
 const codes = ENABLED_LOCALES.map((l) => l.code).join(' + ');
 console.log(`content: ${up.studies.length} studies in ${codes}, each showing its title, summary, takeaway, finding and every content/explain line, none a placeholder`);
+console.log(`upstream: all ${up.studies.length} records match the fingerprint they had when the site's layers were last checked (${FINGERPRINT_FILE})`);
+console.log(`explain review: ${ENABLED_LOCALES.map((l) => `${l.code} ${EXPLAIN_STAGE[l.code]}`).join(', ')}`);
 console.log(`direction: every study page shows its tag (${DIRECTIONS.map((d) => `${d} ${up.studies.filter((s) => s.direction === d).length}`).join(', ')})`);
 console.log(`home: no harms or no-effect study under "helps" (${homeCounts.join(', ')})`);
 console.log(`ui: src/ui/{${ENABLED_LOCALES.map((l) => l.code).join(',')}}.json have every key and placeholder of zh.json, and no value starts with TODO`);

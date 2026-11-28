@@ -59,6 +59,8 @@ npm run build && npm run check
 
 `src/model.ts` 在边界上把上游文件解析成 `Study`。子分类、结论和等级都查表转换，遇到不认识的值会直接报错。话题由子分类表决定，另有 8 条按 ID 的例外。`src/explain.ts` 读 `content/explain/`，每种语言每条记录都要有问题、回答、两到四句解释、注意事项，以及（原说法有问题时）流行说法；它还按研究设计把每条记录分成随机试验、跟踪观察和间接证据三类。
 
+上游可能只改某条记录的数字而不改 ID。`src/fingerprint.ts` 给每条记录的中文原文算一个指纹，`content/upstream-fingerprints.json` 记着本站的方向、研究类型、话题例外和白话解读上次核对时它的指纹。同步后如果有记录变了，`npm run check` 会列出这些 ID；对照 `git diff -- data/upstream` 改好本站的几层内容，再运行 `npm run mark-checked -- <ID>`。`src/explain.ts` 里的 `EXPLAIN_STAGE` 记着每种语言的解读审到了哪一步（机器翻译、已对照上游核对、已有人审读），关于页会照实告诉读者。
+
 证据等级只说证据有多可靠，不说有益还是有害。`src/directions.ts` 给每条记录定一个方向（有益、有害、没看到效果、好坏不定），附一行依据，只看上游的效应量、区间、比较对象和研究发现。上游新增或删除记录而这张表没跟上，构建会报错。首页按方向分成「值得做的事」和「没用，甚至有害」，`npm run check` 会核对前者里没有有害或没效果的研究。医学内容的修改请提交到上游，见它的 [CONTRIBUTING.md](https://github.com/geekan/HowToLiveLonger/blob/main/CONTRIBUTING.md)。
 
 ### 许可
@@ -122,6 +124,8 @@ npm run build && npm run check
 
 `src/model.ts` parses the upstream files into `Study` records at the boundary. Subcategories, verdicts and grades go through lookup tables, and an unknown value stops the build. A subcategory table picks each study's topic, with eight per-ID exceptions. `src/explain.ts` reads `content/explain/`. Every record needs, in every language, a question, an answer, two to four sentences of explanation, a caution, and the popular claim when the verdict questions it. It also sorts each record by study design into randomized trials, observational studies and indirect evidence.
 
+Upstream can change a record's numbers without changing its id. `src/fingerprint.ts` fingerprints each record's Chinese source text, and `content/upstream-fingerprints.json` keeps the fingerprint each record had when this site's direction, kind, topic override and explanations were last checked against it. After a sync, `npm run check` lists every record that changed. Compare with `git diff -- data/upstream`, update this site's layers to fit, then run `npm run mark-checked -- <id>`. `EXPLAIN_STAGE` in `src/explain.ts` records how far each language's explanations have been reviewed (machine-translated, checked against upstream, read by a person), and the about page tells readers.
+
 An evidence grade says how reliable the evidence is, not whether the thing helps. `src/directions.ts` gives every record a direction (helps, harms, no effect found, mixed or unclear) with a one-line reason, read only from upstream's effect estimate, interval, comparison and findings. If upstream adds or drops a record and the table does not follow, the build stops. The home page splits strong evidence by direction, and `npm run check` confirms that nothing that harms or has no effect sits in the "Worth doing" list. Send medical corrections upstream, following its [CONTRIBUTING.md](https://github.com/geekan/HowToLiveLonger/blob/main/CONTRIBUTING.md).
 
 ### License
@@ -135,11 +139,13 @@ data/upstream/       upstream files and SOURCE.json
 scripts/build.ts     renders dist/
 scripts/check.ts     checks content and dist/
 scripts/sync-upstream.ts
+scripts/mark-checked.ts  records that a changed upstream record has been rechecked
 scripts/screenshots.ts
 src/locales.ts       the eight languages and which are on
 src/model.ts         parses upstream into Study records; topic tables
 src/explain.ts       reads content/explain/; kind of evidence per record
 content/explain/     plain-language question, answer and explanation per record and language
+src/fingerprint.ts   fingerprints upstream records; content/upstream-fingerprints.json
 src/directions.ts    which way each record's evidence points, with the reason
 src/pages.ts         routes, layout and one renderer per page kind
 src/claim.ts         renders the archived Markdown in original claims

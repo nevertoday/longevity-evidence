@@ -2,6 +2,7 @@ import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { DIRECTION_BY_ID, type Direction } from './directions.ts';
 import { evidenceKind, KIND_IDS, loadExplainers, type EvidenceKind, type Explainer } from './explain.ts';
+import { fingerprint } from './fingerprint.ts';
 import { LOCALE_CODES, type LocaleCode } from './locales.ts';
 
 export const GRADES = ['A', 'B', 'C', 'D'] as const;
@@ -112,6 +113,8 @@ export type Study = {
   // This site's plain-language restatement, from content/explain/.
   kind: EvidenceKind;
   explain: Record<LocaleCode, Explainer>;
+  // Changes whenever upstream changes this record's Chinese source text. See src/fingerprint.ts.
+  fingerprint: string;
 };
 
 export type GlossaryEntry = { term: string; name: string; description: string };
@@ -270,6 +273,7 @@ function parseStudy(r: Obj, langs: Record<LocaleCode, Lang>): Omit<Study, 'expla
     kind: evidenceKind(id),
     verdict: lookup(VERDICT_BY_UPSTREAM, str(r.verdict, `${at}.verdict`), `${at}.verdict`),
     origin: lookup(ORIGIN_BY_UPSTREAM, str(r.origin, `${at}.origin`), `${at}.origin`),
+    fingerprint: fingerprint({ record: r, reader: langs[SOURCE_LANG].reader(id) }),
     sources: rawSources.map((s, i) => parseSource(s, `${at}.sources[${i}]`)),
     text: Object.fromEntries(
       LOCALE_CODES.map((code) => [code, parseText(id, rawSources, langs[code], `${at} (${code})`)]),
