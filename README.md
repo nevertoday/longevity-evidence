@@ -14,10 +14,10 @@
 
 ```sh
 npm run build    # 生成 dist/
-npm run check    # 检查内容完整、没有 TODO 占位、链接、lang、canonical 和 hreflang
+npm run check    # 检查内容完整、没有 TODO 占位、链接、lang、canonical、hreflang、sitemap 和结构化数据
 ```
 
-线上地址是 https://longevity.xiaoxiaodong.ai （Cloudflare Workers 静态资源，配置见 `wrangler.jsonc`）。`npm run deploy` 会构建、检查并上传。fork 后部署到别的域名时设置 `SITE_ORIGIN`，canonical 和 hreflang 会用到它：
+线上地址是 https://longevity.xiaoxiaodong.ai （Cloudflare Workers 静态资源，配置见 `wrangler.jsonc`）。`npm run deploy` 会构建、检查并上传。fork 后部署到别的域名时设置 `SITE_ORIGIN`，canonical、hreflang、sitemap 和结构化数据都会用到它：
 
 ```sh
 SITE_ORIGIN=https://你的域名 npm run build
@@ -63,6 +63,14 @@ npm run build && npm run check
 
 证据等级只说证据有多可靠，不说有益还是有害。`src/directions.ts` 给每条记录定一个方向（有益、有害、没看到效果、好坏不定），附一行依据，只看上游的效应量、区间、比较对象和研究发现。上游新增或删除记录而这张表没跟上，构建会报错。首页按方向分成「值得做的事」和「没用，甚至有害」，`npm run check` 会核对前者里没有有害或没效果的研究。医学内容的修改请提交到上游，见它的 [CONTRIBUTING.md](https://github.com/geekan/HowToLiveLonger/blob/main/CONTRIBUTING.md)。
 
+### 搜索引擎
+
+`npm run build` 还会生成 `dist/sitemap.xml` 和 `dist/robots.txt`。sitemap 列出根页面和每种语言的每个页面，每条都带 8 种语言的 hreflang 互链，首页和根页面另有 x-default。它不写 lastmod，因为全站一个日期对大多数页面都不准。robots.txt 允许抓取并指向 sitemap，Cloudflare 会在前面加上它自己托管的内容。
+
+每种语言有 `<语言>/404.html`，`dist/404.html` 用后备语言，Cloudflare 对不存在的地址返回路径上最近的那个。404 页面带 `noindex`，链接都从根路径写起。
+
+每个可索引的页面都有 Open Graph 标签。JSON-LD 里，首页和根页面有 WebSite，话题页和研究页有 BreadcrumbList，研究页还有 MedicalWebPage，列出每篇论文和所依据的上游提交。JSON-LD 不写作者或审稿人，因为还没有医生审读过这些页面。研究页写明两个日期：上游数据的提交日期，和 `content/explain` 最后一次提交的日期。后者在构建时从 git 读取，所以要在 git 仓库里构建。`dateModified` 取两者中较晚的一个。`npm run check` 会核对以上全部。
+
 ### 许可
 
 本仓库以 Unlicense 发布到公共领域，和上游一致。`vendor/xxd/` 例外，它来自小小东 UI Kit，按 PolyForm Noncommercial 许可使用，详见 [NOTICE](NOTICE)。
@@ -79,10 +87,10 @@ You need Node 26 or later. The build and the check need no installed packages.
 
 ```sh
 npm run build    # writes dist/
-npm run check    # checks content, TODO placeholders, links, lang, canonical and hreflang
+npm run check    # checks content, TODO placeholders, links, lang, canonical, hreflang, the sitemap and structured data
 ```
 
-The live site is https://longevity.xiaoxiaodong.ai (Cloudflare Workers static assets, configured in `wrangler.jsonc`). `npm run deploy` builds, checks and uploads. A fork that deploys elsewhere sets `SITE_ORIGIN`, which canonical and hreflang URLs use:
+The live site is https://longevity.xiaoxiaodong.ai (Cloudflare Workers static assets, configured in `wrangler.jsonc`). `npm run deploy` builds, checks and uploads. A fork that deploys elsewhere sets `SITE_ORIGIN`, which canonical and hreflang URLs, the sitemap and structured data use:
 
 ```sh
 SITE_ORIGIN=https://your.domain npm run build
@@ -128,6 +136,14 @@ Upstream can change a record's numbers without changing its id. `src/fingerprint
 
 An evidence grade says how reliable the evidence is, not whether the thing helps. `src/directions.ts` gives every record a direction (helps, harms, no effect found, mixed or unclear) with a one-line reason, read only from upstream's effect estimate, interval, comparison and findings. If upstream adds or drops a record and the table does not follow, the build stops. The home page splits strong evidence by direction, and `npm run check` confirms that nothing that harms or has no effect sits in the "Worth doing" list. Send medical corrections upstream, following its [CONTRIBUTING.md](https://github.com/geekan/HowToLiveLonger/blob/main/CONTRIBUTING.md).
 
+### Search engines
+
+`npm run build` also writes `dist/sitemap.xml` and `dist/robots.txt`. The sitemap lists the root and every page in every language, each with hreflang alternates for all eight languages. Home pages and the root also name x-default. It has no lastmod, because one site-wide date would be wrong for most pages. robots.txt allows everything and points at the sitemap. Cloudflare prepends its own managed block.
+
+Each language has `<code>/404.html`, and `dist/404.html` uses the fallback language. Cloudflare serves the nearest one up a missing URL's path. 404 pages carry `noindex` and use root-absolute links.
+
+Every indexable page has Open Graph tags. In JSON-LD, home pages and the root carry a WebSite node, topic and study pages a BreadcrumbList, and study pages a MedicalWebPage that cites each paper and the upstream commit. The JSON-LD names no author or reviewer, because no clinician has reviewed the pages. Each study page shows two dates: upstream's commit date and the date of the last commit to `content/explain`. The build reads the second from git, so it must run in a git checkout. `dateModified` is the later of the two. `npm run check` verifies all of this.
+
 ### License
 
 This repository is released into the public domain under the Unlicense, like upstream. The exception is `vendor/xxd/`, which comes from the 小小东 UI Kit under the PolyForm Noncommercial license. See [NOTICE](NOTICE).
@@ -148,6 +164,7 @@ content/explain/     plain-language question, answer and explanation per record 
 src/fingerprint.ts   fingerprints upstream records; content/upstream-fingerprints.json
 src/directions.ts    which way each record's evidence points, with the reason
 src/pages.ts         routes, layout and one renderer per page kind
+src/seo.ts           sitemap.xml, robots.txt, Open Graph tags and JSON-LD serialization
 src/claim.ts         renders the archived Markdown in original claims
 src/ui/<code>.json   interface text; zh.json defines the keys
 src/assets/          site.css and site.js, copied to dist/assets/
