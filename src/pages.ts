@@ -15,7 +15,7 @@ import {
   type Upstream,
   type VerdictId,
 } from './model.ts';
-import type { Alternate } from './seo.ts';
+import { openGraph, type Alternate } from './seo.ts';
 import { APPEARANCE_KEY, SITE_ORIGIN, SOURCE_REPO, UPSTREAM_CONTRIBUTING } from './site.ts';
 import type { T, UiKey } from './ui.ts';
 
@@ -577,15 +577,21 @@ const NAV: [IndexablePage, UiKey][] = [
   [{ kind: 'about' }, 'nav.about'],
 ];
 
-const indexLinks = (url: string, page: IndexablePage) => html`<link rel="canonical" href="${url}">
-${alternates(page).map((a) => html`<link rel="alternate" hreflang="${a.hreflang}" href="${a.href}">\n`)}`;
+// What an indexable page tells search engines about itself. A page without it gets noindex.
+type Index = { url: string; page: IndexablePage; locale: Locale; siteName: string };
 
-function head(base: string, title: string, description: string, links: Part): Html {
+function indexMeta(index: Index, title: string, description: string): Html {
+  const og = openGraph({ type: index.page.kind === 'study' ? 'article' : 'website', siteName: index.siteName, title, description, url: index.url, locale: index.locale });
+  return html`<link rel="canonical" href="${index.url}">
+${alternates(index.page).map((a) => html`<link rel="alternate" hreflang="${a.hreflang}" href="${a.href}">\n`)}${og}`;
+}
+
+function head(base: string, title: string, description: string, index: Index | null): Html {
   return html`<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${title}</title>
 <meta name="description" content="${description}">
-${links}
+${index ? indexMeta(index, title, description) : html`<meta name="robots" content="noindex">`}
 <meta name="color-scheme" content="light dark">
 <script src="${base}vendor/xxd/boot.js" data-key="${APPEARANCE_KEY}" data-default-theme="system"></script>
 <link rel="stylesheet" href="${base}vendor/xxd/xxd.css">
@@ -600,11 +606,10 @@ export function renderPage(locale: Locale, t: T, up: Upstream, page: Page): stri
   const ctx: Ctx = { locale, t, guide: up.guide[locale.code], up, base: here ? toRoot(pagePath(locale.code, here)) : '/' };
   const c = content(ctx, page);
   const title = page.kind === 'home' ? `${t('site.name')} · ${c.title}` : `${c.title} · ${t('site.name')}`;
-  const links = here ? indexLinks(pageUrl(locale.code, here), here) : html`<meta name="robots" content="noindex">`;
   const doc = html`<!doctype html>
 <html lang="${locale.htmlLang}" dir="${locale.dir}">
 <head>
-${head(ctx.base, title, c.description, links)}
+${head(ctx.base, title, c.description, here && { url: pageUrl(locale.code, here), page: here, locale, siteName: t('site.name') })}
 </head>
 <body class="xxd-page">
 <a class="xxd-sr-only-focusable" href="#main">${t('skip')}</a>
@@ -648,14 +653,13 @@ export function renderRoot(locales: { locale: Locale; t: T }[], up: Upstream): s
   const fallback = locales.find((l) => l.locale.code === FALLBACK_LOCALE) ?? locales[0];
   if (!fallback) throw new Error('no enabled locales');
   const redirect = `(function(){var codes=${JSON.stringify(codes)};var langs=navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||""];for(var i=0;i<langs.length;i++){var c=String(langs[i]).toLowerCase().split("-")[0];if(codes.indexOf(c)>=0){location.replace(c+"/");return}}location.replace(${JSON.stringify(FALLBACK_LOCALE)}+"/")})();`;
-  const links = indexLinks(ROOT_URL, { kind: 'home' });
   const title = locales.map((l) => l.t('site.name')).join(' · ');
   const description = locales.map((l) => l.t('site.description', { count: up.studies.length })).join(' ');
   return html`<!doctype html>
 <html lang="${fallback.locale.htmlLang}" dir="${fallback.locale.dir}">
 <head>
 <script>${raw(redirect)}</script>
-${head('', title, description, links)}
+${head('', title, description, { url: ROOT_URL, page: { kind: 'home' }, locale: fallback.locale, siteName: fallback.t('site.name') })}
 </head>
 <body class="xxd-page">
 <main id="main" class="site-main">

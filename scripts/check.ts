@@ -88,6 +88,7 @@ if (!distText('robots.txt').split('\n').includes(sitemapLine)) problems.push(`di
 
 let links = 0;
 let notFoundLinks = 0;
+let ogPages = 0;
 const titles = new Map<string, string>();
 for (const file of pages) {
   const text = readFileSync(join('dist', file), 'utf8');
@@ -119,15 +120,17 @@ for (const file of pages) {
 
   const title = /<title>([^<]*)<\/title>/.exec(text)?.[1]?.trim();
   if (!title) problems.push(`${at}: empty or missing <title>`);
-  if (!/<meta name="description" content="[^"]+">/.test(text)) problems.push(`${at}: empty or missing meta description`);
+  const description = /<meta name="description" content="([^"]+)">/.exec(text)?.[1];
+  if (!description) problems.push(`${at}: empty or missing meta description`);
 
   if (notFound) {
     if (!text.includes('<meta name="robots" content="noindex">')) problems.push(`${at}: no robots noindex meta`);
     for (const [what, pattern] of [
-      ['canonical', /<link rel="canonical"/],
-      ['hreflang alternate', /<link rel="alternate" hreflang=/],
+      ['a canonical', /<link rel="canonical"/],
+      ['an hreflang alternate', /<link rel="alternate" hreflang=/],
+      ['an Open Graph tag', /<meta property="og:/],
     ] as const) {
-      if (pattern.test(text)) problems.push(`${at}: has a ${what}`);
+      if (pattern.test(text)) problems.push(`${at}: has ${what}`);
     }
     continue;
   }
@@ -138,6 +141,13 @@ for (const file of pages) {
   if (canonicals.length !== 1 || canonicals[0] !== `${SITE_ORIGIN}/${urlPath}`) {
     problems.push(`${at}: canonical ${JSON.stringify(canonicals)}, expected ["${SITE_ORIGIN}/${urlPath}"]`);
   }
+
+  // Link previews show the same title and description as search results.
+  const og = (name: string) => new RegExp(`<meta property="og:${name}" content="([^"]*)">`).exec(text)?.[1];
+  if (og('url') !== canonicals[0]) problems.push(`${at}: og:url ${og('url')} is not its canonical ${canonicals[0]}`);
+  if (!og('title') || og('title') !== title) problems.push(`${at}: og:title "${og('title')}" is not its <title>`);
+  if (!og('description') || og('description') !== description) problems.push(`${at}: og:description is not its meta description`);
+  ogPages++;
 
   const alternateLinks = [...text.matchAll(/<link rel="alternate" hreflang="([^"]+)" href="([^"]+)">/g)];
   const alternates = new Map(alternateLinks.map((a) => [a[1] as string, a[2] as string]));
@@ -227,7 +237,8 @@ console.log(`ui: src/ui/{${ENABLED_LOCALES.map((l) => l.code).join(',')}}.json h
 console.log(`pages: ${pages.length} HTML files, ${links} internal links and assets resolve`);
 console.log(`h1: every page has exactly one <h1>`);
 console.log(`head: every page has <html lang dir>, a <title> and a meta description; every page but 404.html has a unique <title>, its canonical URL and hreflang for ${codes}`);
+console.log(`og: all ${ogPages} indexable pages have og:url equal to their canonical, and og:title and og:description equal to their <title> and meta description`);
 console.log(`sitemap: ${sitemap.size} URLs, exactly the indexable pages plus the root, each with the alternates its page's hreflang links name`);
 console.log(`robots: dist/robots.txt has "${sitemapLine}"`);
-console.log(`404: ${NOT_FOUND.map((f) => `dist/${f}`).join(', ')} are noindex with no canonical or hreflang, and all ${notFoundLinks} of their links and assets are root-absolute`);
+console.log(`404: ${NOT_FOUND.map((f) => `dist/${f}`).join(', ')} are noindex with no canonical, hreflang or Open Graph tags, and all ${notFoundLinks} of their links and assets are root-absolute`);
 console.log('check passed');
